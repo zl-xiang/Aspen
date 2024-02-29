@@ -1,0 +1,150 @@
+ability_desc:
+  ability: string
+  version_group: string
+  language: string
+  flavor_text: string
+
+ability_name:
+  ability: string
+  local_language: string
+  name: string
+
+ability:
+  ability: string
+  generation: string
+  is_main_series: string
+
+item_desc:
+  item: string
+  version_group: string
+  language: string
+  flavor_text: string
+
+item_name:
+  item: string
+  local_language: string
+  name: string
+
+item:
+  item: string
+  category: string
+  cost: string
+  fling_power: string
+  fling_effect: string
+
+machine:
+  machine_number: string 
+  version_group: string
+  item: string 
+  move: string
+
+move_desc:
+  move: string
+  version_group: string
+  language: string
+  flavor_text: string
+
+move_name:
+  move: string
+  local_language: string
+  name: string
+
+move:
+  move: string 
+  generation: string
+  type: string
+  power: string
+  pp: string
+  accuracy: string
+  priority: string
+  target: string
+  damage_class: string
+  effect: string
+  effect_chance: string
+  contest_type: string
+  contest_effect: string
+  super_contest_effect: string
+
+spec_desc:
+  spec: string
+  version_group: string
+  language: string
+  flavor_text: string
+
+spec_name:
+  spec: string
+  local_language: string
+  name: string
+
+species:
+  species: string
+  generation: string
+  evolves_from_species: string
+  evolution_chain: string
+  color: string
+  shape: string
+  habitat: string
+  gender_rate: string
+  capture_rate: string
+  base_happiness: string
+  is_baby: string
+  hatch_counter: string
+  has_gender_differences: string
+  growth_rate: string
+  forms_switchable: string
+  is_legendary: string
+  is_mythical: string
+  conquest_order: string
+
+poke_ability:
+  pokemon: string
+  ability: string
+  is_hidden: string
+  slot: string
+
+
+poke_item:
+  pokemon: string
+  version: string
+  item: string
+  rarity: string
+
+poke_move:
+  pokemon: string
+  version_group: string
+  move: string
+  pokemon_move_method: string
+  level: string
+  order: string
+
+poke_stats:
+  pokemon: string
+  stat: string
+  base_stat: string
+  effort: string
+
+poke_type:
+  pokemon: string
+  type: string
+  slot: string
+
+pokemon:
+  id: string
+  name: string
+  species: string
+  height: string
+  weight: string
+  base_experience: string
+  is_default: string
+
+
+stats:
+  id: string
+  damage_class: string
+  is_battle_only: string
+  game_index: string
+
+type:
+  id: string
+  generation: string
+  damage_class: string

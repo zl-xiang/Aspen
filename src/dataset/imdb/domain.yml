@@ -1,0 +1,27 @@
+name_basics:
+  nconst: id
+  primaryName: string
+  primaryProfession: cat_seq
+title_basics:
+  tconst: id
+  titleType: cat
+  primaryTitle: string
+  originalTitle: string
+  isAdult: cat
+  startYear: string
+  genres: cat_seq
+title_principals: 
+  tconst: id
+  ordering: string
+  nconst: id
+  category: cat
+title_ratings:
+  tconst: id
+  averageRating: string
+  numVotes: string
+title_akas:
+  titleId: id
+  ordering: string
+  title: string
+  region: cat
+  isOriginalTitle: cat

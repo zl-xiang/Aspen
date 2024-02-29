@@ -1,0 +1,991 @@
+area,gid,name,area_type,ended
+653,afff1a94a98b432288743148139ab6da,Wien,City,f
+222,489ce91b665833079877795b68554c98,United States,Country,f
+3967,f988aff452214b369174befec694f906,Nottingham,City,f
+81,85752fda13c431a3bee50e5cb1f51dad,Germany,Country,f
+107,2db42837c8323c27b4a308198f75693c,Japan,Country,f
+100,d3a68bd074193f99a5bd204d6e057089,Indonesia,Country,f
+105,c65002779a3d349bbf3041afdbf42add,Italy,Country,f
+194,471c46a7afc531c4923cd0444f5053a4,Spain,Country,f
+4434,dc10c22be51040068b7ffecb4f36436e,Paris,City,f
+680,8df376372eb2424b9e1dc90586509826,Punjab,Subdivision,f
+13,106e0becb6383b37b731f53d507dc00e,Australia,Country,f
+175,61ed84b85a1030a78376ccd51801d6d1,Romania,Country,f
+9279,12c3b82efcab42199bd5792089d8280e,Barcelona,City,f
+103,390b05d411ec3bcea343703a366b34a5,Ireland,Country,f
+72,6a264f946ff130b19a8141f7bfabd616,Finland,Country,f
+221,8a754a1600273a29b6d72b40ea0481ed,United Kingdom,Country,f
+202,23d10872f5ae3f0cbf55332788a16ecb,Sweden,Country,f
+214,d3be28b441f737528a05ed45e1d1e492,Turkey,Country,f
+7020,74e50e585deb4b9993a2decbb365c07f,New York,City,f
+5099,29a709d80320493e8d0cf2c386662b7f,Chicago,City,f
+6,2afd5d6a5fee3836878344d0ec9ac115,Angola,Country,f
+96,0373cdffeac83fbc92dc36a607da06d1,Hong Kong,Subdivision,f
+113,b9f7d64046e8313eb158ded6d18593b3,South Korea,Country,f
+38,71bbafaae8253e158ca9017dcad1748b,Canada,Country,f
+7971,2efaacc536104f6aaae9c1776aa48875,Greenock,City,f
+98224,1f001130c53943d4bd372800d4407dec,Simferopol,City,f
+30,f45b47f85796386eb1726c31b009a5d8,Brazil,Country,f
+1178,f03d09b339dc4083afd6159e3f0d462f,London,City,f
+7341,0a61386e15df4a38a1f6d751e133a1a9,Hoboken,City,f
+5075,e331bfdfb908429ca79b710cf9c06abb,Boston,City,f
+292,a36544c1cb404f449e0e7a5a69e403a8,New Jersey,Subdivision,f
+97,312bc5bb7e433e6381c6b4d712b37b2c,Hungary,Country,f
+150,ef1b7cc0cd2636f48ea004d9623786c7,Netherlands,Country,f
+23037,33f49521f75443cf8d7ad9e336fe56e6,Lausanne,City,f
+5241,7b2ca1e7e7f64155881dc660a45c11e8,Cleveland,City,f
+657,8775329a73e147708c4c95d0430cf4d2,Assam,Subdivision,f
+229,0158e991c3c6374a9b9d024bbaff6980,Vietnam,Country,f
+23638,0276a533076347c7956e25e60f8e7537,Reading,City,f
+225,95c0c3eeed5231c483e619ced497e6d0,Uzbekistan,Country,f
+89433,671233afe8d34b4f85b55ee6c930e769,Amersham,City,f
+57,4757b5252a60324ab060578765d2c993,Denmark,Country,f
+3822,6658f787692d417f852cdcca728d5849,Edinburgh,City,f
+5299,520b4d15da9b40ce8ba5d797d0eae8a2,Norfolk,City,f
+23698,9c607066ceb64a78a6144c14a2b3ec35,Bremen,City,f
+2531,aa03e1654c73495991c0a99f9fa8ecab,Seoul,City,f
+21,5b8a5ee50bb334cf9a75c27c44e341fc,Belgium,Country,f
+160,6743d3516f37304997245041161fff4d,Norway,Country,f
+7706,e8e317a1268c4e469db1f10af959ffca,Amsterdam,City,f
+397,8dc97297ac954d3382bce07fab26fb5f,Tokyo,Subdivision,f
+41440,f67494cf1c45496d994777994d90b8eb,Tourouvre,City,f
+5196,58d2816bdaf94fc5962c06967f14a5e5,Austin,City,f
+205,41637cec9a4f389c86d2fc6abf3357b5,Taiwan,Country,f
+22323,2cda13d7d08b469ca1c845ba21e8b170,Bakersfield,City,f
+331,11a44e18a2e543a9bee9aa4f7c83f967,Hamburg,City,f
+30646,e2aa557948d348a994dae199e49b3e4a,Redondo Beach,City,f
+82369,753ebc05fcda4b9b8ee3fb0b53625c9f,Ojai,City,f
+73,0831065851eb380180de5a0739207115,France,Country,f
+193,50cc7852862e30aeaa82385fe7135b7f,South Africa,Country,f
+22328,a7e6070e3afd423ebd10faf0d53e4778,Huntington Beach,City,f
+203,1333ff068e3d3c8e9f3a13a2a38b41df,Switzerland,Country,f
+219,904768d061ca3c4093ac93adc36fef4b,Ukraine,Country,f
+63,8e0551f295c23cc0a0a9f2d344f10667,Egypt,Country,f
+7279,c3cc624eb96349cfad0be318cb341963,Montréal,City,f
+56,51d34c2861bf3d21849f7492672a9d44,Czechia,Country,f
+21830,1cecf17b61fd449a9e4b5c17fee43a12,College Park,City,f
+7978,743523d6c574454e9079de113e30452a,Valencia,City,f
+10,0df04709c7d83b55a6eaf3e5069a947b,Argentina,Country,f
+30636,e3421d8942a243afb88a21e205e4bd58,Joshua Tree,City,f
+176,1f1fc3a4950039b89f10f0a465557eef,Russia,Country,f
+5147,2b748d6ebc1c44349f7becd6332bc557,Portland,City,f
+3925,852531bf3410401fb4329c3157a386b9,Manchester,City,f
+116443,71b1f35f18cb499b8d6c7c7437eed461,Monroeville,City,f
+47,02b60d8d7164339d868d22d147d9f74a,Colombia,Country,f
+22698,595b76690fbf44d6a9fff5b2fbd606a1,Segrate,Municipality,f
+80667,9d0935959e7544f789003bfaa6da8e3c,Medellín,City,f
+170,dd7f80c8f0173d0186082a8c9c32b954,Poland,Country,f
+115659,d451dd884b084caaa73a70ef3af3d1fd,Wood Green,District,f
+5243,309f8f0351b54640b4cfd1a5e022ccf4,Porto,City,f
+5420,99d19231016c428f831a17ce7daca318,Wałbrzych,City,f
+30589,b2bc129477be4c7baf939868b83b1f34,Auckland,City,f
+8393,f19902db479c4b7ba1671f0dcd1dc2b6,Shibuya,City,f
+74756,7098c79766e54064a0e5ebbfef40c1e7,Altlußheim,Municipality,f
+1222,b63533c70c4f443f881fb5ee6211208e,San José,Subdivision,f
+12762,1876749b4a07495b8b579dde0ac39c24,Athens,City,f
+5249,f05903178b424498a2e434cc5562fcf8,Salzburg,City,f
+14,caac77d1a5c83e6e8e2790b44dcc1446,Austria,Country,f
+7289,20619e36fca84499bcc8be01a3ea3e41,Leipzig,City,f
+117,66eb3e73d69e35819a23a73b4c64c8dd,Latvia,Country,f
+4000,fe92d6d64f354a0ea48ab802ae9cdaf4,Surrey,Subdivision,f
+7704,e2bd38a1c5ad4dd4b9a40632ff3be7ae,Zurich,City,f
+304,f934c8dae40e40568f8c212e68fdcaec,Texas,Subdivision,f
+10971,6c6a147d4c26409c9d26543836ed57f8,Burbank,City,f
+3867,2440423175644b11916895dd148049a7,Kent,Subdivision,f
+9541,ca61e2350f314c0e89638232222ef6a8,Oklahoma City,City,f
+43,82d5f4d6aed43ff581d15363ac6e97a7,Chile,Country,f
+3553,6d2ae907d14941ecb4c0c7fc7cb09f1c,Edo,Subdivision,f
+326,c9ac1239e83241bc9930e252a1fd1105,Berlin,City,f
+129,305d19c7c040349c8d5f6ac75d2d2a09,Malaysia,Country,f
+98,48802a32075a3805a183277c66047693,Iceland,Country,f
+7800,fb0c4113d1774f3fbe564fa05d4807b9,Malibu,City,f
+241,89a675c23e373518b83c418bad59a85a,Europe,,f
+80008,26410fd9fac94c38a4a4ac6cbb362e19,Brunn am Gebirge,Municipality,f
+7291,624f2956bfdb43a989249aadb812ee04,Dresden,City,f
+3871,806b9b3b5daf4eaa807d7a2a29cde0da,Leicester,City,f
+22317,73d8cbdd31494cb6a36d1ef2036a8b88,Beverly Hills,City,f
+87975,b844ec601d5b4dcc82c9bc5b12ae04a8,Bandung,City,f
+7388,257288958fd749a2bac4eb17f13d5f5f,Livingston,City,f
+7954,b8a2776aeedf48eaa6f31a9070f0b823,Cologne,City,f
+5239,3e80aaa79b71450f81470ecf101d8f1a,Minneapolis,City,f
+7295,82f3a697ba65404da1ed360147af7d10,San Diego,City,f
+172,3906cf3200a732df93cc4710c5f5a542,Puerto Rico,Country,f
+5212,6ccc62d1bdd84f088faebfaa5310e5ef,Vancouver,City,f
+5197,fc1aee9af1a845dc8820af6b5d7f7450,Denver,City,f
+4534,717b1ffbcd104ed9b8cbc6d0ba53a746,Xanthi,Subdivision,f
+26876,3363a5a5c47d4f47be20589a9b541a84,Marshall,City,f
+8404,6ceb213d227641a8b8b19a2222df4065,Minato,City,f
+297,d2083d8409e24d458fc045eed33748b5,Oklahoma,Subdivision,f
+171,781b0c543d54362da9418a617def4992,Portugal,Country,f
+84,803db0cab6ed3bbcaeb8f89efd0a2168,Greece,Country,f
+9277,eedd8c4c2d894cc1bc3f07b316c0ea59,Nantes,City,f
+23703,d8064b41311b47f299bb043b2a17adc6,Goiânia,City,f
+5076,74b24e62d2fe42d29d9631f2da756c77,Toronto,City,f
+22373,40110a75ab094b39b798155de590b746,Modesto,City,f
+5213,e68879f9bd9541ff96bac082ff37cc74,Nashville,City,f
+5211,1789b8b7dfc4409a891625cde916e311,Albany,City,f
+7703,1f40c6e147ba4e35996ffe6ee5840e62,Los Angeles,City,f
+122,d2007481eefe37c0be712256dfe148cb,Liechtenstein,Country,f
+1805,0a65a72774654e6c8b15ed4d09e021ee,Praha,City,f
+5250,b37e9d2bc1c8431ba2603a3ca21fcb1b,Tel Aviv,City,f
+5282,afaa40c12e114a9b9a33ff0603e3e312,Richmond,City,f
+8391,b3259db36d26435087a4b8363c8b3ad8,Louiseville,City,f
+2450,808e1ef853904300a615c4df977cc349,SanktPeterburg,City,f
+5267,7e5e7fd7c1eb4cb887e2fb1c0eda9e48,Buffalo,City,f
+73605,947f837e6dd54b36bcd3a3a32c6beb12,Worcester,City,f
+66419,c3503bb7f32d4536a1afb2623f54ab4f,San Juan,City,f
+138,3e08b2cd69f3317cb1e4e71be581839e,Mexico,Country,f
+5210,26e0e53419ea4645bfb31aa4e83a4046,Atlanta,City,f
+5194,7c71f82198a04f1bbf6b87fe1d6c89f0,Tucson,City,f
+358,f80d529ef24246efa090d193ed23075f,Oslo,City,f
+7323,e8ad73e99e7f41c4a3956e29260ff1df,Graz,City,f
+7022,83f22bb64631443cbace9fae8540362a,San Francisco,City,f
+7713,39d621981e764de4b079e86e3a393bbc,Helsinki,City,f
+59394,1b3a8b3a9c7a41b78c468c15484d3b11,Woodstock,City,f
+9414,6b142ef295ca41b298df3f266ab24ed2,Santa Cruz de Tenerife,City,f
+5287,188ae04a63e2423abc3df725f1214a69,Madison,City,f
+67,e1c1215fdcc035b4b840d2ca2151593b,Estonia,Country,f
+3993,f706259c989f4a92bbac211135b5c207,SouthendonSea,Subdivision,f
+23188,a1e179bad7a54f39b83994bac2e9b269,Reno,City,f
+69609,e25a3d5ed01b40f797660bd71e8185c6,Neustadt in Holstein,City,f
+5215,f353ba6a10b34023bd4523ccd8576691,Augusta,City,f
+228,2ac90d6b04fa30068a9189da01032365,Venezuela,Country,f
+4014,a7251dbd388c4fdfa2941bcde106ddf7,West Sussex,Subdivision,f
+5236,33587495c7754483b819931c4cf438cd,Oxford,City,f
+106,2dd47a6491d53b13bc9480043ed063d7,Jamaica,Country,f
+21912,db18cd2fce4646b3a1dd7e264de08528,Kokomo,City,f
+3813,f0b226db8e2240e69a53d839cfec6228,Cardiff,City,f
+5161,9443d4f5668c4f3096bd6caf831de30f,Rio de Janeiro,City,f
+99,d31a9a15537f3669ad5325753ddd2772,India,Country,f
+114325,583323d58b8847699c2fc745bf7e95fa,Manresa,Municipality,f
+99508,69f47171a44d41bf9a0b0bc062a826e9,Juiz de Fora,City,f
+5126,3f179da483c64a28a627e46b4a8ff1ed,Sydney,City,f
+3834,55dd286af047423b906237408f148633,Derbyshire,Subdivision,f
+5150,65b55c0fa4fb42e49b9d1a63d6502166,Curitiba,City,f
+295,75e398a35f3f42249cd80fe44715bc95,New York,Subdivision,f
+29528,48753f96d08f4696b90f1880e5a74b96,Morpeth,City,f
+174,6de750e8828037cfbd980dd800419a18,Réunion,Country,f
+5219,10173e977f164d0695348c85a994dae7,Rouen,City,f
+30701,a5bf8e6496dd4e4aa1e39e16d9a20249,Judenburg,City,f
+60638,51c17b5fe1064da6b67aec7c371c0f9e,Toulouse,City,f
+4141,ae8abafa65cf432c86f770cb4c3a49b6,Antwerpen,Subdivision,f
+4692,b712346a2c004cc89c097dfc4954ee91,Reggio Emilia,Subdivision,f
+20019,3c1ea17f7f4f469d8f25a847f72a86cb,Cervia,Municipality,f
+12766,bfbcf45d5c3b4331bfcb6341209cd5ec,Bridgeport,City,f
+4415,f71567c4c4194865b776543d94c2c044,Morbihan,Subdivision,f
+7707,0eeb01c26e3146ad96b8319749f731d2,Philadelphia,City,f
+27,f2b64f816d3635b394b95ba53d693914,Bosnia and Herzegovina,Country,f
+24287,03b105def02a4bae9e6199c942dbfff2,Port Richey,City,f
+188,aa344640fd573960afb484d0d3b69d3d,Singapore,Country,f
+104,03691455bb4637e391d2cb064a35ffcc,Israel,Country,f
+7731,7f1c8f3f69a9454a8633c3d3a628858b,Phoenix,City,f
+9655,10adc6b563bf4b4e993eed83b05c22fc,Seattle,City,f
+434,6fa1c7da66894cec85f9680f853e8a08,Scotland,Subdivision,f
+5264,c1fc21db40e947f5af93f3ebe6581113,Kansas City,City,f
+40602,d43cc76b275d4141bc8f361850a45dd7,Amherst,City,f
+156,1e23d84b202e3fc88c49debc71e9eb16,Nigeria,Country,f
+5130,e55f7917fd8c4ac9a5690ac174f1406a,Trier,City,f
+7307,11ba7f4f3fb94b4ba72fab1cd9c37d99,Cambridge,City,f
+118319,231a13797f5042279d1c5eba65a6c7e2,Elbigenalp,Municipality,f
+435,8297708c574347d6a5acf40a41c49ad9,Wales,Subdivision,f
+82034,c28c2c26ee9b4f429b57dc914038d23b,McCrory,City,f
+68486,2ce155f80523420c82f80d80992f2a6e,Grenoble,City,f
+7789,98bc43b4482d49f09a593655003a0b93,Fayetteville,City,f
+651,94c82f6a70ed485eaaa25dcf11f80e98,Tirol,Subdivision,f
+849,215b240e03ca419684396643970d1bf6,Tianjin,City,f
+9549,202477047f3f40c29c53836532195803,Loveland,City,f
+8319,7ec09cb6df5248fbb8144e4b1594d441,Ipswich,City,f
+72815,aee067c03af445e1bf8e9726508580cf,Börfink,Municipality,f
+7278,d793f202faf04de883e29ddfca54a35f,Milano,City,f
+7709,03e75281c3a3454a8d78c85a5415c49e,Düsseldorf,City,f
+5084,1b1544fa3c884eddae8616bd15ebfe31,Dubai,City,f
+12001,2c31712db1cb4581a989d9afef510103,Aarhus,City,f
+30601,b3cb984814404c2bb258f849f8a9d50a,Belfast,City,f
+5065,f9a822ffadce434c9292a8b6a0a37a8e,Istanbul,City,f
+5117,58ab1035dbbb4e5887f7210cd0351664,Caracas,City,f
+809,72ac17ca9a6b415b9fcc5d1a8e7afeee,București,City,f
+168,786532a52e36315abdf2221dc1b64b72,Philippines,Country,f
+5096,0b565bc605e74c3abc28075fabd9a8d0,Maastricht,City,f
+96230,1b0154291ea847c2b5e427a2cbf2bab3,Heimberg,Municipality,f
+7741,3f8828b9ba9346049b921f616fa1abd1,Raleigh,City,f
+11955,aa76cc13ede54470bab5cdecc427b90d,Metz,City,f
+43994,00d079862f91475fa9635544abfc8eef,Englewood,City,f
+22403,06d8140e9b6345e0b4a65aa563386f86,Somerville,City,f
+68972,00540f947daa493c942535232a2800c3,Diepholz,City,f
+97166,bdf2dee3e43c47a28b270bf29c3c91c2,St Gallen,Municipality,f
+62,967abc0ef6803cde95d00b79b977d410,Ecuador,Country,f
+22353,e1d6ca52681b4868856241521756bb3f,Calabasas,City,f
+5222,47019f62736a4c6e8c8fb3ec0534e068,Jefferson City,City,f
+5902,6fdc9c55f812470d99d90bbbb8d45abf,Lafayette,City,f
+23032,146d929fe6994a9bbb1305726c287f36,Brewer,City,f
+7714,3ff0283e871a4c6d96adba871ab216f1,Essen,City,f
+68702,17b6837bbd654ad98440c28794348704,Charlottetown,City,f
+164,6f85633bdff43fb4babdfb89b3628041,Panama,Country,f
+23742,a66a5bd10e754ac9a03db1755c7bc0a9,Herne,City,f
+23652,116e3eb12b1442c991a17a2510dcc4b3,Leeds,City,f
+261,1ed51cbe42724df99b1844b0d4714086,Maryland,Subdivision,f
+88575,26169c11f0a949d0bc4f05001471eb9a,Guimarães,City,f
+3882,77bd921874c648819495457be4ba62e7,Croydon,Subdivision,f
+167,719f608295c73dd59503e143010a6cc1,Peru,Country,f
+140,560ddb6d430439388407c96605226fad,Moldova,Country,f
+115876,e3d7fd4a3e1b4f87bbf9fd76028bb31b,Clevedon,District,f
+12025,34268a8654ec487dafa31afe3266a382,Bergen,City,f
+12030,26d7f7751bae455194121ab9c61c4314,Lyon,City,f
+82,cf48f4b428f039ab9104650324a1d1c8,Ghana,Country,f
+398,1f43adbe902040bd9fb982b2905acfb5,Kanagawa,Subdivision,f
+29637,a777125045aa426a86db5101f6647b79,Lagos,City,f
+69835,255ff3e3d1a74904a42bd9342ad8e215,Sankt Augustin,City,f
+3892,e3b25e1c0adf4773820e533b4f245d01,Islington,Subdivision,f
+29559,4787ff9ef537438e8d8535d0f22f2ed8,San Francisco,City,f
+67890,adbd2d98ba5b4eedb55996acfddc9804,Dijon,City,f
+54,b06c4e8697f7341984a9a23c60ea0b22,Cuba,Country,f
+208,ce209e56cda5358e96db830e3405b675,Thailand,Country,f
+7956,56e1c305859d4fbb8a7c6e45e1b8ebf1,Pasadena,City,f
+76043,61bb9e5db45e4f69afefc29f1710f149,Grünwald,Municipality,f
+22845,2a7c6d47eea44029b72dc9aaf32d0e86,Bradenton,City,f
+153,8524c7d9f4723890a458f28d5081d9c4,New Zealand,Country,f
+721,f1ac379f8cd345c38da080c429b36c5e,Budapest,City,f
+95884,e86492eca9914295bb802b9c7eb2a9f4,Carlisle,City,f
+3836,2021b98380b84f6ba2a97d33c23e15b6,Devon,Subdivision,f
+74786,48b8550178d1467ab73a8d1eb62d4754,BallrechtenDottingen,Municipality,f
+26,a5aed4a38ce13ab3bfeeb008cff6b857,Bolivia,Country,f
+7310,dcdf24691d204378a2a2f5f462fcc873,Manila,City,f
+44,7c81bb69a99b3487b6d40f76d7a29ca0,China,Country,f
+3855,c279f80501f846f599cf51f165a1adad,Glasgow,City,f
+11113,7fafba3d86074a5094f04b20a9afab84,Greensboro,City,f
+271,d2918f1ac51e4a4aad7fcdd88877b25f,Florida,Subdivision,f
+9736,bbadd70bafd540af8179c1c1505ec67e,Santa Maria,City,f
+378,ee8fe1ca7455485dafbc064844f5ee43,New South Wales,Subdivision,f
+12314,4a9aeb42376342348fb81167ac1dfdfe,Miami,City,f
+84051,523fa8c27ccc4a3198a898d80e42a0c4,Eau Claire,City,f
+5121,b4e9352c8edf49118fa3e852afa30501,Melbourne,City,f
+53,7d30afffe425356a873e17ae9745b31d,Croatia,Country,f
+88326,2ff17195d23e4710be8fa30767f1e3be,Orange,City,f
+26200,77ec97c253774ac7b156620470e71940,Santiago,City,f
+10861,a71b0d32775249e985942247ad6ac12c,Brooklyn,District,f
+1793,7bda5d46480941dca0b8e889ff818f2e,Brussels,City,f
+5228,4591c66232c842789e28fa509e6c57aa,Jackson,City,f
+87944,49b9bf5c6c474b8ea8873ec67545dd84,Brentwood,City,f
+30079,4033e0681d574aa387b50f3bfe8a8167,Odense,City,f
+52490,98383cf1f1e443b2b6d90a6b254d984b,Besançon,City,f
+7717,154ef74fbcd34472bfeedd1dec672864,Bochum,City,f
+86731,9c3d23145a4440939d56c3d2217b53b4,Tver,City,f
+9274,e9ccdb5901e34016abb543af8e13ac34,Zaragoza,City,f
+7809,d0de4f9fdc6a425b8ce3eb2770a3c596,Alameda,City,f
+7712,e0e3c82aaea848d3beda9e587db0b969,Copenhagen,City,f
+9413,9ddf829c48ee4457a80df7370f24f2ec,Madrid,City,f
+254,424c1b5057f834afab97313e2ad40058,Serbia,Country,f
+7955,2e7d0064160345acbe832559fb991d04,Darmstadt,City,f
+23022,970c9f3c4b1c4860991df687632e8937,Ruston,City,f
+7281,ac0f32ec8342409ab97f6ace1f21b438,Fukuoka,City,f
+5179,b03ff310d8e245cf9455769f76641eb2,Detroit,City,f
+79466,71e57e777b2f42448076c5ecc1f62396,Newport Beach,City,f
+12021,3c5a0506d8524e968d1ed8126328f3be,New Orleans,City,f
+5274,208e783b661d4164935a90f9e7937195,Belo Horizonte,City,f
+2429,f310740cad6248c0839be86581b9f464,Moscow,City,f
+3,28242750534a326b8ed61b03dfb88cd0,Algeria,Country,f
+1826,fc0eae1b654c476abcbfc79d4d136f2c,País Vasco,Subdivision,f
+12084,0abacf96801b47209ad06a3c7a90ba1a,Lille,City,f
+5062,9aee8c1ac7d54713af71c022bccf50b4,Lisbon,City,f
+87,338346f84dc238e8a0095a3e1585348f,Guadeloupe,Country,f
+115062,de07d55f034745ceb8209e53deeda5eb,HendrikIdoAmbacht,Municipality,f
+2,1c69b790b46b3e92b6b493b4364badbc,Albania,Country,f
+22910,cb8a856bfd064dcfa94ed9841b0f85b6,Grand Rapids,City,f
+105432,288497a098ff45e4950aa0b189fe0e75,Westerlo,Municipality,f
+115445,37a6d25ac09f4df2a988fdc05cbc3165,Hazlet New Jersey,Municipality,f
+80114,cb34ffc6b77b4465b7500d710d118de2,Kirchstetten,Municipality,f
+29483,cb6abdb87064413a9d8d51b085fe17a9,Torrance,City,f
+7982,45125c6adb294300bd269ff9ed24a3e7,Ghent,City,f
+118350,bb09b5f42c5f436cb3bef360221251a5,VilleMarie,District,f
+68629,0f6b62099dc74e0890d6f91fb71330b4,Avignon,City,f
+282,c45232cf584845d784ae94755f8fe37e,Maine,Subdivision,f
+240,525d4e183d0031b9a58ba146a916de8f,Worldwide,,f
+31088,29d7853f28be41148a5b5dd95d162d69,Athens,City,f
+1008,6f85c2b64250468b9bd8300fd8b451ad,Bogotá,City,f
+126,fa75cdb9cbc435de8bf4a21e7b811484,North Macedonia,Country,f
+7708,8fe055d72c1048a5929a1d1c50b648c1,Stuttgart,City,f
+7744,dc14405c7534457a867254593b8805b9,Olympia,City,f
+30897,16fe6dbcb7aa4935a1505d90660af8a5,Brighton,City,f
+68690,c02ebe2fecf046719f09d997c0effb9a,Antwerp,City,f
+7710,89bbbab672de43eb81bae620ab207008,Munich,City,f
+1468,23e0d1359fe748cbb2c493addd3d1e37,Kingston,Subdivision,f
+5148,2fb5445d398749fe957af730a7acc4a2,Baltimore,City,f
+88032,7afa03b5ac91401c86f679044fb07fce,Charlotte,City,f
+848,96dd7db4d3ef4d7fa1c8d89c7db89181,Beijing,City,f
+411,884d4a48c1344311830e38e7ee4100a5,Osaka,Subdivision,f
+115752,06a7d4ed814c46af8d3953ea82a9f007,Worcester Park,District,f
+11954,03a6d6646d7942e3bb8ac48aef1dcc2b,Bordeaux,City,f
+643,204dd468f79e475d94a764e417246439,São Paulo,Subdivision,f
+22362,33a0f1ec3f96477c87b71f8742ba8824,Livermore,City,f
+101207,ecd2be330f0a4040a9bdfc72f5acc4f8,Riemst,Municipality,f
+313,e10dada7934d4a38a20f44cc6fa4672d,British Columbia,Subdivision,f
+116010,d162eb10aeea4369848ff50ce14ddc1f,Ridgewood,District,f
+5230,7fb1d4af24cf4ca09896415699b58bb3,Lansing,City,f
+41244,bb1efcf5b03049289e5bf61dadba0f81,Umeå,City,f
+22258,38b9a54d647145ab8f3ad786da6670fe,Kaiserslautern,City,f
+131,c35e6d5e901132e5a23f9e7639b7350c,Mali,Country,f
+688,5b473d1f68034ef2a5250519fc2ed2a8,West Bengal,Subdivision,f
+9399,e96f1c0d721b470da9c40aa2d89cf9e7,Dallas,City,f
+6952,9f53e025d2f14e088a8550404873d2ef,Cieszyn,City,f
+123,0785dc1496af3dc4bde4dcdfc2e2d0d6,Lithuania,Country,f
+190,5b0b6225584c3942b69d5efceb9989af,Slovenia,Country,f
+5253,2776df1ed04241d6856e76c8e1a277b1,Columbia,City,f
+18,20395c3e610c34fd99956b6f299121f2,Bangladesh,Country,f
+4313,8cfddbccb38a4da2a9906317cd92892a,Barcelona,Subdivision,f
+5297,32b6a351f0c240d6970b6c0b0721eb09,Nijmegen,City,f
+23187,cd22d0bac79b45b3a8e0617b240df5f0,Las Vegas,City,f
+288,d4ab49e71d2545e28659b147e0ea3684,North Carolina,Subdivision,f
+269,af59135f38b54ea4b4e2dd28c5f0bad7,Washington DC,Subdivision,f
+5152,0f0cb63bb6754f9aad63f24686cf2037,Cape Town,City,f
+13207,aca96fb2ce0f4e79a5747a6fc96d99c0,Borås,Municipality,f
+322,a510b9b1404d4e238db80f6585909ed8,Québec,Subdivision,f
+262,821b0738e1a2463682e0b5ca8b331679,Alaska,Subdivision,f
+14438,524241234d3246fa8aa5e99e435e432e,Melazzo,Municipality,f
+5060,dccd77b2bd3d49eba98ffd58e87f481e,Roma,City,f
+23264,8d2ad562290f440bb6106df497dfef95,Provo,City,f
+69933,78825b38606f4dc2a965d7895795e76a,Sinsheim,City,f
+1503,3c810219baf24fffb98c46b425eea1f5,Ciudad de México,City,f
+88313,324f6935aca9430d952241fa4102923c,Gold Coast,City,f
+242,5ebb5384b92a3ada8c8a363d5075fd44,Serbia and Montenegro,Country,t
+303,f9caf2d896384b96bc498462339d4b2e,Tennessee,Subdivision,f
+1872,55f3682eff804f119ec98923608a6ee1,Zagreb,City,f
+98031,ef18a96f7e644ffd8bc64065b45a71e7,Risch,Municipality,f
+2230,b4c55385d2ef45bbba4786adbecaeb01,Chişinău,City,f
+13056,c2edb75482d74a03a1be8c20a829f1e1,Copenhagen Municipality,Municipality,f
+207,c2676abd2ac7351a94a9a802b3434737,Tanzania,Country,f
+23035,e03bf3ef3e0b4f519600a161cbd5fb75,Bern,City,f
+82199,f05e07a90ea24b8e9538370456752089,Mechelen,City,f
+4001,f449c8190a9b4c0894466e7d5bd48d08,Swansea,Subdivision,f
+695,2bd8607d56fe4fa196e33badd6a98588,Buenos Aires,City,f
+7953,b2cf490fa8a74875a1b7addede3b327f,Cincinnati,City,f
+23738,0c21d37fadf54bdc8cccbe74713afcd8,Krefeld,City,f
+5242,1bf52e6ed46b401394273ad4446ecbc0,The Hague,City,f
+7340,411611e69779404dbb23cf11388c7f3e,Toledo,City,f
+279,85255cb8edb94a66b23aa5261d42c116,Kentucky,Subdivision,f
+28381,57a3856937864949b5f758a22bc8165b,South Pittsburg,City,f
+33,114c14ad977634e981b06299507f3771,Bulgaria,Country,f
+26653,be57acff977642e1ae802e7e4146927b,Hammond,City,f
+281,05f68b4c10f349b5b28c260a1b707043,Massachusetts,Subdivision,f
+67476,3b057757e74d45589f8a922cd148f5e5,Rennes,City,f
+115565,c4bc54fc34db40129461e9e5503aca9d,Venice,District,f
+30644,4dba3eb035414ac6bc8e7c63bf8b4d47,Van Nuys,City,f
+299,75d8fdcf03e943d99399131b8e118b0b,Pennsylvania,Subdivision,f
+7776,e0b8960619994a43b32a17c2541194ff,Galveston,City,f
+48166,0f0736adb59f41bc9c62941b26886732,La TourduPin,City,f
+22275,50dd961dc0114c1b829bf706768e516d,Spartanburg,City,f
+15556,f51a1724464b41aeb96e30f868973077,Bath,City,f
+29447,c45dab1e8cb14ca3af6c0762c590f333,Hamilton,City,f
+117012,c4b1597acfac48749330f8266ec55810,Maui,Island,f
+15123,2b3973130d044167b9a8914f16935d4a,Firenze,City,f
+12057,4dc3fa97cf9b43f0bec9fcc52d6215d5,Milwaukee,City,f
+116093,aaef6ccc52fb4addae99aded66a0b170,Upper West Side,District,f
+12783,5dbbac1979244c2297983209dc0c5071,Las Palmas de Gran Canaria,City,f
+118302,bfb6dee8f0d64398a7fce259d7641010,Kamirenjaku,District,f
+5111,883b76936382425288f1097718bf7e9c,Tallinn,City,f
+45171,e0343b8e1eff47eea64f2e3df0d8e8e8,Eugene,City,f
+30632,08737978027f49f7a992d8a6599ee4b9,Chatsworth,City,f
+5180,c38d8161bec94f2598469fe262f864cf,Tartu,City,f
+3926,80a262674f754976ae82aad848ec096a,Newcastle upon Tyne,City,f
+7339,54ea3cb76a394318934c056849e00a8a,Newton,City,f
+9622,462e79524fa943cdbc242c5c9cd5dd47,Dublin,City,f
+72200,d8e85ab196344e45850649874d06408e,Grefrath,Municipality,f
+7326,c920948b83e340b78fe99ab5abaac55b,Houston,City,f
+28034,bb0af2e96ae04c4fb729c8d6444d6380,Long Branch,City,f
+8851,26649fc85247491fa0bbd257f4942065,Erfurt,City,f
+14228,3e28831d509a423e87a59f9ad818f7fd,Lucca,Municipality,f
+69995,df612b54ebfa4f308c64b2dafeaa0d9f,Taucha,City,f
+23377,d6a9e5cb846348c8bb38ab6be61bace2,West Valley City,City,f
+273,1b420c0851a54bdd9b0ecd601703d20b,Hawaii,Subdivision,f
+5114,1127ddc2eab3466287186adbdeea3b10,Stockholm,City,f
+119391,57814d11e6b7467ca1e22fb5c1cd9226,Berriedale,City,f
+88767,3ba0668143bf48eca3b8d7c4e44dc7f5,Campinas,City,f
+101373,6f46e080d9aa4e4b87c9b681e8e3613c,Ypres,Municipality,f
+116702,ad337f93ad8943a5ad2728b8cb4c4f9b,Jingūmae,District,f
+22844,9501f8a14c384a9db55dc389fb18d0c2,Daytona Beach,City,f
+23737,47cf7072da93435485ec7852c338ec87,Gelsenkirchen,City,f
+7952,759f9567910740efa825e57824a62e70,St Louis,City,f
+31090,e6e36a5833444d84a9abd001e5a02330,Wellington,City,f
+5782,1bdbf088fecd4c76a1f054a5b8010972,Roanoke,City,f
+12389,289e716fc682413ca0b222c1dbebbaab,Kristiansand,Municipality,f
+80664,33e0f86cd709448da484d55778913af1,São Paulo,City,f
+88668,3a3a40aa9e734ccebedeefe81e65aeba,Hayes,City,f
+8854,b654bbfe4c4248c18c4f6e66df7c520a,Mainz,City,f
+118012,723e95fa7018498db4631db8bcf1223b,Ewing Township,Municipality,f
+39882,96bbe327f9cd42e0a689eb9febe1693f,Hollywood,City,f
+8966,c7644e45dec443fdaad635036b8e911d,Weimar,City,f
+11811,3a3224a9f75d474981d338b8ab1335b3,Nakaku,District,f
+21777,9d5ae15af1d44b848a89b8e1cf3a1aec,Spokane,City,f
+115167,0b530e47afcd4a7e8e8e50a583015906,Somis,City,f
+7296,51dc37b5ea3e49609b3ce5c368389b86,Kyoto,City,f
+87946,96280e4870ce4d289a7b798b9b68b9f8,Amityville,City,f
+69946,c1afdb344ddc4bc1969f7b90c478e64d,Springe,City,f
+116591,8c2052059e0044188f99acbbcca90c03,Petrópolis,City,f
+44467,61a9459b05ee483da364785dfb6232e9,Princeton,City,f
+23204,e3b387f8435543108cca8913dbb07923,St Catharines,City,f
+118129,3cb90fef486b4053a45d4d6b1bd9c66a,Shimokitazawa,District,f
+13235,cadab5715d7045d79e1d843f6cb78bb5,Vilnius,City,f
+69082,57aea637fcf64263b760b921b5d44ebf,Friedrichshafen,City,f
+7324,e183ffae1d354c78b552957535e40af1,Long Beach,City,f
+5757,860a21bd92a4462fa0003eefc57ed793,Evanston,City,f
+7023,b86b7e97c4e24ec2942b5a6cd8eea1da,Bonn,City,f
+69541,236912a5dcd5437b936081d0d11d0540,Munster,City,f
+12899,bd4a4de2a21d493bb10ef99b82949271,Örebro Municipality,Municipality,f
+116223,874dbe813f0247c69149fdc6963b4e5a,Preston,City,f
+69685,efb7a320baa94aed98e3fc4a7193a6ab,OsterholzScharmbeck,City,f
+13463,0a659075c0e24767bbd3e0e90927534a,Pontirolo Nuovo,Municipality,f
+30672,b1e05296a23a4d72910a2b6972c69d5f,Bad Aussee,City,f
+119009,0fb4f258a0df412e9c08241ffacdab79,Thornbury,District,f
+7795,77f6b33a5c5c4ba59a339d8875f67a60,Lancaster,City,f
+47778,340b83afaa844eadb297698534fbea7e,Saessolsheim,City,f
+119019,d26f190591c141a58e82f535393d51b2,Pumptown,District,f
+118016,ff0db5a48818455babdacaa80b91f62d,Radnor Township,Municipality,f
+116607,0f017789e65546d3b98a7c4d5c9a1c0d,French Quarter,District,f
+49835,b50091e9277346e98fe5f593c6c78b15,La Brède,City,f
+66426,b7abc17a76de40a288a5c128228288a5,East Orange,City,f
+68706,d002ff8fb7da47e0860fc3b85eaf8aca,Abensberg,City,f
+8396,6f00906cbc9347c98d4b3cec91eebb73,Ōta,City,f
+3924,c249c30e88ab4b2fa74596a25bd7afee,Liverpool,City,f
+98428,3db6d0064edc465182fcceee6d06a83b,Fundão,Municipality,f
+8000,87a9a2ab614f4f8d811f46e681a1ef33,Kirishima,City,f
+101137,f401bafb28704869bf29497d3b6391ee,Mjölby,City,f
+23745,d396388b3d7c42e396d216df964e8c07,Solingen,City,f
+68614,d28c6c7f69564b968f3f12b1962b6102,Amiens,City,f
+10667,6db294a71e8d4d2f956a3158aa0a7afa,Okinawa,City,f
+5071,92e7329e374e4b71a175f61fffc30213,Poznań,City,f
+60639,edcffd33018c495e907951bf1ef204ac,Helsingborg,City,f
+70156,9965269e035e4e5dafd3e318381c6620,Wiehl,City,f
+3885,76325ecac006429f93bbd499ae80916c,Hackney,Subdivision,f
+5535,9da2ced999c144adb4b294fc8075476a,Matsuyama,City,f
+7705,32843dc6d9a046d2bcf1981bb8af4b4c,Groningen,City,f
+16488,ecff7e5903184cdbae7e6e886731b675,Guspini,Municipality,f
+62242,a8373a0ccc2f45dfb1e51596dc5391f9,Hoxton,District,f
+9,2a8cc14f8d47389bb54de94312b23d27,Antigua and Barbuda,Country,f
+82326,5ff9f2d3b50a4d7eaa9faf5f8ff1330f,Indio,City,f
+118133,14b5ec3636504c5b8d4ccb43b35e0557,Jaroměř,City,f
+115610,9f7e9dde52ab46799ea1f18275a1f7ed,North Hollywood,District,f
+69287,df0fe4c6ca4b4518b7808304b20eafac,Ilmenau,City,f
+118630,c83aae16714f4090b739bfc118ccd94f,Taiyūjichō,District,f
+12873,8d73fc52bc3b4d738350bb006ef86dba,Gnesta Municipality,Municipality,f
+82790,881e3e529b304ef8bc94f77acf65471c,Veneta,City,f
+12047,6fd7f7a8a3f04b36a28860b898a8fad9,Nurmijärvi,City,f
+7488,0ba113bf35f7422bbc151cb103cd109b,Brookline,City,f
+39881,5290606f716244ecb908fc41c1b57d76,HeusdenZolder,City,f
+5876,b24e37a2b6e043e6bb819b7fc442c708,Hamilton,City,f
+88625,3e782d05fc92487dbb7ed069b72e88b3,Port Dover,City,f
+22375,bca5a4aab2b34561bec96577fe789d77,Vallejo,City,f
+67466,6d40e32c1a5e4599b06c6ab3759d51fe,SaintÉtienne,City,f
+23229,178237e0866a41939e29f160ba245d19,Hanover,City,f
+10651,13b0ee9556554738b9993d864a29a490,Kanazawa,City,f
+5303,17203e02355a40dba524980192eb9d0f,Rochester,City,f
+85169,ca7298d8a2a14efe8e23389451b6db27,Irving,City,f
+116896,03d93a6d6a75426f88f096e1ff8d66c3,Shibuya,District,f
+23609,5adb4165d0ac4e8691b56eb11f21f579,Zlín,City,f
+119072,995a7fc8612e47438d952244757ba159,Mayfair,District,f
+7503,f12f47f9daf94eeca30ee8a9e9bd4124,Santa Barbara,City,f
+4555,a3af9f50448a4e19a947aeaa50c00c09,Bali,Subdivision,f
+5056,93c6bcf5533648b5a16b39454458eb66,Warsaw,City,f
+55341,79e9cadbc71e40fcbf78950ef290517e,Putney,District,f
+5082,22c10271daf74cb380565c6bc2786fd2,Novosibirsk,City,f
+4015,6978245c9b5e4a4c82c183cf5e54584f,Wiltshire,Subdivision,f
+88222,1b86fabd75ac4b38b1cd820609b6be46,Peckham,City,f
+22163,ae96202ae99345deadfea8c6b66a781d,Fort Worth,City,f
+12336,c5b720e81a304650be8c5a116009bae6,Sarpsborg,Municipality,f
+99789,8922604aec114ea8ac3b2ed0df757efb,Halesworth,City,f
+23910,3230e753990e42d9853c99fe008e6431,Saratoga,City,f
+12988,c20e6ef3af604f048f149d5e35f5909b,Fredensborg Municipality,Municipality,f
+5298,ad641986dad64f0abf902430ac5d0c86,Durham,City,f
+76376,2aca9fbbba804ce9a4a9140afca70626,Maihingen,Municipality,f
+10703,893f5e335d2943df8d907f8dc797cadc,Midori,City,f
+29533,aa5d615dd05c472297ba3465432960eb,Kidderminster,City,f
+3848,61b6a12e47514fe3b40decb84f29736c,East Sussex,Subdivision,f
+99691,4b9d526fbdff4ee889b35c761ed2df17,Gosport,City,f
+118894,cdfaeb88c2a84edf9c2cffbea1a9b118,Bellerive,District,f
+18575,da8875b202604d3daf0bc6d5fa1bb1ac,Rosà,Municipality,f
+67445,9d10e6ed6b1344d8ba8df217094f295b,Lower East Side,City,f
+5136,3bb238a4c2a444e59843a63e71b17e83,Indianapolis,City,f
+10422,91bf53d09cec411799f257833f8278c6,at sea,,f
+7716,b07271ff75a44dbd96ee6386cf3c5fab,Mannheim,City,f
+12769,9469bbff23d348848b489fc0d94efeed,Linz,City,f
+69540,294f9a0f66c84f459146abeb9c988a3a,Mosbach,City,f
+5331,9f6fa2202d55457da8b08116d9b306e7,Jonesboro,City,f
+20975,dcc5354812ed4a6db63b5f17a74b0ad0,Bergamo,Municipality,f
+83799,8ae464a3cdf14471892cf68a7d6310b4,Warren,City,f
+5682,9742d8c96271469c983a618db962ee12,Schenectady,City,f
+7463,c0c20947019a4a7f84b1c75d95382547,Wetzlar,City,f
+99547,60f40dc91f5d498787386b1b698c4fcd,Ibiza,Island,f
+19680,4b24e2f0f21e48f79c782e3750bf8bb4,Salisbury,City,f
+90926,757fcb4744964b81933177d34d912cb7,Mount Kisco,City,f
+118880,77739699833145c3936ca086bac9c538,Milton Parc,District,f
+8908,208bd3662e2041908107035a226c0c75,Wolfsburg,City,f
+35063,1c98aebc036f428cb3b41bbfc44213ba,Visby,City,f
+4386,7148756d941c41ac9ab72fec4611a7aa,Finistère,Subdivision,f
+88699,afabefb24d4e42ee9edc0a86ced989f9,Casablanca,City,f
+83785,e0a842313a364edf9e894914c5795e4f,Lincoln,City,f
+12351,2a234ba47a534e4781958f4746242f5e,Steinkjer,Municipality,f
+3795,3d45e7c5f19c44ce84978c0256299b41,Argyll and Bute,Subdivision,f
+19534,f48cfb0b72ad4436b2776c734622a975,Atri,Municipality,f
+327,4b8c47dd0fe2450e8a21d4d739ee0e0c,BadenWürttemberg,Subdivision,f
+12799,91849d7eab8a4978a9d1369b25ad75c1,Salamanca,City,f
+63976,aa864f76c9164d408ecc5a75986c37a2,West Heath,District,f
+116862,4f2245d05fb445989d83ae5ac80a20b7,Bramham,District,f
+14665,bc8323bc8b9b4d559635512377d9d338,Durham,City,f
+5110,70cd6f669881410580968721a1887aad,Gdańsk,City,f
+5057,d384ec5f98314890ac40648a71aec054,Ljubljana,City,f
+7961,787abc2628ce44f8a2d182d86b5d28a8,Pittsburgh,City,f
+68696,d5210692e55c411195175d798cf172cd,Halifax,City,f
+18363,686e7b1e613f419cbcc11e84df36586a,Soresina,Municipality,f
+3912,226c4dcaef2a4d4bba254118d116557a,Birmingham,City,f
+29506,a4c18aa9914b4a89b489c4f3b5a4f14e,Bishops Stortford,City,f
+10863,eb4a386e11784e3aa37130418dd6fd2e,The Bronx,District,f
+117838,497eb1f186324b4eb29a88aa4c08ba62,Hells Kitchen,District,f
+7715,e180425274134a4da34dd21a8e8e752b,Québec City,City,f
+3887,cd46362d4a6e429ea970c3a0134e0b10,Haringey,Subdivision,f
+99696,757d5ec877ed4030bfb744e1876969dc,Käsmu,City,f
+14225,2ab4ff39f6a34c649b130945414003eb,Avellino,Municipality,f
+30978,a2993fdb6cc649daabe6831142053fd1,Fort Lauderdale,City,f
+106232,19c7f0b424b74e07a6c6b8eafa8dd070,Hilversum,Municipality,f
+7288,6195f38157114655bf7c75918c04b201,Oakland,City,f
+118366,e7f34bc48e474b608e5ed02b9ffb8f02,Tribeca,District,f
+116724,6f5b43eeddfe4c05ac76e4415572ef2f,Shimomeguro,District,f
+47590,ace6f43f95734edc816283ec875d68df,ChoisyleRoi,City,f
+15668,722b2e408aa345aa83b06218444f8740,Ciampino,Municipality,f
+75073,0ceac33467a246b6ad29a9f3c92295b7,Illingen,Municipality,f
+14324,df4c45432c9e423a9b7e3aeffe7c0d49,Palazzo Pignano,Municipality,f
+94156,ef34f8d2f97d4a33a7796893058b001a,Fall Creek,City,f
+68546,01905aeef6ae416c8c864d6849d20579,Niort,City,f
+9607,638a021df62842668a917956f91f1e08,Espoo,City,f
+115443,e24f16e09b7a461aaffc5a071b55bab9,Howell Township,Municipality,f
+9403,2948328adde247f1bafb4b21cde9d917,Freiburg im Breisgau,City,f
+13718,ec5823de45224697ac83cad5a7061af9,Peccioli,Municipality,f
+23277,42f02406d15144c6ab3c61e47ce07f0b,Warren,City,f
+30655,d64ee715dab345e2b6c635962406b9a5,Krems an der Donau,City,f
+12776,0641d55d9fcb48be92c70a5273ab58bc,Sofia,City,f
+7939,bafc8a519d3640949a3a1e84afc85f6b,sHertogenbosch,City,f
+5104,309f34c55df24bc79ad42ba4a78abb67,Wrocław,City,f
+64334,d9c8f6bb745d47fd958c26801649d2ba,Stockwell,District,f
+22959,065633001e2f4b3f86934b2d6915a017,Farmington Hills,City,f
+5217,a27ad6360a2843eea9fd4dc4ec1c23e5,Annapolis,City,f
+22397,c5293e2f37564e4daa61a67879d70c61,Palm Desert,City,f
+29612,732b178135c945ce87d0a579e173f84e,Pratteln,City,f
+23532,56b7077006fe40fb8e49d3113ee0e4b8,Kuopio,City,f
+112783,9cfef528fd3f432e920d6d896343587f,Neubau,District,f
+3917,aab979a4b1064baaa4a3fc45f775cff9,Coventry,Subdivision,f
+10862,261962ead8c24eafa80cf14376ffadb0,Manhattan,District,f
+21854,6738a4f0effa4da5aaf54df8c4845644,Esslingen am Neckar,City,f
+5353,19f91eea5c1a48ae849f78c3185d121e,Christchurch,City,f
+97160,0e92d88c53e241f881ba6b6c23c4da4e,Sargans,Municipality,f
+114964,2545b0d00ad546ddbc101b7036e7cd21,Schijndel,Municipality,f
+118827,59533d12b3994ee588d990b6356e4e83,Ahuntsic,District,f
+87960,24028cbaf6bc46a9b7c88320df641640,Mexicali,City,f
+8105,7285ff09d6f94c91941a3a43ad8b6ff4,Stockport,City,f
+5127,bbf298a892c04659b02e1f18ca87cdc4,Rostock,City,f
+81685,1b921ffe5de64200ad9102db1ed96bea,Sparks,City,f
+105924,06141a32eef4462a8c6b52a11cc3241f,Kuwait City,City,f
+5193,a1411661be2142908dc150f3d8e3ea67,Honolulu,City,f
+68808,e15e7349bf2f4b12877d48f4eb0f2d14,Bad Pyrmont,City,f
+71662,19e2e4bdff6549f19503801bb14b4299,Hehlen,Municipality,f
+4679,0d69aa1fbda44e03a5a6effb89b860be,Padova,Subdivision,f
+21729,1d9b2b8d824b406fb6c002a9ccd312b8,Beirut,City,f
+5279,0247962e83d640089f506da87d7ccc6a,Bydgoszcz,City,f
+13255,b2038f5992ba45208e9fb006b7e50aa9,Stirling,City,f
+93564,c094a4125b9143e496b4bbfbf6aee36c,Benson,City,f
+7949,00ed07a5acd74217a37a72ebf08349b6,Wiesbaden,City,f
+68553,70df1026beea441caa6d77603201698d,Pantin,City,f
+5184,1dd3b994d81347a4b6cab5e03f14327b,Santiago de Compostela,City,f
+22537,39d41edd5b4e496ea080077283989dd0,Mobile,City,f
+29508,fb4623e621174e59b8b6790621dcf995,Cheltenham,City,f
+84067,ed427bf82a644286927632da0dbc4083,Oshkosh,City,f
+2625,79ff64b9a57f4068bddc5b8122b35e11,Phnom Penh,City,f
+22322,bf46ac1379714ec3851d201b690a64f4,Fall River,City,f
+1406,a1aa5bc6b34e4b6b9e8392b1fa839641,Valmiera,City,f
+7298,fbded44f063e4143968dec39753f617c,Okayama,City,f
+5258,291777c2c48d40029a0dc7f87fea5c2b,Johannesburg,City,f
+7280,21e8495a32fa4a978a9257184e36235a,Perth,City,f
+68508,69294834fcd54516b5ac53fe2363339f,Courbevoie,City,f
+67482,36eeafdac557483ea7fd7842c9a892e3,Wimbledon,District,f
+68922,294d206c9c0d475a9d7e30162cfd042a,Burscheid,City,f
+118140,701f92b022c74b3181a403878efd7005,Le PlateauMontRoyal,District,f
+69750,f1fe8be95ca44378896ca793826c9d37,Radolfzell,City,f
+69096,710fb7bba4a64b2496f2b4c64f4396e4,Garbsen,City,f
+69060,e43e04cb623c46d2b6196fb13342ddb0,Finsterwalde,City,f
+100940,418f628054cb4245b8abe63f3e135347,Santa Ynez,City,f
+9276,3eba167151f3465dbd2445455c20fddb,Alicante,City,f
+3992,32950a389edd42fdaec926128507ff06,Southampton,City,f
+80634,cdae4d5216c141fd9d300adc024422e7,Zirl,City,f
+106102,7edc5b5525d64a7283cbd946a08508cf,Arlington,Municipality,f
+116160,017d899fa68f4a81b5a551e4ef27b8d6,Borgerhout,District,f
+7788,5112c2c6e2ec4aa0861d12e1239c62cb,Järvenpää,City,f
+106178,8fbf09ad02b748d0b91ca0d6bb01b414,Commack,City,f
+108511,c90f83faf06849b9b13d1d1d50067ccf,Dénia,Municipality,f
+7724,92eb3db2ecba40aabecbbde4c80a6b9b,Lugano,City,f
+5129,61490d91cbed40a9a8c6d5c339b5438b,Canberra,City,f
+23382,9bcf5f48e3cb4dbaa769ba3d7aa15ccd,Franklin,City,f
+4879,5aa4734b6d9547efaabd1be461923d89,Wellington,Subdivision,f
+8852,8e6d774f482e4c57b8523d9696498ae6,Potsdam,City,f
+102118,316c59a66e8e4c2ba7e85cdbdba8b819,Anne Arundel County,County,f
+27085,a26f23552bcf4e578d167653d53f01bf,Concord,City,f
+25446,7a57e79420f44be18791a08e9ace1659,Whitesburg,City,f
+107042,0b127c18fa414021bf5c6fd2e6d71b39,Viveiro,Municipality,f
+117103,c2f0c986194a43b4a2fb51200d776210,Boondall,District,f
+9526,8f6c316e992448ea967b16757dd82399,Gothenburg,City,f
+9232,b53e1003e9944bffb1e5b55c70f7e496,PointeClaire,City,f
+58384,48ce9bf6bdc84460846f7b8b3f5143aa,Highgate,District,f
+23722,f1271fec43074a9cb89daa2a7bede5ce,Bayreuth,City,f
+119200,4e8763ad98404619aaa930ee34dbd242,AixlesBains,City,f
+115540,e76cf40e9243491baa2e25795741e842,Bushwick,City,f
+5195,689306d834dd4081afa688c9d49117e2,Guangzhou,City,f
+68600,725182abb2ae475eb9518a8d5c84015d,Abbeville,City,f
+8169,cc61a0e0a5084ee3a81855ecb376dd1b,Acquasparta,City,f
+16365,7276c828a05f4c9e996e75f910108bae,Rovereto,Municipality,f
+117401,7b4dea22b4674e3f861a093246ad0c5d,Newbury,City,f
+69821,100d65d97173404d83931f7de5aef594,Rötha,City,f
+5283,dbacf2e37e3e4cee8804999b109285fa,Santa Monica,City,f
+67440,ecc582384ef44eaa8c552c50707dc591,Astoria,City,f
+23707,05033b8862214a57bb6acaf39703a4d5,Arvada,City,f
+99554,0f67f804d27d4b4c86e61220013ebe26,Tenerife,Island,f
+53025,3fd8ce278e3e423cbca8872e0ae7109b,Chevreuse,City,f
+23723,84b5640d60b34710b315c349aa754302,Bamberg,City,f
+68605,a2008f1c71104251a5e215b5ac116ef1,Reims,City,f
+5767,04e60741b1ae407880bbffe8ae643ea7,Duluth,City,f
+68850,53728093d0f9458f95607c9fe12f7746,Bergisch Gladbach,City,f
+3821,40d758a4b7c240f3b4395efbd2a3b038,Bristol,City,f
+5200,f1898820820a4b868c5c90e670fde674,Trenton,City,f
+23036,28d44913d1b14cc88c51bf80a2a210cf,Geneva,City,f
+105437,3fb6b6c9ed5d45e48e5adf6a06ae1b02,Turnhout,Municipality,f
+107355,437b728aa4a540afa39314f9699d5cf4,Esparza,Municipality,f
+5296,1be74a466d7a42859f419df7424319c9,Tulsa,City,f
+22430,c97f3307fc87481c8635d00a990efb7c,Inglewood,City,f
+23184,4d81dd62104f455ea30a0bf4bfff27e9,Richfield,City,f
+961,2aa35979215b4398af7ef4d8c1abefcb,Valletta,Subdivision,f
+105393,2f53b97dd83343b491c83705b8aa9a94,Schaerbeek  Schaarbeek,Municipality,f
+5251,0975b71a995a4f7ba1c341e302ba4dc6,Boise,City,f
+44419,7ca27b3e897e4d018c7336135bc96656,Red Bank,City,f
+12751,fc617bbb6cae4e33ae25bf5a6cb7d7d5,Kharkiv,City,f
+116887,feace4f718f747ca840cfa0a7c832b1a,Sendagaya,District,f
+8834,75bd15505bc54b4c99bf54dc8274eff9,SaintJérôme,City,f
+29593,9a1332a481ba466a8bbc650f2072f19f,Saratov,City,f
+53124,2adcddcc34e34244b5cc352a95a9def7,Caen,City,f
+67590,30d5f2819e494b88a54de8cab004d3c2,Laval,City,f
+76953,945c5d13eae8460aa9268727d1ab2ef7,Steingaden,Municipality,f
+39344,decf0bda610b4024bf04ad59a8a6d8c1,Chevannes,City,f
+2913,f47b98e571bc4ca0aa4bf62d37fa96e1,Toshkent,City,f
+115834,68145576515549e9b080314a4c5b9310,Johanneshov,District,f
+118050,cf6a9e220cf2472c84a573ea52e99c20,Crowthorne,City,f
+105368,379f192ed43e4266aa861c77993d2cb7,Dour,Municipality,f
+81741,729541efff20452bba8edc6748a7d026,South Bend,City,f
+11669,c7ee402c01374931a72ea262796c0d16,Montpellier,City,f
+62240,9b73c4487299488bbb5f8b3f3b2365e7,Iqaluit,City,f
+5107,bbc88d721f3249368dc6b62b3318e1c4,Ottawa,City,f
+76059,7cf1ea5c4b574b79baf88384bb1d5b22,Haar,Municipality,f
+88628,80146f9f0c9d4bcba630a8e72b50cd60,Xalapa,City,f
+11712,b38a3ba5d6b145989d3aab74521ab394,Chūōku,District,f
+48334,97fde531c41e4ae696487404003b6a5d,Longjumeau,City,f
+118123,540336a4417e4876b1448b56513a8e50,Wan Chai,District,f
+23072,9d2d14eed5084fcdb09c1a0cbdc6873b,Southaven,City,f
+43556,1880086daa5349fda2eef74eadad9fe7,Montrabé,City,f
+7805,f9719692c39a4d9cbf8cdd4035b09534,Berkeley,City,f
+118295,2866429e38c54a8599413c2fb42b156f,Tateishi,District,f
+117367,50a93e2ec1f34f6ab43d18b275196032,Les Laurentides Regional County Municipality,County,f
+780,e498a3ef704c462eb1446e6fc108a6f2,Reykjavík,City,f
+13310,2e2e06254ad942f79c90c5976851b592,Caravaggio,Municipality,f
+26627,a3d3f5823c6a4e158a13f3c2a4330cd7,Kópavogur,City,f
+69932,7372e9fd67b44d19b506970dbc328987,Singen,City,f
+14215,243a869ea82148aa90cb5f0e7c9ec620,Rimini,Municipality,f
+71242,abdefdfc289e4a93ae76dfcedb2a894d,Wacken,Municipality,f
+7608,234f229c55644329b04b85ac8addbc82,Griesheim,City,f
+116788,e14258fa79344f9db806a0ce535c2d6e,Fitzroy,District,f
+23734,dbdd7aff9bf5408498c3722f27d7bb4d,Bielefeld,City,f
+28483,d45d231d9e4544be851c5430e94e9bc1,Frisco,City,f
+8258,80482b31ce114c02a1d7d87b818ea0ed,Wivenhoe,City,f
+80914,46baa8dab1784a479aab53643fb44ba8,Waterford,City,f
+27657,3ebb10a4914a4ea4821512a4b81d1af4,Bixby,City,f
+1514,fad94cac93604956aca9df5d26426e1f,Oaxaca,Subdivision,f
+22955,7970c198c8f34455aa4de286a340af9a,Traverse City,City,f
+83122,8a810b6b0da74def80859dee0f2e6f3c,Kahului,City,f
+69178,f62210bfe9354e6da1ca439ae5980be2,Güstrow,City,f
+23535,a62f5ab3c6e24b1eb35f2d83cd20ab58,Kitee,City,f
+60189,10fa66f7aa0848238af852108f350a5a,Asbury Park,City,f
+23641,d490df668c7e478eaaf8c4b9ae13f86d,Santa Ana,City,f
+62241,bc89000ca72c445698cf11d7562b9d5b,Tomigaya,City,f
+95246,bb7fc472e15c4e44a8d3252875054776,Cadott,City,f
+5769,a1bb8b0204964cfaa7712482e55451af,Ann Arbor,City,f
+115611,0c875d86e14e4d3aa4f46070f1a23d7f,Williamsburg,District,f
+3974,8116b732987244939f5d7413cbb70194,Peterborough,City,f
+67435,7c68161ee9fc4766b6367da86aafc5ce,Scarborough,City,f
+70043,9f434c83c02547a08ee6c1a736650f5b,Uelzen,City,f
+102550,56f01f3114e648a9859280bfe628c0f8,Sønderborg,City,f
+68705,6d48ef2c5e084e27866b4e2b05153d47,Abenberg,City,f
+24566,7f7aa0ffb9ae405d84359dfdec421a47,Pensacola,City,f
+3934,3ce737cbf5bb403da98ae0602670229f,Sheffield,City,f
+7662,4f12a0b6b3894190b32449feb3387ff9,Lorch,City,f
+68938,0a75c5086d5f4f7a9ff3ed32b8a3e737,Calw,City,f
+266,ae0110b613d4499891165b926287aa23,California,Subdivision,f
+101739,2eeff806859d43f18f6395532bd7d423,Millersville,Municipality,f
+31092,ffce4f674e654685877d22b3dc792c47,Gävle,City,f
+7948,16560d3e358b48698a6d727db2ee7b69,Frankfurt am Main,City,f
+79674,cfca0d67018c4c5eb9f62e098ef9a226,Malmö,City,f
+116962,728fcb1d5f974f01918317927147d0ee,Kōraku,District,f
+7984,619f0a6d348648999e496702b16896f2,Livorno,City,f
+7960,e189710322e54d08996992794635bb81,Northampton,City,f
+11117,264779d659a84fb68c435f39ce67ccd1,Basel,City,f
+117549,20227dc8908f467ebf2ff4ff73b49eae,Antwerp,District,f
+7729,c2d96f6175a44375aed56aacb0b6326a,Memphis,City,f
+8173,497f1c8ce6624353b822009d1d28a656,Aalborg,City,f
+116675,d9fd27acb36f492bb598039ee0dd08c1,Roppongi,District,f
+71954,583b75d576214d2fb30417dd3b010bc1,Rosdorf,Municipality,f
+13225,311ce77a605b4ca69b3bc3f4ddfcbf01,Dakar,City,f
+7793,65ceae5478eb4063979c328ca8906d46,Scranton,City,f
+7328,21879fbafe4e4dbc99e8cad9142e5618,Sacramento,City,f
+102372,898f967148c643e0b7b1453e95a0009d,Ocean County,County,f
+7282,30bcaa9298704798be1a4e0036755316,Osaka,City,f
+83934,df214e3e06d4457a876904dcf0535400,New Market,City,f
+118831,42f165de89ab41c9ae698a000be44f26,CornwallonHudson,District,f
+118052,ac2b83960a2e4aaf88926fb437cc3f34,Kingston,District,f
+7734,88458f706ca94a4aad8ee8053e18b981,Jersey City,City,f
+29013,68c951e0a5ea47528d350ae19baa8c4c,Sweetwater,City,f
+28079,cf10c2adb28f40a5a9de5be3e91941f5,Petrozavodsk,City,f
+115564,44a76f34afec4171a0a0180cf1f5dfee,Tarzana,District,f
+15012,e563fe8d58bb4f5083932604ad4de5bf,Verona,Municipality,f
+83919,622057a4f1df416b9a577c5aa817773c,Manchester,City,f
+5346,41f4d32e575a4271b73220fc0b18ec03,Rogers,City,f
+115962,997a4b1fb32741dcad582c884eb61328,Stateline,City,f
+86219,05cd175a0e3a4bd6a27e86fad1a654f4,Kazan,City,f
+11880,addd832c81d34d9d9a26093b89b99bc4,Mihamaku,District,f
+22399,6db2e45dd7f343daac0b7ba5ca627373,Glendale,City,f
+7737,96713a371ebb419eb052ffc93ceabcb2,Saint Paul,City,f
+67449,9a8145452fe0485fa5a23b522b7b58e6,Luxembourg,City,f
+100792,07245922a0e44603b9a1d293a0dee156,Black Mountain,City,f
+82351,7ee81b13cc5f400f97e0a0c24a4dd543,Los Altos Hills,City,f
+5131,38693e55f5d34dc599afdebd2a8c1c87,Münster,City,f
+14227,c8f3d45d8fc94ddeb7409d7598772f6b,Civitanova Marche,Municipality,f
+13929,e07612d423834b6a8470654f1188313b,Correggio,Municipality,f
+118933,20dfb5b0e1524710bf4358b426b07513,Vescherana,District,f
+633,15060f0d3bfc47728299bd45db706a40,Pernambuco,Subdivision,f
+18717,12eb6022e706469786ecd170a24027c3,Schio,Municipality,f
+5558,fe696a8cda15422aa90ee1b714ef456e,Kōfu,City,f
+27685,ee0f3d3766b7437eb01e47d2a9c2c66b,Catoosa,City,f
+106242,f4ccaaa3b871467c9cfb21e4ac8f7161,Bussum,Municipality,f
+115866,74e29f62e8f24008804c94c917a3c2e1,Sotra,Island,f
+70176,24bc6b420bff4fe296bb040d2e50ec06,Wismar,City,f
+38581,f0cec74ce98841e5bceddd23501dae18,Ladbroke Grove,District,f
+68698,3013a6c362354e218ee69fc840e5e4fb,Guelph,City,f
+14818,6e11785f3b284c15b7f59d63006d93ef,Cagliari,Municipality,f
+11537,95af2ed4964c4b34806d1432b3dd13ee,Zama,City,f
+59328,d5358f749437491bb95dc266cf9dee5c,Sausalito,City,f
+12730,960889918e3f46f0884c9972e673ddb9,Gjerstad,Municipality,f
+118607,57f8eb2615874772bdc2515056c7e2c8,Interlochen,City,f
+22867,ec1e55f403df4ba1a3141ab959aa3fd6,Orlando,City,f
+115961,3656a4278cd14d0998d14b415c87b292,Oakville,City,f
+26579,52f646b98a6c423fb034fe81a7693323,Gretna,City,f
+7321,92645bfdb361434cb50eefd6657f257a,DessauRoßlau,City,f
+12906,2d655a873ff349f59af5be8bc30d4e1e,Järfälla municipality,Municipality,f
+116890,1b52d4e4081a44e8858dafbf42484be8,Higashi,District,f
+22162,1370aa1f02d44d6a9f2c5235e016905a,Denton,City,f
+481,7f13ff1ee767449696d5c202bbd21515,Halland,Subdivision,f
+90855,9d3600d3649c47d98ae25ff0e6e4cd0d,Hanley,City,f
+9250,d9c8d2ede2074435bcdcd067865e0957,MontTremblant,City,f
+5534,8611a4078b034ef0b6c39253fdf4c83c,Morioka,City,f
+116482,2a87a504320b43929bd71b22ababef49,Pacific Palisades,District,f
+12823,51964d61b23d419891b853e447042f26,Ourense,City,f
+102430,99f0937c69b7455c9b13fe708da6943e,Rockingham County,County,f
+21907,a634371fb33540b4ad36ac9f424b1585,Evansville,City,f
+72350,dae5d58f13a847b9b2afee4921885c71,Eichenzell,Municipality,f
+22604,e79585b7ead24f1e9f7767ff659617c7,Ravenna,Municipality,f
+12836,ce210b2a386f49d1a926773a95a04356,Partille Municipality,Municipality,f
+69497,944203f4d8724f24ab80022c7d82a787,Marl,City,f
+29463,153f5e6221114c9e9d4b4c0b039bdf4f,Strasbourg,City,f
+20072,8b4ce23deeda418fa733cd8181638e14,Sesto al Reghena,Municipality,f
+2159,5c85100778034943ad45a713635fc1ae,Fiorentino,Subdivision,f
+115885,573f35c734e840bd94f887f99b9aee1e,Waterloo,City,f
+116767,71a40ce1c09040c7ae5aeac44714c940,Kabukichō,District,f
+7749,7a1008ce0932422ebf783b3185ca24f2,Wichita,City,f
+69661,7c84f4df56b74eb199d2dfd39fa58c12,OerErkenschwick,City,f
+10195,93422fd5189046cd9ea93517c32f35b4,Boulder,City,f
+236,d1733e1690643181961dd56f8599969b,Democratic Republic of the Congo,Country,f
+39,41d328a301da35c2b26e69c56d7121d1,Cape Verde,Country,f
+189,eb52ca74dd1137a1a3fa154430bf2df2,Slovakia,Country,f
+52,e56e3d7a4b903546845049548050924a,Côte dIvoire,Country,f
+5244,782d4fa5dfbf455887bfc41043f5a2a1,Brisbane,City,f
+283,29fa065fa568418c98b95023f64d9312,Michigan,Subdivision,f
+80,7e081aa0817b3ae09fe24bb4e3b3cc95,Georgia,Country,f
+1794,2ea52ae100ee406ea8f150fb88554d24,Flanders,Subdivision,f
+432,9d5dd6753cf442969e3967865ebee758,England,Subdivision,f
+120,d66e68e664103d34a8aa9242045ed593,Liberia,Country,f
+185,122bb81f191e37988be24b54ffd7ffa4,Senegal,Country,f
+86739,46f3c1de24b74cedbea5c0e2b84d0598,Ufa,City,f
+115982,3e4e751b0838428fa44cba54b69508f4,Kitchener,City,f
+268,887720165866496a8de74340e922d663,Connecticut,Subdivision,f
+118456,aee96acc29ab4f1bb23d52012b29c25b,Kingdom of the Netherlands,Country,f
+69751,d438f02b62bb43a5a940c9db8c7ed926,RaguhnJeßnitz,City,f
+7739,755982fafbbe40499939ecfd7fda430b,Rotterdam,City,f
+89187,e4a658fc6042417fb5a1f7fbfd7bb6d8,São Vicente,City,f
+704,078142c9cdfb4e99b3e8651af6173572,Mendoza,Subdivision,f
+67743,2b7c4074dded4703a7dee1d045c34b5c,Nancy,City,f
+395,2b42a55167664b7ab07fe947be599926,Saitama,Subdivision,f
+383,09936ede4dcc4794a1e783d3af37bf4e,Victoria,Subdivision,f
+1818,92e2d2d363b04b5aadca0e31c367eca2,Catalunya,Subdivision,f
+1404,9c612199d66f4109aedc67ab26e0a43b,Rīga,City,f
+2758,05fa380d3ced4ff7a005ff2e7f4d05b0,Sarawak,Subdivision,f
+5246,15c5ef043f80485f87eed538d1dfa3f1,Tallahassee,City,f
+249,7d24dd34a00f37a18307f2ef1dd3dbcd,Palestine,Country,f
+243,32f90933b4b43248b98ce573d5329f57,Soviet Union,Country,t
+5198,18187bcb18e64075903efb976db17a55,Columbus,City,f
+80849,4955495c004d4c7fba17d9df26388cd0,Uppsala,City,f
+28114,47bd6beed7fc459c9f49020cabed58a0,New Castle,City,f
+317,4a91ccc7ea894dc698f4c8044123a032,Nova Scotia,Subdivision,f
+7297,e57442a4b5d245b08d5069c48541482d,Nagoya,City,f
+5098,1e1edc0e9e894612b62928b4eccb6914,Arnhem,City,f
+5286,ff1b74fd054b4136b948bb88fe55d93f,Cambridge,City,f
+7747,ff21865cce464417967ca3d2d02d29bf,Tampa,City,f
+280,fc68ecf5507e4012b60bd93747a3cfa7,Louisiana,Subdivision,f
+12403,4c093436be964317a82f733938485084,Trondheim,Municipality,f
+204,18086faa7f753ca3a5bba77a83d4b200,Syria,Country,f
+5548,b30b36003cd64762b3c633a0a5aff27d,Hamilton,City,f
+81384,1e77791f41ce48729eaabf8da389e490,Cairo,City,f
+5586,27b29a82d6e5490b80a6965c9f77c741,Auburn,City,f
+96563,279d0a3854a949008ce8d3de518383a7,Riehen,Municipality,f
+60,696cb3e0508430ab991665ece70adbf6,Dominican Republic,Country,f
+3957,1f73fbd248ee4951b75047c6c92ba7ae,Norfolk,Subdivision,f
+7450,0918dfa2f6674dbebac9644d81a06612,Yekaterinburg,City,f
+5132,aaa5899ff0b74bc1bae4aba7f6770402,Tehran,City,f
+24599,3b91d286f38b4c96916870552b5869ac,Atlanta,City,f
+162,7c87112d504d31f1814711ff45fc3bfd,Pakistan,Country,f
+82371,57dcc070ab3b43918f8de4445041efcf,Oxnard,City,f
+4666,9ceb94739fa64077be0502113549dd87,Milano,Subdivision,f
+84948,6c0adac78e7741049eaaff6359a9ee6b,Pretoria,City,f
+195,6e2d562da754303684847ac576606e27,Sri Lanka,Country,f
+381,2b15d4dfae714465ad1905f442a5913b,South Australia,Subdivision,f
+95605,b9f0fe3d931a471ca323828cdbaa3af9,Stevenage,City,f
+7345,e12c1d8297e24ec499b77ed055720437,Akron,City,f
+7725,fa03255593674c9c8c4a16fb471df7e9,Eindhoven,City,f
+263,cffc01901aa2489fb6f943b9a9e01a91,Alabama,Subdivision,f
+115582,675bbb61a94a4b5492421fbf81a46ee6,Queensbridge,District,f
+99552,3fa0a27bb5e04b4ea861931ec6a0da92,Fuerteventura,Island,f
+24081,dc10cb18285641f6b3a88c44af500a67,Stanley,City,f
+622,943fc54ce6434a16926d08e0dedf5667,Bahia,Subdivision,f
+307,a3435b4af42c404ebeeef290f62a5e1c,Vermont,Subdivision,f
+23795,cc5bd08aa05140c2b075a23251e86d68,Trollhättan Municipality,Municipality,f
+5430,cf1f324c2e6949529a73e190d0cde505,Dunedin,City,f
+433,2b30f961ed7c40d2a9c56a905b35439a,Northern Ireland,Subdivision,f
+7454,a6f7157abfab49e8a22b240ade4552ca,San Antonio,City,f
+67754,31eea06ca7944138879de633336275a2,ClermontFerrand,City,f
+88782,4434785a030b45da92f2e0693f267f26,Greater São Paulo,City,f
+11939,841c52e6b2734cd1a726637f99f5ea52,Kalamazoo,City,f
+7711,eca79b55a6c44078a3838353271ee81e,Hanover,City,f
+230,8562c2e5eabb3fad96f2f536a93a2957,British Virgin Islands,Country,f
+9676,ebcd61d11f2745a9a1c1101904e1f451,Bilbao,City,f
+5102,b7e60f9a4c2543e395ffc73b9bac93e6,Lund,City,f
+86085,fe18a7f31788434e95a78397c75f9137,Chelyabinsk,City,f
+118,8138206e57863f86a53b19a7303e7419,Lebanon,Country,f
+37,bf132644e3ee3bfc93237f82824e4945,Cameroon,Country,f
+330,1b76163661664decaf7f48c506f4e24d,Hessen,Subdivision,f
+144,b84d8617249a3a06849dfc5c25e2249b,Morocco,Country,f
+29423,b21e4552050d4c0cac5a031108eb0c47,Louisville,City,f
+79463,dce45ea2f0be456882a6072837b54cf1,Long Island City,City,f
+3869,5c6f4550e4ae457099c9dc133582d1aa,Lancashire,Subdivision,f
+132,050c94f714133a34bb904a94f3bb2084,Malta,Country,f
+93,cf25d3067da53878a2b1a0370f847308,Haiti,Country,f
+101,a63fbc7faf0033c786163e86df9fc16b,Iran,Country,f
+284,f5ffcc03ebf2466abb11b38c6c0c84f5,Minnesota,Subdivision,f
+80640,54f1527ccfb346f4b43cea5b9ab7e75c,Byron Bay,City,f
+320,2747553fb44d44c4a7c3b67412b6f10b,Ontario,Subdivision,f
+80924,60db70c30f8a40fa87e6d31cc54cc09b,Mullingar,City,f
+89455,3ab1537fe425435ba50078128ba50de5,Novi Sad,City,f
+50845,517d9854b3394956a6d3bca1eb82dfd4,MarcqenBarœul,City,f
+82557,133563951f5f4276b145a9031299dc66,Marblehead,City,f
+9625,3fc3b364665e4875a9ff3699cd716152,Iowa City,City,f
+125,ed4e8ad92b333133b10528bb719d6ce8,Macao,Subdivision,f
+87369,af464e18bb2d48d59e7455904398bcca,Ishpeming,City,f
+612,6e9c8367459e4271ac337658cdeeb271,Zürich,Subdivision,f
+3961,d5081290cba54881b983913729235b02,North Lanarkshire,Subdivision,f
+8239,719ad60bf32b4eeaa9686e4e4975a5c3,Wigan,City,f
+12779,f42c1e2ab7db4acf97421889b9c6d530,A Coruña,City,f
+5207,d117de1f68164ff0b56bd1e94165782a,Harrisburg,City,f
+13032,4ba621d346d84b298c46d2338f600b23,Töreboda Municipality,Municipality,f
+24,df3bbd946a4c3fc3bb6ecd701623db8a,Bermuda,Country,f
+590,df44433ef5a34b069518fb6841c72819,Bern,Subdivision,f
+40176,9304f358057241d1ad587587b96d61e0,Solesmes,City,f
+55,a75b525f8c0131f6975e4a32a2b001d5,Cyprus,Country,f
+46231,e00cb58131014de386a638d3e4922e97,SaintÉmilion,City,f
+7975,dea069af67b5422ca19aa6915b9fe592,Tours,City,f
+134,b939dcaa472934e0a398d22fba4407cd,Martinique,Country,f
+20987,de390b4bc2864971a54ba56f729d3cfd,Belluno,Municipality,f
+20,660e3c48b3013c8c97080f71d5d094d6,Belarus,Country,f
+212,6c290168f3b93adb9889b856feb2c26c,Trinidad and Tobago,Country,f
+88569,05d96990a7c14b6ab251a9b6400b3621,Bucaramanga,City,f
+444,3c529caf88b144549bfbc003061a4bd3,Lappi,Subdivision,f
+250,3519cc6eae193d2c9b9e575a860ef8e1,Åland Islands,Country,f
+99496,99cb48784bd74d0ba696a01a40f2cc4e,Vitória da Conquista,City,f
+30620,e815db74f1aa4fbca78cf3e76f53409e,Marseille,City,f
+1812,08b11c30becb4f538f0fb645d66eedf8,Asturias,Subdivision,f
+21982,1fcce45bd0a646c8ba07156e75e33870,Sherbrooke,City,f
+5199,788892228f0840b692b173f4a98fc533,Thessaloniki,City,f
+20503,2146c032d901490c9cb21b8d772fea7c,Trieste,Municipality,f
+44676,ca61a2546d4e45c189d2a22f5cc158f8,Chapel Hill,City,f
+68649,9828e130c29c4bb3a2480b3a5970d76e,Valence,City,f
+127,f3a306783d233f428056d32ebe58c66d,Madagascar,Country,f
+7493,4983a5b8eb24431ea78293bec2a56fdc,Newcastle,City,f
+29125,778dfc9e316245719179882dc2de970f,Port Orchard,City,f
+70,9ed3be5fd54c3adda6a676c0cca54fd8,Faroe Islands,Country,f
+8162,f25806622f9443a8a83cebea034c55b8,Ekenäs,City,f
+3923,400bdd75a3a048e2a6aec4733366aff3,Leeds,Subdivision,f
+7995,f6ee740cc95142209568f443ac667a83,Sapporo,City,f
+3833,4ce8712bc3e94373a5d687f0b2afd313,Derby,City,f
+306,02e01cf9b0ed4286ac6d16989f92ced6,Virginia,Subdivision,f
+334,1de7fa77cb5240a2b82a251c7818249d,NordrheinWestfalen,Subdivision,f
+29961,a6b7d9a6ef73458d94f5727492d81d4b,Perth,City,f
+3831,78b53d025ffe4b6095ec57684eb4d5e1,Darlington,Subdivision,f
+28126,442671dfe6b9436f9732f031ea9e9d82,Vidnoye,City,f
+235,885dce63c21130338cf746cb82d440c7,Yugoslavia,Country,t
+1837,8216eb6e3b174aef9285ff2901ef9b4f,Corse,Subdivision,f
+22389,486eed4fe8374e79b801701e5ef6f20c,Brea,City,f
+23042,d8fc057dc584476a94dcac640c5500ea,Minneapolis–Saint Paul,City,f
+30918,96cb90d88847453d8e741030d769ca6f,Huddersfield,City,f
+83392,dfb8e9d9181f40a88337d88690d887b2,New Port Richey,City,f
+2369,51c526a4ed344eaf94cf0b96cd019d47,Kyïv,City,f
+95,0c3ea9154e4934fcb702debb216fd7fa,Honduras,Country,f
+143,290ea4381cb635e197556ab123214293,Montserrat,Country,f
+82583,c0e87f93f541480ab6d2991f6ea90ee2,New Bedford,City,f
+296,0573177b9ff9464380bced2513419267,Ohio,Subdivision,f
+13181,aead5bd4ba1140cf8df52c67286e3ae3,Lindesberg Municipality,Municipality,f
+1512,7af347a3ca3c4505b839e67c606709cf,Nayarit,Subdivision,f
+30670,179507c6bdd04d85bc601f98d39f532f,Aberystwyth,City,f
+5214,33957ca3f2cd4b08b667c933eff5c1a7,Lincoln,City,f
+80651,d882fff5c203486c971f68e78809698b,Glen Rose,City,f
+187,2b547f54a97c348196257ad9a670b1e6,Sierra Leone,Country,f
+117235,fce9c7adfedb45d883c7236865aaf0b5,Montreal,Municipality,f
+1838,3e233b8d30e642a59ea257a197f0477c,FrancheComté,Subdivision,t
+224,ea88d39587c93c47b49a114cad41fd39,Uruguay,Country,f
+111634,3964fdeee9f64655bc344d7345e58da0,Avilés,Municipality,f
+12930,16df85d7270f48138c56c6ccd51e6de5,Arboga Municipality,Municipality,f
+84003,3b3c74f838634af6b1af5a523d9f3831,Bellingham,City,f
+7327,f95f42b059a6410da08e3db77f4aea8a,San Jose,City,f
+91670,53d70a468eb34debb020a2c17e8f34ef,Ridgewood,City,f
+2759,b9516e0b422347a6a64a8750450c8c05,Kuala Lumpur,City,f
+670,0ca39eb53e8a44478ac9f3f1e83f97c9,Karnataka,Subdivision,f
+69512,0a6568a107c04ec4b3c51dc7e14ab42f,Meissen,City,f
+5563,8802de90150b48f68f8364a9601ad014,Dunfermline,City,f
+213,5895507167c134918dec48d28f824bda,Tunisia,Country,f
+30651,5eb4e89da1fb42f384be5a1cd1e6549e,East Palo Alto,City,f
+7738,075e1cc995674317a9314f6dcecc688f,Albuquerque,City,f
+68939,ab3e3c0b039d4864b543e262bb110cb8,CastropRauxel,City,f
+3880,71d7ce55816c4e648dbfe2289a696354,Bromley,Subdivision,f
+1876,19a7a4c5d8974ab09657632b1878c91c,TrentinoAlto Adige,Subdivision,f
+9563,1a49363bee814d1bad9bd3a93ca8c7a3,Reutlingen,City,f
+99854,b60b1843405e48059124e6990c66b7f4,Coalville,City,f
+6926,f61848ab0ba045348b71d9c7c03e854c,Salford,City,f
+5120,ed09184962dd4d109d4050594afb1b15,Bratislava,City,f
+86,217e2eb30a3a3b599eaaa7465c1417ff,Grenada,Country,f
+116782,e6de74aba76c4312ba28aab7c4a915dd,Rancagua,City,f
+4021,a769ad5b09884963b4804f91e33f2beb,Greater Manchester,Subdivision,f
+88377,7a075b5a7a0e4750888b2061db5b72a5,Scarborough,City,f
+24945,6feac5e17f8c4c71905d0c4103e4e474,Leavenworth,City,f
+210,756f26ff2bc53d25b4296873ccbe160d,Tokelau,Country,f
+410,8ff1831b3350489fac911975ab38331e,Kyoto,Subdivision,f
+82618,82f3953c96d6440cbed667817c074f05,Richmond,City,f
+655,87e57205079047c090ad63a6888c99d9,Andhra Pradesh,Subdivision,f
+86942,48ba15f238974ea694a712701f7a2f65,Abertillery,City,f
+8855,67fba220706a459ab506a59fefe7c280,Changsha,City,f
+23720,b796063636484ca49328d59d3f6562b7,Landshut,City,f
+5089,a03385a0da4341f9bbfc741b949c2e0c,Chennai,City,f
+267,373183af56db44d7b06a5877c02c5f01,Colorado,Subdivision,f

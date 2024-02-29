@@ -1,0 +1,6826 @@
+aid_a,name_a
+1,Gottfried Vossen
+2,Mathias Weske
+4,Isabel F. Cruz
+5,Kimberly M. James
+7,Athman Bouguettaya
+8,Boualem Benatallah
+9,Lily Hendra
+10,James Beard
+11,Kevin Smith
+12,Mourad Quzzani
+14,Chaitan Baru
+15,Amarnath Gupta
+16,Bertram Lud&#228;scher
+17,Richard Marciano
+18,Yannis Papakonstantinou
+19,Pavel Velikhov
+20,Vincent Chu
+22,Alexander Brodsky
+23,Victor E. Segal
+24,Jia Chen
+25,Paval A. Exarkhopoulo
+27,Phillippe Bonnet
+28,Kyle Buza
+29,Zhiyuan Chan
+30,Victor Cheng
+31,Randolph Chung
+32,Takako Hickey
+33,Ryan Kennedy
+34,Daniel Mahashin
+35,Tobias Mayr
+36,Ivan Oprencak
+37,Praveen Seshadri
+38,Hubert Siu
+40,Nick Roussopoulos
+41,Yannis Kotidis
+42,Yannis Sismanis
+44,Michael B&#246;hlen
+45,Linas Bukauskas
+46,Curtis Dyreson
+48,N. R. Jennings
+49,T. J. Norman
+50,P. Faratin
+52,Benny Reich
+53,Israel Ben-Shaul
+55,Susanne Boll
+56,Wolfgang Klas
+57,Bernard Battaglin
+59,Alex G. B&#252;chner
+60,Maurice D. Mulvenna
+62,Martin Bichler
+63,Arie Segev
+64,J. Leon Zhao
+66,Sherif Danish
+68,Bart Meltzer
+69,Robert Glushko
+71,Asuman Dogac
+72,Ilker Durusoy
+73,Sena Arpinar
+74,Nesime Tatbul
+75,Pinar Koksal
+76,Ibrahim Cingil
+77,Nazife Dimililer
+79,Mehmet Altinel
+80,Demet Aksoy
+81,Thomas Baby
+82,Michael Franklin
+83,William Shapiro
+84,Stan Zdonik
+86,Ling Liu
+87,Wei Han
+88,David Buttler
+89,Calton Pu
+90,Wei Tang
+92,Reinhard Braumandl
+93,Alfons Kemper
+94,Donald Kossmann
+96,Ouri Wolfson
+97,Prasad Sistla
+98,Bo Xu
+99,Jutai Zhou
+100,Sam Chamberlain
+102,Lyman Do
+103,Prabhu Ram
+104,Pamela Drew
+106,Thomas Bergstraesser
+107,Philip A. Bernstein
+108,Shankar Pal
+109,David Shutt
+111,Stefano M. Trisolini
+112,Maurizio Lenzerini
+113,Daniele Nardi
+115,Matthias Jarke
+116,Christoph Quix
+117,Guido Blees
+118,Dirk Lehmann
+119,Gunter Michalk
+120,Stefan Stierl
+122,E. A. Rundensteiner
+123,K. Claypool
+124,M. Li
+125,L. Chen
+126,Z. Zhang
+127,C. Natarajan
+128,J. Jin
+129,S. De Lima
+130,S. Weiner
+132,Wen-Syan Li
+133,Quoc Vu
+134,Edward Chang
+135,Divyakant Agrawal
+136,Kyoji Hirata
+137,Sougata Mukherjea
+138,Yi-Leh Wu
+139,Corey Bufi
+140,Chen-Chuan Kevin Chang
+141,Yoshinori Hara
+142,Reiko Ito
+143,Yutaka Kimura
+144,Kezuyuki Shimazu
+145,Yukiyoshi Saito
+147,Swarup Acharya
+148,Phillip B. Gibbons
+149,Viswanath Poosala
+150,Sridhar Ramaswamy
+152,Tong Zhou
+153,Ling Liu
+154,Calton Pu
+156,Raymond Ng
+157,Laks V. S. Lakshmanan
+158,Jiawei Han
+159,Teresa Mah
+161,E. A. Rundensteiner
+162,A. Koeller
+163,X. Zhang
+164,A. J. Lee
+165,A. Nica
+166,A. Van Wyk
+167,Y. Lee
+169,Roger Barga
+170,David B. Lomet
+172,Brad Adelberg
+173,Matthew Denny
+175,Vishu Krishnamurthy
+176,Sandeepan Banerjee
+177,Anil Nori
+179,Paul Brown
+181,Dan Suciu
+183,M. Carey
+184,D. Chamberlin
+185,D. Doole
+186,S. Rielau
+187,N. Mattos
+188,S. Narayanan
+189,B. Vance
+190,R. Swagerman
+192,Soumen Chakrabarti
+194,Alexander Hinneburg
+195,Daniel A. Keim
+197,Dirk D&#252;llmann
+199,C. Mohan
+201,Bassel Ojjeh
+203,Anand Rajaraman
+205,Brad Hammond
+207,CORPORATE TimesTen Team
+209,Walt Kohler
+211,Rick Greer
+213,J. Baulier
+214,P. Bohannon
+215,S. Gogate
+216,C. Gupta
+217,S. Haldar
+219,K. V. Ravi Kanth
+220,Siva Ravada
+221,Jayant Sharma
+222,Jay Banerjee
+224,Alin Deutsch
+225,Mary Fernandez
+226,Dan Suciu
+228,Daniel A. Keim
+230,Charu C. Aggarwal
+231,Joel L. Wolf
+232,Philip S. Yu
+234,Apostol Natsev
+235,Rajeev Rastogi
+236,Kyuseok Shim
+238,Wilburt Juan Labio
+239,Ramana Yerneni
+240,Hector Garcia-Molina
+242,Yannis Kotidis
+243,Nick Roussopoulos
+245,Kevin Beyer
+246,Raghu Ramakrishnan
+248,Tobias Mayr
+249,Praveen Seshadri
+251,M. Tamer &#214;zsu
+253,Minos N. Garofalakis
+254,Sridhar Ramaswamy
+255,Rajeev Rastogi
+256,Kyuseok Shim
+258,Praveen Seshadri
+260,Hasan Davulcu
+261,Juliana Freire
+262,Michael Kifer
+263,I. V. Ramakrishnan
+265,Jamie Callan
+266,Margaret Connell
+267,Aiqun Du
+269,D. W. Embley
+270,Y. Jiang
+271,Y.-K. Ng
+273,Yannis Papakonstantinou
+274,Vasilis Vassalos
+276,Ramana Yerneni
+277,Chen Li
+278,Hector Garcia-Molina
+279,Jeffrey Ullman
+281,David B. Lomet
+283,Wilburt Juan Labio
+284,Janet L. Wiener
+285,Hector Garcia-Molina
+286,Vlad Gorelik
+288,Mohana K. Lakhamraju
+289,Rajeev Rastogi
+290,S. Seshadri
+291,S. Sudarshan
+293,Charu C. Aggarwal
+294,Philip S. Yu
+296,Christopher R. Palmer
+297,Christos Faloutsos
+299,Markus M. Breunig
+300,Hans-Peter Kriegel
+301,Raymond T. Ng
+302,J&#246;rg Sander
+304,Markos Zaharioudakis
+305,Roberta Cochrane
+306,George Lapis
+307,Hamid Pirahesh
+308,Monica Urata
+310,Junghoo Cho
+311,Hector Garcia-Molina
+313,Kenneth Salem
+314,Kevin Beyer
+315,Bruce Lindsay
+316,Roberta Cochrane
+318,Vassilis Christophides
+319,Sophie Cluet
+320,J&#233;r&#466;me Sim&#232;on
+322,Hartmut Liefke
+323,Dan Suciu
+325,Minos Garofalakis
+326,Aristides Gionis
+327,Rajeev Rastogi
+328,S. Seshadri
+329,Kyuseok Shim
+331,Christos Faloutsos
+332,Bernhard Seeger
+333,Agma Traina
+334,Caetano Traina
+335,Jr.
+337,Manuel Rodr&#237;guez-Mart&#237;nez
+338,Nick Roussopoulos
+340,Antonio Corral
+341,Yannis Manolopoulos
+342,Yannis Theodoridis
+343,Michael Vassilakopoulos
+345,Flip Korn
+346,S. Muthukrishnan
+348,Krishnamurty Muralidhar
+349,Rathindra Sarathy
+351,Debabrata Dey
+352,Veda C. Storey
+353,Terence M. Barron
+355,Tak W. Yan
+356,Hector Garcia-Molina
+358,Yair Wand
+359,Veda C. Storey
+360,Ron Weber
+362,Andrew Frank
+363,Stephane Grumbach
+364,Ralf Hartmut G&#252;ting
+365,Christian S. Jensen
+366,Manolis Koubarakis
+367,Nikos Lorentzos
+368,Yannis Manolopoulos
+369,Enrico Nardelli
+370,Barbara Pernici
+371,Hans-J&#246;rg Schek
+372,Michel Scholl
+373,Timos Sellis
+374,Babis Theodoulidis
+375,Peter Widmayer
+377,S. Conrad
+378,W. Hasselbring
+379,U. Hohenstein
+380,R.-D. Kutsche
+381,M. Roantree
+382,G. Saake
+383,F. Saltor
+385,Arnon Rosenthal
+386,Edward Sciore
+388,Jihad Boulos
+389,Kinji Ono
+391,Prabhu Ram
+392,Lyman Do
+393,Pamela Drew
+395,Stanley M. T. Yau
+396,Hong Va Leong
+397,Dennis McLeod
+398,Antonio Si
+400,Ruxandra Domenig
+401,Klaus R. Dittrich
+403,Mark Papiani
+404,Jasmin L. Wason
+405,Alistair N. Dunlop
+406,Denis A. Nicole
+408,Jiawei Han
+409,Jian Pei
+410,Yiwen Yin
+412,Le Gruenwald
+413,Leonard Brown
+414,Ravi Dirckze
+415,Sylvain Guinepain
+416,Carlos Sanchez
+417,Brian Summers
+418,Sirirut Vanichayobon
+420,Pradeep Shenoy
+421,Jayant R. Haritsa
+422,S. Sundarshan
+423,Gaurav Bhalotia
+424,Mayank Bawa
+425,Devavrat Shah
+427,Erik Riedel
+428,Christos Faloutsos
+429,Gregory R. Ganger
+430,David F. Nagle
+432,Joseph Kuan
+433,Paul Lewis
+435,Mark Roantree
+436,John Murphy
+437,Wilhelm Hasselbring
+439,M&#225;rcio Farias de Souza
+440,Marcus Costa Sampaio
+442,Stefano Ceri
+443,Piero Fraternali
+444,Stefano Paraboschi
+446,Andrew Eisenberg
+447,Jim Melton
+449,Anindya Datta
+450,Debra E. VanderMeer
+451,Aslihan Celik
+452,Vijay Kumar
+454,Amit Sheth
+455,Clemens Bertram
+456,Kshitij Shah
+458,Mike Carey
+459,Len Seligman
+461,Surajit Chaudhuri
+462,Kyuseok Shim
+464,Luis Gravano
+465,H&#233;ctor Garc&#237;a-Molina
+466,Anthony Tomasic
+468,Mark Levene
+469,George Loizou
+471,Jef Wijsen
+473,Tolga Bozkaya
+474,Meral Ozsoyoglu
+476,Fabio Casati
+477,Stefano Ceri
+478,Stefano Paraboschi
+479,Guiseppe Pozzi
+481,G&#237;sli R. Hjaltason
+482,Hanan Samet
+484,Suad Alag&#237;c
+486,David Ritter
+488,Phil Bernstein
+489,Michael Brodie
+490,Stefano Ceri
+491,David DeWitt
+492,Mike Franklin
+493,Hector Garcia-Molina
+494,Jim Gray
+495,Jerry Held
+496,Joe Hellerstein
+497,H. V. Jagadish
+498,Michael Lesk
+499,Dave Maier
+500,Jeff Naughton
+501,Hamid Pirahesh
+502,Mike Stonebraker
+503,Jeff Ullman
+505,Michael Christoffel
+506,Sebastian Pulkowski
+507,Bethina Schmitt
+508,Peter C. Lockemann
+510,Josep Domingo-Ferrer
+511,Jordi Herrera-Joancomart&#237;
+513,E. Forte
+514,F. Haenni
+515,K. Warkentyne
+516,E. Duval
+517,K. Cardinaels
+518,E. Vervaet
+519,K. Hendrikx
+520,M. Wentland Forte
+521,F. Simillion
+523,D. Scott Mackay
+525,A. M. Ouksel
+526,A. Sheth
+528,Andrew Eisenberg
+529,Jim Melton
+531,Katia Sycara
+532,Matthias Klusch
+533,Seth Widoff
+534,Jianguo Lu
+536,M. P. Papazoglou
+537,J. Hoppenbrouwers
+539,Arun Hampapur
+541,Ken Smith
+542,Leo Obrst
+544,Mario A. Nascimento
+545,Claudia Bauzer Medeiros
+547,Avigdor Gal
+549,Jerry Fowler
+550,Brad Perry
+551,Marian Nodine
+552,Bruce Bargmeyer
+554,S. Bergamaschi
+555,S. Castano
+556,M. Vincini
+558,Robert S. Epstein
+560,Larry J. Ellison
+562,Zahir Tari
+563,John Stokes
+564,Stefano Spaccapietra
+566,Veda C. Storey
+567,Roger H. L. Chiang
+568,Debabrata Dey
+569,Robert C. Goldstein
+570,Shankar Sudaresan
+572,Justin Zobel
+573,Alistair Moffat
+574,Kotagiri Ramamohanarao
+576,Sharad Mehrotra
+577,Rajeev Rastogi
+578,Henry F. Korth
+579,Abraham Silberschatz
+581,A. Prasad Sistla
+582,Ouri Wolfson
+583,Yelena Yesha
+584,Robert Sloan
+586,David Konopnicki
+587,Oded Shmueli
+589,Jing Chen
+590,Limsoon Wong
+591,Louxin Zhang
+593,Shaul Dar
+594,Gadi Entin
+595,Shai Geva
+596,Eran Palmon
+598,Xiangning Liu
+599,Abdelsalam Helal
+600,Weimin Du
+602,Joseph M. Hellerstein
+604,Osmar R. Za&#239;ane
+605,Jiawei Han
+606,Ze-Nian Li
+607,Sonny H. Chee
+608,Jenny Y. Chiang
+610,Jang Ho Park
+611,Yong Sik Kwon
+612,Ki Hong Kim
+613,Sang Ho Lee
+614,Byoung Dae Park
+615,Sang Kyun Cha
+617,Stefano Ceri
+618,Piero Fraternali
+619,Stefano Paraboschi
+621,Motomichi Toyama
+623,Ron Avnur
+624,Joseph M. Hellerstein
+625,Bruce Lo
+626,Chris Olston
+627,Bhaskaran Raman
+628,Vijayshankar Raman
+629,Tali Roth
+630,Kirk Wylie
+632,Marcel Kornacker
+633,Mehul Shah
+634,Joseph M. Hellerstein
+636,Zo&#233; Lacroix
+637,Arnaud Sahuguet
+638,Raman Chandrasekar
+640,P. Baumann
+641,A. Dehmel
+642,P. Furtado
+643,R. Ritsch
+644,N. Widmann
+646,Bartek Kiepuszewski
+647,Ralf Muhlberger
+648,Maria E. Orlowska
+650,William W. Cohen
+652,Jos&#233; Luis Ambite
+653,Naveen Ashish
+654,Greg Barish
+655,Craig A. Knoblock
+656,Steven Minton
+657,Pragnesh J. Modi
+658,Ion Muslea
+659,Andrew Philpot
+660,Sheila Tejada
+662,Chen Li
+663,Ramana Yerneni
+664,Vasilis Vassalos
+665,Hector Garcia-Molina
+666,Yannis Papakonstantinou
+667,Jeffrey Ullman
+668,Murty Valiveti
+670,G. Mecca
+671,P. Atzeni
+672,A. Masci
+673,G. Sindoni
+674,P. Merialdo
+676,Ling Liu
+677,Calton Pu
+678,Wei Tang
+679,David Buttler
+680,John Biggs
+681,Tong Zhou
+682,Paul Benninghoff
+683,Wei Han
+684,Fenghua Yu
+686,Chris Olston
+687,Allison Woodruff
+688,Alexander Aiken
+689,Michael Chu
+690,Vuk Ercegovac
+691,Mark Lin
+692,Mybrid Spalding
+693,Michael Stonebraker
+695,Surajit Chaudhuri
+696,Vivek Narasayya
+698,Edwin R. Lassettre
+700,Eric A. Brewer
+702,Sherri Kennamer
+704,Bin Li
+705,Dennis Shasha
+707,James Chong
+709,John Nauman
+710,Ray Suorsa
+712,Daniel S. Whelan
+714,Kamar Aulakh
+716,Tirthankar Lahiri
+717,Ashok Joshi
+718,Amit Jasuja
+719,Sumanta Chatterjee
+721,Richard Anderson
+722,Gopalan Arun
+723,Richard Frank
+725,KianSing Ng
+726,Huan Liu
+727,HweeBong Kwah
+729,Arvola Chan
+731,Satish Ramakrishnan
+732,Vibha Dayal
+734,Michael Franklin
+735,Stan Zdonik
+737,Peter Spiro
+739,C. Gregory Doherty
+741,Chris Eaton
+743,Berthold Reinwald
+744,Hamid Pirahesh
+746,Seth White
+747,Rick Cattell
+748,Shel Finkelstein
+750,Jos&#233; A. Blakeley
+751,Michael J. Pizzo
+753,Gray Clossman
+754,Phil Shaw
+755,Mark Hapner
+756,Johannes Klein
+757,Richard Pledereder
+758,Brian Becker
+760,Stefan Berchtold
+761,Daniel A. Keim
+763,Nabil R. Adam
+764,Yelena Yesha
+766,Alfons Kemper
+767,Donald Kossmann
+768,Florian Matthes
+770,Michael Stonebraker
+772,John Mylopoulos
+774,Per-&#197;ke Larson
+775,Goetz Graefe
+777,Todd Anderson
+778,Yuri Breitbart
+779,Henry F. Korth
+780,Avishai Wool
+782,Yossi Matias
+783,Jeffrey Scott Vitter
+784,Min Wang
+786,David Lomet
+787,Gerhard Weikum
+789,Gurmeet Singh Manku
+790,Sridhar Rajagopalan
+791,Bruce G. Lindsay
+793,Surajit Chaudhuri
+794,Rajeev Motwani
+795,Vivek Narasayya
+797,S. Adali
+798,P. Bonatti
+799,M. L. Sapino
+800,V. S. Subrahmanian
+802,Mary Fern&#225;ndez
+803,Daniela Florescu
+804,Jaewoo Kang
+805,Alon Levy
+806,Dan Suciu
+808,Michael Jaedicke
+809,Bernhard Mitschang
+811,Michael Godfrey
+812,Tobias Mayr
+813,Praveen Seshadri
+814,Thorsten von Eicken
+816,Surajit Chaudhuri
+817,Rajeev Motwani
+818,Vivek Narasayya
+820,Gurmeet Singh Manku
+821,Sridhar Rajagopalan
+822,Bruce G. Lindsay
+824,Peter J. Haas
+825,Joseph M. Hellerstein
+827,Swarup Acharya
+828,Phillip B. Gibbons
+829,Viswanath Poosala
+830,Sridhar Ramaswamy
+832,Daniela Florescu
+833,Alon Levy
+834,Ioana Manolescu
+835,Dan Suciu
+837,Zachary G. Ives
+838,Daniela Florescu
+839,Marc Friedman
+840,Alon Levy
+841,Daniel S. Weld
+843,Chen-Chuan K. Chang
+844,H&#233;ctor Garc&#237;a-Molina
+846,Arunprasad P. Marathe
+847,Kenneth Salem
+849,Johannes Gehrke
+850,Venkatesh Ganti
+851,Raghu Ramakrishnan
+852,Wei-Yin Loh
+854,Laks V. S. Lakshmanan
+855,Raymond Ng
+856,Jiawei Han
+857,Alex Pang
+859,Jeffrey Scott Vitter
+860,Min Wang
+862,Ashraf Aboulnaga
+863,Surajit Chaudhuri
+865,Chee-Yong Chan
+866,Yannis E. Ioannidis
+868,Ju-Hong Lee
+869,Deok-Hwan Kim
+870,Chin-Wan Chung
+872,Bj&#246;rn Blohsfeld
+873,Dieter Korus
+874,Bernhard Seeger
+876,Ming-Chuan Wu
+878,Charu C. Aggarwal
+879,Joel L. Wolf
+880,Philip S. Yu
+881,Cecilia Procopiuc
+882,Jong Soo Park
+884,David Lomet
+885,Mark Tuttle
+887,Jayavel Shanmugasundaram
+888,Arvind Nithrakashyap
+889,Rajendran Sivasankaran
+890,Krithi Ramamritham
+892,Yuri Breitbart
+893,Raghavan Komondoor
+894,Rajeev Rastogi
+895,S. Seshadri
+896,Avi Silberschatz
+898,Hasan M. Jamil
+900,S. Adali
+901,M. L. Sapino
+902,V. S. Subrahmanian
+904,H. V. Jagadish
+905,Laks V. S. Lakshmanan
+906,Tova Milo
+907,Divesh Srivastava
+908,Dimitra Vista
+910,Christian Hidber
+912,S. Castano
+913,V. De Antonellis
+914,M. G. Fugini
+915,B. Pernici
+917,Elisa Bertino
+918,Claudio Bettini
+919,Elena Ferrari
+920,Pierangela Samarati
+922,A. Formica
+923,H. D. Groger
+924,M. Missikoff
+926,Nikos Mamoulis
+927,Dimitris Papadias
+929,Swarup Acharya
+930,Viswanath Poosala
+931,Sridhar Ramaswamy
+933,Kaushik Chakrabarti
+934,Sharad Mehrotra
+936,H. V. Jagadish
+937,Laks V. S. Lakshmanan
+938,Divesh Srivastava
+940,Mihael Ankerst
+941,Markus M. Breunig
+942,Hans-Peter Kriegel
+943,J&#246;rg Sander
+945,Kimberly Keeton
+946,David A. Patterson
+947,Joseph M. Hellerstein
+949,G. Kappel
+950,W. Retschitzegger
+952,Richard Snodgrass
+954,David Lomet
+956,David Lomet
+957,Roger Barga
+958,Surajit Chaudhuri
+959,Paul Larson
+960,Vivek Narasayya
+962,Shih-Fu Chang
+963,Luis Gravano
+964,Gail E. Kaiser
+965,Kenneth A. Ross
+966,Salvatore J. Stolfo
+968,Daniela Florescu
+969,Alon Levy
+970,Alberto Mendelzon
+972,Andrew Eisenberg
+973,Jim Melton
+975,Peter Z. Revesz
+977,Curtis E. Dyreson
+978,Richard Thomas Snodgrass
+980,M. Tork Roth
+981,M. Arya
+982,L. Haas
+983,M. Carey
+984,W. Cody
+985,R. Fagin
+986,P. Schwarz
+987,J. Thomas
+988,E. Wimmers
+990,A. Biliris
+991,T. A. Funkhouser
+992,W. O'Connell
+993,E. Panagos
+995,Timothy Griffin
+996,Bharat Kumar
+998,King Lum Cheung
+999,Ada Wai-Chee Fu
+1001,Alex Borgida
+1002,Vinay K. Chaudhri
+1003,Martin Staudt
+1005,Alexei P. Stolboushkin
+1006,Michael A. Taitslin
+1008,Jaiwei Han
+1009,Youngjian Fu
+1010,Wei Wang
+1011,Jenny Chiang
+1012,Osmar R. Za&#239;ane
+1013,Krzysztof Koperski
+1015,S. Choo
+1016,W. O'Connell
+1017,G. Linerman
+1018,H. Chen
+1019,K. Ganapathy
+1020,A. Biliris
+1021,E. Panagos
+1022,D. Schrader
+1024,Mark Lefler
+1025,Mark Stokrp
+1026,Craig Wong
+1028,Dallan Quass
+1029,Jennifer Widom
+1030,Roy Goldman
+1031,Kevin Haas
+1032,Qingshan Luo
+1033,Jason McHugh
+1034,Svetlozar Nestorov
+1035,Anand Rajaraman
+1036,Hugo Rivero
+1037,Serge Abiteboul
+1038,Jeff Ullman
+1039,Janet Wiener
+1041,Patrick C. K. Hung
+1042,Helen P. Yeung
+1043,Kamalakar Karlapalem
+1045,E. A. Rundensteiner
+1046,H. A. Kuno
+1047,Y.-G. Ra
+1048,V. Crestana-Taube
+1049,M. C. Jones
+1050,P. J. Marron
+1052,Asuman Dogac
+1053,Ugur Halici
+1054,Ebru Kilic
+1055,Gokhan Ozhan
+1056,Fatma Ozcan
+1057,Sena Nural
+1058,Cevdet Dengi
+1059,Sema Mancuhan
+1060,Budak Arpinar
+1061,Pinar Koksal
+1062,Cem Evrendilek
+1064,Takeshi Fukuda
+1065,Yasuhiko Morimoto
+1066,Shinichi Morishita
+1067,Takeshi Tokuyama
+1069,Pillip A. Bernstein
+1071,Daniel A. Keim
+1073,Markos Zaharioudakis
+1074,Michael J. Carey
+1075,Michael J. Franklin
+1077,Phil Fernandez
+1078,Donovan Schneider
+1080,Peter Piatko
+1081,Roman Yangarber
+1082,Daoi Lin
+1083,Dennis Shasha
+1085,Klemens B&#246;hm
+1086,Karl Aberer
+1088,C. Mohan
+1090,Jiawei Han
+1092,Sihem Amer-Yahia
+1093,SungRan Cho
+1094,Laks V. S. Lakshmanan
+1095,Divesh Srivastava
+1097,Ling Ling Yan
+1098,Ren&#233;e J. Miller
+1099,Laura M. Haas
+1100,Ronald Fagin
+1102,Assaf Schuster
+1103,Ran Wolff
+1105,Lise Getoor
+1106,Benjamin Taskar
+1107,Daphne Koller
+1109,Yi-Leh Wu
+1110,Divyakant Agrawal
+1111,Amr El Abbadi
+1113,Benjamin Nguyen
+1114,Serge Abiteboul
+1115,Gr&#233;gory Cobena
+1116,Miha&#237; Preda
+1118,Chun Zhang
+1119,Jeffrey Naughton
+1120,David DeWitt
+1121,Qiong Luo
+1122,Guy Lohman
+1124,Igor Tatarinov
+1125,Zachary G. Ives
+1126,Alon Y. Halevy
+1127,Daniel S. Weld
+1129,Denise Draper
+1130,Alon Y. Halevy
+1131,Daniel S. Weld
+1133,Zohreh Nazeri
+1134,Eric Bloedorn
+1135,Paul Ostwald
+1137,Thomas Maguire
+1139,Michael Stonebraker
+1140,Joseph M. Hellerstein
+1142,Julio C. Navas
+1143,Michael Wynblatt
+1145,K. Sel&#231;uk Candan
+1146,Wen-Syan Li
+1147,Qiong Luo
+1148,Wang-Pin Hsiung
+1149,Divyakant Agrawal
+1151,Felipe Cari&#241;o
+1152,Jr.
+1153,Pekka Kostamaa
+1154,Art Kaufmann
+1155,John Burgess
+1157,AnHai Doan
+1158,Pedro Domingos
+1159,Alon Y. Halevy
+1161,L. Shou
+1162,C. H. Chionh
+1163,Z. Huang
+1164,Y. Ruan
+1165,Kian-Lee Tan
+1167,Arnaud Sahuguet
+1169,Pavan Deolasee
+1170,Amol Katkar
+1171,Ankur Panchbudhe
+1172,Krithi Ramamritham
+1173,Prashant Shenoy
+1175,Werner Kie&#946;ling
+1176,Stefan Holland
+1177,Stefan Fischer
+1178,Thorsten Ehm
+1180,Parke Godfrey
+1181,Jarek Gryz
+1182,Calisto Zuzarte
+1184,Tirthankar Lahiri
+1185,Amit Ganesh
+1186,Ron Weiss
+1187,Ashok Joshi
+1189,Reed M. Meseck
+1191,C&#233;sar Galindo-Legaria
+1192,Milind Joshi
+1194,Sanjay Agrawal
+1195,Surajit Chaudhuri
+1196,Vivek Narasayya
+1198,Tiziana Catarci
+1199,Giuseppe Santucci
+1201,Kajal T. Claypool
+1202,Elke A. Rundensteiner
+1203,Xin Zhang
+1204,Su Hong
+1205,Harumi Kuno
+1206,Wang-chien Lee
+1207,Gail Mitchell
+1209,Mauricio A. Hern&#225;ndez
+1210,Ren&#233;e J. Miller
+1211,Laura M. Haas
+1213,David Buttler
+1214,Ling Liu
+1215,Calton Pu
+1216,Henrique Paques
+1217,Wei Han
+1218,Wei Tang
+1220,Elisa Bertino
+1221,Silvana Castano
+1222,Elena Ferrari
+1224,Asaf Adii
+1225,David Botzer
+1226,Opher Etzion
+1227,Tali Yatzkar-Haham
+1229,Sudarshan S. Chawathe
+1230,Thomas Baby
+1231,Jihwang Yoo
+1233,Mahesh V. Joshi
+1234,Ramesh C. Agarwal
+1235,Vipin Kumar
+1237,Markus M. Breunig
+1238,Hans-Peter Kriegel
+1239,Peer Kr&#246;ger
+1240,J&#246;rg Sander
+1242,Fran&#231;oise Fabret
+1243,H. Arno Jacobsen
+1244,Fran&#231;ois Llirbat
+1245,Jo&#259;o Pereira
+1246,Kenneth A. Ross
+1247,Dennis Shasha
+1249,Mary Fernandez
+1250,Atsuyuki Morishima
+1251,Dan Suciu
+1253,Denis Rinfret
+1254,Patrick O'Neil
+1255,Elizabeth O'Neil
+1257,Charu C. Aggarwal
+1258,Philip S. Yu
+1260,Panagiotis G. Ipeirotis
+1261,Luis Gravano
+1262,Mehran Sahami
+1264,Michael Greenwald
+1265,Sanjeev Khanna
+1267,Clement Yu
+1268,Weiyi Meng
+1269,Wensheng Wu
+1270,King-Lup Liu
+1272,Vinayak Borkar
+1273,Kaustubh Deshmukh
+1274,Sunita Sarawagi
+1276,Nicolas Bruno
+1277,Surajit Chaudhuri
+1278,Luis Gravano
+1280,Amol Deshpande
+1281,Minos Garofalakis
+1282,Rajeev Rastogi
+1284,Kihong Kim
+1285,Sang K. Cha
+1286,Keunjoo Kwon
+1288,Giedrius Slivinskas
+1289,Christian S. Jensen
+1290,Richard Thomas Snodgrass
+1292,Philip Bohannon
+1293,Peter Mcllroy
+1294,Rajeev Rastogi
+1296,Eamonn Keogh
+1297,Kaushik Chakrabarti
+1298,Michael Pazzani
+1299,Sharad Mehrotra
+1301,Zhiyuan Chen
+1302,Johannes Gehrke
+1303,Flip Korn
+1305,Shivnath Babu
+1306,Minos Garofalakis
+1307,Rajeev Rastogi
+1309,Surajit Chaudhuri
+1310,Gautam Das
+1311,Vivek Narasayya
+1313,Hoshi Mistry
+1314,Prasan Roy
+1315,S. Sudarshan
+1316,Krithi Ramamritham
+1318,H. V. Jagadish
+1319,Hui Jin
+1320,Beng Chin Ooi
+1321,Kian-Lee Tan
+1323,Shimin Chen
+1324,Phillip B. Gibbons
+1325,Todd C. Mowry
+1327,Aristides Gionis
+1328,Dimitrios Gunopulos
+1329,Nick Koudas
+1331,Vagelis Hristidis
+1332,Nick Koudas
+1333,Yannis Papakonstantinou
+1335,Panos Kalnis
+1336,Dimitris Papadias
+1338,Christian B&#246;hm
+1339,Bernhard Braunm&#252;ller
+1340,Florian Krebs
+1341,Hans-Peter Kriegel
+1343,Christian A. Lang
+1344,Ambuj K. Singh
+1346,Iosif Lazaridis
+1347,Sharad Mehrotra
+1349,Foto N. Afrati
+1350,Chen Li
+1351,Jeffrey D. Ullman
+1353,Jonathan Goldstein
+1354,Per-&#197;ke Larson
+1356,Sang-Ho Lee
+1357,Kyu-Young Whang
+1358,Yang-Sae Moon
+1359,Il-Yeol Song
+1361,Chris Olston
+1362,Boon Thau Loo
+1363,Jennifer Widom
+1365,D. B. Phatak
+1366,N. L. Sarda
+1367,S. Seshadri
+1368,S. Sudarshan
+1370,Andrew E. Wade
+1372,Eric Freeman
+1373,David Gelernter
+1375,Susan D. Urban
+1376,Suzanne W. Dietrich
+1377,Forouzan Golshani
+1379,Marc Andries
+1380,Luca Cabibbo
+1381,Jan Paredaens
+1382,Jan van den Bussche
+1384,Xiaolei Qian
+1386,Lotus Development Corp.
+1388,John Gaffney
+1390,Takeshi Fukuda
+1391,Yasuhiko Morimoto
+1392,Shimichi Morishita
+1393,Takeshi Tokuyama
+1395,Jan Chomicki
+1396,David Toman
+1397,Michael H. B&#246;hlen
+1399,Windsor W. Hsu
+1400,Alan Jay Smith
+1401,Honesty C. Young
+1403,Alex Dekhtyar
+1404,Robert Ross
+1405,V. S. Subrahmanian
+1407,Chen Li
+1408,Edward Chang
+1410,Thomas Eiter
+1411,James J. Lu
+1412,Thomas Lukasiewicz
+1413,V. S. Subrahmanian
+1415,Richard Snodgrass
+1417,Sushil Jajodia
+1418,Pierangela Samarati
+1419,Maria Luisa Sapino
+1420,V. S. Subrahmanian
+1422,Nikos Mamoulis
+1423,Dimitris Papadias
+1425,Laks V. S. Lakshmanan
+1426,Fereidoon Sadri
+1427,Subbu N. Subramanian
+1429,Wilfred Ng
+1431,Yannis Kotidis
+1432,Nick Roussopoulos
+1434,Dan Suciu
+1436,Heiko Schuldt
+1437,Gustavo Alonso
+1438,Catriel Beeri
+1439,Hans-J&#246;rg Schek
+1441,Richard Snodgrass
+1443,Richard Snodgrass
+1445,Asuman Dogac
+1447,Feng Tian
+1448,David J. DeWitt
+1449,Jianjun Chen
+1450,Chun Zhang
+1452,Mengchi Liu
+1453,Gillian Dobbie
+1454,Tok Wang Ling
+1456,Asuman Dogac
+1458,M. Cilia
+1459,A. P. Buchmann
+1461,W. H&#252;mmer
+1462,W. Lehner
+1463,H. Wedekind
+1465,Ibrahim Cingil
+1467,Rainer A. Sommer
+1468,Thomas R. Gulledge
+1469,David Bailey
+1471,Eugene Agichtein
+1472,Luis Gravano
+1473,Jeff Pavel
+1474,Viktoriya Sokolova
+1475,Aleksandr Voskoboynik
+1477,Mehul A. Shah
+1478,Sirish Chandrasekaran
+1480,Hans-Peter Kriegel
+1481,Andreas M&#252;ller
+1482,Marco P&#246;tke
+1483,Thomas Seidl
+1485,Edward Chang
+1486,Kwang-Ting Cheng
+1487,Lihyuarn L. Chang
+1489,Anindya Datta
+1490,Kaushik Dutta
+1491,Krithi Ramamritham
+1492,Helen Thomas
+1493,Debra VanderMeer
+1495,Kam-Yiu Lam
+1496,Edward Chan
+1497,Tei-Wei Kuo
+1498,S. W. Ng
+1499,Dick Hung
+1501,Jiawei Han
+1502,Hasan Jamil
+1503,Ying Lu
+1504,Liangyou Chen
+1505,Yaqin Liao
+1506,Jian Pei
+1508,Arthur Whitney
+1509,Dennis Shasha
+1511,Per-&#197;ke Larson
+1512,Dana Florescu
+1513,Goetz Graefe
+1514,Guido Moerkotte
+1515,Hamid Pirahesh
+1516,Harald Sch&#246;ning
+1518,Jun Chen
+1519,Xin Zhang
+1520,Songting Chen
+1521,Andreas Koeller
+1522,Elke A. Rundensteiner
+1524,C. Mohan
+1525,Larry Cable
+1526,Matthieu Devin
+1527,Scott Dietzen
+1528,Pat Helland
+1529,Dan Wolfson
+1531,Arnon Rosenthal
+1532,Klaus Dittrich
+1533,Jim Donahue
+1534,Bill Maimone
+1536,Dimitrios Gunopulos
+1537,Gautam Das
+1539,Peter J. Haas
+1540,Joseph M. Hellerstein
+1542,Fabio Casati
+1543,Ming-Chien Shan
+1545,Christoph Bussler
+1547,John R. Smith
+1549,Michael H. B&#246;hlen
+1550,Christian S. Jensen
+1551,Richard Thomas Snodgrass
+1553,Leonidas Fegaras
+1554,David Maier
+1556,Donald Kossmann
+1557,Michael J. Franklin
+1558,Gerhard Drasch
+1559,Wig Ag
+1561,Azer Bestavros
+1563,Krithi Ramamritham
+1564,Raju Sivasankaran
+1565,John A. Stankovic
+1566,Don T. Towsley
+1567,Ming Xiong
+1569,Jayant R. Haritsa
+1570,S. Seshadri
+1572,Tei-Wei Kuo
+1573,Aloysius K. Mok
+1575,&#214;zg&#252;r Ulusoy
+1576,Alejandro Buchmann
+1578,Kwei-Jay Lin
+1579,Ching-Shan Peng
+1581,Sang H. Son
+1582,Rasikan David
+1583,Bhavani Thuraisingham
+1585,S. F. Andler
+1586,J. Hansson
+1587,J. Eriksson
+1588,J. Mellin
+1589,M. Berndtsson
+1590,B. Eftring
+1592,Brad Adelberg
+1593,Ben Kao
+1594,Hector Garcia-Molina
+1596,Avi Silberschatz
+1597,Mike Stonebraker
+1598,Jeff Ullman
+1600,Mikael Berndtsson
+1601,J&#246;rgen Hansson
+1603,Ricardo Baeza-Yates
+1604,Gonzalo Navarro
+1606,Leonidas Fegaras
+1607,Chandrasekhar Srinivasan
+1608,Arvind Rajendran
+1609,David Maier
+1611,Jason T. L. Wang
+1612,Xiong Wang
+1613,Dennis Shasha
+1614,Bruce A. Shapiro
+1615,Kaizhong Zhang
+1616,Qicheng Ma
+1617,Zasha Weinberg
+1619,Ouri Wolfson
+1621,Zachary Ives
+1622,Alon Levy
+1623,Jayant Madhavan
+1624,Rachel Pottinger
+1625,Stefan Saroiu
+1626,Igor Tatarinov
+1627,Shiori Betzler
+1628,Qiong Chen
+1629,Ewa Jaslikowska
+1630,Jing Su
+1631,Wai Tak Theodora Yeung
+1633,Jos&#233; A. Blakeley
+1634,Anand Deshpande
+1636,Shridhar Shukla
+1637,Anand Deshpande
+1639,Svein Erik Bratsberg
+1640,&#216;ystein Torbj&#248;rnsen
+1642,Avigdor Gal
+1644,Anil K. Nori
+1646,Jennifer Widom
+1647,Adam Bosworth
+1648,Bruce Lindsay
+1649,Michael Stonebraker
+1650,Dan Suciu
+1652,Raghu Ramakrishnan
+1654,Joseph M. Hellerstein
+1655,Hans-Peter Kriegel
+1656,David Comet
+1657,Christos Falsutsos
+1658,Raghu Ramakrishnan
+1659,Paul Brown
+1661,Carlos Ordonez
+1662,Paul Cereghini
+1664,Anant Jhingran
+1666,Andreas Weininger
+1668,Chung-Min Chen
+1669,Munir Cochinwala
+1670,Claudio Petrone
+1671,Marc Pucci
+1672,Sunil Samtani
+1673,Patrizia Santa
+1675,Vincent Oria
+1676,M. Tamer &#214;zsu
+1677,Paul J. Iglinski
+1678,Shu Lin
+1679,Bin Yao
+1681,Chong Leng Goh
+1682,Beng Chin Ooi
+1683,Stephane Bressan
+1684,Kian-Lee Tan
+1686,Chung-Sheng Li
+1687,Lawrence D. Bergman
+1688,Yuan-Chi Chang
+1689,Vittorio Castelli
+1690,John R. Smith
+1692,Ling Liu
+1693,Calton Pu
+1694,David Buttler
+1695,Wei Han
+1696,Henrique Paques
+1697,Wei Tang
+1699,Jun Yang
+1700,Huacheng C. Ying
+1701,Jennifer Widom
+1703,Michael Gillmann
+1704,Jeanine Weissenfels
+1705,German Shegalov
+1706,Wolfgang Wonner
+1707,Gerhard Weikum
+1709,Manuel Rodr&#237;guez-Mart&#237;nez
+1710,Nick Roussopoulos
+1711,John M. McGann
+1712,Stephen Kelley
+1713,Vadim Katz
+1714,Zhexuan Song
+1715,Joseph J&#225;J&#225;
+1717,Wynne Hsu
+1718,Mong Li Lee
+1719,Kheng Guan Goh
+1721,Jian Pei
+1722,Runying Mao
+1723,Kan Hu
+1724,Hua Zhu
+1726,M. Jarke
+1727,C. Quix
+1728,D. Calvanese
+1729,M. Lenzerini
+1730,E. Franconi
+1731,S. Ligoudistianos
+1732,P. Vassiliadis
+1733,Y. Vassiliou
+1735,Helena Galhardas
+1736,Daniela Florescu
+1737,Dennis Shasha
+1738,Eric Simon
+1740,Sunita Sarawagi
+1741,Gayatri Sathe
+1743,Jochen van den Bercken
+1744,Jens-Peter Dittrich
+1745,Bernhard Seeger
+1747,Songting Chen
+1748,Yanlei Diao
+1749,Hongjun Lu
+1750,Zengping Tian
+1752,Paolo Merialdo
+1753,Paolo Atzeni
+1754,Marco Magnante
+1755,Giansalvatore Mecca
+1756,Marco Pecorone
+1758,Elke A. Rundensteiner
+1759,Kajal T. Claypool
+1760,Li Chen
+1761,Hong Su
+1762,Keiji Oenoki
+1764,Alexandros Labrinidis
+1765,Nick Roussopoulos
+1767,Jianjun Chen
+1768,David J. DeWitt
+1769,Feng Tian
+1770,Yuan Wang
+1772,Yuan-Chi Chang
+1773,Lawrence Bergman
+1774,Vittorio Castelli
+1775,Chung-Sheng Li
+1776,Ming-Ling Lo
+1777,John R. Smith
+1779,H. V. Jagadish
+1780,Nick Koudas
+1781,Divesh Srivastava
+1783,Luca Forlizzi
+1784,Ralf Hartmut G&#252;ting
+1785,Enrico Nardelli
+1786,Markus Schneider
+1788,Simonas &#352;altenis
+1789,Christian S. Jensen
+1790,Scott T. Leutenegger
+1791,Mario A. Lopez
+1793,Hyoseop Shin
+1794,Bongki Moon
+1795,Sukho Lee
+1797,Junghoo Cho
+1798,Narayanan Shivakumar
+1799,Hector Garcia-Molina
+1801,Lucian Popa
+1802,Alin Deutsch
+1803,Arnaud Sahuguet
+1804,Val Tannen
+1806,Roy Goldman
+1807,Jennifer Widom
+1809,Rakesh Agrawal
+1810,Edward L. Wimmers
+1812,Tom Barclay
+1813,Jim Gray
+1814,Don Slutz
+1816,Mong Li Lee
+1817,Masaru Kitsuregawa
+1818,Beng Chin Ooi
+1819,Kian-Lee Tan
+1820,Anirban Mondal
+1822,Witold Litwin
+1823,Thomas Schwarz
+1825,Prasan Roy
+1826,S. Seshadri
+1827,S. Sudarshan
+1828,Siddhesh Bhobe
+1830,Ron Avnur
+1831,Joseph M. Hellerstein
+1833,Hui-I Hsiao
+1834,Inderpal Narang
+1836,Eric Kintzer
+1838,Melliyal Annamalai
+1839,Rajiv Chopra
+1840,Samuel DeFazio
+1841,Susan Mavris
+1843,Nagavamsi Ponnekanti
+1844,Hanuma Kodavalla
+1846,Wolfgang Lehner
+1847,Richard Sidle
+1848,Hamid Pirahesh
+1849,Roberta Wolfgang Cochrane
+1851,Fanny Wattez
+1852,Sophie Cluet
+1853,V&#233;ronique Benzaken
+1854,Guy Ferran
+1855,Christian Fiegel
+1857,Ronald G. Ross
+1859,Val Huber
+1861,Jun Rao
+1862,Kenneth A. Ross
+1864,Dimitrios Gunopulos
+1865,George Kollios
+1866,Vassilis J. Tsotras
+1867,Carlotta Domeniconi
+1869,Florian Waas
+1870,C&#233;sar Galindo-Legaria
+1872,Swarup Acharya
+1873,Phillip B. Gibbons
+1874,Viswanath Poosala
+1876,Sridhar Ramaswamy
+1877,Rajeev Rastogi
+1878,Kyuseok Shim
+1880,JungHwan Oh
+1881,Kien A. Hua
+1883,Alexander S. Szalay
+1884,Peter Z. Kunszt
+1885,Ani Thakar
+1886,Jim Gray
+1887,Don Slutz
+1888,Robert J. Brunner
+1890,Rakesh Agrawal
+1891,Ramakrishnan Srikant
+1893,B. P&#244;ssas
+1894,M. Carvalho
+1895,R. Resende
+1896,W. Meita
+1897,Jr.
+1899,Awais Rashid
+1900,Peter Sawyer
+1902,Fabio Casati
+1903,Umesh Dayal
+1904,Ming-Chien Shan
+1906,W. Hasselbring
+1907,W.-J. van den Heuvel
+1908,G. J. Houben
+1909,R.-D. Kutsche
+1910,B. Rieger
+1911,M. Roantree
+1912,K. Subieta
+1914,Anant Jhingran
+1916,Phillip A. Bernstein
+1917,Alon Y. Halevy
+1918,Rachel A. Pottinger
+1920,Joe Chun-Hung Yuen
+1921,Edward Chan
+1922,Kam-Yiu Lam
+1923,H. W. Leung
+1925,Alon Y. Halevy
+1927,Thomas Vetterli
+1928,Anca Vaduva
+1929,Martin Staudt
+1931,Dongwon Lee
+1932,Wesley W. Chu
+1934,Jan Van den Bussche
+1936,Till Westmann
+1937,Donald Kossmann
+1938,Sven Helmer
+1939,Guido Moerkotte
+1941,Bettina Kemme
+1942,Gustavo Alonso
+1944,Rosa Meo
+1946,Themistoklis Palpanas
+1948,Elena Baralis
+1949,Jennifer Widom
+1951,Jim Melton
+1952,Jan-Eike Michels
+1953,Vanja Josifovski
+1954,Krishna Kulkarni
+1955,Peter Schwarz
+1956,Kathy Zeidenstein
+1958,Patrick Bosc
+1959,Amihai Motro
+1960,Gabriella Pasi
+1962,David Carmel
+1963,Yoelle Maarek
+1964,Aya Soffer
+1966,Terence Critchlow
+1968,Raymond T. Ng
+1969,Alan Wagner
+1970,Yu Yin
+1972,Johannes Gehrke
+1973,Flip Korn
+1974,Divesh Srivastava
+1976,Jiawei Han
+1977,Jian Pei
+1978,Guozhu Dong
+1979,Ke Wang
+1981,Ren&#233;e J. Miller
+1982,Mauricio A. Hern&#225;ndez
+1983,Laura M. Haas
+1984,Lingling Yan
+1985,C. T. Howard Ho
+1986,Ronald Fagin
+1987,Lucian Popa
+1989,J. K. Lawder
+1990,P. J. H. King
+1992,Charu C. Aggarwal
+1994,Chiara Biancheri
+1995,Jean-Christophe Pazzaglia
+1996,Gavino Paddeu
+1998,Meikel Poess
+1999,Chris Floyd
+2001,Peter Buneman
+2002,Wenfei Fan
+2003,J&#233;r&#244;me Sim&#233;on
+2004,Scott Weinstein
+2006,Ling Feng
+2007,Marfred A. Jeusfeld
+2008,Jeroen Hoppenbrouwers
+2010,Elisa Bertino
+2011,Ahmed K. Elmagarmid
+2012,Mohand-Sa&#239;d Hacid
+2014,Calton Pu
+2015,Karsten Schwan
+2016,Jonathan Walpole
+2018,Opher Etzion
+2020,Angela Bonifati
+2021,Stefano Ceri
+2023,Stella Gatziu
+2024,Manfred Jeusfeld
+2025,Martin Staudt
+2026,Yannis Vassiliou
+2028,Andreas Paepcke
+2029,Hector Garcia-Molina
+2030,Gerard Rodriguez-Mula
+2031,Junghoo Cho
+2033,Eric N. Hanson
+2034,Lloyd X. Noronha
+2036,Tim Kempster
+2037,Colin Stirling
+2038,Peter Thanisch
+2040,Leonid Libkin
+2042,Serge Abiteboul
+2044,Peter Revesz
+2045,Rui Chen
+2046,Pradip Kanjamala
+2047,Yiming Li
+2048,Yuguo Liu
+2049,Yonghui Wang
+2051,John F. Roddick
+2052,Lina Al-Jadir
+2053,Leopoldo Bertossi
+2054,Marlon Dumas
+2055,Florida Estrella
+2056,Heidi Gregersen
+2057,Kathleen Hornsby
+2058,Jens Lufter
+2059,Federica Mandreoli
+2060,Tomi M&#228;nnist&#246;
+2061,Enric Mayol
+2062,Lex Wedemeijer
+2064,Alexandros Labrinidis
+2065,Nick Roussopoulos
+2067,Elaheh Pourabbas
+2068,Maurizio Rafanelli
+2070,Costas Vassilakis
+2072,Guozhu Dong
+2073,Jianwen Su
+2075,Hartmut Liefke
+2076,Dan Suciu
+2078,Andrew Eisenberg
+2079,Jim Melton
+2081,Jeffrey Parsons
+2082,Yair Wand
+2084,Yingwei Cui
+2085,Jennifer Widom
+2086,Janet L. Wiener
+2088,Heiko Ludwig
+2089,Paul Grefen
+2091,Krishna Kant
+2092,Prasant Mohapatra
+2094,Sena Arpinar
+2095,Asuman Dogac
+2097,Kun-Lung Wu
+2098,Philip S. Yu
+2100,Yannis Theodoridis
+2101,Mario A. Nascimento
+2103,Eliseo Clementini
+2104,Paolino Di Felice
+2106,Ron Musick
+2107,Terence Critchlow
+2109,Kaippallimalil J. Jacob
+2110,Dennis Shasha
+2112,Panos Vassiliadis
+2113,Timos Sellis
+2115,Andrew Eisenberg
+2116,Jim Melton
+2118,Donald Kossmann
+2119,Konrad Stocker
+2121,Ralf Hartmut G&#252;ting
+2122,Michael H. B&#246;hlen
+2123,Martin Erwig
+2124,Christian S. Jensen
+2125,Nikos A. Lorentzos
+2126,Markus Schneider
+2127,Michalis Vazirgiannis
+2129,Christian B&#246;hm
+2131,Barbara Staudt Lerner
+2133,Karl Aberer
+2135,Karl Aberer
+2137,Maria Halkidi
+2138,Yannis Batistakis
+2139,Michalis Vazirgiannis
+2141,Shi Ming Huang
+2142,Irene Kwan
+2143,Chih He Li
+2145,Leonid Libkin
+2147,Frank Neven
+2149,Bart Kuijpers
+2151,Gerhard Weikum
+2153,Len Seligman
+2155,Sam S. Lightstone
+2156,Guy Lohman
+2157,Danny Zilio
+2159,Marianne Winslett
+2161,Marianne Winslett
+2163,Jim Melton
+2165,Jim Melton
+2166,Jan Eike Michels
+2167,Vanja Josifovski
+2168,Krishna Kulkarni
+2169,Peter Schwarz
+2171,Ken Ross
+2173,Kenneth A. Ross
+2174,Theodore Johnson
+2175,Richard Thomas Snodgrass
+2177,Nicolas Bruno
+2178,Surajit Chaudhuri
+2179,Luis Gravano
+2181,Ronald Fagin
+2183,Leonid Libkin
+2185,Andrew Eisenberg
+2186,Jim Melton
+2188,Toon Calders
+2189,Raymond T. Ng
+2190,Jef Wijsen
+2192,Won Kim
+2194,Won Kim
+2196,Kaushik Chakrabarti
+2197,Eamonn Keogh
+2198,Sharad Mehrotra
+2199,Michael Pazzani
+2201,Paolo Ciaccia
+2202,Marco Patella
+2204,Wolfgang May
+2205,Bertram Lud&#228;scher
+2207,Yufei Tao
+2208,Dimitris Papadias
+2209,Jun Zhang
+2211,Phillip B. Gibbons
+2212,Yossi Matias
+2213,Viswanath Poosala
+2215,Yong Yao
+2216,Johannes Gehrke
+2218,Avigdor Gal
+2220,Joachim Hammer
+2222,Mary Fern&#225;ndez
+2223,Yana Kadiyska
+2224,Dan Suciu
+2225,Atsuyuki Morishima
+2226,Wang-Chiew Tan
+2228,Luc Bouganim
+2229,Maria Claudia Cavalcanti
+2230,Fran&#231;oise Fabret
+2231,Maria Luiza Campos
+2232,Fran&#231;ois Llirbat
+2233,Marta Mattoso
+2234,Rubens Melo
+2235,Ana Maria Moura
+2236,Esther Pacitti
+2237,Fabio Porto
+2238,Margareth Simoes
+2239,Eric Simon
+2240,Asterio Tanaka
+2241,Patrick Valduriez
+2243,Nam Huyn
+2245,Ken Ross
+2247,Kenneth A. Ross
+2249,Shivnath Babu
+2250,Jennifer Widom
+2252,Alexandros Labrinidis
+2254,Alexandros Labrinidis
+2255,Alberto O. Mendelzon
+2257,Kenneth A. Ross
+2259,Daniel Barbar&#225;
+2261,Daniel Barbar&#225;
+2263,Salvatore J. Stolfo
+2264,Wenke Lee
+2265,Philip K. Chan
+2266,Wei Fan
+2267,Eleazar Eskin
+2269,Daniel Barbar&#225;
+2270,Julia Couto
+2271,Sushil Jajodia
+2272,Ningning Wu
+2274,Jo&#227;o B. D. Cabrera
+2275,Lundy Lewis
+2276,Raman K. Mehra
+2278,Wenke Lee
+2279,Wei Fan
+2281,Y&#252;cel Saygin
+2282,Vassilios S. Verykios
+2283,Chris Clifton
+2285,O. de Vel
+2286,A. Anderson
+2287,M. Corney
+2288,G. Mohay
+2290,Zachary G. Ives
+2291,Qiong Luo
+2293,Alexandros Labrinidis
+2295,M. Winslett
+2296,K. Chang
+2297,A. Doan
+2298,J. Han
+2299,C. Zhai
+2300,Y. Zhou
+2302,Amit Sheth
+2304,Kenneth A. Ross
+2306,Isabel Cruz
+2307,Ashfaq Khokhar
+2308,Bing Liu
+2309,Prasad Sistla
+2310,Ouri Wolfson
+2311,Clement Yu
+2313,Peter Fankhauser
+2315,Karl Aberer
+2317,Albrecht Schmidt
+2318,Florian Waas
+2319,Martin Kersten
+2320,Daniela Florescu
+2321,Michael J. Carey
+2322,Ioana Manolescu
+2323,Ralph Busse
+2325,Jayavel Shanmugasundaram
+2326,Eugene Shekita
+2327,Jerry Kiernan
+2328,Rajasekar Krishnamurthy
+2329,Efstratios Viglas
+2330,Jeffrey Naughton
+2331,Igor Tatarinov
+2333,Dan Suciu
+2335,Wei Han
+2336,David Buttler
+2337,Calton Pu
+2339,Bertram Lud&#228;scher
+2340,Richard Marciano
+2341,Reagan Moore
+2343,Shu Yao Chien
+2344,Vassilis J. Tsotras
+2345,Carlo Zaniolo
+2347,David Lomet
+2349,Avigdor Gal
+2351,Jayen Vaghani
+2352,Kotagiri Ramamohanarao
+2353,David B. Kemp
+2354,Zoltan Somogyi
+2355,Peter J. Stuckey
+2356,Tim S. Leask
+2357,James Harland
+2359,Byung Suk Lee
+2360,Gio Wiederhold
+2362,Raghu Ramakrishnan
+2363,Divesh Srivastava
+2364,S. Sudarshan
+2365,Praveen Seshadri
+2367,Werner Kie&#223;ling
+2368,Helmut Schmidt
+2369,Werner Strau&#223;
+2370,Gerhard D&#252;nzinger
+2372,Kotagiri Ramamohanarao
+2373,James Harland
+2375,Marcia A. Derr
+2376,Shinichi Morishita
+2377,Geoffrey Phipps
+2379,Edward Sciore
+2381,K. Ramamohanarao
+2383,Dimitris Papadias
+2384,Timos Sellis
+2386,King Ip Lin
+2387,H. V. Jagadish
+2388,Christos Faloutsos
+2390,Peter Baumann
+2392,Wesley W. Chu
+2393,Ion T. Ieong
+2394,Ricky K. Taira
+2396,H. J. Schek
+2398,Ralf Hartmut G&#252;ting
+2400,Daniel Barbar&#225;-Mill&#225;
+2401,Hector Garcia-Molina
+2403,Elisa Bertino
+2405,Jim Melton
+2406,Andrew Eisenberg
+2408,Andrew Eisenberg
+2410,Luca Cardelli
+2412,Leonid Libkin
+2414,H. V. Jagadish
+2416,Marc H. Scholl
+2418,Karl Aberer
+2420,Karl Aberer
+2422,Nabil Kamel
+2423,Ping Wu
+2424,Stanley Y. W. Su
+2426,Kyu Young Whang
+2427,Sang Wook Kim
+2428,Gio Wiederhold
+2430,Dimitrios Georgakopoulos
+2431,Marek Rusinkiewicz
+2432,Witold Litwin
+2434,Amit Sheth
+2435,John Miller
+2436,Krys Kochut
+2437,Budak Arpinar
+2439,Amit Sheth
+2441,U&#287;ur &#199;etintemel
+2443,Alexandros Labrinidis
+2445,Mehul A. Shah
+2446,Michael J. Franklin
+2447,Samuel Madden
+2448,Joseph M. Hellerstein
+2450,Robert Meersman
+2451,Amit Sheth
+2453,Peter Spyns
+2454,Robert Meersman
+2455,Mustafa Jarrar
+2457,York Sure
+2458,Steffen Staab
+2459,Rudi Studer
+2461,Christoph Bussler
+2462,Dieter Fensel
+2463,Alexander Maedche
+2465,Daniel Barbar&#225;
+2466,Tomasz Imieli&#324;ski
+2468,Chris Nyberg
+2469,Tom Barclay
+2470,Zarka Cvetanovic
+2471,Jim Gray
+2472,Dave Lomet
+2474,Seth J. White
+2475,David J. DeWitt
+2477,Arun Swami
+2478,K. Bernhard Schiefer
+2480,W. I. Grosky
+2481,D. V. Sreenath
+2482,F. Fotouhi
+2484,David Buttler
+2485,Matthew Coleman
+2486,Terence Critchlow
+2487,Renato Fileto
+2488,Wei Han
+2489,Calton Pu
+2490,Daniel Rocco
+2491,Li Xiong
+2493,Carole Goble
+2494,David De Roure
+2496,Karl Aberer
+2498,Tim Finin
+2499,Anupam Joshi
+2501,E. Michael Maximilien
+2502,Munindar P. Singh
+2504,Kemafor Anyanwu
+2505,Amit Sheth
+2507,Karl Aberer
+2508,Philippe Cudr&#233;-Mauroux
+2509,Manfred Hauswirth
+2511,Ernest Teniente
+2512,Antoni Oliv&#233;
+2514,Joan Peckham
+2515,Bonnie MacKellar
+2516,Michael Doherty
+2518,Marjorie Templeton
+2519,Herbert Henley
+2520,Edward Maros
+2521,Darrel J. Van Buer
+2523,Ralf Hartmut G&#252;ting
+2524,Markus Schneider
+2526,Chris Clifton
+2527,Hector Garcia-Molina
+2528,David Bloom
+2530,Panos Constantopoulos
+2531,Matthias Jarke
+2532,John Mylopoulos
+2533,Yannis Vassiliou
+2535,Asit Dan
+2536,Philip S. Yu
+2537,Jen Yao Chung
+2539,Divyakant Agrawal
+2540,Amr El Abbadi
+2541,Richard Jeffers
+2542,Lijing Lin
+2544,Gad M. Landau
+2545,Jeanette P. Schmidt
+2546,Vassilis J. Tsotras
+2548,Alfons Kemper
+2549,Donald Kossmann
+2551,Stanley Y. W. Su
+2553,Serge Abiteboul
+2554,Catriel Beeri
+2556,Antonio Albano
+2557,Giorgio Ghelli
+2558,Renzo Orsini
+2560,Malcolm Atkinson
+2561,Ronald Morrison
+2563,V&#233;ronique Benzaken
+2564,Anne Doucet
+2566,M. Tamer &#214;zsu
+2567,Randal Peters
+2568,Duane Szafron
+2569,Boman Irani
+2570,Anna Lipka
+2571,Adriana Mu&#241;oz
+2573,Stratis D. Viglas
+2574,Jeffrey F. Naughton
+2576,Panos Kalnis
+2577,Wee Siong Ng
+2578,Beng Chin Ooi
+2579,Dimitris Papadias
+2580,Kian-Lee Tan
+2582,Mirek Riedewald
+2583,Divyakant Agrawal
+2584,Amr El Abbadi
+2586,Peter Buneman
+2587,Sanjeev Khanna
+2588,Keishi Tajima
+2589,Wang-Chiew Tan
+2591,Vladimir Zadorozhny
+2592,Louiqa Raschid
+2593,Maria Esther Vidal
+2594,Tolga Urhan
+2595,Laura Bright
+2597,Chris Olston
+2598,Jennifer Widom
+2600,Alin Dobra
+2601,Minos Garofalakis
+2602,Johannes Gehrke
+2603,Rajeev Rastogi
+2605,Samuel Madden
+2606,Mehul Shah
+2607,Joseph M. Hellerstein
+2608,Vijayshankar Raman
+2610,Avigdor Gal
+2612,Kenneth A. Ross
+2614,Ken Ross
+2616,Michael Stonebraker
+2618,Richard Thomas Snodgrass
+2620,Alexandros Labrinidis
+2622,Albertas Caplinskas
+2623,Johann Eder
+2624,Olegas Vasilecas
+2626,Carole Goble
+2627,Brian Read
+2629,Michael Dertouzos
+2631,Marianne Winslett
+2633,Philip M. Lewis
+2634,Arthur Bernstein
+2635,Michael Kifer
+2637,Ian H. Witten
+2638,Eibe Frank
+2640,Dan Suciu
+2642,Len Seligman
+2644,Marianne Winslett
+2646,Leonid Libkin
+2648,Christoph Quix
+2649,Mareike Schoop
+2650,Manfred Jeusfeld
+2652,Riza Cenk Erdur
+2653,O&#287;uz Dikenelli
+2655,HyoungDo Kim
+2657,Zhan Cui
+2658,Dean Jones
+2659,Paul O'Brien
+2661,Karl Aberer
+2663,Karl Aberer
+2665,Michael O. Ball
+2666,Meng Ma
+2667,Louiqa Raschid
+2668,Zhengying Zhao
+2670,Christoph Bussler
+2672,Haixun Wang
+2673,Wei Wang
+2674,Jiong Yang
+2675,Philip S. Yu
+2677,Yang-Sae Moon
+2678,Kyu-Young Whang
+2679,Wook-Shin Han
+2681,Cecilia M. Procopiuc
+2682,Michael Jones
+2683,Pankaj K. Agarwal
+2684,T. M. Murali
+2686,Jiong Yang
+2687,Wei Wang
+2688,Philip S. Yu
+2689,Jiawei Han
+2691,Yong-Jin Choi
+2692,Chin-Wan Chung
+2694,Nitin Thaper
+2695,Sudipto Guha
+2696,Piotr Indyk
+2697,Nick Koudas
+2699,Yannis Sismanis
+2700,Antonios Deligiannakis
+2701,Nick Roussopoulos
+2702,Yannis Kotidis
+2704,Charu C. Aggarwal
+2706,Prakash Ramanan
+2708,Sudipto Guha
+2709,H. V. Jagadish
+2710,Nick Koudas
+2711,Divesh Srivastava
+2712,Ting Yu
+2714,Arjen P. de Vries
+2715,Nikos Mamoulis
+2716,Niels Nes
+2717,Martin Kersten
+2719,Nicolas Bruno
+2720,Nick Koudas
+2721,Divesh Srivastava
+2723,Kevin Chen-Chuan Chang
+2724,Seung-won Hwang
+2726,Yufei Tao
+2727,Dimitris Papadias
+2729,Like Gao
+2730,X. Sean Wang
+2732,Neoklis Polyzotis
+2733,Minos Garofalakis
+2735,Yannis Papakonstantinou
+2736,Michalis Petropoulos
+2737,Vasilis Vassalos
+2739,Igor Tatarinov
+2740,Stratis D. Viglas
+2741,Kevin Beyer
+2742,Jayavel Shanmugasundaram
+2743,Eugene Shekita
+2744,Chun Zhang
+2746,Hakan Hacig&#252;m&#252;&#351;
+2747,Bala Iyer
+2748,Chen Li
+2749,Sharad Mehrotra
+2751,Michael Gillmann
+2752,Gerhard Weikum
+2753,Wolfgang Wonner
+2755,Tamraparni Dasu
+2756,Theodore Johnson
+2757,S. Muthukrishnan
+2758,Vladislav Shkapenyuk
+2760,Gang Luo
+2761,Curt J. Ellmann
+2762,Peter J. Haas
+2763,Jeffrey F. Naughton
+2765,Nicolas Bruno
+2766,Surajit Chaudhuri
+2768,Vijayshankar Raman
+2769,Joseph M. Hellerstein
+2771,Anindya Datta
+2772,Kaushik Dutta
+2773,Helen Thomas
+2774,Debra VanderMeer
+2775,Suresha
+2776,Krithi Ramamritham
+2778,Torsten Grust
+2780,Chin-Wan Chung
+2781,Jun-Ki Min
+2782,Kyuseok Shim
+2784,Raghav Kaushik
+2785,Philip Bohannon
+2786,Jeffrey F Naughton
+2787,Henry F Korth
+2789,Jingren Zhou
+2790,Kenneth A. Ross
+2792,Shimin Chen
+2793,Phillip B. Gibbons
+2794,Todd C. Mowry
+2795,Gary Valentin
+2797,Wei Li
+2798,Dengfeng Gao
+2799,Richard Thomas Snodgrass
+2801,Juliana Freire
+2802,Jayant R. Haritsa
+2803,Maya Ramanath
+2804,Prasan Roy
+2805,J&#233;r&#244;me Sim&#233;on
+2807,Alexander Hinneburg
+2808,Daniel A. Keim
+2809,Markus Wawryniuk
+2811,Jessica M. Phan
+2812,Raymond Ng
+2814,Sanjay Agrawal
+2815,Surajit Chaudhuri
+2816,Gautam Das
+2818,Jiawei Han
+2819,Jianyong Wang
+2820,Guozhu Dong
+2821,Jian Pei
+2822,Ke Wang
+2824,Daniela Florescu
+2825,Andreas Gr&#252;nhagen
+2826,Donald Kossmann
+2827,Steffen Rost
+2829,Valter Crescenzi
+2830,Giansalvatore Mecca
+2831,Paolo Merialdo
+2833,Chuck Cranor
+2834,Yuan Gao
+2835,Theodore Johnson
+2836,Vlaidslav Shkapenyuk
+2837,Oliver Spatscheck
+2839,Samuel Madden
+2840,Joseph M. Hellerstein
+2842,Wai Fu Fung
+2843,David Sun
+2844,Johannes Gehrke
+2846,Tengjiao Wang
+2847,Shiwei Tang
+2848,Dongqing Yang
+2849,Jun Gao
+2850,Yuqing Wu
+2851,Jian Pei
+2853,Pradnya Karbhari
+2854,Michael Rabinovich
+2855,Zhen Xiao
+2856,Fred Douglis
+2858,Li Chen
+2859,Elke A. Rundensteiner
+2860,Song Wang
+2862,Daniel J. Abadi
+2863,Mitch Cherniack
+2865,Denilson Barbosa
+2866,Alberto Mendelzon
+2867,John Keenleyside
+2868,Kelly Lyons
+2870,Anja Theobald
+2871,Gerhard Weikum
+2873,Xin Zhang
+2874,Mukesh Mulchandani
+2875,Steffen Christ
+2876,Brian Murphy
+2877,Elke A. Rundensteiner
+2879,Mehmet Altinel
+2880,Qiong Luo
+2881,Sailesh Krishnamurthy
+2882,C. Mohan
+2883,Hamid Pirahesh
+2884,Bruce G. Lindsay
+2885,Honguk Woo
+2886,Larry Brown
+2888,Volker Markl
+2889,Guy Lohman
+2891,Jesse Anton
+2892,Lawrence Jacobs
+2893,Xiang Liu
+2894,Jordan Parker
+2895,Zheng Zeng
+2896,Tie Zhong
+2898,Qiong Luo
+2899,Sailesh Krishnamurthy
+2900,C. Mohan
+2901,Hamid Pirahesh
+2902,Honguk Woo
+2903,Bruce G. Lindsay
+2904,Jeffrey F. Naughton
+2906,Meikel Poess
+2907,Bryan Smith
+2908,Lubor Kollar
+2909,Paul Larson
+2911,The TimesTen Team
+2913,Jun Rao
+2914,Chun Zhang
+2915,Nimrod Megiddo
+2916,Guy Lohman
+2918,Alexander S. Szalay
+2919,Jim Gray
+2920,Ani R. Thakar
+2921,Peter Z. Kunszt
+2922,Tanu Malik
+2923,Jordan Raddick
+2924,Christopher Stoughton
+2925,Jan vandenBerg
+2927,Andreas Weininger
+2929,Ravi Kanth V Kothuri
+2930,Siva Ravada
+2931,Daniel Abugov
+2933,Vanja Josifovski
+2934,Peter Schwarz
+2935,Laura Haas
+2936,Eileen Lin
+2938,Peter Bumbulis
+2939,Ivan T. Bowman
+2941,Suparna Bhattacharya
+2942,C. Mohan
+2943,Karen W. Brannon
+2944,Inderpal Narang
+2945,Hui-I Hsiao
+2946,Mahadevan Subramanian
+2948,Asuman Dogac
+2949,Yusuf Tambag
+2950,Pinar Pembecioglu
+2951,Sait Pektas
+2952,Gokce Laleci
+2953,Gokhan Kurt
+2954,Serkan Toprak
+2955,Yildiray Kabak
+2957,Minos Garofalakis
+2958,Phillip B. Gibbons
+2960,Surajit Chaudhuri
+2961,Ashish Kumar Gupta
+2962,Vivek Narasayya
+2964,Jignesh Patel
+2966,Alberto H. F. Laender
+2967,Berthier A. Ribeiro-Neto
+2968,Altigran S. da Silva
+2969,Juliana S. Teixeira
+2971,Andrew Eisenberg
+2973,Roger Barga
+2974,David Lomet
+2976,Avigdor Gal
+2978,Frank G. Goethals
+2980,Joachim Hammer
+2982,Birgitta K&#246;nig-Ries
+2983,Kia Makki
+2984,Sam Makki
+2985,Charles Perkins
+2986,Niki Pissinou
+2987,Peter Reiher
+2988,Peter Scheuermann
+2989,Jari Veijalainen
+2990,Ouri Wolfson
+2992,Karl Aberer
+2994,Karl Aberer
+2996,Aris Ouksel
+2998,Fernando Berzal
+2999,Nicolf&#225;s Mat&#237;n
+3001,Rafael Camps Par&#233;
+3003,Maria Halkidi
+3004,Yannis Batistakis
+3005,Michalis Vazirgiannis
+3007,Marianne Winslett
+3009,Marianne Winslett
+3011,Ratko Orlandic
+3012,Jack Lukaszuk
+3013,Craig Swietlik
+3015,Elaheh Pourabbas
+3016,Maurizio Rafanelli
+3018,Nancy Wiegand
+3020,Harald Kosch
+3022,Dennis Shasha
+3023,Philippe Bonnet
+3025,Christoph Bussler
+3027,Avigdor Gal
+3029,Giedrius Slivinskas
+3030,Christian S. Jensen
+3031,Richard Thomas Snodgrass
+3033,Paul Cotton
+3035,Minos Garofalakis
+3036,Johannes Gehrke
+3037,Rajeev Rastogi
+3039,C. Mohan
+3041,Dennis Shasha
+3042,Philippe Bonnet
+3044,Hongjun Lu
+3045,Guoren Wang
+3046,Ge Yu
+3047,Yubin Bao
+3048,Jianhua Lv
+3049,Yaxin Yu
+3051,Elke A. Rundensteiner
+3052,Matthew O. Ward
+3053,Jing Yang
+3054,Punit R. Doshi
+3056,Joseph M. Hellerstein
+3057,Jennifer Widom
+3059,Philippe Bonnet
+3061,Edwin M. Knorr
+3062,Raymond T. Ng
+3064,Stephen Blott
+3065,Henry F. Korth
+3066,Abraham Silberschatz
+3068,Laurent Vieille
+3070,Randall G. Bello
+3071,Karl Dias
+3072,Alan Downing
+3073,James J. Feenan
+3074,Jr.
+3075,James L. Finnerty
+3076,William D. Norcott
+3077,Harry Sun
+3078,Andrew Witkowski
+3079,Mohamed Ziauddin
+3081,Min Fang
+3082,Narayanan Shivakumar
+3083,Hector Garcia-Molina
+3084,Rajeev Motwani
+3085,Jeffrey D. Ullman
+3087,Clara Nippl
+3088,Bernhard Mitschang
+3090,Lars Arge
+3091,Octavian Procopiuc
+3092,Sridhar Ramaswamy
+3093,Torsten Suel
+3094,Jeffrey Scott Vitter
+3096,Rasa Bliujute
+3097,Christian S. Jensen
+3098,Simonas Saltenis
+3099,Giedrius Slivinskas
+3101,Gholamhosein Sheikholeslami
+3102,Surojit Chatterjee
+3103,Aidong Zhang
+3105,Reinhard Braumandl
+3106,Jens Clau&#223;en
+3107,Alfons Kemper
+3109,Sergio Greco
+3111,J. D. Tygar
+3113,Roy Goldman
+3114,Narayanan Shivakumar
+3115,Suresh Venkatasubramanian
+3116,Hector Garcia-Molina
+3118,Erik Riedel
+3119,Garth A. Gibson
+3120,Christos Faloutsos
+3122,Jason McHugh
+3123,Jennifer Widom
+3125,Swarup Acharya
+3126,Phillip B. Gibbons
+3127,Viswanath Poosala
+3129,Arnaud Sahuguet
+3130,Fabien Azavant
+3132,Theodore Johnson
+3134,Anindya Datta
+3135,Krithi Ramamritham
+3136,Helen M. Thomas
+3138,David Campbell
+3140,Sin Yeung Lee
+3141,Tok Wang Ling
+3143,Jianzhong Li
+3144,Doron Rotem
+3145,Jaideep Srivastava
+3147,Felix Naumann
+3148,Ulf Leser
+3149,Johann Christoph Freytag
+3151,Qi Cheng
+3152,Jarek Gryz
+3153,Fred Koo
+3154,T. Y. Cliff Leung
+3155,Linqi Liu
+3156,Xiaoyan Qian
+3157,K. Bernhard Schiefer
+3159,Marcel Kornacker
+3161,Surajit Chaudhuri
+3162,Luis Gravano
+3164,Ke Wang
+3165,Senqiang Zhou
+3166,Shiang Chen Liew
+3168,J&#233;r&#244;me Darmont
+3169,Michel Schneider
+3171,Jun Rao
+3172,Kenneth A. Ross
+3174,Kaladhar Voruganti
+3175,M. Tamer &#214;zsu
+3176,Ronald C. Unrau
+3178,Peter A. Boncz
+3179,Stefan Manegold
+3180,Martin L. Kersten
+3182,Chee Yong Chan
+3183,Yannis E. Ioannidis
+3185,Mary Tork Roth
+3186,Fatma Ozcan
+3187,Laura M. Haas
+3189,Daniela Florescu
+3190,Alon Y. Levy
+3191,Dan Suciu
+3192,Khaled Yagoub
+3194,Michael L. Brodie
+3195,Surajit Chaudhuri
+3197,Torben Bach Pedersen
+3198,Christian S. Jensen
+3199,Curtis E. Dyreson
+3201,Philip A. Bernstein
+3202,Shankar Pal
+3203,David Shutt
+3205,Serge Abiteboul
+3206,Vincent Aguilera
+3207,S&#233;bastien Ailleret
+3208,Bernd Amann
+3209,Sophie Cluet
+3210,Brendan Hills
+3211,Fr&#233;d&#233;ric Hubert
+3212,Jean-Claude Mamou
+3213,Am&#233;lie Marian
+3214,Laurent Mignet
+3215,Tova Milo
+3216,Cassio Souza dos Santos
+3217,Bruno Tessier
+3218,Anne-Marie Vercoustre
+3220,Weidong Chen
+3221,Jyh-Herng Chow
+3222,You-Chin Fuh
+3223,Jean Grandbois
+3224,Michelle Jou
+3225,Nelson Mendon&#231;a Mattos
+3226,Brian T. Tran
+3227,Yun Wang
+3229,Masahisa Tamura
+3230,Masaru Kitsuregawa
+3232,Umeshwar Dayal
+3234,H. V. Jagadish
+3235,Olga Kapitskaia
+3236,Raymond T. Ng
+3237,Divesh Srivastava
+3239,Sunita Sarawagi
+3241,Jayavel Shanmugasundaram
+3242,Kristin Tufte
+3243,Chun Zhang
+3244,Gang He
+3245,David J. DeWitt
+3246,Jeffrey F. Naughton
+3248,Alfons Kemper
+3249,Donald Kossmann
+3250,Christian Wiesner
+3252,Alexander Hinneburg
+3253,Daniel A. Keim
+3255,Evaggelia Pitoura
+3256,Panos K. Chrysanthis
+3258,Antony L. Hosking
+3259,Jiawan Chen
+3261,Roger Bamford
+3262,Rafiul Ahad
+3263,Angelo Pruscino
+3265,Donko Donjerkovic
+3266,Raghu Ramakrishnan
+3268,Cheng Hian Goh
+3269,Beng Chin Ooi
+3270,D. Sim
+3271,Kian-Lee Tan
+3273,James R. Hamilton
+3275,Peter Baumann
+3276,Andreas Dehmel
+3277,Paula Furtado
+3278,Roland Ritsch
+3279,Norbert Widmann
+3281,Minos N. Garofalakis
+3282,Rajeev Rastogi
+3283,Kyuseok Shim
+3285,Laks V. S. Lakshmanan
+3286,Fereidoon Sadri
+3287,Subbu N. Subramanian
+3289,Ravi Kumar
+3290,Prabhakar Raghavan
+3291,Sridhar Rajagopalan
+3292,Andrew Tomkins
+3294,Chris Jermaine
+3295,Anindya Datta
+3296,Edward Omiecinski
+3298,Luc Bouganim
+3299,Tatiana Chan-Sine-Ying
+3300,Tuyet-Tram Dang-Ngoc
+3301,Jean-Luc Darroux
+3302,Georges Gardarin
+3303,Fei Sha
+3305,Michael Jaedicke
+3306,Bernhard Mitschang
+3308,Aristides Gionis
+3309,Piotr Indyk
+3310,Rajeev Motwani
+3312,Esther Pacitti
+3313,Pascale Minet
+3314,Eric Simon
+3316,Michael J. Carey
+3317,Donald D. Chamberlin
+3318,Srinivasa Narayanan
+3319,Bennet Vance
+3320,Doug Doole
+3321,Serge Rielau
+3322,Richard Swagerman
+3323,Nelson Mendon&#231;a Mattos
+3325,Kian-Lee Tan
+3326,Cheng Hian Goh
+3327,Beng Chin Ooi
+3329,You-Chin Fuh
+3330,Stefan De&#223;loch
+3331,Weidong Chen
+3332,Nelson Mendon&#231;a Mattos
+3333,Brian T. Tran
+3334,Bruce G. Lindsay
+3335,Linda DeMichel
+3336,Serge Rielau
+3337,Danko Mannhaupt
+3339,Goetz Graefe
+3341,Yannis E. Ioannidis
+3342,Viswanath Poosala
+3344,Arjen P. de Vries
+3345,Mark G. L. M. van Doorn
+3346,Henk M. Blanken
+3347,Peter M. G. Apers
+3349,Edwin M. Knorr
+3350,Raymond T. Ng
+3352,Stefano Ceri
+3353,Piero Fraternali
+3354,Stefano Paraboschi
+3356,Soumen Chakrabarti
+3357,Martin van den Berg
+3358,Byron Dom
+3360,C. Mohan
+3362,Felipe Cari&#241;o
+3363,William O'Connell
+3364,John Burgess
+3365,Joel H. Saltz
+3367,H. V. Jagadish
+3368,Laks V. S. Lakshmanan
+3369,Divesh Srivastava
+3371,Thomas Zurek
+3372,Markus Sinnwell
+3374,Arnd Christian K&#246;nig
+3375,Gerhard Weikum
+3377,H. V. Jagadish
+3378,J. Madar
+3379,Raymond T. Ng
+3381,Anastassia Ailamaki
+3382,David J. DeWitt
+3383,Mark D. Hill
+3384,David A. Wood
+3386,Udo Nink
+3387,Theo H&#228;rder
+3388,Norbert Ritter
+3390,Serge Abiteboul
+3391,Bernd Amann
+3392,Sophie Cluet
+3393,Adi Eyal
+3394,Laurent Mignet
+3395,Tova Milo
+3397,Vijayshankar Raman
+3398,Bhaskaran Raman
+3399,Joseph M. Hellerstein
+3401,Vanja Josifovski
+3402,Tore Risch
+3404,Alexander Hinneburg
+3405,Charu C. Aggarwal
+3406,Daniel A. Keim
+3408,Yasushi Sakurai
+3409,Masatoshi Yoshikawa
+3410,Shunsuke Uemura
+3411,Haruhiko Kojima
+3413,Ren&#233;e J. Miller
+3414,Laura M. Haas
+3415,Mauricio A. Hern&#225;ndez
+3417,Sudarshan S. Chawathe
+3419,Steven J. DeRose
+3421,Laura M. Haas
+3422,Donald Kossmann
+3423,Ioana Ursu
+3425,Curtis E. Dyreson
+3426,Michael H. B&#246;hlen
+3427,Christian S. Jensen
+3429,Cyrus Shahabi
+3430,Adil Faisal
+3431,Farnoush Banaei Kashani
+3432,Jabed Faruque
+3434,Sandeepan Banerjee
+3436,Wilburt Labio
+3437,Jun Yang
+3438,Yingwei Cui
+3439,Hector Garcia-Molina
+3440,Jennifer Widom
+3442,John L. Schnase
+3444,Yanlei Diao
+3445,Hongjun Lu
+3446,Songting Chen
+3447,Zengping Tian
+3449,Junghoo Cho
+3450,Hector Garcia-Molina
+3452,Michael L. Brodie
+3454,Naphtali Rishe
+3455,Jun Yuan
+3456,Rukshan Athauda
+3457,Shu-Ching Chen
+3458,Xiaoling Lu
+3459,Xiaobin Ma
+3460,Alexander Vaschillo
+3461,Artyom Shaposhnikov
+3462,Dmitry Vasilevsky
+3464,Fabio Casati
+3465,Ming-Chien Shan
+3467,Maurizio Panti
+3468,Luca Spalazzi
+3469,Alberto Giretti
+3471,Rachel Pottinger
+3472,Alon Y. Levy
+3474,Jo&#227;o Pereira
+3475,Fran&#231;oise Fabret
+3476,Fran&#231;ois Llirbat
+3477,Radu Preotiuc-Pietro
+3478,Kenneth A. Ross
+3479,Dennis Shasha
+3481,Byoung-Kee Yi
+3482,Christos Faloutsos
+3484,Matthias Jarke
+3485,Thomas List
+3486,J&#246;rg K&#246;ller
+3488,Haixun Wang
+3489,Carlo Zaniolo
+3491,Hongjun Lu
+3492,Hongyan Liu
+3494,S. Misbah Deen
+3495,Anant Jhingran
+3496,Shamkant B. Navathe
+3497,Erich J. Neuhold
+3498,Gio Wiederhold
+3500,Sanjay Agrawal
+3501,Surajit Chaudhuri
+3502,Vivek R. Narasayya
+3504,Michael J. Carey
+3506,Piotr Indyk
+3507,Nick Koudas
+3508,S. Muthukrishnan
+3510,Anil Nori
+3512,Ke Wang
+3513,Yu He
+3514,Jiawei Han
+3516,Surajit Chaudhuri
+3517,Gerhard Weikum
+3519,Jayavel Shanmugasundaram
+3520,Eugene J. Shekita
+3521,Rimon Barr
+3522,Michael J. Carey
+3523,Bruce G. Lindsay
+3524,Hamid Pirahesh
+3525,Berthold Reinwald
+3527,Torben Bach Pedersen
+3528,Christian S. Jensen
+3529,Curtis E. Dyreson
+3531,Thomas St&#246;hr
+3532,Holger M&#228;rtens
+3533,Erhard Rahm
+3535,Shalom Tsur
+3537,Mehmet Altinel
+3538,Michael J. Franklin
+3540,Asaf Adi
+3541,David Botzer
+3542,Opher Etzion
+3543,Tali Yatzkar-Haham
+3545,Amir Netz
+3546,Surajit Chaudhuri
+3547,Jeff Bernhardt
+3548,Usama M. Fayyad
+3550,Wes Cowley
+3551,Dimitris Plexousakis
+3553,Nikos Pappas
+3554,Stavros Christodoulakis
+3556,Kaushik Chakrabarti
+3557,Minos N. Garofalakis
+3558,Rajeev Rastogi
+3559,Kyuseok Shim
+3561,Joseph Y. Halpern
+3563,Jonathan Goldstein
+3564,Raghu Ramakrishnan
+3566,Ioana Manolescu
+3567,Daniela Florescu
+3568,Donald Kossmann
+3569,Florian Xhumari
+3570,Dan Olteanu
+3572,Leejay Wu
+3573,Christos Faloutsos
+3574,Katia P. Sycara
+3575,Terry R. Payne
+3577,Hans-Peter Kriegel
+3578,Marco P&#246;tke
+3579,Thomas Seidl
+3581,Elvira Schaefer
+3582,Jan-Dirk Becker
+3583,Andreas Boehmer
+3584,Matthias Jarke
+3586,Jim Melton
+3588,Andrew Eisenberg
+3589,Jim Melton
+3591,Amit Sheth
+3593,Mark Roantree
+3594,Alan F. Smeaton
+3596,S. J. O'Connell
+3597,N. Winterbottom
+3599,Georg Gottlob
+3600,Christoph Koch
+3601,Reinhard Pichler
+3603,Ya-Hui Chang
+3605,Ji-Rong Wen
+3606,Qing Li
+3607,Wei-Ying Ma
+3608,Hong-Jiang Zhang
+3610,Karl Aberer
+3612,Antonio Badia
+3614,Jie Wu
+3615,Duncan J. Watts
+3617,Marianne Winslett
+3619,Martin Grohe
+3621,Avigdor Gal
+3623,Amit Sheth
+3624,Robert Meersman
+3626,Omar Boucelma
+3627,Silvana Castano
+3628,Carole Goble
+3629,Vanja Josifovski
+3630,Zo&#233; Lacroix
+3631,Bertram Lud&#228;scher
+3633,Karl Aberer
+3635,Zo&#233; Lacroix
+3636,Omar Boucelma
+3638,Sharma Chakravarthy
+3639,Alp Aslandogan
+3640,Ramez Elmasri
+3641,Leonidas Fegaras
+3642,JungHwan Oh
+3644,Amit Sheth
+3646,Ning An
+3647,Sudhanva Gurumurthi
+3648,Anand Sivasubramaniam
+3649,Narayanan Vijaykrishnan
+3650,Mahmut Kandemir
+3651,Mary Jane Irwin
+3653,Peter Apers
+3654,Stefano Ceri
+3655,Richard Snodgrass
+3657,Rada Chirkova
+3658,Alon Y. Halevy
+3659,Dan Suciu
+3661,Anastassia Ailamaki
+3662,David J. DeWitt
+3663,Mark D. Hill
+3665,Michael M. David
+3667,Elisa Bertino
+3668,Ahmed K. Elmagarmid
+3669,Mohand-Sa&#239;d Hacid
+3671,Marianne Winslett
+3673,Fabien De Marchi
+3674,St&#233;phane Lopes
+3675,Jean-Marc Petit
+3676,Farouk Toumani
+3678,Ken Ross
+3680,Marianne Winslett
+3682,Avigdor Gal
+3684,Kenneth A. Ross
+3686,Philip A. Bernstein
+3687,Brian Harry
+3688,Paul Sanders
+3689,David Shutt
+3690,Jason Zander
+3692,Rune Humborstad
+3693,Maitrayi Sabaratnam
+3694,Svein-Olaf Hvasshovd
+3695,&#216;ystein Torbj&#248;rnsen
+3697,Eric Hughes
+3698,Roman Ginis
+3699,Bhavani M. Thuraisingham
+3700,Peter C. Krupp
+3701,John A. Maurer
+3703,D. Wildfogel
+3704,Ramana Yerneni
+3706,Damianos Chatziantoniou
+3707,Kenneth A. Ross
+3709,Minos N. Garofalakis
+3710,Yannis E. Ioannidis
+3712,J&#246;rg-Uwe Kietz
+3713,Ulrich Reimer
+3714,Martin Staudt
+3716,Arunprasad P. Marathe
+3717,Kenneth Salem
+3719,Fran&#231;ois Llirbat
+3720,Eric Simon
+3721,Dimitri Tombroff
+3723,Mary Tork Roth
+3724,Peter M. Schwarz
+3726,Vincent Aguilera
+3727,Sophie Cluet
+3728,Tova Milo
+3729,Pierangelo Veltri
+3730,Dan Vodislav
+3732,Ela Hunt
+3733,Malcolm P. Atkinson
+3734,Robert W. Irving
+3736,Laura M. Haas
+3737,Donald Kossmann
+3738,Edward L. Wimmers
+3739,Jun Yang
+3741,Yun-Wu Huang
+3742,Ning Jing
+3743,Elke A. Rundensteiner
+3745,Kenneth A. Ross
+3746,Divesh Srivastava
+3748,Luis Gravano
+3749,Hector Garcia-Molina
+3751,Jochen Van den Bercken
+3752,Bernhard Seeger
+3753,Peter Widmayer
+3755,Jong-Hak Lee
+3756,Young-Koo Lee
+3757,Kyu-Young Whang
+3758,Il-Yeol Song
+3760,Paolo Atzeni
+3761,Giansalvatore Mecca
+3762,Paolo Merialdo
+3764,H. V. Jagadish
+3765,P. P. S. Narayan
+3766,S. Seshadri
+3767,S. Sudarshan
+3768,Rama Kanneganti
+3770,Gustavo Alonso
+3771,Claus Hagen
+3772,Hans-J&#246;rg Schek
+3773,Markus Tresch
+3775,Elena Baralis
+3776,Stefano Paraboschi
+3777,Ernest Teniente
+3779,John C. Shafer
+3780,Rakesh Agrawal
+3782,Rajeev Rastogi
+3783,S. Seshadri
+3784,Philip Bohannon
+3785,Dennis W. Leinbaugh
+3786,Abraham Silberschatz
+3787,S. Sudarshan
+3789,Roy Goldman
+3790,Jennifer Widom
+3792,Stavros Christodoulakis
+3793,Peter Triantafillou
+3794,Fenia Zioga
+3796,Weiye Zhang
+3797,Per-&#197;ke Larson
+3799,Paolo Ciaccia
+3800,Marco Patella
+3801,Pavel Zezula
+3803,Stefan De&#223;loch
+3804,Nelson Mendon&#231;a Mattos
+3806,William Bridge
+3807,Ashok Joshi
+3808,M. Keihl
+3809,Tirthankar Lahiri
+3810,Juan Loaiza
+3811,N. MacNaughton
+3813,Praveen Seshadri
+3814,Miron Livny
+3815,Raghu Ramakrishnan
+3817,Suresh Kumar
+3818,Eng-Kee Kwang
+3819,Divyakant Agrawal
+3821,Goetz Graefe
+3822,Ross Bunker
+3823,Shaun Cooper
+3825,Fr&#233;d&#233;ric Gingras
+3826,Laks V. S. Lakshmanan
+3828,Dimitris Papadias
+3829,Nikos Mamoulis
+3830,Vasilis Delis
+3832,Hector Garcia-Molina
+3833,Wilburt Labio
+3834,Jun Yang
+3836,Beng Chin Ooi
+3837,Cheng Hian Goh
+3838,Kian-Lee Tan
+3840,Felipe Cari&#241;o
+3841,Mark Jahnke
+3843,Felipe Cari&#241;o
+3844,William O'Connell
+3846,Ling Lin
+3847,Tore Risch
+3849,Flip Korn
+3850,Alexandros Labrinidis
+3851,Yannis Kotidis
+3852,Christos Faloutsos
+3854,Peter Muth
+3855,Patrick E. O'Neil
+3856,Achim Pick
+3857,Gerhard Weikum
+3859,Craig Silverstein
+3860,Sergey Brin
+3861,Rajeev Motwani
+3862,Jeffrey D. Ullman
+3864,Shivakumar Venkataraman
+3865,Tian Zhang
+3867,Manoj Chavda
+3868,Peter T. Wood
+3870,Edward Y. Chang
+3871,Hector Garcia-Molina
+3873,Roger Bamford
+3874,D. Butler
+3875,Boris Klots
+3876,N. MacNaughton
+3878,M. Tamer &#214;zsu
+3879,Kaladhar Voruganti
+3880,Ronald C. Unrau
+3882,Narayanan Shivakumar
+3883,Hector Garcia-Molina
+3884,Chandra Chekuri
+3886,Jack A. Orenstein
+3888,Harald Sch&#246;ning
+3890,Nick Roussopoulos
+3891,Yannis Kotidis
+3893,Jerry Baulier
+3894,Philip Bohannon
+3895,S. Gogate
+3896,S. Joshi
+3897,C. Gupta
+3898,A. Khivesera
+3899,Henry F. Korth
+3900,Peter McIlroy
+3901,J. Miller
+3902,P. P. S. Narayan
+3903,M. Nemeth
+3904,Rajeev Rastogi
+3905,Abraham Silberschatz
+3906,S. Sudarshan
+3908,Guido Moerkotte
+3910,Mitch Cherniack
+3911,Stanley B. Zdonik
+3913,Ted Mihalisin
+3915,Sridhar Ramaswamy
+3916,Sameer Mahajan
+3917,Abraham Silberschatz
+3919,David Elliot Shaw
+3921,Serge Abiteboul
+3922,Jason McHugh
+3923,Michael Rys
+3924,Vasilis Vassalos
+3925,Janet L. Wiener
+3927,Peter A. Boncz
+3928,Tim R&#252;hl
+3929,Fred Kwakkel
+3931,Michael J. Carey
+3932,Donald Kossmann
+3934,Lyman Do
+3935,Pamela Drew
+3936,Wei Jin
+3937,Vish Jumani
+3938,David Van Rossum
+3940,Daniela Florescu
+3941,Alon Y. Levy
+3942,Dan Suciu
+3944,Jerry Baulier
+3945,Stephen Blott
+3946,Henry F. Korth
+3947,Abraham Silberschatz
+3949,Geraldo Zimbrao
+3950,Jano Moreira de Souza
+3952,Sven Helmer
+3953,Till Westmann
+3954,Guido Moerkotte
+3956,Fernando de Ferreira Rezende
+3957,Klaudia Hergula
+3959,Fernando de Ferreira Rezende
+3960,G&#252;nter Sauter
+3962,Roger Weber
+3963,Hans-J&#246;rg Schek
+3964,Stephen Blott
+3966,Minos N. Garofalakis
+3967,Yannis E. Ioannidis
+3968,Banu &#214;zden
+3970,Binto George
+3971,Jayant R. Haritsa
+3973,H. V. Jagadish
+3974,Nick Koudas
+3975,S. Muthukrishnan
+3976,Viswanath Poosala
+3977,Kenneth C. Sevcik
+3978,Torsten Suel
+3980,Yv&#225;n J. Garc&#237;a
+3981,Mario A. Lopez
+3982,Scott T. Leutenegger
+3984,Amit Shukla
+3985,Prasad Deshpande
+3986,Jeffrey F. Naughton
+3988,Yasuhiko Morimoto
+3989,Takeshi Fukuda
+3990,Hirofumi Matsuzawa
+3991,Takeshi Tokuyama
+3992,Kunikazu Yoda
+3994,K. Bernhard Schiefer
+3995,Jim Kleewein
+3996,Karen Brannon
+3997,Guy M. Lohman
+3998,Gene Fuh
+4000,Ashok Joshi
+4001,William Bridge
+4002,Juan Loaiza
+4003,Tirthankar Lahiri
+4005,Weiyi Meng
+4006,King-Lup Liu
+4007,Clement T. Yu
+4008,Xiaodong Wang
+4009,Yuhsi Chang
+4010,Naphtali Rishe
+4012,Chendong Zou
+4013,Betty Salzberg
+4015,Rajeev Rastogi
+4016,Kyuseok Shim
+4018,Weiye Zhang
+4019,Per-&#197;ke Larson
+4021,Yoshiharu Ishikawa
+4022,Ravishankar Subramanya
+4023,Christos Faloutsos
+4025,Johannes Gehrke
+4026,Raghu Ramakrishnan
+4027,Venkatesh Ganti
+4029,Sumit Ganguly
+4031,Soumen Chakrabarti
+4032,Sunita Sarawagi
+4033,Byron Dom
+4035,Theodore Johnson
+4036,Ethan L. Miller
+4038,Tova Milo
+4039,Sagit Zohar
+4041,Shaul Dar
+4042,Gadi Entin
+4043,Shai Geva
+4044,Eran Palmon
+4046,Sihem Amer-Yahia
+4047,Sophie Cluet
+4048,Claude Delobel
+4050,&#216;ystein Gr&#248;vlen
+4051,Svein-Olaf Hvasshovd
+4052,&#216;ystein Torbj&#248;rnsen
+4054,Warren Sterling
+4056,David Gibson
+4057,Jon M. Kleinberg
+4058,Prabhakar Raghavan
+4060,Martin Ester
+4061,Hans-Peter Kriegel
+4062,J&#246;rg Sander
+4063,Michael Wimmer
+4064,Xiaowei Xu
+4066,M. Seetha Lakshmi
+4067,Shaoyu Zhou
+4069,Donald R. Slutz
+4071,Mihael Ankerst
+4072,Bernhard Braunm&#252;ller
+4073,Hans-Peter Kriegel
+4074,Thomas Seidl
+4076,Fr&#233;d&#233;ric Cuppens
+4078,Viswanath Poosala
+4079,Yannis E. Ioannidis
+4081,Marc Gyssens
+4082,Laks V. S. Lakshmanan
+4084,Marcin Skubiszewski
+4085,Patrick Valduriez
+4087,Christos Faloutsos
+4088,H. V. Jagadish
+4089,Nikolaos Sidiropoulos
+4091,David M. Malon
+4092,Edward N. May
+4094,Wee Teck Ng
+4095,Peter M. Chen
+4097,Nam Huyn
+4099,Srinivas Ashwin
+4100,Prasan Roy
+4101,S. Seshadri
+4102,Abraham Silberschatz
+4103,S. Sudarshan
+4105,Surajit Chaudhuri
+4106,Vivek R. Narasayya
+4108,Hasan M. Jamil
+4110,Jens Clau&#223;en
+4111,Alfons Kemper
+4112,Guido Moerkotte
+4113,Klaus Peithner
+4115,Khaled Alsabti
+4116,Sanjay Ranka
+4117,Vineet Singh
+4119,Yasuhiko Morimoto
+4120,Hiromu Ishii
+4121,Shinichi Morishita
+4123,Peter Baumann
+4124,Paula Furtado
+4125,Roland Ritsch
+4126,Norbert Widmann
+4128,Konstantinos Stathatos
+4129,Nick Roussopoulos
+4130,John S. Baras
+4132,Roberta Cochrane
+4133,Hamid Pirahesh
+4134,Nelson Mendon&#231;a Mattos
+4136,Sameet Agarwal
+4137,Rakesh Agrawal
+4138,Prasad Deshpande
+4139,Ashish Gupta
+4140,Jeffrey F. Naughton
+4141,Raghu Ramakrishnan
+4142,Sunita Sarawagi
+4144,Rosa Meo
+4145,Giuseppe Psaila
+4146,Stefano Ceri
+4148,T. K. Rengarajan
+4150,Stefan Berchtold
+4151,Daniel A. Keim
+4152,Hans-Peter Kriegel
+4154,Michael Rys
+4155,Moira C. Norrie
+4156,Hans-J&#246;rg Schek
+4158,Damianos Chatziantoniou
+4159,Kenneth A. Ross
+4161,Divesh Srivastava
+4162,Shaul Dar
+4163,H. V. Jagadish
+4164,Alon Y. Levy
+4166,Susan Malaika
+4168,Dan Suciu
+4170,Sunita Sarawagi
+4171,Michael Stonebraker
+4173,Narendra Mohan
+4175,Praveen Seshadri
+4176,Miron Livny
+4177,Raghu Ramakrishnan
+4179,Michael J. Carey
+4180,Laura M. Haas
+4181,Vivekananda Maganty
+4182,John H. Williams
+4184,A. A. Diwan
+4185,Sanjeeva Rane
+4186,S. Seshadri
+4187,S. Sudarshan
+4189,Mark W. W. Vermeer
+4190,Peter M. G. Apers
+4192,Raghu Ramakrishnan
+4193,Hector Garcia-Molina
+4194,Gerhard Rossbach
+4195,Abraham Silberschatz
+4196,Gio Wiederhold
+4197,Jaco Zijlstra
+4199,Norman W. Paton
+4200,Carole A. Goble
+4202,Alin Deutsch
+4203,Lucian Popa
+4204,Val Tannen
+4206,Junmin Gu
+4207,Torben Bach Pedersen
+4208,Arie Shoshani
+4210,Hongjun Lu
+4211,Rudy Setiono
+4212,Huan Liu
+4214,Henry F. Korth
+4216,Frank Leymann
+4218,Ambuj Shatdal
+4219,Chander Kant
+4220,Jeffrey F. Naughton
+4222,Minos N. Garofalakis
+4223,Banu &#214;zden
+4224,Abraham Silberschatz
+4226,Wei Wang
+4227,Jiong Yang
+4228,Richard R. Muntz
+4230,Chaitanya K. Baru
+4232,Peter Scheuermann
+4233,Junho Shim
+4234,Radek Vingralek
+4236,H. V. Jagadish
+4237,Nick Koudas
+4238,S. Muthukrishnan
+4240,Evangelos Zirintsis
+4241,Graham N. C. Kirby
+4242,Ronald Morrison
+4244,Gopalan Arun
+4245,Ashok Joshi
+4247,Peter Fankhauser
+4248,Georges Gardarin
+4249,M. Lopez
+4250,J. Mu&#241;oz
+4251,Anthony Tomasic
+4253,Jian Yang
+4254,Kamalakar Karlapalem
+4255,Qing Li
+4257,Dimitri Theodoratos
+4258,Timos K. Sellis
+4260,Thomas Seidl
+4261,Hans-Peter Kriegel
+4263,Daniela Florescu
+4264,Daphne Koller
+4265,Alon Y. Levy
+4267,Arjan Pellenkoft
+4268,C&#233;sar A. Galindo-Legaria
+4269,Martin L. Kersten
+4271,Steven D. Whitehead
+4272,Himanshu Sinha
+4273,Michael Murphy
+4275,Soumen Chakrabarti
+4276,Byron Dom
+4277,Rakesh Agrawal
+4278,Prabhakar Raghavan
+4280,Timos K. Sellis
+4281,Nick Roussopoulos
+4282,Christos Faloutsos
+4284,Peter C. Lockemann
+4285,Ulrike K&#246;lsch
+4286,Arne Koschel
+4287,Ralf Kramer
+4288,Ralf Nikolai
+4289,Mechtild Wallrath
+4290,Hans-Dirk Walter
+4292,Achim Kraiss
+4293,Gerhard Weikum
+4295,Peter Triantafillou
+4296,Thomas Papadakis
+4298,Vasilis Vassalos
+4299,Yannis Papakonstantinou
+4301,Phillip B. Gibbons
+4302,Yossi Matias
+4303,Viswanath Poosala
+4305,Wen-Syan Li
+4306,K. Sel&#231;uk Candan
+4307,Kyoji Hirata
+4308,Yoshinori Hara
+4310,Sven Helmer
+4311,Guido Moerkotte
+4313,Andr&#233; Eickler
+4314,Alfons Kemper
+4315,Donald Kossmann
+4317,Hannu Toivonen
+4319,Curtis E. Dyreson
+4321,Christos Faloutsos
+4322,Yossi Matias
+4323,Abraham Silberschatz
+4325,Sriram Padmanabhan
+4327,Yasushi Ogawa
+4329,Viswanath Poosala
+4330,Yannis E. Ioannidis
+4332,Swarup Acharya
+4333,Michael J. Franklin
+4334,Stanley B. Zdonik
+4336,Umang Gupta
+4338,Dieter Gawlick
+4340,Surajit Chaudhuri
+4341,Kyuseok Shim
+4343,Shaul Dar
+4344,Michael J. Franklin
+4345,Bj&#246;rn &#222;&#243;r J&#243;nsson
+4346,Divesh Srivastava
+4347,Michael Tan
+4349,Vijay V. Raghavan
+4351,Luc Bouganim
+4352,Daniela Florescu
+4353,Patrick Valduriez
+4355,Sin Yeung Lee
+4356,Tok Wang Ling
+4358,Alon Y. Levy
+4360,R. Ramakrishnan
+4361,D. Janaki Ram
+4363,Luis-Felipe Cabrera
+4364,Robert Rees
+4365,Wayne Hineman
+4367,Kazuhiko Mogi
+4368,Masaru Kitsuregawa
+4370,Staffan Flodin
+4371,Tore Risch
+4373,Markus Tresch
+4374,Neal Palmer
+4375,Allen Luniewski
+4377,Ramakrishnan Srikant
+4378,Rakesh Agrawal
+4380,Leonard J. Seligman
+4381,Nicholas J. Belkin
+4382,Erich J. Neuhold
+4383,Michael Stonebraker
+4384,Gio Wiederhold
+4386,Stuart E. Madnick
+4388,Marcel Kornacker
+4389,Douglas Banks
+4391,Harry Leslie
+4392,Rohit Jain
+4393,Dave Birdsall
+4394,Hedieh Yaghmai
+4396,Georgios Evangelidis
+4397,David B. Lomet
+4398,Betty Salzberg
+4400,Eric Simon
+4401,Angelika Kotz Dittrich
+4403,Andreas Reuter
+4404,Stefano Ceri
+4405,Jim Gray
+4406,Betty Salzberg
+4407,Gerhard Weikum
+4409,Tor Didriksen
+4410,C&#233;sar A. Galindo-Legaria
+4411,Eirik Dahle
+4413,Surajit Chaudhuri
+4414,Shahram Ghandeharizadeh
+4415,Cyrus Shahabi
+4417,Christian Kalus
+4418,Peter Dadam
+4420,Fabrizio Ferrandina
+4421,Thorsten Meyer
+4422,Roberto Zicari
+4423,Guy Ferran
+4424,Jo&#235;lle Madec
+4426,Christos Faloutsos
+4427,Volker Gaede
+4429,Dan Suciu
+4431,Georges Gardarin
+4432,Fei Sha
+4433,Zhao-Hui Tang
+4435,Ron Sacks-Davis
+4437,Boris Klots
+4439,Georges Gardarin
+4440,Jean-Robert Gruser
+4441,Zhao-Hui Tang
+4443,Yannis Papakonstantinou
+4444,Serge Abiteboul
+4445,Hector Garcia-Molina
+4447,Ashish Gupta
+4448,Inderpal Singh Mumick
+4450,Takeshi Fukuda
+4451,Yasuhiko Morimoto
+4452,Shinichi Morishita
+4453,Takeshi Tokuyama
+4455,Yannis E. Ioannidis
+4456,Miron Livny
+4457,S. Gupta
+4458,Nagavamsi Ponnekanti
+4460,Flip Korn
+4461,Nikolaos Sidiropoulos
+4462,Christos Faloutsos
+4463,Eliot Siegel
+4464,Zenon Protopapas
+4466,Amit Shukla
+4467,Prasad Deshpande
+4468,Jeffrey F. Naughton
+4469,Karthikeyan Ramasamy
+4471,John C. Shafer
+4472,Rakesh Agrawal
+4473,Manish Mehta
+4475,Amit P. Sheth
+4477,Mark Sullivan
+4479,Laks V. S. Lakshmanan
+4480,Fereidoon Sadri
+4481,Iyer N. Subramanian
+4483,Pedro Celis
+4485,Ramesh Bhashyam
+4487,Alon Y. Levy
+4488,Anand Rajaraman
+4489,Joann J. Ordille
+4491,Amit P. Sheth
+4492,Krys Kochut
+4493,John A. Miller
+4494,Devashish Worah
+4495,Souvik Das
+4496,Chenye Lin
+4497,Devanand Palaniswami
+4498,John Lynch
+4499,Ivan Shevchenko
+4501,Nelson Mendon&#231;a Mattos
+4503,Kenneth C. Sevcik
+4504,Nick Koudas
+4506,Michael J. Carey
+4507,David J. DeWitt
+4509,Marisa S. Viveros
+4510,John P. Nearhos
+4511,Michael J. Rothman
+4513,Jochen Van den Bercken
+4514,Bernhard Seeger
+4516,Martin Staudt
+4517,Matthias Jarke
+4519,Wilburt Labio
+4520,Hector Garcia-Molina
+4522,William J. McKenna
+4523,Louis Burger
+4524,Chi Hoang
+4525,Melissa Truong
+4527,Elisa Bertino
+4528,Claudio Bettini
+4529,Elena Ferrari
+4530,Pierangela Samarati
+4532,Michael H. B&#246;hlen
+4533,Richard Thomas Snodgrass
+4534,Michael D. Soo
+4536,Jim Kleewein
+4538,E. Panagos
+4539,A. Biliris
+4541,Michael Steinbrunn
+4542,Guido Moerkotte
+4543,Alfons Kemper
+4545,Laura M. Haas
+4546,Michael J. Carey
+4547,Miron Livny
+4548,Amit Shukla
+4550,David Lomet
+4551,Betty Salzberg
+4553,Gustav Fahl
+4554,Tore Risch
+4556,M. P. Papazoglou
+4557,B. J. Kr&#228;mer
+4559,Klemens B&#246;hm
+4560,Karl Aberer
+4561,Erich J. Neuhold
+4562,Xiaoya Yang
+4564,Oscar D&#237;az
+4565,Arturo Jaime
+4567,Manish Mehta
+4568,David J. DeWitt
+4570,Vigyan Singhal
+4571,Alan Jay Smith
+4573,T. Catarci
+4574,G. Santucci
+4575,J. Cardiff
+4577,M. P. Papazoglou
+4578,B. J. Kr&#228;mer
+4580,Yannis E. Ioannidis
+4581,Raymond T. Ng
+4582,Kyuseok Shim
+4583,Timos K. Sellis
+4585,Ming-Syan Chen
+4586,Hui-I Hsiao
+4587,Philip S. Yu
+4589,Edward E. Cobb
+4591,Sharad Mehrotra
+4592,Henry F. Korth
+4593,Avi Silberschatz
+4595,M. Tamer &#214;zsu
+4596,Stavros Christodoulakis
+4598,Haitao Jiang
+4599,Ahmed K. Elmagarmid
+4601,Raymond T. Ng
+4602,Paul Shum
+4604,Aya Soffer
+4605,Hanan Samet
+4607,Pavel Zezula
+4608,Pasquale Savino
+4609,Giuseppe Amato
+4610,Fausto Rabitti
+4612,Nevzat Hurkan Balkir
+4613,Gultekin Ozsoyoglu
+4615,Georgios Evangelidis
+4616,David Lomet
+4617,Betty Salzberg
+4619,Gennady Antoshenkov
+4621,Serge Abiteboul
+4622,Sophie Cluet
+4623,Tova Milo
+4625,Beng Chin Ooi
+4626,Kian-Lee Tan
+4627,Tat Seng Chua
+4628,Wynne Hsu
+4630,Matthias Jarke
+4632,Praveen Seshadri
+4634,Achim Kraiss
+4635,Gerhard Weikum
+4637,Soumen Chakrabarti
+4638,Byron Dom
+4639,Rakesh Agrawal
+4640,Prabhakar Raghavan
+4642,P. Roy
+4643,S. Seshadri
+4644,A. Silberschatz
+4645,S. Sudarshan
+4646,S. Ashwin
+4648,Wee Teck Ng
+4649,Peter M. Chen
+4651,Gisli R. Hjaltason
+4652,Hanan Samet
+4654,Yasushi Sakurai
+4655,Masatoshi Yoshikawa
+4656,Shunsuke Uemura
+4657,Haruhiko Kojima
+4659,Arunprasad P. Marathe
+4660,Kenneth Salem
+4662,E. Ferrari
+4663,N.R. Adam
+4664,V. Atluri
+4665,E. Bertino
+4666,U. Capuozzo
+4668,Massimo Mecella
+4669,Barbara Pernici
+4671,Fabio Casati
+4672,Ming-Chien Shan
+4673,Dimitrios Georgakopoulos
+4675,Ling Feng
+4676,Jeffrey Xu Yu
+4677,Hongjun Lu
+4678,Jiawei Han
+4680,Alexandros Nanopoulos
+4681,Yannis Manolopoulos
+4683,Vipul Kashyap
+4684,Amit Sheth
+4686,Bruno Becker
+4687,Stephan Gschwind
+4688,Thomas Ohler
+4689,Bernhard Seeger
+4690,Peter Widmayer
+4692,John Mylopoulos
+4693,Vinay Chaudhri
+4694,Dimitris Plexousakis
+4695,Adel Shrufi
+4696,Thodoros Topologlou
+4698,Gennady Antoshenkov
+4699,Mohamed Ziauddin
+4701,George A. Mihaila
+4702,Louiqa Raschid
+4703,Anthony Tomasic
+4705,Gonzalo Navarro
+4707,Davood Rafiei
+4708,Alberto O. Mendelzon
+4710,Simonas &#352;altenis
+4711,Christian S. Jensen
+4713,Evan P. Harris
+4714,Kotagiri Ramamohanarao
+4716,Krithi Ramamritham
+4717,Panos K. Chrysanthis
+4719,Arthur M. Keller
+4720,Julie Basu
+4722,Michael Stonebraker
+4723,Paul M. Aoki
+4724,Witold Litwin
+4725,Avi Pfeffer
+4726,Adam Sah
+4727,Jeff Sidell
+4728,Carl Staelin
+4729,Andrew Yu
+4731,Theo H&#228;rder
+4732,Joachim Reinert
+4734,Beng Chin Ooi
+4735,Jiawei Han
+4736,Hongjun Lu
+4737,Kian Lee Tan
+4739,Debabrata Dey
+4740,Terence M. Barron
+4741,Veda C. Storey
+4743,Yuh-Ming Shyy
+4744,Javier Arroyo
+4745,Stanley Y.W. Su
+4746,Herman Lam
+4748,Odysseas G. Tsatalos
+4749,Marvin H. Solomon
+4750,Yannis E. Ioannidis
+4752,Alexandra Poulovassilis
+4753,Carol Small
+4755,Thomas A. Mueck
+4756,Martin L. Polaschek
+4758,Stefan Berchtold
+4759,Daniel A. Keim
+4760,Hans-Peter Kriegel
+4762,David J. De Witt
+4763,Jeffrey F. Naughton
+4764,John C. Shafer
+4765,Shivakumar Venkataraman
+4767,Rajendran M. Sivasankaran
+4768,John A. Stankovic
+4769,Don Towsley
+4770,Bhaskar Purimetla
+4771,Krithi Ramamritham
+4773,Eric Amiel
+4774,Marie-Jo Bellosta
+4775,Eric Dujardin
+4776,Eric Simon
+4778,Doug Fang
+4779,Shahram Ghandeharizadeh
+4780,Dennis McLeod
+4782,Paolo Atzeni
+4783,Alberto O. Mendelzon
+4785,Weifa Liang
+4786,Maria E. Orlowska
+4787,Jeffrey X. Yu
+4789,Jean-Robert Gruser
+4790,Louiqa Raschid
+4791,Vladimir Zadorozhny
+4792,Tao Zhan
+4794,Boris Chidlovskii
+4795,Uwe M. Borghoff
+4797,Kristian Torp
+4798,Christian S. Jensen
+4799,Richard Thomas Snodgrass
+4801,Flip Korn
+4802,Alexandros Labrinidis
+4803,Yannis Kotidis
+4804,Christos Faloutsos
+4806,Esther Pacitti
+4807,Eric Simon
+4809,Gholamhosein Sheikholeslami
+4810,Surojit Chatterjee
+4811,Aidong Zhang
+4813,Peter Muth
+4814,Patrick O'Neil
+4815,Achim Pick
+4816,Gerhard Weikum
+4818,Binto George
+4819,Jayant R. Haritsa
+4821,Edwin M. Knorr
+4822,Raymond T. Ng
+4823,Vladimir Tucakov
+4825,David Gibson
+4826,Jon Kleinberg
+4827,Prabhakar Raghavan
+4829,Zachary G. Ives
+4830,A. Y. Halevy
+4831,D. S. Weld
+4833,C.-Y. Chan
+4834,P. Felber
+4835,M. Garofalakis
+4836,R. Rastogi
+4838,R. Braumandl
+4839,J. Claussen
+4840,A. Kemper
+4841,D. Kossmann
+4843,O. Shmueli
+4844,J. Widom
+4846,H. V. Jagadish
+4847,S. Al-Khalifa
+4848,A. Chapman
+4849,L. V. S. Lakshmanan
+4850,A. Nierman
+4851,S. Paparizos
+4852,J. M. Patel
+4853,D. Srivastava
+4854,N. Wiwatwattana
+4855,Y. Wu
+4856,C. Yu
+4858,T. Fiebig
+4859,S. Helmer
+4860,C.-C. Kanne
+4861,G. Moerkotte
+4862,J. Neumann
+4863,R. Schiele
+4864,T. Westmann
+4866,S. Amer-Yahia
+4867,S. Cho
+4868,L. V. S. Lakshmanan
+4869,D. Srivastava
+4871,S.-Y. Chien
+4872,V. J. Tsotras
+4873,C. Zaniolo
+4875,Domenico Beneventano
+4876,Sonia Bergamaschi
+4877,Claudio Sartori
+4879,Richard M. Karp
+4880,Scott Shenker
+4881,Christos H. Papadimitriou
+4883,Sergey Melnik
+4884,Hector Garcia-Molina
+4886,Alon Y. Halevy
+4888,Christophe Bobineau
+4889,Luc Bouganim
+4890,Philippe Pucheral
+4891,Patrick Valduriez
+4893,Nicolas Anciaux
+4894,Christophe Bobineau
+4895,Luc Bouganim
+4896,Philippe Pucheral
+4897,Patrick Valduriez
+4899,Dimitris Margaritis
+4900,Christos Faloutsos
+4901,Sebastian Thrun
+4903,David W. Adler
+4905,Kjetil N&#248;rv&#229;g
+4907,Haifeng Yu
+4908,Amin Vahdat
+4910,Soumen Chakrabarti
+4911,Sandeep Srivastava
+4912,Mallela Subramanyam
+4913,Mitul Tiwari
+4915,Khaled Yagoub
+4916,Daniela Florescu
+4917,Val&#233;rie Issarny
+4918,Patrick Valduriez
+4920,Stefan De&#223;loch
+4921,Theo H&#228;rder
+4922,Nelson Mattos
+4923,Bernhard Mitschang
+4924,Joachim Thomas
+4926,Naci S. Ishakbeyoglu
+4927,Z. Meral Ozsoyoglu
+4929,Peter Scheuermann
+4930,Gerhard Weikum
+4931,Peter Zabback
+4933,Ashish Mehta
+4934,James Geller
+4935,Yehoshua Perl
+4936,Erich Neuhold
+4938,Eric N. Hanson
+4939,I.-Cheng Chen
+4940,Roxana Dastur
+4941,Kurt Engel
+4942,Vijay Ramaswamy
+4943,Wendy Tan
+4944,Chun Xu
+4946,Jia Liang Han
+4948,Navin Kabra
+4949,David J. DeWitt
+4951,Yueh-Min Huang
+4952,Jen-Wen Ding
+4953,Shiao-Li Tsao
+4955,Theo H&#228;rder
+4956,G&#252;nter Sauter
+4957,Joachim Thomas
+4959,Zhe Li
+4960,Kenneth A. Ross
+4962,Kelvin K. W. Law
+4963,John C. S. Lui
+4964,Leana Golubchik
+4966,Goksel Aslan
+4967,Dennis McLeod
+4969,Peter A. Boncz
+4970,Martin L. Kersten
+4972,Natalija Krivokapi&#263;
+4973,Alfons Kemper
+4974,Ehud Gudes
+4976,Changzhou Wang
+4977,X. Sean Wang
+4979,Chiang Lee
+4980,Chi-Sheng Shih
+4981,Yaw-Huei Chen
+4983,Carlo Combi
+4984,Giuseppe Pozzi
+4986,Wen-Syan Li
+4987,K.Sel&#231;uk Candan
+4988,Kyoji Hirata
+4989,Yoshinori Hara
+4991,Kian-Lee Tan
+4992,Cheng Hian Goh
+4993,Beng Chin Ooi
+4995,Anne H. H. Ngu
+4996,Quan Z. Sheng
+4997,Du Q. Huynh
+4998,Ron Lei
+5000,Stefan Manegold
+5001,Peter A. Boncz
+5002,Martin L. Kersten
+5004,Vijayshankar Raman
+5005,Bhaskaran Raman
+5006,Joseph M. Hellerstein
+5008,J. Claussen
+5009,A. Kemper
+5010,D. Kossmann
+5011,C. Wiesner
+5013,H. V. Jagadish
+5014,Olga Kapitskaia
+5015,Raymond T. Ng
+5016,Divesh Srivastava
+5018,Malcolm P. Atkinson
+5020,Philip A. Bernstein
+5021,Shankar Pal
+5022,David Shutt
+5024,K. Sel&#231;uk Candan
+5025,Eric Lemar
+5026,V. S. Subrahmanian
+5028,Ada Wai-chee Fu
+5029,Polly Mei-shuen Chan
+5030,Yin-Ling Cheung
+5031,Yiu Sang Moon
+5033,Peter Buneman
+5034,Mary Fernandez
+5035,Dan Suciu
+5037,I. Mirbel
+5038,B. Pernici
+5039,T. Sellis
+5040,S. Tserkezoglou
+5041,M. Vazirgiannis
+5043,Mary Fern&#225;ndez
+5044,Daniela Florescu
+5045,Alon Levy
+5046,Dan Suciu
+5048,Bettina Berendt
+5049,Myra Spiliopoulou
+5051,Guozhu Dong
+5052,Jiawei Han
+5053,Joyce M. W. Lam
+5054,Jian Pei
+5055,Ke Wang
+5057,Rakesh Agrawal
+5058,Amit Somani
+5059,Yirong Xu
+5061,Anna C. Gilbert
+5062,Yannis Kotidis
+5063,S. Muthukrishnan
+5064,Martin Strauss
+5066,Demet Aksoy
+5067,Michael J. Franklin
+5068,Stanley B. Zdonik
+5070,Mitch Cherniack
+5071,Michael J. Franklin
+5072,Stanley B. Zdonik
+5074,Henk Ernst Blok
+5075,Menzo Windhouwer
+5076,Roelof van Zwol
+5077,Milan Petkovic
+5078,Peter M. G. Apers
+5079,Martin L. Kersten
+5080,Willem Jonker
+5082,Cui Yu
+5083,Beng Chin Ooi
+5084,Kian-Lee Tan
+5085,H. V. Jagadish
+5087,Shu Lin
+5088,M. Tamer &#214;zsu
+5089,Vincent Oria
+5090,Raymond T. Ng
+5092,William O'Connell
+5093,Andrew Witkowski
+5094,Goetz Graefe
+5096,Yannis Kotidis
+5098,Craig J. Bunker
+5099,Latha S. Colby
+5100,Richard L. Cole
+5101,William J. McKenna
+5102,Gopal Mulagund
+5103,David Wilhite
+5105,Stephen Dill
+5106,Ravi Kumar
+5107,Kevin S. McCurley
+5108,Sridhar Rajagopalan
+5109,D. Sivakumar
+5110,Andrew Tomkins
+5112,Robert Baumgartner
+5113,Sergio Flesca
+5114,Georg Gottlob
+5116,Tolga Urhan
+5117,Michael J. Franklin
+5119,Atsuyuki Morishima
+5120,Seiichi Koizumi
+5121,Hiroyuki Kitagawa
+5122,Satoshi Takano
+5124,Jos&#233; Luis Ambite
+5125,Craig A. Knoblock
+5126,Mohammad R. Kolahdouzan
+5127,Maria Muslea
+5128,Cyrus Shahabi
+5129,Snehal Thakkar
+5131,Sophie Cluet
+5132,Pierangelo Veltri
+5133,Dan Vodislav
+5135,M. W. Bright
+5136,A. R. Hurson
+5137,S. Pakzad
+5139,Beverly Yang
+5140,Hector Garcia-Molina
+5142,Edward Sciore
+5143,Michael Siegel
+5144,Arnon Rosenthal
+5146,Daniela Grigori
+5147,Fabio Casati
+5148,Umeshwar Dayal
+5149,Ming-Chien Shan
+5151,James Clifford
+5152,Albert Croker
+5153,Alexander Tuzhilin
+5155,Jayant Madhavan
+5156,Philip A. Bernstein
+5157,Erhard Rahm
+5159,Arnon Rosenthal
+5160,David Reiner
+5162,Jochen Van den Bercken
+5163,Bernhard Seeger
+5165,Michael Stonebraker
+5167,Klemens B&#246;hm
+5168,Michael Mlivoncic
+5169,Hans-J&#246;rg Schek
+5170,Roger Weber
+5172,Won Kim
+5174,Robert Baumgartner
+5175,Sergio Flesca
+5176,Georg Gottlob
+5178,V. S. Subrahmanian
+5180,Jo&#227;o Pereira
+5181,Fran&#231;oise Fabret
+5182,Hans-Arno Jacobsen
+5183,Fran&#231;ois Llirbat
+5184,Dennis Shasha
+5186,Tak W. Yan
+5187,H&#233;ctor Garc&#237;a-Molina
+5189,Athman Bouguettaya
+5190,Ahmed K. Elmagarmid
+5191,Brahim Medjahed
+5192,M. Ouzzani
+5194,Brian Cooper
+5195,Neal Sample
+5196,Michael J. Franklin
+5197,Gisli R. Hjaltason
+5198,Moshe Shadmon
+5200,Michael J. Carey
+5201,Steve Kirsch
+5202,Mary Roth
+5203,Bert Van der Linden
+5204,Nicolas Adiba
+5205,Michael Blow
+5206,Daniela Florescu
+5207,David Li
+5208,Ivan Oprencak
+5209,Rajendra Panwar
+5210,Runping Qi
+5211,David Rieber
+5212,John C. Shafer
+5213,Brian Sterling
+5214,Tolga Urhan
+5215,Brian Vickery
+5216,Dan Wineman
+5217,Kuan Yee
+5219,Luis Gravano
+5220,Panagiotis G. Ipeirotis
+5221,H. V. Jagadish
+5222,Nick Koudas
+5223,S. Muthukrishnan
+5224,Divesh Srivastava
+5226,Am&#233;lie Marian
+5227,Serge Abiteboul
+5228,Gregory Cobena
+5229,Laurent Mignet
+5231,Martin S. Olivier
+5232,Sebastiaan H. von Solms
+5234,Aoying Zhou
+5235,Hongjun Lu
+5236,Shihui Zheng
+5237,Yuqi Liang
+5238,Long Zhang
+5239,Wenyun Ji
+5240,Zengping Tian
+5242,Patrick Tendick
+5243,Norman Matloff
+5245,Jayavel Shanmugasundaram
+5246,Jerry Kiernan
+5247,Eugene J. Shekita
+5248,Catalina Fan
+5249,John Funderburk
+5251,Alfons Kemper
+5252,Christian Wiesner
+5254,Kenneth Salem
+5255,H&#233;ctor Garc&#237;a-Molina
+5256,Jeannie Shands
+5258,Thomas St&#246;hr
+5259,Erhard Rahm
+5261,Ioana Stanoi
+5262,Mirek Riedewald
+5263,Divyakant Agrawal
+5264,Amr El Abbadi
+5266,John Catozzi
+5267,Sorana Rabinovici
+5269,Leonidas Fegaras
+5270,Ramez Elmasri
+5272,Angela Bonifati
+5273,Fabio Casati
+5274,Umeshwar Dayal
+5275,Ming-Chien Shan
+5277,Umeshwar Dayal
+5278,Meichun Hsu
+5279,Rivka Ladin
+5281,Amihood Amir
+5282,Reuven Kashi
+5283,Nathan S. Netanyahu
+5285,Srinivasa Narayanan
+5286,Subbu N. Subramanian
+5288,Kian-Lee Tan
+5289,Pin-Kwang Eng
+5290,Beng Chin Ooi
+5292,Rada Chirkova
+5293,Alon Y. Halevy
+5294,Dan Suciu
+5296,Svein Erik Bratsberg
+5297,Rune Humborstad
+5299,Seok-Ju Chun
+5300,Chin-Wan Chung
+5301,Ju-Hong Lee
+5302,Seok-Lyong Lee
+5304,Rie Sawai
+5305,Masahiko Tsukamoto
+5306,Yin-Huei Loh
+5307,Tsutomu Terada
+5308,Shojiro Nishio
+5310,Michael Stillger
+5311,Guy M. Lohman
+5312,Volker Markl
+5313,Mokhtar Kandil
+5315,Banu &#214;zden
+5316,Eran Gabber
+5317,Bruce Hillyer
+5318,Wee Teck Ng
+5319,Elizabeth A. M. Shriver
+5320,David J. DeWitt
+5321,Bruce Gordon
+5322,Jim Gray
+5323,John Wilkes
+5325,Phillip B. Gibbons
+5327,Shalom Tsur
+5328,Serge Abiteboul
+5329,Rakesh Agrawal
+5330,Umeshwar Dayal
+5331,Johannes Klein
+5332,Gerhard Weikum
+5334,Harald Kosch
+5335,L&#225;szl&#243; B&#246;sz&#246;rm&#233;nyi
+5336,Alexander Bachlechner
+5337,Christian Hanin
+5338,Christian Hofbauer
+5339,Margit Lang
+5340,Carmen Riedler
+5341,Roland Tusch
+5343,Man Abrol
+5344,Neil Latarche
+5345,Uma Mahadevan
+5346,Jianchang Mao
+5347,Rajat Mukherjee
+5348,Prabhakar Raghavan
+5349,Michel Tourn
+5350,John Wang
+5351,Grace Zhang
+5353,Minos N. Garofalakis
+5354,Phillip B. Gibbon
+5356,Mihnea Andrei
+5357,Patrick Valduriez
+5359,Alexandros Nanopoulos
+5360,Yannis Theodoridis
+5361,Yannis Manolopoulos
+5363,C. Mohan
+5365,Seema Sundara
+5366,Ying Hu
+5367,Timothy Chorma
+5368,Nipun Agarwal
+5369,Jagannathan Srinivasan
+5371,Alexandros Labrinidis
+5372,Nick Roussopoulos
+5374,Yufei Tao
+5375,Dimitris Papadias
+5377,Anindya Datta
+5378,Kaushik Dutta
+5379,Helen M. Thomas
+5380,Debra E. VanderMeer
+5381,Krithi Ramamritham
+5382,Dan Fishman
+5384,Apostol Natsev
+5385,Yuan-Chi Chang
+5386,John R. Smith
+5387,Chung-Sheng Li
+5388,Jeffrey Scott Vitter
+5390,Gayatri Sathe
+5391,Sunita Sarawagi
+5393,Anastassia Ailamaki
+5394,David J. DeWitt
+5395,Mark D. Hill
+5396,Marios Skounakis
+5398,Ioana Manolescu
+5399,Daniela Florescu
+5400,Donald Kossmann
+5402,Oded Shmueli
+5404,Guy Pardon
+5405,Gustavo Alonso
+5407,Richard Taylor
+5409,C. Mohan
+5410,Ron Barber
+5411,S. Watts
+5412,A. Somani
+5413,Markos Zaharioudakis
+5415,Meridith A. Lane
+5416,James L. Edwards
+5417,Ebbe Nielsen
+5419,Bettina Kemme
+5420,Gustavo Alonso
+5422,Michelangelo Diligenti
+5423,Frans Coetzee
+5424,Steve Lawrence
+5425,C. Lee Giles
+5426,Marco Gori
+5428,Svein-Olaf Hvasshovd
+5429,Svein Erik Bratsberg
+5430,&#216;ystein Torbj&#248;rnsen
+5432,Kaushik Chakrabarti
+5433,Sharad Mehrotra
+5435,Sin Yeung Lee
+5436,Tok Wang Ling
+5437,Hua-Gang Li
+5439,Philip A. Bernstein
+5440,Laura M. Haas
+5441,Matthias Jarke
+5442,Erhard Rahm
+5443,Gio Wiederhold
+5445,Anand Deshpande
+5447,Julie Basu
+5448,Jos&#233; Alberto Fern&#225;ndez
+5449,Olga Peschansky
+5451,Bertram Lud&#228;scher
+5452,Amarnath Gupta
+5453,Maryann E. Martone
+5455,Theodore Johnson
+5456,Laks V. S. Lakshmanan
+5457,Raymond T. Ng
+5459,Michael J. Carey
+5460,Jerry Kiernan
+5461,Jayavel Shanmugasundaram
+5462,Eugene J. Shekita
+5463,Subbu N. Subramanian
+5465,Hans-J&#246;rg Schek
+5467,Ulrich G&#252;ntzer
+5468,Wolf-Tilo Balke
+5469,Werner Kie&#223;ling
+5471,Stefano Ceri
+5472,Roberta Cochrane
+5473,Jennifer Widom
+5475,Ziv Bar-Yossef
+5476,Alexander Berg
+5477,Steve Chien
+5478,Jittat Fakcharoenphol
+5479,Dror Weitz
+5481,Sihem Amer-Yahia
+5482,Theodore Johnson
+5484,Geoffrey C. Bowker
+5486,Frank Ramsak
+5487,Volker Markl
+5488,Robert Fenk
+5489,Martin Zirkel
+5490,Klaus Elhardt
+5491,Rudolf Bayer
+5493,Abdelsalam Helal
+5494,Hua Li
+5496,Francesco Caruso
+5497,Munir Cochinwala
+5498,Uma Ganapathy
+5499,Gail Lalk
+5500,Paolo Missier
+5502,Karthikeyan Ramasamy
+5503,Jignesh M. Patel
+5504,Jeffrey F. Naughton
+5505,Raghav Kaushik
+5507,Stefan Manegold
+5508,Peter A. Boncz
+5509,Martin L. Kersten
+5511,Krithi Ramamritham
+5512,Yeha El Atfi
+5513,Carlo Batini
+5514,Michael Eitan
+5515,Valerie Gregg
+5516,D. B. Phatak
+5518,Sunil Choenni
+5520,St&#233;phane Grumbach
+5521,Philippe Rigaux
+5522,Luc Segoufin
+5524,Alberto O. Mendelzon
+5525,Alejandro A. Vaisman
+5527,Chris Olston
+5528,Jennifer Widom
+5530,Jagannathan Srinivasan
+5531,Souripriya Das
+5532,Chuck Freiwald
+5533,Eugene Inseok Chong
+5534,Mahesh Jagannath
+5535,Aravind Yalamanchi
+5536,Ramkumar Krishnan
+5537,Anh-Tuan Tran
+5538,Samuel DeFazio
+5539,Jayanta Banerjee
+5541,Andrey Balmin
+5542,Thanos Papadimitriou
+5543,Yannis Papakonstantinou
+5545,Gladys A. Cotter
+5546,Barbara T. Bauldock
+5548,Kaushik Dutta
+5549,Anindya Datta
+5550,Debra E. VanderMeer
+5551,Krithi Ramamritham
+5552,Helen M. Thomas
+5554,Venkatesh Ganti
+5555,Mong-Li Lee
+5556,Raghu Ramakrishnan
+5558,Sridhar Ramaswamy
+5560,Yossi Matias
+5561,Jeffrey Scott Vitter
+5562,Min Wang
+5564,Domenico Beneventano
+5565,Sonia Bergamaschi
+5566,Silvana Castano
+5567,Alberto Corni
+5568,R. Guidetti
+5569,G. Malvezzi
+5570,Michele Melchiori
+5571,Maurizio Vincini
+5573,Junyan Ding
+5574,Luis Gravano
+5575,Narayanan Shivakumar
+5577,Yasushi Sakurai
+5578,Masatoshi Yoshikawa
+5579,Ryoji Kataoka
+5580,Shunsuke Uemura
+5582,Liangzhao Zeng
+5583,Boualem Benatallah
+5584,Phuong Nguyen
+5585,Anne H. H. Ngu
+5587,Ilaria Bartolini
+5588,Paolo Ciaccia
+5589,Florian Waas
+5591,Sriram Raghavan
+5592,Hector Garcia-Molina
+5594,Khaled Yagoub
+5595,Daniela Florescu
+5596,Val&#233;rie Issarny
+5597,Patrick Valduriez
+5599,Dieter Pfoser
+5600,Christian S. Jensen
+5601,Yannis Theodoridis
+5603,Kevin Chen-Chuan Chang
+5604,Hector Garcia-Molina
+5606,Linan Jiang
+5607,Betty Salzberg
+5608,David B. Lomet
+5609,Manuel Barrena Garc&#237;a
+5611,Leonard Brown
+5612,Le Gruenwald
+5614,Philip Wadler
+5616,Ashraf Aboulnaga
+5617,Alaa R. Alameldeen
+5618,Jeffrey F. Naughton
+5620,Quanzhong Li
+5621,Bongki Moon
+5623,Christian S. Jensen
+5624,David B. Lomet
+5626,Tamer Kahveci
+5627,Ambuj K. Singh
+5629,Yingwei Cui
+5630,Jennifer Widom
+5632,Ela Hunt
+5633,Malcolm P. Atkinson
+5634,Robert W. Irving
+5636,Helena Galhardas
+5637,Daniela Florescu
+5638,Dennis Shasha
+5639,Eric Simon
+5640,Cristian-Augustin Saita
+5642,Reza Sadri
+5643,Carlo Zaniolo
+5644,Amir M. Zarkesh
+5645,Jafar Adibi
+5647,Surajit Chaudhuri
+5648,Kyuseok Shim
+5650,Vijayshankar Raman
+5651,Joseph M. Hellerstein
+5653,Wolfgang May
+5655,Giuseppe Sindoni
+5656,Leonardo Tininini
+5657,Amedea Ambrosetti
+5658,Cristina Bedeschi
+5659,Stefano De Francisci
+5660,Orietta Gargano
+5661,Rossella Molinaro
+5662,Mario Paolucci
+5663,Paola Patteri
+5664,Pina Ticca
+5666,Wen-Syan Li
+5667,K. Sel&#231;uk Candan
+5668,Wang-Pin Hsiung
+5669,Oliver Po
+5670,Divyakant Agrawal
+5671,Qiong Luo
+5672,Wei-Kuang Waine Huang
+5673,Yusuf Akca
+5674,Cemal Yilmaz
+5676,Qiong Luo
+5677,Jeffrey F. Naughton
+5679,Christine Collet
+5680,Thierry Coupaye
+5681,T. Svensen
+5683,Bruce E. Martin
+5684,R. G. G. Cattell
+5686,Ibrahim Kamel
+5687,Christos Faloutsos
+5689,Elena Baralis
+5690,Jennifer Widom
+5692,Ling Tony Chen
+5693,Doron Rotem
+5694,Sidhar Seshadri
+5696,Rainer Gallersd&#246;rfer
+5697,Matthias Nicola
+5699,Kurt P. Brown
+5700,Manish Mehta
+5701,Michael J. Carey
+5702,Miron Livny
+5704,Sergey Brin
+5706,B. Sreenath
+5707,S. Seshadri
+5709,Theodore Johnson
+5710,Dennis Shasha
+5712,Stefano Spaccapietra
+5714,Sharma Chakravarthy
+5715,V. Krishnaprasad
+5716,Eman Anwar
+5717,S.-K. Kim
+5719,Philip A. Bernstein
+5721,H. V. Jagadish
+5722,Daniel F. Lieuwen
+5723,Rajeev Rastogi
+5724,Abraham Silberschatz
+5725,S. Sudarshan
+5727,Alain Pirotte
+5728,Esteban Zim&#225;nyi
+5729,David Massart
+5730,Tatiana Yakusheva
+5732,Maria Zemankova
+5733,Yannis E. Ioannidis
+5735,Marek Rusinkiewicz
+5736,Wolfgang Klas
+5737,Thomas Tesch
+5738,J&#252;rgen W&#228;sch
+5739,Peter Muth
+5741,Kazutoshi Sumiya
+5742,Kouichi Yasutake
+5743,Hirohiko Tanaka
+5744,Norio Sanada
+5745,Yoshihiko Imai
+5747,Gilles Fecteau
+5749,Hongjun Lu
+5750,Kian-Lee Tan
+5751,Son Dao
+5753,A. Prasad Sistla
+5754,Clement T. Yu
+5755,Chengwen Liu
+5756,King Liu
+5758,Joseph M. Hellerstein
+5759,Jeffrey F. Naughton
+5760,Avi Pfeffer
+5762,Steven Milliner
+5763,Athman Bouguettaya
+5764,Mike P. Papazoglou
+5766,Waqar Hasan
+5767,Rajeev Motwani
+5769,Jiawei Han
+5770,Yongjian Fu
+5772,Rudolf Bayer
+5774,Paul Brown
+5775,Michael Stonebraker
+5777,Azer Bestavros
+5778,Spyridon Braoudakis
+5780,Kazimierz Subieta
+5781,Yahiko Kambayashi
+5782,Jacek Leszczylowski
+5784,N. Bassiliades
+5785,Ioannis P. Vlahavas
+5787,Svein-Olaf Hvasshovd
+5788,&#216;ystein Torbj&#248;rnsen
+5789,Svein Erik Bratsberg
+5790,Per Holager
+5792,Erik G. Hoel
+5793,Hanan Samet
+5795,Rakesh Agrawal
+5796,King-Ip Lin
+5797,Harpreet S. Sawhney
+5798,Kyuseok Shim
+5800,Gary Hallmark
+5802,Rakesh Agrawal
+5803,Giuseppe Psaila
+5804,Edward L. Wimmers
+5805,Mohamed Za&#239;t
+5807,Kun-Lung Wu
+5808,Philip S. Yu
+5809,Jen-Yao Chung
+5810,James Z. Teng
+5812,Sunita Sarawagi
+5814,Peter Buneman
+5815,Susan B. Davidson
+5816,Kyle Hart
+5817,G. Christian Overton
+5818,Limsoon Wong
+5820,Bruce G. Lindsay
+5822,Erhard Rahm
+5823,Robert Marek
+5825,Brajesh Goyal
+5826,Jayant R. Haritsa
+5827,S. Seshadri
+5828,V. Srinivasan
+5830,David Konopnicki
+5831,Oded Shmueli
+5833,Frank Moser
+5834,Achim Kraiss
+5835,Wolfgang Klas
+5837,Ashish Gupta
+5838,Venky Harinarayan
+5839,Dallan Quass
+5841,Jack A. Orenstein
+5842,D. N. Kamber
+5844,Yun Wang
+5846,Tak W. Yan
+5847,Hector Garcia-Molina
+5849,Weipeng P. Yan
+5850,Per-&#197;ke Larson
+5852,Eben M. Haber
+5853,Yannis E. Ioannidis
+5854,Miron Livny
+5856,Peter J. Haas
+5857,Jeffrey F. Naughton
+5858,S. Seshadri
+5859,Lynne Stokes
+5861,Roger S. Barga
+5862,Calton Pu
+5864,John Catozzi
+5865,Sorana Rabinovici
+5867,Ashoka Savasere
+5868,Edward Omiecinski
+5869,Shamkant B. Navathe
+5871,Manish Mehta
+5872,David J. DeWitt
+5874,Laurent Amsaleg
+5875,Michael J. Franklin
+5876,Olivier Gruber
+5878,Andreas Meier
+5880,Andr&#233; Eickler
+5881,Carsten Andreas Gerlhof
+5882,Donald Kossmann
+5884,Paul Ammann
+5885,Sushil Jajodia
+5886,Indrakshi Ray
+5888,Michael Steinbrunn
+5889,Klaus Peithner
+5890,Guido Moerkotte
+5891,Alfons Kemper
+5893,Alberto Belussi
+5894,Christos Faloutsos
+5896,Georges Gardarin
+5897,Jean-Robert Gruser
+5898,Zhao-Hui Tang
+5900,Janet L. Wiener
+5901,Jeffrey F. Naughton
+5903,Luis Gravano
+5904,Hector Garcia-Molina
+5906,David B. Lomet
+5907,Mark R. Tuttle
+5909,Erik G. Hoel
+5910,Hanan Samet
+5912,Ada Wai-Chee Fu
+5913,David Wai-Lok Cheung
+5915,Diane L. Davison
+5916,Goetz Graefe
+5918,Sudarshan S. Chawathe
+5919,Ming-Syan Chen
+5920,Philip S. Yu
+5922,Hennie J. Steenhagen
+5923,Peter M. G. Apers
+5924,Henk M. Blanken
+5925,Rolf A. de By
+5927,Yuh-Ming Shyy
+5928,H. Stephen Au-Yeung
+5929,C. P. Chou
+5931,D. Woelk
+5932,B. Bohrer
+5933,N. Jacobs
+5934,K. Ong
+5935,C. Tomlinson
+5936,C. Unnikrishnan
+5938,Jim Gray
+5940,Rob Goldring
+5942,Kestutis Ivinskis
+5944,Peter Buneman
+5945,David Maier
+5947,William L. Gettys
+5949,Greg Hope
+5951,CORPORATE The Access Team Microsoft
+5953,Kenneth Moore
+5955,Surajit Chaudhuri
+5956,Umeshwar Dayal
+5957,Tak W. Yan
+5959,CORPORATE Fox Development Team Microsoft
+5961,Serge Abiteboul
+5962,Sophie Cluet
+5963,Tova Milo
+5965,Sergey Brin
+5966,James Davis
+5967,H&#233;ctor Garc&#237;a-Molina
+5969,Steven Berson
+5970,Leana Golubchik
+5971,Richard R. Muntz
+5973,Asit Dan
+5974,Dinkar Sitaram
+5976,Craig S. Freedman
+5977,David J. DeWitt
+5979,James J. Lu
+5980,Guido Moerkotte
+5981,Joachim Schue
+5982,V. S. Subrahmanian
+5984,Timothy Griffin
+5985,Leonid Libkin
+5987,Yue Zhuge
+5988,H&#233;ctor Garc&#237;a-Molina
+5989,Joachim Hammer
+5990,Jennifer Widom
+5992,Gautam Bhargava
+5993,Piyush Goel
+5994,Bala Iyer
+5996,Weimin Du
+5997,Ming-Chien Shan
+5998,Umeshwar Dayal
+6000,Diane L. Davison
+6001,Goetz Graefe
+6003,A. Prasad Sistla
+6004,Ouri Wolfson
+6006,Claudio Bettini
+6007,X. Sean Wang
+6008,Elisa Bertino
+6009,Sushil Jajodia
+6011,B. Adelberg
+6012,H. Garcia-Molina
+6013,B. Kao
+6015,Yannis E. Ioannidis
+6016,Viswanath Poosala
+6018,Wen-Chi Hou
+6019,Zhongyang Zhang
+6021,Ashish Gupta
+6022,Inderpal S. Mumick
+6023,Kenneth A. Ross
+6025,Swarup Acharya
+6026,Rafael Alonso
+6027,Michael Franklin
+6028,Stanley Zdonik
+6030,Seth J. White
+6031,David J. DeWitt
+6033,Jong Soo Park
+6034,Ming-Syan Chen
+6035,Philip S. Yu
+6037,Joachim Hammer
+6038,H&#233;ctor Garc&#237;a-Molina
+6039,Kelly Ireland
+6040,Yannis Papakonstantinou
+6041,Jeffrey Ullman
+6042,Jennifer Widom
+6044,Wen-Syan Li
+6045,Chris Clifton
+6047,CORPORATE The Paradise Team
+6049,CORPORATE The SHORE Team
+6051,J. Thomas
+6052,S. De&#223;loch
+6053,N. Mattos
+6055,Stella Gatziu
+6056,Andreas Geppert
+6057,Klaus R. Dittrich
+6059,E. Radeke
+6060,R. B&#246;ttger
+6061,B. Burkert
+6062,Y. Engel
+6063,G. Kachel
+6064,S. Kolmschlag
+6065,D. Nolte
+6067,Daniel A. Keim
+6068,Hans-Peter Kriegel
+6070,Jonathan Ashley
+6071,Myron Flickner
+6072,James Hafner
+6073,Denis Lee
+6074,Wayne Niblack
+6075,Dragutin Petkovic
+6077,A. P. Buchmann
+6078,A. Deutsch
+6079,J. Zimmermann
+6080,M. Higa
+6082,Antonio Massari
+6083,Stefano Pavani
+6084,Lorenzo Saladini
+6085,Panos K. Chrysanthis
+6087,Leon Shklar
+6088,Amit Sheth
+6089,Vipul Kashyap
+6090,Satish Thatte
+6092,Garth A. Gibson
+6094,T. Imielinski
+6095,A. Virmani
+6097,Stefano Ceri
+6098,Piero Fraternali
+6099,Stefano Paraboschi
+6100,Giuseppe Psaila
+6102,C. Collet
+6103,T. Coupaye
+6105,Jim Melton
+6106,Nelson Mendoca Mattos
+6108,Donald R. Deutsch
+6110,Moira C. Norrie
+6112,Amit Sheth
+6114,Bob Gerber
+6116,Chaitanya Baru
+6117,Gilles Fecteau
+6119,Christos Faloutsos
+6121,Charles Levine
+6123,Michael A. Olson
+6125,Janet Perna
+6127,Charly Kleissner
+6129,Robert Atkinson
+6131,Case Squire
+6133,Herb Edelstein
+6135,Clark D. French
+6137,Sanju K. Bansal
+6139,Arnon Rosenthal
+6140,Len Seligman
+6141,Catherine McCollum
+6142,Barbara Blaustein
+6143,Bhavani Thuraisingham
+6144,Edward Lafferty
+6146,Xiaolei Qian
+6148,Tak W. Yan
+6149,H&#233;ctor Garc&#237;a-Molina
+6151,Naphtali Rishe
+6152,Wei Sun
+6153,David Barton
+6154,Yi Deng
+6155,Cyril Orji
+6156,Michael Alexopoulos
+6157,Leonardo Loureiro
+6158,Carlos Ordonez
+6159,Mario Sanchez
+6160,Artyom Shaposhnikov
+6162,I.-Min A. Chen
+6163,Richard Hull
+6164,Dennis McLeod
+6166,Piero Fraternali
+6167,Letizia Tanca
+6169,Ralph Kimball
+6170,Kevin Strehlo
+6172,Jeff Richey
+6174,Chiang Lee
+6175,Chia-Jung Chen
+6176,Hongjun Lu
+6178,Limsoon Wong
+6180,Joseph Fong
+6182,Byung S. Lee
+6184,Andr&#233; Gamache
+6185,Nadjiba Sahraoui
+6187,A. Dogac
+6188,C. Dengi
+6189,E. Kilic
+6190,G. Ozhan
+6191,F. Ozcan
+6192,S. Nural
+6193,C. Evrendilek
+6194,U. Halici
+6195,B. Arpinar
+6196,P. Koksal
+6197,N. Kesim
+6198,S. Mancuhan
+6200,Stavros Kokkotos
+6201,Efstathios V. Ioannidis
+6202,Themis Panayiotopoulos
+6203,Constantine D. Spyropoulos
+6205,Evaggelia Pitoura
+6206,Bharat Bhargava
+6208,Dennis Shasha
+6209,Francois Llirbat
+6210,Eric Simon
+6211,Patrick Valduriez
+6213,Yannis E. Ioannidis
+6214,Raghu Ramakrishnan
+6216,Weidong Chen
+6218,Goetz Graefe
+6219,Richard L. Cole
+6221,Dac Khoa Doan
+6222,Norman W. Paton
+6223,Alistair Kilgour
+6225,Patrick O'Neil
+6226,Goetz Graefe
+6228,R. Maelbrancke
+6229,H. Olivi&#233;
+6231,Serge Abiteboul
+6232,Richard Hull
+6234,Matthias Jarke
+6236,Bruce Berra
+6237,Kingsley Nwosu
+6238,Bhavani Thuraisingham
+6240,Ulrike Jaeger
+6241,Johann Christoph Freytag
+6243,Akmal B. Chaudhri
+6245,Jan Chomicki
+6247,Lars Baekgaard
+6248,Leo Mark
+6250,Carl Medsker
+6251,Margaret Christensen
+6252,Il-Yeol Song
+6254,Gunter Schlageter
+6255,Thomas Berkel
+6256,Eberhard Heuel
+6257,Silke Mittrach
+6258,Andreas Scherer
+6259,Wolfgang Wilkes
+6261,Michael Freeston
+6263,Dimitris Papadias
+6264,Timos Sellis
+6265,Yannis Theodoridis
+6266,Max J. Egenhofer
+6268,Ambuj Shatdal
+6269,Jeffrey F. Naughton
+6271,Annita N. Wilschut
+6272,Jan Flokstra
+6273,Peter M. G. Apers
+6275,Mauricio A. Hern&#225;ndez
+6276,Salvatore J. Stolfo
+6278,Sridhar Ramaswamy
+6279,Paris C. Kanellakis
+6281,Walid Aref
+6282,Daniel Barbar&#225;
+6283,Padmavathi Vallabhaneni
+6285,Christos Faloutsos
+6286,King-Ip Lin
+6288,Rich Finkelstein
+6290,Hal Berenson
+6291,Phil Bernstein
+6292,Jim Gray
+6293,Jim Melton
+6294,Elizabeth O'Neil
+6295,Patrick O'Neil
+6297,Lory D. Molesky
+6298,Krithi Ramamritham
+6300,Atul Adya
+6301,Robert Gruber
+6302,Barbara Liskov
+6303,Umesh Maheshwari
+6305,Alexander Brodsky
+6306,Yoram Kornatzky
+6308,Leonidas Fegaras
+6309,David Maier
+6311,Georges Gardarin
+6312,Fernando Machuca
+6313,Philippe Pucheral
+6315,Nick Roussopoulos
+6316,Stephen Kelley
+6317,Fr&#233;d&#233;ric Vincent
+6319,Michael H. B&#246;hlen
+6321,Arie Segev
+6322,Christian S. Jensen
+6323,Richard Thomas Snodgrass
+6325,Murali Venkatrao
+6326,Michael Pizzo
+6328,Susanne Englert
+6329,Ray Glasstone
+6330,Waqar Hasan
+6332,P. Drew
+6333,B. Hamidzadeh
+6334,K. Karlapalem
+6335,A. Kean
+6336,D. Lee
+6337,Q. Li
+6338,F. Lochovsky
+6339,C. D. Shum
+6340,B. Wuthrich
+6342,CORPORATE National Technical Univ. of Athens
+6344,Doug Stacey
+6346,Xiaolei Qian
+6348,Margaret H. Dunham
+6349,Abdelsalam Helal
+6351,Divesh Srivastava
+6352,S. Sudarshan
+6353,Raghu Ramakrishnan
+6354,Jeffrey F. Naughton
+6356,Ahmed Elmagarmid
+6357,Jin Jing
+6358,Tetsuya Furukawa
+6360,Brian D. Noble
+6361,M. Satyanarayanan
+6363,Rafael Alonso
+6364,Yuh-Lin Chang
+6365,Liviu Iftode
+6366,V. S. Mani
+6368,Ouri Wolfson
+6369,Prasad Sistla
+6370,Son Dao
+6371,Kailash Narayanan
+6372,Ramya Raj
+6374,&#214;zg&#252;r Ulusoy
+6376,Bharat Bhargava
+6377,Melliyal Annamalai
+6378,Evaggelia Pitoura
+6380,Bruce E. Martin
+6382,Krishna G. Kulkarni
+6384,Andrew Laursen
+6385,Jeffrey Olkin
+6386,Mark Porter
+6388,Alex Gorelik
+6389,Yongdong Wang
+6390,Mark Deppe
+6392,Daniel J. Dietterich
+6394,Dean Daniels
+6395,Lip Boon Doo
+6396,Alan Downing
+6397,Curtis Elsbernd
+6398,Gary Hallmark
+6399,Sandeep Jain
+6400,Bob Jenkins
+6401,Peter Lim
+6402,Gordon Smith
+6403,Benny Souder
+6404,Jim Stamos
+6406,Michael J. Carey
+6408,Shaul Dar
+6409,Raghu Ramakrishnan
+6411,Phillip M. Fernandez
+6413,Susanne Englert
+6415,Carrie Ballinger
+6417,David Vaskevitch
+6419,Hamid Pirahesh
+6421,Michael Ubell
+6423,Won Kim
+6425,R. G. G. Cattell
+6427,A. Kemper
+6428,G. Moerkotte
+6429,K. Peithner
+6430,M. Steinbrunn
+6432,C&#233;sar A. Galindo-Legaria
+6434,V. Christophides
+6435,S. Abiteboul
+6436,S. Cluet
+6437,M. Scholl
+6439,Joseph M. Hellerstein
+6441,Anthony Tomasic
+6442,H&#233;ctor Garc&#237;a-Molina
+6443,Kurt Shoens
+6445,Mariano P. Consens
+6446,Tova Milo
+6448,Brigitte Kr&#246;ll
+6449,Peter Widmayer
+6451,Hasanat M. Dewan
+6452,Salvatore J. Stolfo
+6453,Mauricio Hern&#225;ndez
+6454,Jae-Jun Hwang
+6456,Praveen Seshadri
+6457,Miron Livny
+6458,Raghu Ramakrishnan
+6460,Konstantinos Sagonas
+6461,Terrance Swift
+6462,David S. Warren
+6464,William J. McIver
+6465,Jr.
+6466,Roger King
+6468,Christos Faloutsos
+6469,M. Ranganathan
+6470,Yannis Manolopoulos
+6472,Michael J. Carey
+6473,David J. DeWitt
+6474,Michael J. Franklin
+6475,Nancy E. Hall
+6476,Mark L. McAuliffe
+6477,Jeffrey F. Naughton
+6478,Daniel T. Schuh
+6479,Marvin H. Solomon
+6480,C. K. Tan
+6481,Odysseas G. Tsatalos
+6482,Seth J. White
+6483,Michael J. Zwilling
+6485,Seth J. White
+6486,David J. DeWitt
+6488,Michael J. Carey
+6489,Michael J. Franklin
+6490,Markos Zaharioudakis
+6492,Jonathan E. Cook
+6493,Alexander L. Wolf
+6494,Benjamin G. Zorn
+6496,Asuman Dogac
+6497,Budak Arpinar
+6498,Cem Evrendilek
+6499,Cetin Ozkan
+6500,Ilker Altintas
+6501,Ilker Durusoy
+6502,Mehmet Altinel
+6503,Tansel Okay
+6504,Yuksel Saygin
+6506,Marianne Winslett
+6507,Kenneth Smith
+6508,Xiaolei Qian
+6510,Weidong Chen
+6512,Alexander Aiken
+6513,Joseph M. Hellerstein
+6514,Jennifer Widom
+6516,H. V. Jagadish
+6518,C. Mohan
+6520,Narayanan Krishnakumar
+6521,Arthur J. Bernstein
+6523,Kenneth J. Goldman
+6524,Nancy Lynch
+6526,Shan-hoi Ng
+6527,Sheung-lun Hung
+6529,Magdy S. Hanna
+6531,Hugh Darwen
+6532,C. J. Date
+6534,Jan Jannink
+6536,Jian Zhang
+6538,H. V. Jagadish
+6540,Kamalakar Karlapalem
+6541,Qing Li
+6542,Chung-Dak Shum
+6544,Asuman Dogac
+6545,Mehmet Altinel
+6546,Cetin Ozkan
+6547,Ilker Durusoy
+6549,M. Missikoff
+6550,M. Toiati
+6552,Eva K&#252;hn
+6553,Thomas Tschernko
+6554,Konrad Schwarz
+6556,R. L. Grossman
+6557,X. Qin
+6559,Babis Theodoulidis
+6560,Aziz Ait-Braham
+6561,George Andrianopoulos
+6562,Jayant Chaudhary
+6563,George Karvelis
+6564,Simon Sou
+6566,Wesley P. Melling
+6568,Munindar P. Singh
+6569,Christine Tomlinson
+6570,Darrell Woelk
+6572,Jan Flokstra
+6573,Maurice van Keulen
+6574,Jacek Skowronek
+6576,G. M. Bryan
+6577,W. E. Moore
+6578,B. J. Curry
+6579,K. W. Lodge
+6580,J. Geyer
+6582,Alexandros Biliris
+6583,Euthimios Panagos
+6585,S.-Y. Hwang
+6586,E.-P. Lim
+6587,H.-R. Yang
+6588,S. Musukula
+6589,K. Mediratta
+6590,M. Ganesh
+6591,D. Clements
+6592,J. Stenoien
+6593,J. Srivastava
+6595,Thomas Brinkhoff
+6596,Hans-Peter Kriegel
+6597,Ralf Schneider
+6598,Bernhard Seeger
+6600,Jos&#233; A. Blakeley
+6602,Konstantinos Sagonas
+6603,Terrance Swift
+6604,David S. Warren
+6606,R. Agrawal
+6607,M. Carey
+6608,C. Faloutsos
+6609,S. Ghosh
+6610,M. Houtsma
+6611,T. Imieli&#324;ski
+6612,B. Iyer
+6613,A. Mahboob
+6614,H. Miranda
+6615,R. Srikant
+6616,A. Swami
+6618,Tiziana Catarci
+6619,Giuseppe Santucci
+6621,Jiawei Han
+6622,Yongjian Fu
+6623,Yue Huang
+6624,Yandong Cai
+6625,Nick Cercone
+6627,H.-J. Klein
+6629,Anindya Datta
+6631,CORPORATE Object Database Management Group
+6633,Henry F. Korth
+6634,Greg Speegle
+6636,Jos&#233; A. Blakeley
+6637,Dan Fishman
+6638,David Lomet
+6639,Michael Stonebraker
+6641,Richard Thomas Snodgrass
+6642,Ilsoo Ahn
+6643,Gad Ariav
+6644,Don Batory
+6645,James Clifford
+6646,Curtis E. Dyreson
+6647,Ramez Elmasri
+6648,Fabio Grandi
+6649,Christian S. Jensen
+6650,Wolfgang K&#228;fer
+6651,Nick Kline
+6652,Krishna Kulkarni
+6653,T. Y. Cliff Leung
+6654,Nikos Lorentzos
+6655,John F. Roddick
+6656,Arie Segev
+6657,Michael D. Soo
+6658,Suryanarayana M. Sripada
+6660,Richard Thomas Snodgrass
+6661,Ilsoo Ahn
+6662,Gad Ariav
+6663,Don Batory
+6664,James Clifford
+6665,Curtis E. Dyreson
+6666,Ramez Elmasri
+6667,Fabio Grandi
+6668,Christian S. Jensen
+6669,Wolfgang K&#228;fer
+6670,Nick Kline
+6671,Krishna Kulkarni
+6672,T. Y. Cliff Leung
+6673,Nikos Lorentzos
+6674,John F. Roddick
+6675,Arie Segev
+6676,Michael D. Soo
+6677,Suryanarayana M. Sripada
+6679,Chim-fu Yeung
+6680,Sheung-lun Hung
+6681,Kam-yiu Lam
+6683,Xiaolei Qian
+6685,Arbee L. P. Chen
+6687,Jorge C. G. Ramirez
+6688,Lon A. Smith
+6689,Lynn L. Peterson
+6691,Jennifer Widom
+6693,Klemens B&#246;hm
+6694,Thomas C. Rakow
+6696,Dong Keun Shin
+6697,Arnold Charles Meltzer
+6699,Martin Bertram
+6701,Hartmut Wedekind
+6703,Oscar D&#237;az
+6704,Arturo Jaime
+6705,Norman W. Paton
+6706,Ghassan al-Qaimari
+6708,Andreas Geppert
+6709,Klaus R. Dittrich
+6711,Werner Dreyer
+6712,Angelika Kotz Dittrich
+6713,Duri Schmidt
+6715,Li Yang
+6717,Richard Thomas Snodgrass
+6718,Ilsoo Ahn
+6719,Gadi Ariav
+6720,Don Batory
+6721,James Clifford
+6722,Curtis E. Dyreson
+6723,Ramez Elmasri
+6724,Fabio Grandi
+6725,Christian S. Jensen
+6726,Wolfgang K&#228;fer
+6727,Nick Kline
+6728,Krishna Kulkarni
+6729,T. Y. Cliff Leung
+6730,Nikos Lorentzos
+6731,John F. Roddick
+6732,Arie Segev
+6733,Michael D. Soo
+6734,Suryanarayana M. Sripada
+6736,Peter Buneman
+6737,Leonid Libkin
+6738,Dan Suciu
+6739,Val Tannen
+6740,Limsoon Wong
+6742,Niki Pissinou
+6743,Richard Thomas Snodgrass
+6744,Ramez Elmasri
+6745,Inderpal S. Mumick
+6746,Tamer &#214;zsu
+6747,Barbara Pernici
+6748,Arie Segev
+6749,Babis Theodoulidis
+6750,Umeshwar Dayal
+6752,Curtis Dyreson
+6753,Fabio Grandi
+6754,Wolfgang K&#228;fer
+6755,Nick Kline
+6756,Nikos Lorentzos
+6757,Yannis Mitsopoulos
+6758,Angelo Montanari
+6759,Daniel Nonen
+6760,Elisa Peressi
+6761,Barbara Pernici
+6762,John F. Roddick
+6763,Nandlal L. Sarda
+6764,Maria Rita Scalas
+6765,Arie Segev
+6766,Richard Thomas Snodgrass
+6767,Mike D. Soo
+6768,Abdullah Tansel
+6769,Paolo Tiberio
+6770,Gio Wiederhold
+6772,Moira C. Norrie
+6773,Stephen M. Blott
+6774,Hans-J&#246;rg Schek
+6775,Gerhard Weikum
+6777,Leonard Gallagher
+6779,Arjan Loeffen
+6781,Claudia Bauzer Medeiros
+6782,Fatima Pires
+6784,Christos A. Polyzois
+6785,H&#233;ctor Garc&#237;a-Molina
+6787,Panos K. Chrysanthis
+6788,Krithi Ramamritham
+6790,Marianne Winslett
+6792,Stefano Ceri
+6793,Piero Fraternali
+6794,Stefano Paraboschi
+6795,Letizia Tanca
+6797,Simon Gibbs
+6798,Christian Breiteneder
+6799,Dennis Tsichritzis
+6801,Steven Berson
+6802,Shahram Ghandeharizadeh
+6803,Richard Muntz
+6804,Xiangyu Ju
+6806,Jason Tsong-Li Wang
+6807,Gung-Wei Chirn
+6808,Thomas G. Marr
+6809,Bruce Shapiro
+6810,Dennis Shasha
+6811,Kaizhong Zhang
+6813,Inderpal Singh Mumick
+6814,Hamid Pirahesh
+6816,Yannis E. Ioannidis
+6817,Yezdi Lashkari
+6819,Luis Gravano
+6820,H&#233;ctor Garc&#237;a-Molina
+6821,Anthony Tomasic
+6823,Chungmin Melvin Chen
+6824,Nick Roussopoulos
+6826,Richard L. Cole
+6827,Goetz Graefe
+6829,Hui-I Hsiao
+6830,Ming-Syan Chen
+6831,Philip S. Yu
+6833,Arun Swami
+6834,K. Bernhard Schiefer
+6836,Ming-Ling Lo
+6837,Chinya V. Ravishankar
+6839,Thomas Brinkhoff
+6840,Hans-Peter Kriegel
+6841,Ralf Schneider
+6842,Bernhard Seeger
+6844,Chris Nyberg
+6845,Tom Barclay
+6846,Zarka Cvetanovic
+6847,Jim Gray
+6848,Dave Lomet
+6850,Hwee Hwa Pang
+6851,Michael J. Carey
+6852,Miron Livny
+6854,Radek Vingralek
+6855,Yuri Breitbart
+6856,Gerhard Weikum
+6858,Jim Gray
+6859,Prakash Sundaresan
+6860,Susanne Englert
+6861,Ken Baclawski
+6862,Peter J. Weinberger
+6864,Ramesh Jain
+6865,Arun Hampapur
+6867,Yasushi Kiyoki
+6868,Takashi Kitagawa
+6869,Takanari Hayama
+6871,Jean T. Anderson
+6872,Michael Stonebraker
+6874,William I. Grosky
+6875,Farshad Fotouhi
+6876,Ishwar K. Sethi
+6877,Bogdan Capatina
+6879,Ulrike Glavitsch
+6880,Peter Sch&#228;uble
+6881,Martin Wechsler
+6883,Francine Chen
+6884,Marti Hearst
+6885,Julian Kupiec
+6886,Jan Pedersen
+6887,Lynn Wilcox
+6889,Tom Barclay
+6890,Robert Barnes
+6891,Jim Gray
+6892,Prakash Sundaresan
+6894,Nelson Mattos
+6895,Linda G. DeMichiel
+6897,Bill Rosenblatt
+6899,Daniel Barbar&#225;
+6900,Tomasz Imieli&#324;ski
+6902,Yixiu Huang
+6903,Prasad Sistla
+6904,Ouri Wolfson
+6906,Tomasz Imielinski
+6907,S. Viswanathan
+6908,B. R. Badrinath
+6910,Ilsoo Ahn
+6912,A. Biliris
+6913,S. Dar
+6914,N. Gehani
+6915,H. V. Jagadish
+6916,K. Ramamritham
+6918,C. Mohan
+6919,Inderpal Narang
+6921,Aidong Zhang
+6922,Marian Nodine
+6923,Bharat Bhargava
+6924,Omran Bukhres
+6926,Ashish Gupta
+6927,Venky Harinarayan
+6928,Anand Rajaraman
+6930,S. Conrad
+6931,B. Eaglestone
+6932,W. Hasselbring
+6933,M. Roantree
+6934,M. Sch&#246;hoff
+6935,M. Str&#228;ssler
+6936,M. Vermeer
+6937,F. Saltor
+6939,Sushil Jajodia
+6940,Daniel Barbar&#225;
+6941,Alex Brodsky
+6942,Larry Kerschberg
+6943,Ami Motro
+6944,Edgar Sibley
+6945,X. Sean Wang
+6947,Jim Gray
+6948,Goetz Graefe
+6950,Robert A. Nado
+6951,Scott B. Huffman
+6953,Jason McHugh
+6954,Jennifer Widom
+6956,R. McClatchey
+6957,G. Vossen
+6959,Svetlozer Nestorov
+6960,Serge Abiteboul
+6961,Rajeev Motwani
+6963,Dan Suciu
+6965,Brigitta K&#246;nig-Ries
+6966,Peter C. Lockermann
+6968,Paolo Atzeni
+6969,Giansalvatore Mecca
+6970,Paolo Merialdo
+6972,Naveen Ashish
+6973,Craig A. Knoblock
+6975,Avi Silberschatz
+6976,Stan Zdonik
+6978,Nenad A. Jukic
+6979,Susan V. Vrbsky
+6981,Jason McHugh
+6982,Serge Abiteboul
+6983,Roy Goldman
+6984,Dallas Quass
+6985,Jennifer Widom
+6987,Krithi Ramamritham
+6988,Nandit Soparkar
+6990,Arnon Rosenthal
+6992,Philip A. Bernstein
+6994,Jiawei Han
+6996,Franz Baader
+6997,Manfred A. Jeusfeld
+6998,Werner Nutt
+7000,Vassilis J. Tsotras
+7001,Christian S. Jensen
+7002,Richard Thomas Snodgrass
+7004,Chialin Chang
+7005,Anurag Acharya
+7006,Alan Sussman
+7007,Joel Saltz
+7009,Pinar Koksal
+7010,Sena Nural Arpinar
+7011,Asuman Dogac
+7013,Frank Manola
+7015,Nick Roussopoulos
+7017,Bradley F. Burton
+7018,Victor W. Marek
+7020,Stella Gatziu
+7021,Arne Koschel
+7022,G&#252;nter von B&#252;ltzingsloewen
+7023,Hans Fritschi
+7025,Chan Man Kuok
+7026,Ada Fu
+7027,Man Hon Wong
+7029,Peter Dadam
+7030,Wolfgang Klas
+7032,Akmal B. Chaudhri
+7034,Ron Musick
+7035,Chris Miller
+7037,Praveen Seshadri
+7039,Sophie Cluet
+7040,Claude Delobel
+7041,J&#233;r&#466;me Sim&#233;on
+7042,Katarzyna Smaga
+7044,K. V. Ravi Kanth
+7045,Divyakant Agrawal
+7046,Ambuj Singh
+7048,Thomas Seidl
+7049,Hans-Peter Kriegel
+7051,Stefan Berchtold
+7052,Christian B&#246;hm
+7053,Hans-Peter Kriegal
+7055,Tolga Urhan
+7056,Michael J. Franklin
+7057,Laurent Amsaleg
+7059,Bj&#246;rn T. J&#243;nsson
+7060,Michael J. Franklin
+7061,Divesh Srivastava
+7063,Navin Kabra
+7064,David J. DeWitt
+7066,Rakesh Agrawal
+7067,Johannes Gehrke
+7068,Dimitrios Gunopulos
+7069,Prabhakar Raghavan
+7071,Roberto J. Bayardo
+7072,Jr.
+7074,Sudipto Guha
+7075,Rajeev Rastogi
+7076,Kyuseok Shim
+7078,Mitch Cherniack
+7079,Stan Zdonik
+7081,Leonidas Fegaras
+7083,Jun Rao
+7084,Kenneth A. Ross
+7086,Takahiko Shintani
+7087,Masaru Kitsuregawa
+7089,Raymond T. Ng
+7090,Laks V. S. Lakshmanan
+7091,Jiawei Han
+7092,Alex Pang
+7094,Dick Tsur
+7095,Jeffrey D. Ullman
+7096,Serge Abiteboul
+7097,Chris Clifton
+7098,Rajeev Motwani
+7099,Svetlozar Nestorov
+7100,Arnon Rosenthal
+7102,Chee-Yong Chan
+7103,Yannis E. Ioannidis
+7105,Surajit Chaudhuri
+7106,Vivek Narasayya
+7108,Phillip B. Gibbons
+7109,Yossi Matias
+7111,Sunita Sarawagi
+7112,Shiby Thomas
+7113,Rakesh Agrawal
+7115,Soumen Chakrabarti
+7116,Byron Dom
+7117,Piotr Indyk
+7119,Subbu N. Subramanian
+7120,Shivakumar Venkataraman
+7122,Brad Adelberg
+7124,Svetlozar Nestorov
+7125,Serge Abiteboul
+7126,Rajeev Motwani
+7128,Prasad M. Deshpande
+7129,Karthikeyan Ramasamy
+7130,Amit Shukla
+7131,Jeffrey F. Naughton
+7133,Yihong Zhao
+7134,Prasad M. Deshpande
+7135,Jeffrey F. Naughton
+7136,Amit Shukla
+7138,G&#237;sli R. Hjaltason
+7139,Hanan Samet
+7141,Yannis Kotidis
+7142,Nick Roussopoulos
+7144,St&#233;phane Grumbach
+7145,Philippe Rigaux
+7146,Luc Segoufin
+7148,Apostolos N. Papadopoulos
+7149,Yannis Manolopoulos
+7151,Re&#233;e J. Miller
+7153,William W. Cohen
+7155,Timothy Griffin
+7156,Richard Hull
+7158,Michael J. Carey
+7159,Donald Kossmann
+7161,Sergey Brin
+7162,Rajeev Motwani
+7163,Jeffrey D. Ullman
+7164,Shalom Tsur
+7166,Andrea C. Arpaci-Dusseau
+7167,Remzi H. Arpaci-Dusseau
+7168,David E. Culler
+7169,Joseph M. Hellerstein
+7170,David A. Patterson
+7172,Eui-Hong Han
+7173,George Karypis
+7174,Vipin Kumar
+7176,Sergey Brin
+7177,Rajeev Motwani
+7178,Craig Silverstein
+7180,M. Livny
+7181,R. Ramakrishnan
+7182,K. Beyer
+7183,G. Chen
+7184,D. Donjerkovic
+7185,S. Lawande
+7186,J. Myllymaki
+7187,K. Wenger
+7189,Flip Korn
+7190,H. V. Jagadish
+7191,Christos Faloutsos
+7193,Michael J. Carey
+7194,David J. DeWitt
+7195,Jeffrey F. Naughton
+7196,Mohammad Asgarian
+7197,Paul Brown
+7198,Johannes E. Gehrke
+7199,Dhaval N. Shah
+7201,Joachen Doppelhammer
+7202,Thomas H&#246;ppler
+7203,Alfons Kemper
+7204,Donald Kossmann
+7206,Yihong Zhao
+7207,Prasad M. Deshpande
+7208,Jeffrey F. Naughton
+7210,Brad Adelberg
+7211,Hector Garcia-Molina
+7212,Jennifer Widom
+7214,Swarup Acharya
+7215,Michael Franklin
+7216,Stanley Zdonik
+7218,Joseph M. Hellerstein
+7219,Peter J. Haas
+7220,Helen J. Wang
+7222,Luis Gravano
+7223,Chen-Chuan K. Chang
+7224,H&#233;ctor Garc&#237;a-Molina
+7225,Andreas Paepcke
+7227,R. J. Bayardo
+7228,Jr.
+7229,W. Bohrer
+7230,R. Brice
+7231,A. Cichocki
+7232,J. Fowler
+7233,A. Helal
+7234,V. Kashyap
+7235,T. Ksiezyk
+7236,G. Martin
+7237,M. Nodine
+7238,M. Rashid
+7239,M. Rusinkiewicz
+7240,R. Shea
+7241,C. Unnikrishnan
+7242,A. Unruh
+7243,D. Woelk
+7245,Latha S. Colby
+7246,Akira Kawaguchi
+7247,Daniel F. Lieuwen
+7248,Inderpal Singh Mumick
+7249,Kenneth A. Ross
+7251,D. Agrawal
+7252,A. El Abbadi
+7253,A. Singh
+7254,T. Yurek
+7256,Fran&#231;ois Llirbat
+7257,Fran&#231;oise Fabret
+7258,Eric Simon
+7260,Iakovos Motakis
+7261,Carlo Zaniolo
+7263,R. J. Miller
+7264,Y. Yang
+7266,Binto George
+7267,Jayant Haritsa
+7269,Sushil Jajodia
+7270,Pierangela Samarati
+7271,V. S. Subrahmanian
+7272,Eliza Bertino
+7274,Ramesh Gupta
+7275,Jayant Haritsa
+7276,Krithi Ramamritham
+7278,Umesh Maheshwari
+7279,Barbara Liskov
+7281,Nick Koudas
+7282,Kenneth C. Sevcik
+7284,Jignesh Patel
+7285,JieBing Yu
+7286,Navin Kabra
+7287,Kristin Tufte
+7288,Biswadeep Nag
+7289,Josef Burger
+7290,Nancy Hall
+7291,Karthikeyan Ramasamy
+7292,Roger Lueder
+7293,Curt Ellmann
+7294,Jim Kupsch
+7295,Shelly Guo
+7296,Johan Larson
+7297,David De Witt
+7298,Jeffrey Naughton
+7300,Michael Gebhardt
+7301,Matthias Jarke
+7302,Stephan Jacobs
+7304,Tolga Bozkaya
+7305,Meral Ozsoyoglu
+7307,Norio Katayama
+7308,Shin'ichi Satoh
+7310,Narayanan Shivakumar
+7311,H&#233;ctor Garc&#237;a-Molina
+7313,Dallan Quass
+7314,Jennifer Widom
+7316,Joachim Hammer
+7317,H&#233;ctor Garc&#237;a-Molina
+7318,Svetlozar Nestorov
+7319,Ramana Yerneni
+7320,Marcus Breunig
+7321,Vasilis Vassalos
+7323,Paolo Atzeni
+7324,Riccardo Torlone
+7326,S. Bressan
+7327,C. H. Goh
+7328,K. Fynn
+7329,M. Jakobisiak
+7330,K. Hussein
+7331,H. Kon
+7332,T. Lee
+7333,S. Madnick
+7334,T. Pena
+7335,J. Qu
+7336,A. Shum
+7337,M. Siegel
+7339,Wen-Syan Li
+7340,K. Sel&#231;uk Candan
+7341,Kyoji Hirata
+7342,Yoshinori Hara
+7344,Anthony Tomasic
+7345,R&#233;my Amouroux
+7346,Philippe Bonnet
+7347,Olga Kapitskaia
+7348,Hubert Naacke
+7349,Louiqa Raschid
+7351,R. J. Bayardo
+7352,Jr.
+7353,W. Bohrer
+7354,R. Brice
+7355,A. Cichocki
+7356,J. Fowler
+7357,A. Halal
+7358,V. Kashyap
+7359,T. Ksiezyk
+7360,G. Martin
+7361,M. Nodine
+7362,M. Rashid
+7363,M. Rusinkiewicz
+7364,R. Shea
+7365,C. Unnikrishnan
+7366,A. Unruh
+7367,D. Woelk
+7369,Michael R. Genesereth
+7370,Arthur M. Keller
+7371,Oliver M. Duschka
+7373,Fr&#233;d&#233;ric Gingras
+7374,Laks V. S. Lakshmanan
+7375,Iyer N. Subramanian
+7376,Despina Papoulis
+7377,Nematollaah Shiri
+7379,Surajit Chaudhuri
+7380,Umeshwar Dayal
+7382,Ralf Kramer
+7384,Michael J. Carey
+7385,Nelson M. Mattos
+7386,Anil K. Nori
+7388,Dennis Shasha
+7390,M. Livny
+7391,R. Ramakrishnan
+7392,K. Beyer
+7393,G. Chen
+7394,D. Donjerkovic
+7395,S. Lawande
+7396,J. Myllymaki
+7397,K. Wenger
+7399,Nita Goyal
+7400,Charles Hoch
+7401,Ravi Krishnamurthy
+7402,Brian Meckler
+7403,Michael Suchow
+7404,Moshe Zloof
+7406,Isabel F. Cruz
+7407,M. Averbuch
+7408,Wendy T. Lucas
+7409,Melissa Radzyminski
+7410,Kirby Zhang
+7412,Surajit Chaudhuri
+7414,Thomas Eiter
+7415,Georg Gottlob
+7416,Heikki Mannila
+7418,Laks V. S. Lakshmanan
+7419,Nicola Leone
+7420,Robert Ross
+7421,V. S. Subrahmanian
+7423,Yannis E. Ioannidis
+7424,Miron Livny
+7425,Anastassia Ailamaki
+7426,Anand Narayanan
+7427,Andrew Therber
+7429,Michael J. Franklin
+7430,Michael J. Carey
+7431,Miron Livny
+7433,Gilles Cl&#233;ment
+7434,Christian Larouche
+7435,Denis Gouin
+7436,Paul Morin
+7437,Henry Kucera
+7439,Thanasis Hadzilacos
+7440,Nectaria Tryfona
+7442,Mary Fernandez
+7443,Daniela Florescu
+7444,Alon Levy
+7445,Dan Suciu
+7447,Daniel Barbar&#225;
+7448,Mark Sullivan
+7450,Wilburt J. Labio
+7451,Yue Zhuge
+7452,Janet L. Wiener
+7453,Himanshu Gupta
+7454,H&#233;ctor Garc&#237;a-Molina
+7455,Jennifer Widom
+7457,Jason Tsong-Li Wang
+7458,Dennis Shasha
+7459,George J. S. Chang
+7460,Liam Relihan
+7461,Kaizhong Zhang
+7462,Girish Patel
+7464,Mary Fernandez
+7465,Daniela Florescu
+7466,Jaewoo Kang
+7467,Alon Levy
+7468,Dan Suciu
+7470,Jaiwei Han
+7471,Krzysztof Koperski
+7472,Nebojsa Stefanovic
+7474,S. Chakravarthy
+7476,Dirk Wodtke
+7477,Jeanine Weissenfels
+7478,Gerhard Weikum
+7479,Angelika Kotz Dittrich
+7480,Peter Muth
+7482,Stefan Berchtold
+7483,Hans-Peter Kriegel
+7485,Praveen Seshadri
+7486,Mark Paskin
+7488,Corporate Act-Net Consortium
+7490,Azer Bestavros
+7491,Kwei-Jay Lin
+7492,Sang Son
+7494,Alexandros Biliris
+7495,Euthimios Panagos
+7497,Asuman Dogac
+7499,Michael G. Norman
+7500,Thomas Zurek
+7501,Peter Thanisch
+7503,Carsten A. Gerlhof
+7504,Alfons Kemper
+7505,Guido Moerkotte
+7507,Waqar Hasan
+7508,Daniela Florescu
+7509,Patrick Valduriez
+7511,Lionel Brunie
+7512,Harald Kosch
+7514,Witold Litwin
+7515,Marie-Anna Neimat
+7516,Donovan A. Schneider
+7518,Louiqa Raschid
+7519,Jorge Lobo
+7521,John S. Keen
+7522,William J. Dally
+7524,C&#233;sar Galindo-Legaria
+7525,Arnon Rosenthal
+7527,George Colliat
+7529,Albert D'Andrea
+7530,Phil Janus
+7532,Xiaolei Qian
+7534,Dean Kuo
+7536,Yannis E. Ioannidis
+7538,Tiziana Catarci
+7539,Isabel F. Cruz
+7541,Christopher Ahlberg
+7543,Egemen Tanin
+7544,Richard Beigel
+7545,Ben Shneiderman
+7547,C. J. Date
+7549,Randel J. Peters
+7550,M. Tamer &#214;zsu
+7552,M. Rafanelli
+7553,A. Bezenchek
+7554,L. Tininini
+7556,Hugh Darwen
+7558,Amit Sheth
+7559,Dimitrios Georgakopoulos
+7560,Stef M. M. Joosten
+7561,Marek Rusinkiewicz
+7562,Walt Scacchi
+7563,Jack Wileden
+7564,Alexander L. Wolf
+7566,Kenneth C. Cox
+7567,Stephen G. Eick
+7568,Taosong He
+7570,Jeff Sidell
+7572,M. P. Atkinson
+7573,L. Dayn&#232;s
+7574,M. J. Jordan
+7575,T. Printezis
+7576,S. Spence
+7578,Daniel A. Keim
+7580,Jessie B. Kennedy
+7581,Kenneth J. Mitchell
+7582,Peter J. Barclay
+7584,Masum Z. Hasan
+7585,Alberto O. Mendelzon
+7586,Dimitra Vista
+7588,Giuseppe Santucci
+7589,Laura Tarantino
+7591,Ralf Kramer
+7592,Ralf Nicholai
+7593,Arne Koschel
+7594,Claudia Rolker
+7595,Peter Lockemann
+7596,Andree Keitel
+7597,Rudolf Legat
+7598,Konrad Tirm
+7600,Wolf-Fritz Riekert
+7601,Roland Mayer-F&#246;ll
+7602,Gerlinde Wiest
+7604,David J. Abel
+7605,Kerry Taylor
+7606,Dean Kun
+7608,Anthony Tomasic
+7609,Eric Simon
+7611,Xiolai Qian
+7613,Oliver G&#252;nther
+7615,Andrew Eisenberg
+7617,Ramesh Bhashyam
+7619,Shekar Ramanathan
+7620,Julia Hodges
+7622,Surajit Chaudhuri
+7623,Umeshwar Dayal
+7625,Kosmas Karadimitriou
+7626,John M. Tyler
+7628,Joseph Fong
+7630,Peter Buneman
+7631,Louiqa Raschid
+7632,Jeffrey Ullman
+7634,Arnon Rosenthal
+7635,Erich Hughes
+7636,Scott Renner
+7637,Len Seligman
+7639,James Frew
+7640,Jeff Dozier
+7642,Kenn Gardels
+7644,Davood Rafiei
+7645,Alberto Mendelzon
+7647,Stefan Berchtold
+7648,Christian B&#246;hm
+7649,Bernhard Braunm&#252;ller
+7650,Daniel A. Keim
+7651,Hans-Peter Kriegel
+7653,Ouri Wolfson
+7654,Sushil Jajodia
+7655,Yixiu Huang
+7657,Paul Ammann
+7658,Sushil Jajodia
+7659,Indrakshi Ray
+7661,James Clifford
+7662,Curtis Dyreson
+7663,Tom&#225;s Isakowitz
+7664,Christian S. Jensen
+7665,Richard Thomas Snodgrass
+7667,X. Sean Wang
+7668,Claudio Bettini
+7669,Alexander Brodsky
+7670,Sushil Jajodia
+7672,Xiaolei Qian
+7674,Khoa Doan
+7675,Catherine Plaisant
+7676,Ben Shneiderman
+7677,Tom Bruns
+7679,Thin-Fong Tsuei
+7680,Allan N. Packer
+7681,Keng-Tai Ko
+7683,Inderpal Singh Mumick
+7684,Dallan Quass
+7685,Barinderpal Singh Mumick
+7687,Nick Roussopoulos
+7688,Yannis Kotidis
+7689,Mema Roussopoulos
+7691,Ching-Tien Ho
+7692,Rakesh Agrawal
+7693,Nimrod Megiddo
+7694,Ramakrishnan Srikant
+7696,Marcel Kornacker
+7697,C. Mohan
+7698,Joseph M. Hellerstein
+7700,Markos Zaharioudakis
+7701,Michael J. Carey
+7703,Patrick O'Neil
+7704,Dallan Quass
+7706,Sudarshan S. Chawathe
+7707,Hector Garcia-Molina
+7709,Jason T. L. Wang
+7710,Kaizhong Zhang
+7711,Dennis Shasha
+7713,R. L. Grossman
+7714,D. Hanley
+7715,X. Qin
+7717,Werner Dreyer
+7718,Angelika Kotz Dittrich
+7719,Duri Schmidt
+7721,Willem Jonker
+7722,Heribert Sch&#252;tz
+7724,Elena Baralis
+7725,Stefano Ceri
+7726,Stefano Paraboschi
+7728,Peter Buneman
+7729,Atsushi Ohori
+7731,Wai Yin Mok
+7732,Yiu-Kai Ng
+7733,David W. Embley
+7735,Inderpal Singh Mumick
+7736,Sheldon J. Finkelstein
+7737,Hamid Pirahesh
+7738,Raghu Ramakrishnan
+7740,Ling Liu
+7741,Robert Meersman
+7743,Kenneth A. Ross
+7745,Colin Bell
+7746,Anil Nerode
+7747,Raymond T. Ng
+7748,V. S. Subrahmanian
+7750,Sha Guo
+7751,Wei Sun
+7752,Mark A. Weiss
+7754,Paolo Ciaccia
+7755,Paolo Tiberio
+7756,Pavel Zezula
+7758,Debabrata Dey
+7759,Sumit Sarkar
+7761,Shahram Ghandeharizadeh
+7762,Richard Hull
+7763,Dean Jacobs
+7765,Ramakrishnan Srikant
+7766,Rakesh Agrawal
+7768,Peter G. Selfridge
+7769,Divesh Srivastava
+7770,Lynn O. Wilson
+7772,Takeshi Fukuda
+7773,Yasukiko Morimoto
+7774,Shinichi Morishita
+7775,Takeshi Tokuyama
+7777,Piyush Goel
+7778,Bala Iyer
+7780,Bennet Vance
+7781,David Maier
+7783,W. O'Connell
+7784,I. T. Ieong
+7785,D. Schrader
+7786,C. Watson
+7787,G. Au
+7788,A. Biliris
+7789,S. Choo
+7790,P. Colin
+7791,G. Linderman
+7792,E. Panagos
+7793,J. Wang
+7794,T. Walter
+7796,David Simmen
+7797,Eugene Shekita
+7798,Timothy Malkemus
+7800,Surajit Chaudhuri
+7801,Luis Gravano
+7803,Banu &#214;zden
+7804,Rajeev Rastogi
+7805,Prashant Shenoy
+7806,Avi Silberschatz
+7808,Chendong Zou
+7809,Betty Salzberg
+7811,Tian Zhang
+7812,Raghu Ramakrishnan
+7813,Miron Livny
+7815,S. Adali
+7816,K. S. Candan
+7817,Y. Papakonstantinou
+7818,V. S. Subrahmanian
+7820,Kiran J. Achyutuni
+7821,Edward Omiecinski
+7822,Shamkant B. Navathe
+7824,Jos&#233; A. Blakeley
+7826,Michael J. Franklin
+7827,Bj&#246;rn Th&#243;r J&#243;nsson
+7828,Donald Kossmann
+7830,Kazuhiko Mogi
+7831,Masaru Kitsuregawa
+7833,Jim Gray
+7834,Pat Helland
+7835,Patrick O'Neil
+7836,Dennis Shasha
+7838,Sudhir G. Rao
+7839,Antonio Badia
+7840,Dirk van Gucht
+7842,Leonid Libkin
+7843,Rona Machlin
+7844,Limsoon Wong
+7846,Bruce K. Hillyer
+7847,Avi Silberschatz
+7849,Venky Harinarayan
+7850,Anand Rajaraman
+7851,Jeffrey D. Ullman
+7853,Jignesh M. Patel
+7854,David J. DeWitt
+7856,Sumit Ganguly
+7857,Phillip B. Gibbons
+7858,Yossi Matias
+7859,Avi Silberschatz
+7861,Ramesh C. Agarwal
+7863,Ming-Ling Lo
+7864,Chinya V. Ravishankar
+7866,Michael Doherty
+7867,Richard Hull
+7868,Mohammed Rupawalla
+7870,B. Liskov
+7871,A. Adya
+7872,M. Castro
+7873,S. Ghemawat
+7874,R. Gruber
+7875,U. Maheshwari
+7876,A. C. Myers
+7877,M. Day
+7878,L. Shrira
+7880,P. Krishnan
+7881,Jeffrey Scott Vitter
+7882,Bala Iyer
+7884,Viswanath Poosala
+7885,Peter J. Haas
+7886,Yannis E. Ioannidis
+7887,Eugene J. Shekita
+7889,Kurt P. Brown
+7890,Michael J. Carey
+7891,Miron Livny
+7893,Minos N. Garofalakis
+7894,Yannis E. Ioannidis
+7896,Stephen Blott
+7897,Lukas Relly
+7898,Hans-J&#246;rg Schek
+7900,Keishi Tajima
+7902,Vassilis Christophides
+7903,Sophie Cluet
+7904,Guido Moerkotte
+7906,Mitch Cherniack
+7907,Stanley B. Zdonik
+7909,Mark L. McAuliffe
+7910,Michael J. Carey
+7911,Marvin H. Solomon
+7913,Jonathan E. Cook
+7914,Artur W. Klauser
+7915,Alexander L. Wolf
+7916,Benjamin G. Zorn
+7918,Claire Morpain
+7919,Mich&#233;le Cart
+7920,Jean Ferri&#233;
+7921,Jean-Fran&#231;ois Pons
+7923,Kenneth A. Ross
+7924,Divesh Srivastava
+7925,S. Sudarshan
+7927,Praveen Seshadri
+7928,Joseph M. Hellerstein
+7929,Hamid Pirahesh
+7930,T. Y. Cliff Leung
+7931,Raghu Ramakrishnan
+7932,Divesh Srivastava
+7933,Peter J. Stuckey
+7934,S. Sudarshan
+7936,Joseph M. Hellerstein
+7937,Jeffrey F. Naughton
+7939,Peter Buneman
+7940,Susan Davidson
+7941,Gerd Hillebrand
+7942,Dan Suciu
+7944,Sudarshan S. Chawathe
+7945,Anand Rajaraman
+7946,Hector Garcia-Molina
+7947,Jennifer Widom
+7949,Richard Hull
+7950,Gang Zhou
+7952,Latha S. Colby
+7953,Timothy Griffin
+7954,Leonid Libkin
+7955,Inderpal Singh Mumick
+7956,Howard Trickey
+7958,Justin Zobel
+7959,Alistair Moffat
+7960,Kotagiri Ramamohanarao
+7962,R. Camps
+7964,Tam Nguyen
+7965,V. Srinivasan
+7967,Nita Goyal
+7968,Charles Hoch
+7969,Ravi Krishnamurthy
+7970,Brian Meckler
+7971,Michael Suckow
+7973,Calisto Zuzarte
+7974,Hamid Pirahesh
+7975,Wenbin Ma
+7976,Qi Cheng
+7977,Linqi Liu
+7978,Kwai Wong
+7980,Chuck Cranor
+7981,Theodore Johnson
+7982,Oliver Spataschek
+7983,Vladislav Shkapenyuk
+7985,Laks V. S. Lakshmanan
+7986,Jian Pei
+7987,Yan Zhao
+7989,Jialie Shen
+7990,Anne H. H. Ngu
+7991,John Shepherd
+7992,Du Q. Huynh
+7993,Quan Z. Sheng
+7995,Zachary Ives
+7997,David DeHaan
+7998,David Toman
+7999,Mariano P. Consens
+8000,M. Tamer &#214;zsu
+8002,Koichi Goto
+8003,Yahiko Kambayashi
+8005,Sriram Padmanabhan
+8006,Bishwaranjan Bhattacharjee
+8007,Tim Malkemus
+8008,Leslie Cranston
+8009,Matthew Huras
+8011,Sihem Amer-Yahia
+8012,Mary Fern&#225;ndez
+8013,Divesh Srivastava
+8014,Yu Xu
+8016,Eugene Agichtein
+8017,Luis Gravano
+8019,D. Abadi
+8020,D. Carney
+8021,U. &#199;etintemel
+8022,M. Cherniack
+8023,C. Convey
+8024,C. Erwin
+8025,E. Galvez
+8026,M. Hatoun
+8027,A. Maskey
+8028,A. Rasin
+8029,A. Singer
+8030,M. Stonebraker
+8031,N. Tatbul
+8032,Y. Xing
+8033,R. Yan
+8034,S. Zdonik
+8036,Arvind Arasu
+8037,Brian Babcock
+8038,Shivnath Babu
+8039,Mayur Datar
+8040,Keith Ito
+8041,Itaru Nishizawa
+8042,Justin Rosenstein
+8043,Jennifer Widom
+8045,David T. Liu
+8046,Michael J. Franklin
+8047,Devesh Parekh
+8049,Beng Chin Ooi
+8050,Kian-Lee Tan
+8051,Aoying Zhou
+8052,Chin Hong Goh
+8053,Yingguang Li
+8054,Chu Yee Liau
+8055,Bo Ling
+8056,Wee Siong Ng
+8057,Yanfeng Shu
+8058,Xiaoyu Wang
+8059,Ming Zhang
+8061,Christof Bornh&#246;vd
+8062,Mehmet Altinel
+8063,Sailesh Krishnamurthy
+8064,C. Mohan
+8065,Hamid Pirahesh
+8066,Berthold Reinwald
+8068,Per-&#197;ke Larson
+8069,Jonathan Goldstein
+8070,Jingren Zhou
+8072,Xin Zhang
+8073,Katica Dimitrova
+8074,Ling Wang
+8075,Maged El Sayed
+8076,Brian Murphy
+8077,Bradford Pielech
+8078,Mukesh Mulchandani
+8079,Luping Ding
+8080,Elke A. Rundensteiner
+8082,Stelios Paparizos
+8083,Shurug Al-Khalifa
+8084,Adriane Chapman
+8085,H. V. Jagadish
+8086,Laks V. S. Lakshmanan
+8087,Andrew Nierman
+8088,Jignesh M. Patel
+8089,Divesh Srivastava
+8090,Nuwee Wiwatwattana
+8091,Yuqing Wu
+8092,Cong Yu
+8094,Philip Bohannon
+8095,Xin (Luna) Dong
+8096,Sumit Ganguly
+8097,Henry F. Korth
+8098,Chengkai Li
+8099,P. P. S. Narayan
+8100,Pradeep Shenoy
+8102,Rakesh Agrawal
+8103,Peter J. Haas
+8104,Jerry Kiernan
+8106,Amol Deshpande
+8107,Suman Nath
+8108,Phillip B. Gibbons
+8109,Srinivasan Seshan
+8111,Sirish Chandrasekaran
+8112,Owen Cooper
+8113,Amol Deshpande
+8114,Michael J. Franklin
+8115,Joseph M. Hellerstein
+8116,Wei Hong
+8117,Sailesh Krishnamurthy
+8118,Samuel R. Madden
+8119,Fred Reiss
+8120,Mehul A. Shah
+8122,SungRan Cho
+8123,Sihem Amer-Yahia
+8124,Laks V. S. Lakshmanan
+8125,Divesh Srivastava
+8127,Aoying Zhou
+8128,Qing Wang
+8129,Zhimao Guo
+8130,Xueqing Gong
+8131,Shihui Zheng
+8132,Hongwei Wu
+8133,Jianchang Xiao
+8134,Kun Yue
+8135,Wenfei Fan
+8137,Nick Koudas
+8138,Divesh Srivastava
+8140,Jim Gray
+8141,Hans Schek
+8142,Michael Stonebraker
+8143,Jeff Ullman
+8145,Theodore Johnson
+8146,Tamraparni Dasu
+8148,Don Chamberlin
+8150,Yunyue Zhu
+8151,Dennis Shasha
+8152,Xiaojian Zhao
+8154,Vibhuti S. Sengar
+8155,Jayant R. Haritsa
+8157,Flip Korn
+8158,S. Muthukrishnan
+8159,Yunyue Zhu
+8161,Amarnath Gupta
+8162,Bertram Lud&#228;scher
+8163,Maryann E. Martone
+8165,Anastasios Kementsietsidis
+8166,Marcelo Arenas
+8167,Ren&#233;e J. Miller
+8169,Surajit Chaudhuri
+8170,Kris Ganjam
+8171,Venkatesh Ganti
+8172,Rajeev Motwani
+8174,Ronald Fagin
+8175,Ravi Kumar
+8176,D. Sivakumar
+8178,Tova Milo
+8179,Serge Abiteboul
+8180,Bernd Amann
+8181,Omar Benjelloun
+8182,Fred Dang Ngoc
+8184,Michael Benedikt
+8185,Chee-Yong Chan
+8186,Wenfei Fan
+8187,Juliana Freire
+8188,Rajeev Rastogi
+8190,Sumit Ganguly
+8191,Minos Garofalakis
+8192,Rajeev Rastogi
+8194,Brian Babcock
+8195,Shivnath Babu
+8196,Rajeev Motwani
+8197,Mayur Datar
+8199,Saar Cohen
+8200,Yossi Matias
+8202,Ashish Kumar Gupta
+8203,Dan Suciu
+8205,G. M. Bierman
+8207,David Lomet
+8208,Mark Tuttle
+8210,Frederick R. Reiss
+8211,Tapas Kanungo
+8213,Ihab F. Ilyas
+8214,Jun Rao
+8215,Guy Lohman
+8216,Dengfeng Gao
+8217,Eileen Lin
+8219,Surajit Chaudhuri
+8220,Prasanna Ganesan
+8221,Sunita Sarawagi
+8223,Etzard Stolte
+8224,Christoph von Praun
+8225,Gustavo Alonso
+8226,Thomas Gross
+8228,Arvind Arasu
+8229,Hector Garcia-Molina
+8230,Stanford University
+8232,Amol Deshpande
+8233,Suman Nath
+8234,Phillip B. Gibbons
+8235,Srinivasan Seshan
+8237,Chengkai Li
+8238,Philip Bohannon
+8239,P. P. S. Narayan
+8241,Bin Cui
+8242,Beng Chin Ooi
+8243,Jianwen Su
+8244,Kian-Lee Tan
+8246,Samuel Madden
+8247,Michael J. Franklin
+8248,Joseph M. Hellerstein
+8249,Wei Hong
+8251,Chengyu Sun
+8252,Divyakant Agrawal
+8253,Amr El Abbadi
+8255,Dimitris Papadias
+8256,Yufei Tao
+8257,Greg Fu
+8258,Bernhard Seeger
+8260,Feng Peng
+8261,Sudarshan S. Chawathe
+8263,Jun Zhang
+8264,Manli Zhu
+8265,Dimitris Papadias
+8266,Yufei Tao
+8267,Dik Lun Lee
+8269,Deok-Hwan Kim
+8270,Chin-Wan Chung
+8272,Surajit Chaudhuri
+8273,Raghav Kaushik
+8274,Jeffrey F. Naughton
+8276,Charu C. Aggarwal
+8278,Hans-Peter Kriegel
+8279,Stefan Brecheisen
+8280,Peer Kr&#246;ger
+8281,Martin Pfeifle
+8282,Matthias Schubert
+8284,Reynold Cheng
+8285,Dmitri V. Kalashnikov
+8286,Sunil Prabhakar
+8288,Chris Olston
+8289,Jing Jiang
+8290,Jennifer Widom
+8292,Serge Abiteboul
+8293,Angela Bonifati
+8294,Gr&#233;gory Cob&#233;na
+8295,Ioana Manolescu
+8296,Tova Milo
+8298,Brian Babcock
+8299,Surajit Chaudhuri
+8300,Gautam Das
+8302,Leonid Libkin
+8304,Mario A. Nascimento
+8306,Eugene Inseok Chong
+8307,Jagannathan Srinivasan
+8308,Souripriya Das
+8309,Chuck Freiwald
+8310,Aravind Yalamanchi
+8311,Mahesh Jagannath
+8312,Anh-Tuan Tran
+8313,Ramkumar Krishnan
+8314,Richard Jiang
+8316,Victor Vianu
+8318,Charles E. Campbell
+8319,Andrew Eisenberg
+8320,Jim Melton
+8322,Andrew Eisenberg
+8324,Anastassia Ailamaki
+8325,Johannes Gehrke
+8327,Alexandros Labrinidis
+8329,Dimitrios Gunopulos
+8330,Roni Khardon
+8331,Heikki Mannila
+8332,Sanjeev Saluja
+8333,Hannu Toivonen
+8334,Ram Sewak Sharma
+8336,Yufei Tao
+8337,Dimitris Papadias
+8339,Jeffrey D. Ullman
+8341,Jens Lechtenb&#246;rger
+8342,Gottfried Vossen
+8344,Lin Guo
+8345,Feng Shao
+8346,Chavdar Botev
+8347,Jayavel Shanmugasundaram
+8349,Shurug Al-Khalifa
+8350,Cong Yu
+8351,H. V. Jagadish
+8353,Abhinandan Das
+8354,Johannes Gehrke
+8355,Mirek Riedewald
+8357,Brian Babcock
+8358,Chris Olston
+8360,Andrew Witkowski
+8361,Srikanth Bellamkonda
+8362,Tolga Bozkaya
+8363,Gregory Dorman
+8364,Nathan Folkert
+8365,Abhinav Gupta
+8366,Lei Shen
+8367,Sankar Subramanian
+8369,Laks V. S. Lakshmanan
+8370,Jian Pei
+8371,Yan Zhao
+8373,Saul Schleimer
+8374,Daniel S. Wilkerson
+8375,Alex Aiken
+8377,Rakesh Agrawal
+8378,Alexandre Evfimievski
+8379,Ramakrishnan Srikant
+8381,Radu Sion
+8382,Mikhail Atallah
+8383,Sunil Prabhakar
+8385,Haixun Wang
+8386,Sanghyun Park
+8387,Wei Fan
+8388,Philip S. Yu
+8390,Jun-Ki Min
+8391,Myung-Jae Park
+8392,Chin-Wan Chung
+8394,Qun Chen
+8395,Andrew Lim
+8396,Kian Win Ong
+8398,Wei Wang
+8399,Haifeng Jiang
+8400,Hongjun Lu
+8401,Jeffrey Xu Yu
+8403,Nikos Mamoulis
+8405,Curtis E. Dyreson
+8407,Yunyue Zhu
+8408,Dennis Shasha
+8410,Sergey Melnik
+8411,Erhard Rahm
+8412,Philip A. Bernstein
+8414,Jaewoo Kang
+8415,Jeffrey F. Naughton
+8417,Bin He
+8418,Kevin Chen-Chuan Chang
+8420,Antonios Deligiannakis
+8421,Nick Roussopoulos
+8423,Stanley Y.W. Su
+8424,Chunbo Huang
+8425,Joachim Hammer
+8426,Yihua Huang
+8427,Haifei Li
+8428,Liu Wang
+8429,Youzhong Liu
+8430,Charnyote Pluempitiwiriyawej
+8431,Minsoo Lee
+8432,Herman Lam
+8434,R. Braumandl
+8435,M. Keidl
+8436,A. Kemper
+8437,D. Kossmann
+8438,A. Kreutz
+8439,S. Seltzsam
+8440,K. Stocker
+8442,Angela Bonifati
+8443,Stefano Ceri
+8444,Stefano Paraboschi
+8446,Anat Eyal
+8447,Tova Milo
+8449,Philippe Pucheral
+8450,Luc Bouganim
+8451,Patrick Valduriez
+8452,Christophe Bobineau
+8454,Amr El Abbadi
+8455,Gunter Schlageter
+8456,Kyu-Young Whang
+8458,Anindya Datta
+8459,Kaushik Dutta
+8460,Debra VanderMeer
+8461,Krithi Ramamritham
+8462,Shamkant B. Navathe
+8464,German Shegalov
+8465,Michael Gillmann
+8466,Gerhard Weikum
+8468,Kaushik Chakrabarti
+8469,Minos Garofalakis
+8470,Rajeev Rastogi
+8471,Kyuseok Shim
+8473,Rachel Pottinger
+8474,Alon Halevy
+8476,Kevin Chen-Chuan Chang
+8477,H&#233;ctor Garc&#237;a-Molina
+8479,Jayavel Shanmugasundaram
+8480,Eugene Shekita
+8481,Rimon Barr
+8482,Michael Carey
+8483,Bruce Lindsay
+8484,Hamid Pirahesh
+8485,Berthold Reinwald
+8487,D. Laurent
+8488,J. Lechtenb&#246;rger
+8489,N. Spyratos
+8490,G. Vossen
+8492,Alon Y. Halevy
+8494,Can T&#252;rker
+8495,Michael Gertz
+8497,Sunita Sarawagi
+8499,M. Tamer &#214;zsu
+8501,A. Sheth
+8502,S. Thacker
+8503,S. Patel
+8505,Paul Grefen
+8506,Jochem Vonk
+8507,Peter Apers
+8509,Erhard Rahm
+8510,Philip A. Bernstein
+8512,B. Medjahed
+8513,B. Benatallah
+8514,A. Bouguettaya
+8515,A. H. H. Ngu
+8516,A. K. Elmagarmid
+8518,Lukasz Golab
+8519,M. Tamer &#214;zsu
+8521,V. S. Verykios
+8522,G. V. Moustakides
+8523,M. G. Elfeky
+8525,Y. Cui
+8526,J. Widom
+8528,Debajyoti Mukhopadhyay
+8529,Debasis Giri
+8530,Sanasam Ranbir Singh
+8532,Alberto d'Onofrio
+8533,Elaheh Pourabbas
+8535,Nenad Jukic
+8536,Svetlozar Nestorov
+8537,Susan Vrbsky
+8539,Georg Gottlob
+8540,Christoph Koch
+8541,Reinhard Pichler
+8543,Karl Aberer
+8545,Karl Aberer
+8547,Leslie D. Fife
+8548,Le Gruenwald
+8550,Coral Calero
+8551,Mario Piattini
+8552,Francisco Ruiz
+8554,Objectivity
+8556,Vernon Hoffner
+8558,Dale A. Stirling
+8560,Carsten Blecken
+8562,Adam Blum
+8564,Chris Pound
+8566,Chebel Mina
+8568,Amy Pogue
+8570,Felicity George
+8572,Jos&#233; Blakeley
+8574,Jos&#233; Blakeley
+8576,Subbarao Kambhampati
+8577,Craig A. Knoblock
+8579,Jean-Luc Hainaut
+8581,Paolo Giorgini
+8583,Amihai Motro
+8584,Troels Andreasen
+8586,A. R. Dasgupta
+8588,Kenneth R. Jacobs
+8590,Brad Hammond
+8592,M. Moni
+8594,Karl-Heinz Hess
+8596,Sanket Atal
+8598,David Vaskevitch
+8600,Hannes Spintzik
+8602,Pierre-Paul Sondag
+8604,Luciana Duranti
+8606,Serge Novaretti
+8608,Mario Gentili
+8610,Egbert-Jan Sol
+8612,Nam Huyn
+8614,Vadim Draluk
+8616,Dave Liles
+8618,Laks V. S. Lakshmanan
+8619,Carson Kai-Sang Leung
+8620,Raymond T. Ng
+8622,Junghoo Cho
+8623,Hector Garcia-Molina
+8625,Jan Chomicki
+8627,Yanlei Diao
+8628,Mehmet Altinel
+8629,Michael J. Franklin
+8630,Hao Zhang
+8631,Peter Fischer
+8633,Gisli R. Hjaltason
+8634,Hanan Samet
+8636,C. J. Date
+8638,Alice H. Muntz
+8639,Christian T. Ramiller
+8641,Richard Snodgrass
+8643,Yoko Maeda
+8644,Motomichi Toyama
+8646,Vijay Kumar
+8648,Rune Hjelsvold
+8649,Roger Midtstraum
+8651,Jun Yang
+8652,Jennifer Widom
+8654,Lidan Shou
+8655,Jason Chionh
+8656,Zhiyong Huang
+8657,Yixin Ruan
+8658,Kian-Lee Tan
+8660,Vijay Atluri
+8661,Anupam Joshi
+8662,Yelena Yesha
+8664,Tirthankar Lahiri
+8665,Vinay Srihari
+8666,Wilson Chan
+8667,N. MacNaughton
+8668,Sashikanth Chandrasekaran
+8670,A. Maedche
+8671,B. Motik
+8672,L. Stojanovic
+8674,Ning An
+8675,Anand Sivasubramaniam
+8676,Narayanan Vijaykrishnan
+8677,Mahmut T. Kandemir
+8678,Mary Jane Irwin
+8679,Sudhanva Gurumurthi
+8681,AnHai Doan
+8682,Jayant Madhavan
+8683,Robin Dhamankar
+8684,Pedro Domingos
+8685,Alon Halevy
+8687,Sang K. Cha
+8688,Sangyong Hwang
+8689,Kihong Kim
+8690,Keunjoo Kwon
+8692,Maria Halkidi
+8693,Benjamin Nguyen
+8694,Iraklis Varlamis
+8695,Michalis Vazirgiannis
+8697,Pedro Jos&#233; Marr&#243;n
+8698,Georg Lausen
+8700,Brahim Medjahed
+8701,Athman Bouguettaya
+8702,Ahmed K. Elmagarmid
+8704,Shu-Yao Chien
+8705,Vassilis J. Tsotras
+8706,Carlo Zaniolo
+8708,Renato Fileto
+8709,Ling Liu
+8710,Calton Pu
+8711,Eduardo Delgado Assad
+8712,Claudia Bauzer Medeiros
+8714,Valter Crescenzi
+8715,Giansalvatore Mecca
+8716,Paolo Merialdo
+8718,Yufei Tao
+8719,Jimeng Sun
+8720,Dimitris Papadias
+8722,Jochen Van den Bercken
+8723,Bj&#246;rn Blohsfeld
+8724,Jens-Peter Dittrich
+8725,J&#252;rgen Kr&#228;mer
+8726,Tobias Sch&#228;fer
+8727,Martin Schneider
+8728,Bernhard Seeger
+8730,Themistoklis Palpanas
+8731,Dimitris Papadopoulos
+8732,Vana Kalogeraki
+8733,Dimitrios Gunopulos
+8735,Maur&#236;cio R. Mediano
+8736,Marco A. Casanova
+8737,Marcelo Dreux
+8739,Mario Gerla
+8740,Kaixin Xu
+8742,Alon Y. Levy
+8743,Inderpal Singh Mumick
+8744,Yehoshua Sagiv
+8746,Karl Aberer
+8748,V. W. Setzer
+8749,Andrea Zisman
+8751,D. Calvanese
+8752,G. De Giacomo
+8753,M. Lenzerini
+8754,M. Y. Vardi
+8756,Terry Gaasterland
+8757,Jorge Lobo
+8759,Fernando Berzal
+8760,Nicol&#225;s Mar&#237;n
+8762,Rakesh Agrawal
+8763,Ramakrishnan Srikant
+8765,Qiang Wang
+8766,Brian D. Davison
+8768,Waqar Hasan
+8769,Rajeev Motwani
+8771,Hans J. Lenz
+8772,Panos Vassiliadis
+8773,Manfred Jeusfeld
+8774,Martin Staudt
+8776,Surajit Chaudhuri
+8777,Kyuseok Shim
+8779,Nancy Wiegand
+8781,Nathan Goodman
+8782,Steve Rozen
+8783,Lincoln Stein
+8785,Murali Mani
+8787,Hongjun Lu
+8788,Beng Chin Ooi
+8789,Kian-Lee Tan
+8791,Joseph M. Hellerstein
+8792,Wei Hong
+8793,Samuel R. Madden
+8795,Maguelonne Teisseire
+8796,Pascal Poncelet
+8797,Rosine Cicchetti
+8799,Reynold Cheng
+8800,Sunil Prabhakar
+8802,Michael Lesk
+8804,Philippe Bonnet
+8805,Allan Beaufour
+8806,Mads Bondo Dydensborg
+8807,Martin Leopold
+8809,A. Prasad Sistla
+8810,Clement T. Yu
+8811,R. Haddad
+8813,Alan Demers
+8814,Johannes Gehrke
+8815,Rajmohan Rajaraman
+8816,Niki Trigoni
+8817,Yong Yao
+8819,Raymond T. Ng
+8820,Jinhai Yang
+8822,Anastassia Ailamaki
+8823,Christos Faloutos
+8824,Paul S. Fischbeck
+8825,Mitchell J. Small
+8826,Jeanne VanBriesen
+8828,Raymond T. Ng
+8829,Jiawei Han
+8831,H&#252;seyin &#214;zg&#252;r Tan
+8832,Ibrahim K&#246;rpeo&#487;lu
+8834,Wen-Syan Li
+8835,Chris Clifton
+8837,Rajgopal Kannan
+8838,Ram Kalidindi
+8839,S. S. Iyengar
+8840,Vijay Kumar
+8842,Tzi-cker Chiueh
+8844,Karl Aberer
+8845,Philippe Cudr&#233;-Mauroux
+8846,Anwitaman Datta
+8847,Zoran Despotovic
+8848,Manfred Hauswirth
+8849,Magdalena Punceva
+8850,Roman Schmidt
+8852,Arnon Rosenthal
+8853,Leonard J. Seligman
+8855,Joseph M. Hellerstein
+8857,David J. DeWitt
+8858,Navin Kabra
+8859,Jun Luo
+8860,Jignesh M. Patel
+8861,Jie-Bing Yu
+8863,Karl Aberer
+8865,C&#233;sar A. Galindo-Legaria
+8866,Arjan Pellenkoft
+8867,Martin L. Kersten
+8869,Mayank Bawa
+8870,Brian F. Cooper
+8871,Arturo Crespo
+8872,Neil Daswani
+8873,Prasanna Ganesan
+8874,Hector Garcia-Molina
+8875,Sepandar Kamvar
+8876,Sergio Marti
+8877,Mario Schlosser
+8878,Qi Sun
+8879,Patrick Vinograd
+8880,Beverly Yang
+8882,Alejandro Guti&#233;rrez
+8883,Philippe Pucheral
+8884,Hermann Steffen
+8885,Jean-Marc Th&#233;venin
+8887,Marcelo Arenas
+8888,Vasiliki Kantere
+8889,Anastasios Kementsietsidis
+8890,Iluju Kiringa
+8891,Ren&#233;e J. Miller
+8892,John Mylopoulos
+8894,Maria L. Barja
+8895,Norman W. Paton
+8896,Alvaro A. A. Fernandes
+8897,M. Howard Williams
+8898,Andrew Dinn
+8900,Beng Chin Ooi
+8901,Yanfeng Shu
+8902,Kian-Lee Tan
+8904,Balakrishna R. Iyer
+8905,David Wilhite
+8907,Wolfgang Nejdl
+8908,Wolf Siberski
+8909,Michael Sintek
+8911,Narain H. Gehani
+8912,H. V. Jagadish
+8913,William D. Roome
+8915,Igor Tatarinov
+8916,Zachary Ives
+8917,Jayant Madhavan
+8918,Alon Halevy
+8919,Dan Suciu
+8920,Nilesh Dalvi
+8921,Xin (Luna) Dong
+8922,Yana Kadiyska
+8923,Gerome Miklau
+8924,Peter Mork
+8926,Alon Y. Levy
+8927,Abraham Silberschatz
+8928,Divesh Srivastava
+8929,Maria Zemankova
+8931,Edwin H. Jacox
+8932,Hanan Samet
+8934,Alexandra Poulovassilis
+8935,Carol Small
+8937,Ricardo Jim&#233;nez-Peris
+8938,M. Pati&#241;o-Mart&#237;nez
+8939,Gustavo Alonso
+8940,Bettina Kemme
+8942,Sarabjot S. Anand
+8943,David A. Bell
+8944,John G. Hughes
+8946,Arun Jagatheesan
+8947,Arcot Rajasekar
+8949,N. B. Idris
+8950,W. A. Gray
+8951,R. F. Churchhouse
+8953,Duminda Wijesekera
+8954,Sushil Jajodia
+8955,Francesco Parisi-Presicce
+8956,&#197;sa Hagstr&#246;m
+8958,Munir Cochinwala
+8959,John Bradley
+8961,Alon Y. Halevy
+8963,Thomas Brinkhoff
+8964,Hans-Peter Kriegel
+8966,Anastassia Ailamaki
+8967,Joseph M. Hellerstein
+8969,Witold Litwin
+8970,Marie-Anne Neimat
+8971,Donovan A. Schneider
+8973,Mario A. Nascimento
+8974,J&#246;rg Sander
+8975,Jeffrey Pound
+8977,Zhaohui Xie
+8978,Jiawei Han
+8980,Richard Snodgrass
+8982,Tak W. Yan
+8983,Jurgen Annevelink
+8985,Soumen Chakrabarti
+8986,Shourya Roy
+8987,Mahesh V. Soundalgekar
+8989,Odysseas G. Tsatalos
+8990,Marvin H. Solomon
+8991,Yannis E. Ioannidis
+8993,Rakesh Agrawal
+8994,Peter J. Haas
+8995,Jerry Kiernan
+8997,M. Ouzzani
+8998,M. A. Atroun
+8999,N. L. Belkhodja
+9001,Sirish Chandrasekaran
+9002,Michael J. Franklin
+9004,Philip A. Bernstein
+9005,Umeshwar Dayal
+9007,Daniel J. Abadi
+9008,Don Carney
+9009,Ugur &#199;etintemel
+9010,Mitch Cherniack
+9011,Christian Convey
+9012,Sangdon Lee
+9013,Michael Stonebraker
+9014,Nesime Tatbul
+9015,Stan Zdonik
+9017,Fabrizio Ferrandina
+9018,Thorsten Meyer
+9019,Roberto Zicari
+9021,Sven Helmer
+9022,Guido Moerkotte
+9024,Florian Matthes
+9025,Joachim W. Schmidt
+9027,Cecil Eng H. Chua
+9028,Roger H. L. Chiang
+9029,Ee-Peng Lim
+9031,Eric W. Brown
+9032,James P. Callan
+9033,W. Bruce Croft
+9035,Chen Li
+9037,J&#252;rgen Frohn
+9038,Georg Lausen
+9039,Heinz Uphoff
+9041,Chi-Wai Fung
+9042,Kamalakar Karlapalem
+9043,Qing Li
+9045,Mukesh K. Mohania
+9046,Nandlal L. Sarda
+9048,Susan Malaika
+9049,Andrew Eisenberg
+9050,Jim Melton
+9052,Eric Amiel
+9053,Marie-Jo Bellosta
+9054,Eric Dujardin
+9055,Eric Simon
+9057,Evaggelia Pitoura
+9058,Serge Abiteboul
+9059,Dieter Pfoser
+9060,George Samaras
+9061,Michalis Vazirgiannis
+9063,Christoph Kilger
+9064,Guido Moerkotte
+9066,Manolis Koubarakis
+9067,Christos Tryfonopoulos
+9068,Stratos Idreos
+9069,Yannis Drougas
+9071,Banu &#214;zden
+9072,Alexandros Biliris
+9073,Rajeev Rastogi
+9074,Abraham Silberschatz
+9076,Aris M. Ouksel
+9078,Suryanarayana M. Sripada
+9079,Beat W&#252;thrich
+9081,Chee-Yong Chan
+9082,Minos Garofalakis
+9083,Rajeev Rastogi
+9085,Dirk Jonscher
+9086,Klaus R. Dittrich
+9088,Ravishankar Ramamurthy
+9089,David J. DeWitt
+9090,Qi Su
+9092,Alfons Kemper
+9093,Donald Kossmann
+9095,Philip A. Bernstein
+9096,Yannis Ioannidis
+9097,Raghu Ramakrishnan
+9099,Ralf Hartmut G&#252;ting
+9101,Alexander A. Anisimov
+9103,Janet L. Wiener
+9104,Jeffrey F. Naughton
