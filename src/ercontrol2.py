@@ -359,7 +359,7 @@ class ERControl:
                 atoms = all_models[0]
                 eqs = [a for a in atoms if a.name.startswith(f'{EQ_PRED}')]
                 actives = [a for a in atoms if a.name.startswith(f'{ACTIVE_PRED}')]
-                self.ctrl_log.info("* Sol pairs: % ",[[a for a in sol]])
+                self.ctrl_log.debug("* Sol pairs: % ",[[a for a in sol]])
                 self.ctrl_log.info("* Atom size: % ",[len(atoms)])
                 self.ctrl_log.info("* Eq size: % ",[len(eqs)])
                 self.ctrl_log.info("* Active size: % ",[len(actives)])
@@ -542,7 +542,7 @@ class ERControl:
         elif result.satisfiable:
             pos_merges = [str(a) for a in self.it_model if a.name.startswith(EQ_PRED)]
             # print(pos_merges)
-            self.ctrl_log.info("* possible merges found: %",[pos_merges])
+            self.ctrl_log.debug("* possible merges found: %",[pos_merges])
         return self.shown, [self.it_model], 
     
             
