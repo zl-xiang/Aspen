@@ -1,13 +1,24 @@
 # ASPen: ASP-based Collective Entity Resolution
 
 ## Environment Installation
-- The running environment is maintained using `miniconda`.
-- To install running environment, direct first to the source folder `aspen/src` then execute the following 
+Although it is suffice to install directly with `pip`, we recommand using a `conda` environment as a container.
+To do so, one could execute optionally the following:
+- create a `conda` environment:
+```
+conda create -n aspen python=3.9.7
+```
+- activate the environment:
+```
+conda activate aspen
+```
+
+The running environment is maintained using `pip` based on `Python 3.9.7`. To install, directing first to the source folder `aspen/src` then executing the following:
 
 ```
-conda create --name aspen --file requirements.txt
+pip install -r requirements.txt
 ```
-- Then activate the environment with `conda activate aspen`
+
+
 
 ## Experiment Running Instruction
 

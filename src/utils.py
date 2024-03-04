@@ -1,6 +1,6 @@
 
 import py_stringmatching as sm
-from sentence_transformers import SentenceTransformer, util
+# from sentence_transformers import SentenceTransformer, util
 import pandas as pd
 import yaml
 import re
@@ -110,13 +110,13 @@ def escape(val:str,cat_seq=False):
     else:
         return val
     
-def semantic_sim(X:str,Y:str):
+#def semantic_sim(X:str,Y:str):
     #os.environ['KMP_DUPLICATE_LIB_OK']='True'
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-    embed1 = model.encode(X)
-    embed2 = model.encode(Y)
-    cosine_score = util.cos_sim(embed1, embed2).item()
-    return  cosine_score
+ #   model = SentenceTransformer('all-MiniLM-L6-v2')
+  #  embed1 = model.encode(X)
+   # embed2 = model.encode(Y)
+    #cosine_score = util.cos_sim(embed1, embed2).item()
+    #return  cosine_score
     
     
 def sim(X,Y) -> int:
