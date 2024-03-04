@@ -64,9 +64,7 @@ python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp  --getsim --typed_ev
 # music
 python -u mains_explain_.py -c -l ./experiment/music/music.lp  --getsim --typed_eval --ternary --schema music --data 50
 # music-corr
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp  --getsim --typed_eval --ternary --schema music --data corr
-# music-corr
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp  --getsim --typed_eval --ternary --schema music --data corr
+python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp  --getsim --typed_eval --ternary --schema music --data 50-corr
 # pokemon
 python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --getsim --typed_eval --ternary --schema pokemon
 
