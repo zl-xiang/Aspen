@@ -16,13 +16,16 @@ eq(X,Y):-X!=Y,medium(X,REI,P,F,TC),medium(Y,REI1,P,F1,TC1),eq(REI,REI1),not empt
 
 % release(id, release_group, artist_credit, name, barcode, status, packaging, language, script, quality,)
 % it is a merge if two release-tuples have the same barcode
+%!trace_rule{" release (%)-(%) merged since they have the same barcode % ", X,Y,B}.
 eq(X,Y):-X!=Y,release(X,RGI,AC,NA,B,S,PA,LA,SC,Q),release(Y,RGI1,AC1,NA1,B,S1,PA1,LA1,SC1,Q1),not empty(B).
 
 % release_group(id, name, artist_credit, type,)
 % it is a merge if two release_group-tuples have the same release eq(REI,REI1) and similar names NA,NA1
+%!trace_rule{" release_group (%)-(%) are merged since they have similar names (%,%):%  and contain the same release (%,%)-(%,%) ", X,Y,NA,NA1,S,REI,REI1}.
 eq(X,Y):-X!=Y,release_group(X,NA,AC,TY),release_group(Y,NA1,AC1,TY1),eq(X,RGI),eq(Y,RGI1),eq(REI,REI1),release(REI,RGI,AC2,NA2,B2,S2,PA2,LA2,SC2,Q2),release(REI1,RGI1,AC3,NA3,B3,S3,PA3,LA3,SC3,Q3),sim(NA,NA1,S),S>=90.
 
 % it is a merge if two release_group-tuples have the same release eq(REI,REI1) and the same artist_credit eq(ACI,ACI1)
+%!trace_rule{" release_group (%,-(%) are merged since they contain the same release (%)-(%) and have the same artist credits (%)-(%)", X,Y,REI,REI1,ACI,ACI1}.
 eq(X,Y):-X!=Y,release_group(X,NA,ACI,TY),release_group(Y,NA1,ACI1,TY1),eq(ACI,ACI1),eq(X,RGI),eq(Y,RGI1),eq(REI,REI1),release(REI,RGI,AC2,NA2,B2,S2,PA2,LA2,SC2,Q2),release(REI1,RGI1,AC3,NA3,B3,S3,PA3,LA3,SC3,Q3).
 
 % artist(id, name, sort_name, begin_date_year, begin_date_month, begin_date_day, end_date_year, end_date_month, end_date_day, ended, artist_type, gender, area, comment, )
@@ -47,9 +50,11 @@ eq(X,Y):-X!=Y,place(X,NA,PT,ADD,ARI1,CD,END),place(Y,NA1,PT,ADD1,ARI2,CD1,END1),
 active(X,Y):-X!=Y,artist(X,NA,SN,BY,BM,BD,EY,EM,ED,END,AT,G,ARI,C),artist(Y,NA1,SN1,BY1,BM1,BD1,EY1,EM1,ED1,END1,AT1,G1,ARI1,C1),eq(ARI,ARI1),sim(NA,NA1,S),S>=95.
 
 % it is likely a merge if two release-tuples belong to the same release_group eq(RGI,RGI1) and have similar names NA,NA1
+%!trace_rule{" release (%,%) are active since they have similar names (%,%):% and join on (status:%) and belong to the same release_group (%,%) ", X,Y,NA,NA1,S,ST,RGI,RGI1}.
 active(X,Y):-X!=Y,release(X,RGI,AC,NA,B,ST,PA,LA,SC,Q),not empty(ST),release(Y,RGI1,AC1,NA1,B1,ST,PA1,LA1,SC1,Q1),eq(RGI,RGI1),sim(NA,NA1,S),S>=90.
 
 % it is likely a merge if two release_group-tuples have the same artist_credit eq(ACI,ACI1) and have similar names NA2,NA3
+%!trace_rule{" release_group (%,%) actived because of similar names (%,%):% and have the same list of artist credits (%,%) ", X,Y,NA2,NA3,S,ACI,ACI1}.
 active(X,Y):-X!=Y,release_group(X,NA2,ACI,TY),release_group(Y,NA3,ACI1,TY1),eq(ACI,ACI1),sim(NA2,NA3,S),S>=90.
 
 % it is likely a merge if two artist-tuples have the same born year BY and the same artist type AT and have similar names NA,NA1,
@@ -68,9 +73,11 @@ active(X,Y):-X!=Y,recording(X,NA,ACI,L,V),recording(Y,NA1,ACI1,L,V),not empty(L)
 active(X,Y):-X!=Y,recording(X,NA,ACI,L1,V1),recording(Y,NA1,ACI1,L2,V2),eq(X,RI),eq(Y,RI1),eq(TI,TI1),track(TI,RI,MI,P,N,NA2,ACI2,L3,IDT),track(TI1,RI1,MI1,P1,N1,NA3,ACI3,L4,IDT1),sim(NA,NA1,S),S>=85.
 
 % it is likely a merge if two release-tuples have the same artist_credit eq(ACI,ACI1) and similar names NA,NA1
+%!trace_rule{" release (%,%) are active since they have similar names (%,%):% have the same artist_credit (%,%) ", X,Y,NA,NA1,S,ACI,ACI1}.
 active(X,Y):-X!=Y,release(X,RGI,ACI,NA,B,ST,PA,LA,SC,Q),release(Y,RGI1,ACI1,NA1,B1,ST1,PA1,LA1,SC1,Q1),eq(ACI,ACI1),sim(NA,NA1,S),S>=90.
 
 % it is likely a merge if two artist_credit-tuples have the same artist_count AC and the same reference count RC and similar names and exist associated artist_credit_names with the same position P and similar names NA2,NA3 
+%!trace_rule{" artist_credit (%,%) actived since they have similar names (%,%):% and join on (artist_count %,reference_count:%) and have similar artist credit names (%,%):% on position (%)", X,Y,NA,NA1,S,AC,RC,NA2,NA3,S1,P}.
 active(X,Y):-X!=Y,artist_credit(X,NA,AC,RC,C),artist_credit(Y,NA1,AC,RC,C1),not empty(AC),not empty(RC),eq(X,ACI),eq(Y,ACI1),artist_credit_name(ACI,P,AI,NA2),artist_credit_name(ACI1,P,AI1,NA3),not empty(P),sim(NA,NA1,S),S>=90,sim(NA2,NA3,S1),S1>=90.
 
 % it is likely a merge if two label-tuples have the same label type GT and similar names NA,NA1 
