@@ -1,5 +1,17 @@
 # ASPen: ASP-based Collective Entity Resolution
 
+## Outline
+- [Environment Installation](##environment-installation)
+- [Experiment Running Instruction](##experiment-running-instruction)
+  - [1 Similarity Filtering](###1-similarity-filtering)
+  - [2 Main Results (only after Sim facts computed)](###2-main-results)
+  - [3 Multi-level Recursion](###3-multi-level-recursion)
+  - [4 Varying Duplicates Percentage](4-varying-duplicates-percentage)
+  - [5 Varying Sim Thresholds](###5-varying-sim-thresholds)
+  - [6 Proof Tree](###6-proof-tree)
+- [Clean Data Sampling](##clean-data-sampling)
+
+
 ## Environment Installation
 Although it is suffice to install directly with `pip`, we recommand using a `conda` environment as a container.
 To do so, one could execute optionally the following:
@@ -72,8 +84,8 @@ python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --getsim --ty
 
 
 
-### 2 Main Results (only after Sim facts computed)
-
+### 2 Main Results
+**(only after Sim facts computed)**
 ```
 # dblp
 ## lb
@@ -260,3 +272,13 @@ python -u mains_explain_.py -c -l ./experiment/music/music.lp --pos-merge rec-24
 ```
 python -u mains_explain_.py -c -l ./experiment/music/music.lp --pos-merge id-748086,id-748010   --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
 ```
+
+
+## Clean Data Sampling
+ We describe the process of data sampling and synthesising duplication for the MUSIC and POKEMON datasets. Note that it is important to preserve between entities from different relations when corrupting the instances to retain interdependencies of the data.
+
+Thus we take into consideration the referential dependency graphs of schema when creating the datasets. Assuming the original schema instances of the MUSIC and POKEMON 
+are clean, we sampled tuples from each table and created clean partitions of the instances. In particular, we started from the relations with zero in-degree and sampled for each step the adjacent referenced entity relations that have all their referencing relations sampled. Since tuples from non-entity relations store only foreign keys and do not any identifier, stand alone are meaningless, 
+they were sampled only after one of their referencing relations are done with sampling. 
+
+As seen in figure below, green nodes and blue nodes represent entity and non-entity relations respectively in the MUSIC schema, each edge indicates a referential constraints from an out-node to an in-node labelled with the corresponding foreign key. In this case, we begin sampling from the entity relations `Track`, `Place`, `Label` since they are not referenced by any other relations. As `Artist_Credit` relation is also referenced by many other relations, in the second step we sample only those are adjacent to `Track` and with all in-arrows sampled, i.e., the `Medium` and `Recording` relations. Entities of other relations are sampled analogously. Note that since the non-entity relation `Artist_Credit_Name` stores mappings between  `Artist_Credit` and `Artist`, it is sampled only after the entities of `Artist_Credit` are picked. We are then able to proceed sampling from `Artist` when `Artist_Credit_Name` is selected. Consequently, clean partitions of the schema instances can be obtained from sampling. The sampling procedure is done by an extra ASP program as a part of data preprocessing step.
