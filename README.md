@@ -1,15 +1,15 @@
 # ASPen: ASP-based Collective Entity Resolution
 
 ## Outline
-- [Environment Installation](##environment-installation)
-- [Experiment Running Instruction](##experiment-running-instruction)
-  - [1 Similarity Filtering](###1-similarity-filtering)
-  - [2 Main Results (only after Sim facts computed)](###2-main-results)
-  - [3 Multi-level Recursion](###3-multi-level-recursion)
-  - [4 Varying Duplicates Percentage](4-varying-duplicates-percentage)
-  - [5 Varying Sim Thresholds](###5-varying-sim-thresholds)
-  - [6 Proof Tree](###6-proof-tree)
-- [Clean Data Sampling](##clean-data-sampling)
+- [Environment Installation](#environment-installation)
+- [Experiment Running Instruction](#experiment-running-instruction)
+  - [1 Similarity Filtering](#1-similarity-filtering)
+  - [2 Main Results (only after Sim facts computed)](#2-main-results)
+  - [3 Multi-level Recursion](#3-multi-level-recursion)
+  - [4 Varying Duplicates Percentage](#4-varying-duplicates-percentage)
+  - [5 Varying Sim Thresholds](#5-varying-sim-thresholds)
+  - [6 Proof Tree](#6-proof-tree)
+- [Clean Data Sampling](#clean-data-sampling)
 
 
 ## Environment Installation
