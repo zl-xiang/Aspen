@@ -13,7 +13,7 @@
 
 
 ## Environment Installation
-Although it is suffice to install directly with `pip`, we recommand using a `conda` environment as a container.
+Although it is suffice to install directly with `pip`, we recommand using a [`conda`](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment as a container.
 To do so, one could execute optionally the following:
 - create a `conda` environment:
 ```
