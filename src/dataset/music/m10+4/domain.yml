@@ -1,0 +1,103 @@
+track:
+  track: string
+  recording: string
+  medium: string
+  position: string
+  number: string
+  name: string
+  artist_credit: string
+  length: string
+  is_data_track: cat
+
+recording:
+  recording: string
+  name: string
+  artist_credit: string
+  length: string
+  video: string
+
+
+medium:
+  medium: string
+  release: string
+  position: string
+  format: string
+  track_count: string
+
+release:
+  release: string
+  release_group: string
+  artist_credit: string
+  name: string
+  barcode: string
+  status: string
+  packaging: string
+  language: string
+  script: string
+  quality: string
+
+
+release_group:
+  release_group: string
+  name: string
+  artist_credit: string
+  type: string
+
+artist_credit:
+  artist_credit: string
+  name: string
+  artist_count: string
+  ref_count: string
+  created: string
+  
+
+
+artist_credit_name:
+  artist_credit: string
+  position: string
+  artist: string
+  name: string
+  index: string
+
+artist:
+  artist: string
+  name: string
+  sort_name: string
+  begin_date_year: string
+  begin_date_month: string
+  begin_date_day: string
+  end_date_year: string
+  end_date_month: string
+  end_date_day: string
+  ended: cat
+  artist_type: string
+  gender: cat
+  area: string # can be non
+  comment: string 
+  #begin_area: string
+  #end_area: string
+  # comments on artists could be useful
+
+
+area:
+  area: string
+  name: string
+  area_type: cat # can be non
+  ended: cat
+
+
+place:
+  place: string
+  name: string
+  place_type: cat
+  address: string
+  area: string
+  coordinates: string
+  ended: cat
+  
+label:
+  label: string
+  name: string
+  label_type: cat
+  area: string
+  ended: cat

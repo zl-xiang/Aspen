@@ -244,8 +244,8 @@ class ERControl:
         sim_pairs = self.prg_transformer.sim_pairs
         self.ctrl_log.info("Sim pairs in given specification: %", [sim_pairs])
         self.ctrl_log.info("#Sim attributes : %",[len(sim_pairs)])
-        sum_stats = self.prg_transformer.get_sim_cat_sum()
-        self.ctrl_log.info("#Cat sum of Sim : %, #Sum of sim constants : %",[sum_stats[0],sum_stats[1]])
+        #sum_stats = self.prg_transformer.get_sim_cat_sum()
+        #self.ctrl_log.info("#Cat sum of Sim : %, #Sum of sim constants : %",[sum_stats[0],sum_stats[1]])
 
         mini_thresh = min([v for _,v in sim_pairs.items()])
         sim_rules = '\n'.join(sim_rules)
@@ -309,6 +309,9 @@ class ERControl:
                         sim_facts.add(new_sim)
                         
                 self.ctrl_log.debug("Step 2 complement increment : %",[compl_inc])
+                
+            sim_size = sys.getsizeof({(k[0],k[1],v) for k,v in self.context.sim_pairs.items()})
+            self.ctrl_log.info("Sim filtered size : %",[sim_size])
             self.ctrl_log.info("Sim cached #pairs : %",[len(self.context.sim_pairs.keys())])
             # [2023-11-18] update: take all sim fact from step 1) and ground the program from step 2)
             self.ctrl_log.info("Sim facts size: %", [len(sim_facts)])
@@ -330,22 +333,28 @@ class ERControl:
     def explain_model(self, model:set[Symbol]) -> Sequence[ExplanationGraphModel]:
         return self.explainer._compute_graphs_(model,context=self.context)
     
-    def run(self,maxsol:str,files:Sequence[str], sim_facts = set(),spec_ver = program_transformer.ORIGIN, asprin = False):
+    def run(self,maxsol:str,files:Sequence[str], sim_facts = set(),spec_ver = program_transformer.ORIGIN, asprin = False, ub_eqs = None):
         if not files:
             files = ["-"]
+        is_ol_sim = not len(sim_facts)>1
+        ub_guarded = ub_eqs != None
         atom_base= self.prg_transformer.get_atombase(ter=self.ternary)
         # [print(a) for a in atom_base]
+        atom_base = atom_base.union(sim_facts)
+        #atom_base.add('sim("$H2222","$H3222",91).')
+        #atom_base.add('sim("$H3222","$H2222",91).')
+        #atom_base.add('sim("$H2222","$Hz222",91).')
+        #atom_base.add('sim("$Hz222","$H2222",91).')
+        if ub_guarded:
+          atom_base= atom_base.union(ub_eqs)
+        self.ctrl_log.info("* Atombase size: %",[len(atom_base)])         
+        atom_base = ''.join(atom_base)
         # print(atom_base)
         show = self.args.no_show
         # print(show,'---------------------------------')
-        is_ol_sim = sim_facts == None or len(sim_facts)<1
-        if not is_ol_sim: atom_base = atom_base.union(sim_facts)
-        spec = self.prg_transformer.get_spec(ter=self.ternary,spec_ver=spec_ver,trace=self.trace,show=show,is_ol_sim=is_ol_sim)
+        spec = self.prg_transformer.get_spec(ter=self.ternary,spec_ver=spec_ver,trace=self.trace,show=show,ub_guarded=ub_guarded,is_ol_sim=is_ol_sim)
         [print(r) for r in spec]
         spec = '\n'.join(spec)
-
-        self.ctrl_log.info("* Atombase size: %",[len(atom_base)])         
-        atom_base = ''.join(atom_base)
         if asprin:
             u, prologue, warnings = self.__init_control(program=spec,spec_dir=files[0],optim_dir=maxsol,atom_base=atom_base, asprin=asprin)  
             fname=files[0].replace('.lp','').split('/')[-1] # TODO
@@ -354,6 +363,8 @@ class ERControl:
                                       warnings=warnings, base_ctx=self.context) 
             size = int(sys.getsizeof(self.context.sim_pairs)/(1024*1024))
             self.ctrl_log.info("* Sim cache size : % MB",[size])
+            if ub_guarded:
+                self.ctrl_log.info('Computing maximal solution with cached merge upperbound ..')
             if self.n_enum==1:
                 sol = _solver.get_sol()
                 all_models = [_solver.saturated_model] 
@@ -471,17 +482,18 @@ class ERControl:
 
  
 
-    def pos_merge(self,merge:Sequence[tuple]=None,sim_facts=set(),ter=False,attrs = None):
+    def pos_merge(self,merge:Sequence[tuple]=None,sim_facts=set(),ter=False,attrs = None, ub_eqs = None):
+        ub_guarded = ub_eqs != None
         atom_base = self.prg_transformer.get_atombase(ter=ter)
-        
-        is_ol_sim = sim_facts == None or len(sim_facts)<1 
-        if not is_ol_sim: atom_base = atom_base.union(sim_facts)
+        atom_base = atom_base.union(sim_facts)
+        if ub_guarded:
+            atom_base = atom_base.union(ub_eqs)
         # [print(a) for a in atom_base]
         atom_base = ''.join(atom_base)
         #print(merge)
         single_pair = merge is not None and (len(merge) == 1 and 'all' not in merge)
         show = self.args.no_show
-        program = self.prg_transformer.get_spec(ter=ter,trace=self.trace,show=show,is_ol_sim=is_ol_sim)
+        program = self.prg_transformer.get_spec(ter=ter,trace=self.trace,show=show,ub_guarded=ub_guarded)
         [print(r) for r in program]
         if single_pair: 
             return self.pos_merge_single(program=program,merge=merge,atom_base=atom_base,ter=ter,attrs=attrs)
@@ -652,3 +664,6 @@ class ERControl:
         hard_merges.update(lower_cm)
         # self.ctrl_log.debug('Difference between PM and LowerCM %', [pm.difference(hard_merges)])
         return hard_merges
+    
+    def get_naive_sim(self,):
+         cat_sum, sim_const_sum, naive_sim_mem_size = self.prg_transformer.get_sim_cat_sum()

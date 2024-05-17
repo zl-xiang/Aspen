@@ -1,6 +1,5 @@
 
 import py_stringmatching as sm
-# from sentence_transformers import SentenceTransformer, util
 import pandas as pd
 import yaml
 import re
@@ -375,7 +374,7 @@ def load_cache(dir):
         return pickle.load(file)
     
 def load_result(dir = None, sol= None, a_models = None,triple=True):
-    print("=========",dir, is_empty(dir))
+    #print("=========",dir, is_empty(dir))
     #print('0000000000000000000000',triple)
     if not is_empty(dir):
         with open(dir, 'rb') as file:
@@ -459,10 +458,44 @@ def find_intersection(set_obj):
         result = set_obj.pop()
         result.intersection_update(*set_obj)
         return result
+    
+    
+import csv
 
+def generate_variants():
+    years = range(1920, 2025)
+    variants = []
+    for year in years:
+        # Generate variants for each year
+        yy1 = str(year)[:2]
+        yy2 = str(year)[2:]
+        yyyy = str(year)
+        variant1 = f"{yy1}({yy2})"
+        variant2 = f"{yyyy}."
+        variant3 = f"{yy1} {yy2}"
+        variant4 = f"({yyyy})"
+        variant5 = f"{yyyy}-"
+        variants.append((year, variant1))
+        variants.append((year, variant2))
+        variants.append((year, variant3))
+        variants.append((year, variant4))
+        variants.append((year, variant5))
+
+    # Write variants to a CSV file
+    with open("year_variants.csv", "w", newline='') as csvfile:
+        csvwriter = csv.writer(csvfile)
+        csvwriter.writerow(["Original Year", "Variant"])
+        csvwriter.writerows(variants)
+
+# Call the function to generate variants and write to CSV file
+
+def replace_pred(to_be_replaced:str, replacement:str, atom_set:Sequence[str]) -> Sequence[str]:
+    return set([a.replace(to_be_replaced,replacement,1) for a in atom_set if a.startswith(to_be_replaced)])
 
 if __name__ == "__main__":
-    
+    # generate_variants()
+    #eqvs = load_cache('./cache/atoms_musicbrainz_ds_50-p.pkl')
+    #[print(e) for e in eqvs]
     #fname1 = 'imdb-4k'
     #fname2 = 'imdb-4k-no-eq'
     #rels = ['name_basics_4k','title_basics_4k']
@@ -481,9 +514,9 @@ if __name__ == "__main__":
     #{EQ_PRED}(X,Z):-{EQ_PRED}(X,Y),{EQ_PRED}(Y,Z).
     #""")
    
-   # example 2
-   #print(semantic_sim('Association of Tennis Professionals',"ATP"))
-   print(sim('Quadra',"Quzdra"))
+    # example 2
+    #print(semantic_sim('Association of Tennis Professionals',"ATP"))
+   print(sim('$Hz222',"$H2222"))
    
    # example 3
    #print(semantic_sim('Novak Djokovic is a player of the Association of Tennis Professionals',"Novak Djokovic is a player of the ATP"))

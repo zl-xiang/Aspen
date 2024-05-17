@@ -38,3 +38,5 @@ empty(nan). empty("nan").empty("ーーー").
 
 eq(X,Y) :- eq(X,Z),eq(Z,Y).
 eq(X,Y) :- eq(Y,X).
+#show.
+#show(V0,V5):dblp(V0,V1,V2,V3,V4),acm(V5,V6,V7,V8,V9),eq(V0,V5),V0!=V5.

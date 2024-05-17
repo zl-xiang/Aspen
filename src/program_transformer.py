@@ -1,19 +1,20 @@
 
-from metainfo import Schema, Attribute, Relation
+from metainfo import Schema, Attribute, Relation, LACE, LACE_P, VLOG_LB, VLOG_UB
 import trans_utils
+
 from typing import Sequence
-from trans_utils import  get_sim_pairs, get_atom_vars, locate_body_var,get_atom_pred, get_atoms
+from trans_utils import  get_sim_pairs, get_atom_vars, locate_body_var,get_atom_pred, get_atoms, DEF_OPERA_PAT
 import pickle
 import os
 import re
 import clingo
 import utils
-from logger import logger
-import example_schema
-
+from logger import logger, START, END
+import sys
 
 
 CACHE_DIR = './cache'
+
 
 ### matching patterns ### 
 ATOM_PAT =  utils.ATOM_PAT
@@ -54,6 +55,17 @@ CONST_PRED = 'c'
 SIM_PRED = "sim"
 SIM_FUNC_PRED = '@' + SIM_PRED
 EQ_PRED = "eq"
+UP_EQ = trans_utils.UP_EQ
+
+### LACE+ 
+EQO_PRED = "eqo"
+EQV_PRED = "eqv"
+ACTIVE_O_PRED = "activeo"
+ACTIVE_V_PRED = "activev"
+PROJ_PRED = "proj"
+VAL_PRED = "val"
+
+
 MOCK_DC_PRED = 'falsify'
 ACTIVE_PRED = "active"
 TO_BE_SIM ='sim_attr'
@@ -86,6 +98,15 @@ EQ_AXIOMS_TER = f"""
 {EQ_PRED}(X,Y,I) {IMPLY} {EQ_PRED}(X,Z,I),{EQ_PRED}(Z,Y,I).
 {EQ_PRED}(X,Y,I) {IMPLY} {EQ_PRED}(Y,X,I).
 """
+
+EQ_AXIOMS_VLOG_TRANS_TER = f"""
+{EQ_PRED}(?X,?Y,?I) {IMPLY} {EQ_PRED}(?X,?Z,?I),{EQ_PRED}(?Z,?Y,?I).
+"""
+
+EQ_AXIOMS_VLOG_SYM_TER = f"""
+{EQ_PRED}(?X,?Y,?I) {IMPLY} {EQ_PRED}(?Y,?X,?I).
+"""
+
 
 ACTIVE_CHOICE = f"""
 {{{EQ_PRED}(X,Y)}} {IMPLY} {ACTIVE_PRED}(X,Y).
@@ -169,6 +190,22 @@ TRACE_PAIR_TER = f'{ANTD_SHOW_TRACE} {{{EQ_PRED}(^,^,^)}}.'
 ### trace annotations ###
 
 
+
+### LACE+ axioms
+
+EQUIV_CELL_SET = f'{VAL_PRED}(T1,I2,V) {IMPLY} {EQV_PRED}(T1,I1,T2,I2), {PROJ_PRED}(T2,I2,V){DOT}'
+
+EQV_SYMMETRY = f'{EQV_PRED}(T1,I1,T2,I2) {IMPLY} {EQV_PRED}(T2,I2,T1,I1){DOT}'
+EQV_TRANSITIVITY = f'{EQV_PRED}(T1,I1,T2,I2) {IMPLY} {EQV_PRED}(T1,I1,T3,I3), {EQV_PRED}(T3,I3,T2,I2){DOT}'
+
+EQO_SYMMETRY = f'{EQO_PRED}(X,Y) {IMPLY} {EQO_PRED}(Y,X){DOT}'
+EQO_TRANSITIVITY = f'{EQO_PRED}(X,Y) {IMPLY} {EQO_PRED}(X,Z),{EQO_PRED}(Z,Y){DOT}'
+
+ACTIVE_EQV = f'{{{EQV_PRED}(T1,I1,T2,I2)}} {IMPLY} {ACTIVE_V_PRED}(T1,I1,T2,I2){DOT}'
+ACTIVE_EQO = f'{{{EQO_PRED}(X,Y)}} {IMPLY} {ACTIVE_O_PRED}(X,Y){DOT}'
+### LACE+ axioms
+
+
 HEAD = 'head'
 BODIES = 'BODIES'
 
@@ -180,6 +217,24 @@ def get_sim_atom(x:str,y:str,s:int) -> str:
 def get_default_tup(rel:Relation)-> list:
     # print(rel.name,len(rel.attrs))
     return ['_' for a in rel.attrs]
+
+def add_dom_val(attribute:Attribute,val,ter = False):
+    val = utils.escape(val,attribute.data_type == Attribute.CAT_SEQ) if not utils.is_empty(val) else DF_EMPTY 
+    const_type = [Attribute.NUM]
+    if attribute.data_type not in const_type and val!=DF_EMPTY:
+        val = f'"{val}"' if ter else f'"{attribute.id}:{val}"'
+    if not isinstance(val,str):
+        val = str(int(val))
+    return val
+
+def add_dom_val_local(attribute:Attribute,val,ter = False):
+    val = utils.escape(val,attribute.data_type == Attribute.CAT_SEQ) if not utils.is_empty(val) else DF_EMPTY 
+    const_type = [Attribute.NUM]
+    if attribute.data_type not in const_type and val!=DF_EMPTY:
+        val = f'"{val}"' if ter or not attribute.type == Attribute.O_MERGE else f'"{attribute.id}:{val}"'
+    if not isinstance(val,str):
+        val = str(int(val))
+    return val
 
 # TODO wrapping schema into a factory function
 class program_transformer:
@@ -193,10 +248,14 @@ class program_transformer:
         self.sim_pairs = get_sim_pairs(self.spec_dir)
         self.log = logger('program_transformer')
         spec = trans_utils.get_rule_list(self.spec_dir)
-        self.rules:list[str] = spec[0]
-        self.constraints:list[str] = spec[1]
+        self.rules:list[str] = spec[0] 
+        #if self.schema.ver == LACE else self.transform_local(spec[0])
+        self.constraints:list[str] = spec[1] 
+        #if self.schema.ver == LACE else self.transform_local(spec[1])
         self.annotations:list[tuple[int,str]] = spec[2] # list of tuples [(r_idx, annotation)]
         self.show_list = spec[3]
+        
+        
     def __load_domain(self, sep_lst = [SEP_AND,SEP_AMP,SEP_COMMA],token='',multi_lvl = False, ter = False):
         print("* Starting loading domain and processing atom base ...")
         # val_dom_dict = self.get_attr_dict()
@@ -204,15 +263,6 @@ class program_transformer:
         # key attribute id
         # val set of references
         # dom_values = {}
-        def add_dom_val(attribute:Attribute,val,ter = False):
-            val = utils.escape(val,attribute.data_type == Attribute.CAT_SEQ) if not utils.is_empty(val) else DF_EMPTY 
-            const_type = [Attribute.NUM]
-            if attribute.data_type not in const_type and val!=DF_EMPTY:
-                val = f'"{val}"' if ter else f'"{attr.id}:{val}"'
-            if not isinstance(val,str):
-                val = str(int(val))
-            return val
-
         atom_base = set()
         multi_lvl_token = ',0' if multi_lvl else ''
         #[fixed]: avoid calculating the similarity scores of IDs
@@ -246,6 +296,46 @@ class program_transformer:
                 r_atom =f'{pred}({r_tup_str}).'
                 atom_base.add(r_atom)
                             
+        return atom_base 
+    
+    def __load_local_domain(self, token='',multi_lvl = False, ter = False):
+        atom_base = set()
+        multi_lvl_token = ',0' if multi_lvl else ''
+        # TODO: [2023-01-23] iterating attr set of the schema instead of instance records?
+        for r_name,tbl in self.schema.tbls.items():
+            rel = self.schema.rel_index(r_name)
+            for _,row in tbl[1].iterrows():
+                r_tup = get_default_tup(rel)
+                tid = self.schema.get_uidx()
+                r_tup.insert(0,str(tid))
+                # [2023-11-23] modified, canel tuple id
+                for a_idx,attr_ in enumerate(tbl[1].columns):
+                    if self.schema.refs !=None and (r_name,attr_) in self.schema.refs:
+                        attr = self.schema.index_attr(self.schema.refs[(r_name,attr_)][1],self.schema.refs[(r_name,attr_)][0])
+                    else: 
+                        attr = self.schema.index_attr(attr_,r_name)
+                    # TODO: remove condition
+                    if attr!=None:
+                        val = add_dom_val_local(attr,row[attr_],ter=ter)
+                        reflect_eq = ''
+                        if attr.type == Attribute.O_MERGE and val != DF_EMPTY:
+                            if ter:
+                                reflect_eq = f'{EQO_PRED}({val},{val},{attr.id}{multi_lvl_token}).'
+                            else:
+                                reflect_eq = f'{EQO_PRED}({val},{val}{multi_lvl_token}).'
+                            
+                        else:
+                            v_pos = f'{str(tid)},{str(a_idx+1)}'
+                            reflect_eq = f'{EQV_PRED}({v_pos},{v_pos}).'
+                            proj_fact = f'{PROJ_PRED}({v_pos},{val}).'
+                            atom_base.add(proj_fact)
+                        atom_base.add(reflect_eq)
+
+                        r_tup[a_idx+1] = val
+                r_tup_str = ','.join(r_tup)
+                pred = f'{r_name}' if utils.is_empty(token) else f'{r_name}_{token}'
+                r_atom =f'{pred}({r_tup_str}).'
+                atom_base.add(r_atom)
         return atom_base 
     
     def __load_domain_col(self, sep_lst = [SEP_AND,SEP_AMP,SEP_COMMA],sim_cols:list = None):
@@ -372,7 +462,7 @@ class program_transformer:
         return set(facts)
     """
 
-    def get_db_atombase_(self,cached:bool=True, multi_lvl=False,ter=False):
+    def get_db_atombase_(self,cached:bool=True, multi_lvl=False,ter=False, ):
         # lower_bound = 50
         # if cached
         if multi_lvl:
@@ -383,7 +473,19 @@ class program_transformer:
             name = f'{self.schema.name}'
         atoms = utils.get_atoms(source_func = self.__load_domain,cache_dir= CACHE_DIR,fname = name, multi_lvl = multi_lvl,ter=ter)
         return set(atoms)
-        
+    
+    def get_db_atombase_local(self,cached:bool=True, multi_lvl=False,ter=False, ):
+        # lower_bound = 50
+        # if cached
+        if multi_lvl:
+            name = f'{self.schema.name}-multi-p' 
+        elif ter: 
+            name = f'{self.schema.name}-ter-p' 
+        else:
+            name = f'{self.schema.name}-p'
+        atoms = utils.get_atoms(source_func = self.__load_local_domain,cache_dir= CACHE_DIR,fname = name, multi_lvl = multi_lvl,ter=ter)
+        return set(atoms)
+    
     def get_db_atombase_col(self,cached:bool=True,version=""):
         atoms = utils.get_atoms(source_func = self.__load_colbase_domain,cache_dir= CACHE_DIR,fname= self.schema.name+version+'-col')
         return set(atoms)        
@@ -409,12 +511,11 @@ class program_transformer:
             facts = map(parse,tbl_facts)
         return set(tbl_facts)
     """
-    def get_atombase(self,multi_lvl = False,ter=False,is_col=False):
-        self.log.info("Loading facts from database ...")
-        if is_col:
-            atom_base= self.get_db_atombase_col()
-        else:
+    def get_atombase(self,multi_lvl = False,ter=False,ver = LACE):
+        if ver == LACE:
             atom_base= self.get_db_atombase_(multi_lvl=multi_lvl,ter=ter)
+        elif ver == LACE_P:
+            atom_base = self.get_db_atombase_local(multi_lvl=multi_lvl,ter=ter)
         return atom_base
     
     def get_hard_rules(self, )-> Sequence[str]:
@@ -447,8 +548,10 @@ class program_transformer:
         #print(attr)
         # locate head variables: relation: attributes
         if attr != None:
-            #print(attr)
+            # print(attr[0])
+            [print(r) for r in self.schema.relations]
             rel = self.schema.rel_index(attr[0])
+            # print(rel)
             attr_id = rel.attrs[attr[1]].id
             atom = f'{pred}({vars[0]},{vars[1]},{attr_id})'
         else:
@@ -488,6 +591,193 @@ class program_transformer:
             b_prime = ','.join(b_prime)   
             r = f'{h}{IMPLY}{b_prime}.'        
             transformed_list.append(r)
+        return transformed_list
+    
+    def transform_local(self,rule_list:list[str],anonym=True) -> list[str]:
+        transformed_list = []
+        # iterate rule head, collecting the two sets of attributes participating eqo and eqv respectively
+        for r in rule_list:
+            r = r.split(IMPLY,1)
+            h = r[0]
+            # get rule bodies
+            b = r[1]
+            b = b[:-1]
+            b_literals = trans_utils.get_body_literals(b)
+            b_literals_cp = b_literals.copy()
+            # find joins in the rule bodies
+            body_joins_dict = trans_utils.get_body_joins(b_literals)
+            for var, count in body_joins_dict.items():
+                var_attr_pos = trans_utils.locate_body_var(var,b)
+                #print(var_attr_pos)
+                rel = self.schema.rel_index(var_attr_pos[0])
+                #print(len(rel.attrs))
+                var_attr = rel.attrs[var_attr_pos[1]-1]
+                # new a fresh variable starting from the second occurance,
+                fresh_vars = [f'{var}{str(i+1)}' for i in range(count)]
+                fresh_vars[0] = var # keep a copy as the same variable as before, in case the variable occurs in inequality atoms
+                fresh_vars_index = 0  
+                # replace the var with fresh vars
+                for i,bl in enumerate(b_literals_cp):
+                    if re.match(REL_PAT,bl):
+                        b_pred = get_atom_pred(bl)
+                        b_atom_vars = trans_utils.get_atom_vars(b_literals[i])
+                        if var in b_atom_vars:
+                            # print(len(fresh_vars),fresh_vars_index)
+                            b_atom_vars[b_atom_vars.index(var)] = f'{fresh_vars[fresh_vars_index]}'
+                            fresh_vars_index+=1
+                            new_bl = utils.get_atom(pred_name=b_pred,tup=tuple(b_atom_vars))
+                            # print(i,new_bl)
+                            b_literals[i] = new_bl
+                
+                # if it is a join on eqo merge variables
+                if var_attr.type == Attribute.O_MERGE:
+                    # otherwise, new another copy as common variable VC, then for each of the variables newed previously, append eq(X',XC) to the rule body.
+                    if count>2:
+                        common_var = f'{var}{str(count+1)}'
+                        for fv in fresh_vars:
+                            eqo = f'{EQO_PRED}({fv},{common_var})'
+                            b_literals.append(eqo)
+                    # if no more than 2, append directly a eqo(X,X'), 
+                    elif count == 2:
+                        eqo = f'{EQO_PRED}({fresh_vars[0]},{fresh_vars[1]})'
+                        b_literals.append(eqo)
+                # if it is a join on eqv variables
+                elif var_attr.type == Attribute.V_MERGE:
+                    # locates all occurances of v in the rule body (tid,position), 
+                    occurances = trans_utils.locate_body_var_pos_all(var,b)
+                    prj_idx = len(b_literals)
+                    proj_var = f'PRJ{str(prj_idx)}'
+                    for j, (t,p) in enumerate(occurances):
+                        # eq_pos = f'{t}{str(j)},POS{str(j)}'
+                        # equivalently
+                        valv = f'{VAL_PRED}({t},{str(p)},{proj_var})'
+                        b_literals.append(valv)
+                        # generate new pair of variables (tid',i') and make a new atom eqv(tid,i, tid',i')
+                        #eqv = f'{EQV_PRED}({t},{str(p)},{eq_pos})'
+                        #b_literals.append(eqv)
+                        # new a common intersection variable v
+                        # generate for the tuple location a proj value atom proj(tid',i', v)
+                        #projv = f'{PROJ_PRED}({eq_pos},{proj_var})'
+                        #b_literals.append(projv)
+                    b_literals.append(f'{DEFAULT_NEG} empty({proj_var})') # intersect cannot be empty
+
+            # considered as singleton set for those do not participate merges, and keep same variable join unchanged
+            # make changes on similarity atoms
+            for i,bl in enumerate(b_literals_cp):
+                if re.match(REL_PAT,bl) and trans_utils.get_atom_pred(bl) == SIM_PRED:
+                    sim_vars = trans_utils.get_atom_vars(bl)
+                    # print(sim_vars)
+                    sim_x_pos = trans_utils.locate_body_var_pos(sim_vars[0],b)
+                    sim_y_pos = trans_utils.locate_body_var_pos(sim_vars[1],b)
+                    fresh_sim_x = f'{sim_vars[0]}{str(i)}'
+                    fresh_sim_y = f'{sim_vars[1]}{str(i)}'
+                    sim_vars[0] = fresh_sim_x
+                    sim_vars[1] = fresh_sim_y
+                    fresh_sim_atom = utils.get_atom(SIM_PRED,tuple(sim_vars))
+                    b_literals[i] = fresh_sim_atom
+                    valvx = f'{VAL_PRED}({sim_x_pos[0]},{sim_x_pos[1]},{fresh_sim_x})'
+                    valvy =  f'{VAL_PRED}({sim_y_pos[0]},{sim_y_pos[1]},{fresh_sim_y})'
+                    b_literals.append(valvx)
+                    b_literals.append(valvy)
+                    # print(b_literals)
+                
+                elif utils.is_empty(h) and NOT_EQUAL in bl:
+                    inequated_vars = [v.strip() for v in bl.split(NOT_EQUAL)]
+                    #print(inequated_vars)
+                    # check attribute type
+                    rel_pos = trans_utils.locate_body_var(inequated_vars[0],b)
+                    ineq_attr = self.schema.rel_index(rel_pos[0]).attrs[rel_pos[1]-1]
+                    #print(ineq_attr.name,ineq_attr.type)
+                    if ineq_attr.type == Attribute.O_MERGE:
+                        ineqo = f'{DEFAULT_NEG} {EQO_PRED}({inequated_vars[0]},{inequated_vars[1]})'
+                        b_literals[i] = ineqo
+                    elif ineq_attr.type == Attribute.V_MERGE:
+                        eq_pos_x = trans_utils.locate_body_var_pos(inequated_vars[0],b)
+                        eq_pos_y = trans_utils.locate_body_var_pos(inequated_vars[1],b)
+                        #fresh_pos_x = f'{eq_pos_x[0]}X{str(i)}, POSX{str(i)}'
+                        #fresh_pos_y = f'{eq_pos_y[0]}Y{str(i)}, POSY{str(i)}'
+                        fresh_neq_x = f'PRJX{str(i)}'
+                        fresh_neq_y = f'PRJY{str(i)}'
+                        #eqvx = f'{EQV_PRED}({eq_pos_x[0]}, {str(eq_pos_x[1])}, {eq_pos_x[0]}X{str(i)}, POSX{str(i)})'
+                        #eqvy = f'{EQV_PRED}({eq_pos_y[0]}, {str(eq_pos_y[1])}, {eq_pos_y[0]}Y{str(i)}, POSY{str(i)})'
+                        #projx = f'{PROJ_PRED}({fresh_pos_x}, PRJX{str(i)})'
+                        #projy = f'{PROJ_PRED}({fresh_pos_y}, PRJY{str(i)})'
+                        eqvalvx = f'{VAL_PRED}({eq_pos_x[0]}, {str(eq_pos_x[1])},{fresh_neq_x})'
+                        eqvalvy =  f'{VAL_PRED}({eq_pos_y[0]},{eq_pos_y[1]},{fresh_neq_y})'
+                        new_literals = [eqvalvx, eqvalvy]
+                        # new_literals = [eqvx,eqvy,projx,projy]
+                        b_literals+=new_literals
+                        b_literals[i] = f'PRJX{str(i)} {NOT_EQUAL} PRJY{str(i)}'
+            if anonym:
+                if utils.is_empty(h):
+                    distinguished_vars = trans_utils.get_distinguished_vars(b_literals)
+                else:
+                    distinguished_vars = trans_utils.get_distinguished_vars([h]+b_literals)
+
+                new_body_lit_cp = b_literals.copy()
+                for i,bl in enumerate(new_body_lit_cp):
+                    if bl.startswith(DEFAULT_NEG) :
+                        # print(b_pred)
+                        bl = bl.replace(DEFAULT_NEG,'').strip()
+                    b_pred = trans_utils.get_atom_pred(bl)
+                   
+                    if not utils.is_empty(b_pred):
+                        b_vars = trans_utils.get_atom_vars(bl)
+                        for j,bv in enumerate(b_vars.copy()):
+                            if bv in distinguished_vars:
+                                b_vars[j] = ANOMY_VAR
+                        anonmyed_bl = utils.get_atom(b_pred,tuple(b_vars))
+                        if b_literals[i].startswith(DEFAULT_NEG): anonmyed_bl= f'{DEFAULT_NEG} {anonmyed_bl}'
+                        b_literals[i] = anonmyed_bl
+                            
+            new_b = ','.join(b_literals)
+            new_r = f'{h}{IMPLY}{new_b}{DOT}'
+            transformed_list.append(new_r)
+        return transformed_list  
+
+    def transform_vlog(self,rule_list:list[str])-> list[str]:
+        transformed_list = []
+        def add_uq(atom:str)->str:
+            is_relational = re.match(REL_PAT,atom)
+            if is_relational:
+                vars = trans_utils.get_atom_vars(atom)
+                pred = trans_utils.get_atom_pred(atom)
+            else:
+                vars = re.split(DEF_OPERA_PAT, atom)                
+
+            for j,v in enumerate(vars.copy()):
+                if v[0].isupper():
+                    vars[j] = f'?{v}'
+            return utils.get_atom(pred,vars) if is_relational else f'{vars[0]}{vars[1]}{vars[2]}'
+        
+        # take input lb or ub
+        for r in rule_list:
+            r = r.split(IMPLY,1)
+            if len(r) <2:
+                transformed_list.append(r[0])
+                continue
+            h = r[0].strip()
+            b = r[1].strip()
+            h = add_uq(h)
+            b = b[:-1].strip()
+            b_literals = trans_utils.get_body_literals(b)
+            
+            pop_list = []
+        # for each rule, for each variable, and universal quantifier
+            for i,bl in enumerate(b_literals.copy()):
+                if not bl.startswith(DEFAULT_NEG):
+                    if NOT_EQUAL in bl:
+                        pop_list.append(i)
+                    else:
+                        b_literals[i] = add_uq(bl.strip())  
+                else:
+                    bl = bl.replace(DEFAULT_NEG,'',1).strip()
+                    b_literals[i] = f'~{add_uq(bl)}'
+            for i,p in enumerate(pop_list):
+                b_literals.pop(p-i)
+            new_b = ','.join(b_literals)
+            new_r = f'{h}{IMPLY}{new_b}{DOT}'
+            transformed_list.append(new_r)
         return transformed_list
     
 
@@ -596,9 +886,12 @@ class program_transformer:
         return transformed_rules,to_be_sim_rules
     
     def get_sim_cat_sum (self,) -> tuple:
+        # ('track', 5, 'track', 5): 98
+        # ('dblp', 3, 'acm', 3): 90
         self.log.info("* Calculate CAT sum of sim attributes")
         sim_group = {i:k for i,k in enumerate(self.sim_pairs.keys())}
         sim_group_const_num = {i:[] for i in sim_group.keys()}    
+        sim_group_const = {i:[] for i in sim_group.keys()}
         for r_name,tbl in self.schema.tbls.items():
             rel = self.schema.rel_index(r_name=r_name)
             for i,g in sim_group.items():
@@ -608,43 +901,40 @@ class program_transformer:
                         attr_name = rel.attrs[g[1]].name
                         distinct_cnt = len(tbl[1][attr_name].value_counts(dropna=True))
                         sim_group_const_num[i].append(distinct_cnt)
+                        # unique_const = tbl[1][attr_name].value_counts(dropna=True)
+                        filtered_column = tbl[1][attr_name].dropna()
+                        unique_consts = filtered_column.unique()
+                        sim_group_const[i].append(unique_consts)
                         if r_name in g[2:]:
                             attr_name_2 = rel.attrs[g[3]].name
                             distinct_cnt_2 = len(tbl[1][attr_name_2].value_counts(dropna=True))
                             sim_group_const_num[i].append(distinct_cnt_2)
+                            filtered_column2 = tbl[1][attr_name_2].dropna()
+                            unique_consts2 = filtered_column2.unique()
+                            sim_group_const[i].append(unique_consts2)
                     else:
                         attr_name_2 = rel.attrs[g[3]].name
                         distinct_cnt_2 = len(tbl[1][attr_name_2].value_counts(dropna=True))
                         sim_group_const_num[i].append(distinct_cnt_2)
+                        filtered_column2 = tbl[1][attr_name_2].dropna()
+                        unique_consts2 = filtered_column2.unique()
+                        sim_group_const[i].append(unique_consts2)
         
         cat_sum = sum([num[0]*num[1] for _,num in sim_group_const_num.items()])
         sim_const_sum = sum([sum(num) for _,num in sim_group_const_num.items()])
-        return cat_sum, sim_const_sum
+        start = self.log.timer(proc_name='Computing #CatSum constants similarities', state=START)
+        sim_facts = set()
+        #print(len(sim_facts))
+        for k, v in sim_group_const.items():
+            for c1 in v[0]:
+                for c2 in v[1]:
+                    sim_facts.add((c1,c2,utils.sim(c1,c2)))
+        self.log.timer(proc_name='Computing #CatSum constants similarities', state=END, start= start )
+        naive_sim_mem_size = sys.getsizeof(sim_facts) / (1024*1024)
+        print(len(sim_facts))
+        self.log.info(f'Naive sim computation obtained memory size of {str(naive_sim_mem_size)} MB .')
+        return cat_sum, sim_const_sum, naive_sim_mem_size
     
-    
-    
-    def transform_online_sim(self,r:str,sim_pred_name = SIM_PRED)-> str:
-        h, b_literals = trans_utils.get_rule_parts(r)
-        pop_list =[]
-        for i,bl in enumerate(b_literals.copy()):
-            # TODO: for testing reson here assume sim atoms only occur positively, which is not the case as in dblp we do allow negating sim atoms in constraint bodies
-            if bl.startswith(sim_pred_name):
-                # remake a online sim atom
-                sim_vars = trans_utils.get_atom_vars(bl)
-                # moving thresholds
-                threshold = b_literals[i+1].split('>=')[1].strip() 
-
-                ol_sim_atom = utils.get_atom(SIM_FUNC_PRED,tuple(sim_vars[:-1]))
-                ol_sim_literal = f'{ol_sim_atom}>={threshold}'
-
-                b_literals.append(ol_sim_literal)
-                pop_list.append(i)
-                pop_list.append(i+1)
-
-        for i,p in enumerate(pop_list):
-            b_literals.pop(p-i)
-        return trans_utils.make_normal_rule(h,b_literals)
-        
     
     def generate_show(self, ter=False, rec= False, rec_readoff = False, show = True)-> list[str]:
         merge_attrs = [a for a in self.schema.attrs if a.type == Attribute.MERGE]
@@ -675,8 +965,8 @@ class program_transformer:
                     show_directive = f'{SHOW}({pred_name},{merge_var_X},{merge_var_Y}{iter_var}):{pred_name}({tup_1_str}),{pred_name}({tup_2_str}),{eq_pred_rec}({merge_var_X},{merge_var_Y}{uaid},R),{merge_var_X}!={merge_var_Y}{DOT}'
                 else:
                     show_directive = f'{SHOW}({pred_name},{merge_var_X},{merge_var_Y}):{pred_name}({tup_1_str}),{pred_name}({tup_2_str}),{EQ_PRED}({merge_var_X},{merge_var_Y}{uaid}),{merge_var_X}!={merge_var_Y}{DOT}'
-            #show = '#show(recording,X,Y): recording(X,NA,ACI,L,V),recording(Y,NA1,ACI1,L1,V1),not eq(ACI,ACI1,19),not empty(ACI),not empty(ACI1).'
-            #show_list.append(show)
+                #show =  '#show(release,X,Y): release(X,RGI,AC,NA,B,S,PA,LA,SC,Q),release(Y,RGI1,AC1,NA1,B1,S1,PA1,LA1,SC1,Q1),eq(X,Y,28),not eq(RGI,RGI1,24).'
+                #show_list.append(show)
                 show_list.append(show_directive)
         else:
             # check self relation numbers
@@ -716,11 +1006,17 @@ class program_transformer:
         return show_list
     
     # (version,ter,trace-|traced rels)
-    def spec_construct(self,version,trace = False,show=True, is_ol_sim = False)-> list[str]:
+    def spec_construct(self,version,trace = False,show=True,ub_guarded=False, is_ol_sim = False)-> list[str]:
         if version == program_transformer.ORIGIN:
             rules = self.rules.copy()
-            rules.append(ACTIVE_CHOICE)
-            rules += self.constraints      
+            if self.schema.ver == LACE:
+                if ub_guarded:
+                    rules = self.transform_ub_grauded(rules)
+                rules.append(ACTIVE_CHOICE)
+                rules += self.constraints
+            elif self.schema.ver == LACE_P:
+                rules.append(ACTIVE_EQO)
+                rules.append(ACTIVE_EQV)  
         #elif version == program_transformer.SIM_PRG:
             # rules = self.get_reduced_spec(rule_list=rules)
         elif version == program_transformer.UPERBOUND:
@@ -728,10 +1024,14 @@ class program_transformer:
             rules = self.get_ub_spec(rule_list=rules)
         elif version == program_transformer.LOWERBOUND:
             rules = self.get_hard_rules()
-
+            if ub_guarded:
+                rules = self.transform_ub_grauded(rules)
+        
         if is_ol_sim:
             rules = [self.transform_online_sim(r) for r in rules]
-            
+        
+        if self.schema.ver == LACE_P:
+            rules.append(EQUIV_CELL_SET) 
         
         if trace:
             for i,l in self.annotations:
@@ -746,24 +1046,65 @@ class program_transformer:
         rules+=self.generate_show(show=show)
         return rules
     
-    def spec_construct_ter(self,version,trace = False,show=True, is_ol_sim = False)-> list[str]:
+    
+    def spec_construct_local(self,version,trace = False,show=True)-> list[str]:
+        if version == program_transformer.ORIGIN:
+            rules = self.rules.copy()
+            rules += self.constraints
+            rules.append(ACTIVE_EQO)
+            rules.append(ACTIVE_EQV)  
+        #elif version == program_transformer.SIM_PRG:
+            # rules = self.get_reduced_spec(rule_list=rules)
+        elif version == program_transformer.UPERBOUND:
+            rules = self.rules.copy()
+            rules = self.get_ub_spec(rule_list=rules)
+        elif version == program_transformer.LOWERBOUND:
+            rules = self.get_hard_rules()
+        
+        if trace:
+            for i,l in self.annotations:
+                rules[i] = f"""
+                {l}
+                {rules[i]}"""    
+            rules.append(EQ_AXIOMS_TRACE)
+            rules.append(TRACE_EQ)
+        else:
+            rules.append(EQO_TRANSITIVITY)
+            rules.append(EQO_SYMMETRY)
+            rules.append(EQV_TRANSITIVITY)
+            rules.append(EQV_SYMMETRY)
+        rules.append(EMPTY_TGRS)
+        # rules+=self.generate_show(show=show)
+        return rules
+    
+    
+    def spec_construct_ter(self,version,trace = False,show=True,ub_guarded = False, is_ol_sim = False)-> list[str]:
         rules = self.rules.copy()
         
         if version == program_transformer.ORIGIN:
-            ter_spec = self.transform_ternary(rules+self.constraints)
+            ter_rules = self.transform_ternary(rules)
+            ter_constraints = self.transform_ternary(self.constraints)
+            if ub_guarded:
+                # print(ter_rules)
+                ter_rules = self.transform_ub_grauded(ter_rules)
+            ter_spec = ter_rules+ ter_constraints
             ter_spec.append(ACTIVE_CHOICE_TER)
             #rules += self.constraints      
         #elif version == program_transformer.SIM_PRG:
            #  ter_spec = self.get_reduced_spec(rule_list=ter_spec)
         elif version == program_transformer.UPERBOUND:
-            ter_spec = self.transform_ternary(rules+self.constraints)
-            ter_spec = self.get_ub_spec(rule_list=[r for r in ter_spec if not r.startswith(IMPLY)])
+            ter_spec = self.transform_ternary(rules)
+            ter_spec = self.get_ub_spec(rule_list=ter_spec)
         elif version == program_transformer.LOWERBOUND:
-            ter_spec = self.transform_ternary(self.get_hard_rules())
-        # print(rules)    
+            rules = self.get_hard_rules()
+            ter_spec = self.transform_ternary(rules)
+            if ub_guarded:
+                    ter_spec = self.transform_ub_grauded(ter_spec)
+            
+
+        
         if is_ol_sim:
-            ter_spec = [self.transform_online_sim(r) for r in ter_spec]
-              
+                ter_spec = [self.transform_online_sim(r) for r in ter_spec]    
         ter_spec.append(EMPTY_TGRS)
         if trace:
             for i,l in self.annotations:
@@ -772,20 +1113,43 @@ class program_transformer:
                                 {ter_spec[i]}"""    
             ter_spec.append(EQ_AXIOMS_TER_TRACE)
             ter_spec.append(TRACE_EQ_TER)
-        ter_spec.append(EQ_AXIOMS_TER)
-        #show = [
-          #  '#show(release,X,Y): release(X,RGI,AC,NA,B,S,PA,LA,SC,Q), release(Y,RGI1,AC1,NA1,B1,S1,PA1,LA1,SC1,Q1), eq(X,Y,28), B!=B1, not empty(B), not empty(B1).']
-        # ter_spec+=show
-        ter_spec+=self.generate_show(ter=True,show=show)
+        if self.schema.ver == LACE:
+            ter_spec.append(EQ_AXIOMS_TER)
+            ter_spec+=self.generate_show(ter=True,show=show)
+        else:
+            ter_spec.append(EQ_AXIOMS_VLOG_TRANS_TER)
+            ter_spec.append(EQ_AXIOMS_VLOG_SYM_TER)
         return ter_spec
     
-    def get_spec(self,ter=False,spec_ver=ORIGIN,trace=False,show=True, is_ol_sim = False)->list[str]:
+    
+
+    
+    def get_spec(self,ter=False,spec_ver=ORIGIN,trace=False,show=True,ub_guarded=False, is_ol_sim = False)->list[str]:
         if ter:
-            program = self.spec_construct_ter(version=spec_ver,trace=trace,show=show, is_ol_sim= is_ol_sim)
+            if self.schema.ver == LACE:
+                program = self.spec_construct_ter(version=spec_ver,trace=trace,show=show,ub_guarded=ub_guarded, is_ol_sim=is_ol_sim)
+            elif self.schema.ver == VLOG_LB:
+                program = self.spec_construct_ter(version=program_transformer.LOWERBOUND)
+                program = self.transform_vlog(program)
+                # if 'dblp' in self.schema.name : print('================LB===============','\n'.join(program))
+            elif self.schema.ver == VLOG_UB:
+                program = self.spec_construct_ter(version=program_transformer.UPERBOUND)
+                program = self.transform_vlog(program)
+                
         else:
-            program = self.spec_construct(version=spec_ver,trace=trace,show=show, is_ol_sim = is_ol_sim)
-            
+            if self.schema.ver == LACE:
+                program = self.spec_construct(version=spec_ver,trace=trace,show=show,ub_guarded=ub_guarded, is_ol_sim = is_ol_sim)
+            elif self.schema.ver == LACE_P:
+                program = self.spec_construct_local(version=spec_ver,trace=False,show=True)
+
         return program
+    
+    
+
+    
+    
+
+    
     
     def get_merge_constraint(self,merge:list,neg:bool=False,trace=False,ter=False) -> list[str]:
         merge_constraint = []
@@ -1150,14 +1514,84 @@ class program_transformer:
         transformed_rules.insert(0,f'{PROGRAM} spec(i).')
         #[print(r) for r in transformed_rules]
         return base + transformed_rules
+    
+    
+    def transform_ub_grauded(self,rules: list[str])-> list[str]:
+        transformed = []
+        for r in rules:
+            # get head variables
+            h, b_literals = trans_utils.get_rule_parts(r)
+            head_vars = trans_utils.get_atom_vars(h)
+            # create up_eq atom with the variables
+            up_eq = utils.get_atom(UP_EQ,tup=head_vars)
+            # append in the rule body
+            b_literals.append(up_eq)
+            transformed.append(trans_utils.make_normal_rule(h,b_literals))
+        return transformed
+    
+    def transform_online_sim(self,r:str,sim_pred_name = SIM_PRED)-> str:
+        h, b_literals = trans_utils.get_rule_parts(r)
+        pop_list =[]
+        for i,bl in enumerate(b_literals.copy()):
+            # TODO: for testing reson here assume sim atoms only occur positively, which is not the case as in dblp we do allow negating sim atoms in constraint bodies
+            if bl.startswith(sim_pred_name):
+                # remake a online sim atom
+                sim_vars = trans_utils.get_atom_vars(bl)
+                # moving thresholds
+                threshold = b_literals[i+1].split('>=')[1].strip() 
 
-if __name__ == "__main__":
-   pt = program_transformer(example_schema.music_schema(split='50',files=['./experiment/5-uni/music/music.lp'])[0])
-   # [print(i,r) for i,r in enumerate(pt.rules)]
-   # [print(r) for r in pt.constraints]
-   #pt.spec_construct_ter(version=program_transformer.ORIGIN,trace=False)
-   rules = pt.rules + pt.constraints
-   print(pt.transform_ternary(rules))
-   
-   #print(pt.get_ub_spec())
-   #print(('./experiment/5-uni/music/v2/music_u.lp'))
+                ol_sim_atom = utils.get_atom(SIM_FUNC_PRED,tuple(sim_vars[:-1]))
+                ol_sim_literal = f'{ol_sim_atom}>={threshold}'
+
+                b_literals.append(ol_sim_literal)
+                pop_list.append(i)
+                pop_list.append(i+1)
+
+        for i,p in enumerate(pop_list):
+            b_literals.pop(p-i)
+        return trans_utils.make_normal_rule(h,b_literals)
+    
+
+    def get_datalog_sim(self,ter=False)->list[str]:
+        if ter:
+           rules = self.rules.copy()
+           ub = self.get_ub_spec(rules)
+           ub = self.transform_ternary(ub)
+           ub1 = ub.copy()
+           ub2 = ub.copy()
+           up_eq_rules = []
+           for i,r in enumerate(ub1):
+               h,b_literals = trans_utils.get_rule_parts(r)
+               pop_list = []
+               for j,b in enumerate(b_literals):
+                if b.startswith(SIM_PRED):
+                    pop_list.append(j)
+                    pop_list.append(j+1)
+               for j,p in enumerate(pop_list):
+                   b_literals.pop(p-j)
+                
+               up_r = trans_utils.make_normal_rule(h,b_literals)  
+               up_eq_rules.append(up_r)
+            
+           to_be_simed_rules = []
+           for i,r in enumerate(ub2):
+               h,b_literals = trans_utils.get_rule_parts(r)
+               sim_index = []
+               sim_bodies = []
+               for j,b in enumerate(b_literals):
+                   if b.startswith(SIM_PRED):
+                       sim_index.append(j)
+                       sim_index.append(j+1)
+                       sim_bodies.append(b)
+               # remove sim in body literals
+               for j,p in enumerate(sim_index):
+                   b_literals.pop(p-j)
+               b_literals.append(h)
+               #print(sim_bodies)
+               for s in sim_bodies:
+                   s_vars = trans_utils.get_atom_vars(s)
+                   sim_head = utils.get_atom(SIM_PRED,tuple(s_vars[:-1]))
+                   to_be_simed_rules.append(trans_utils.make_normal_rule(sim_head, b_literals))
+           
+           return self.transform_vlog(up_eq_rules), self.transform_vlog(to_be_simed_rules)
+       

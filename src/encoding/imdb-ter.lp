@@ -13,7 +13,7 @@ active(X,Y,5):-name_basics(X,PN1,PP),name_basics(Y,PN2,PP),not empty(PP),sim(PN1
 active(X,Y,5):-name_basics(X,PN1,PP1),name_basics(Y,PN2,PP2),sim(PN1,PN2,S2),S2>=98,X!=Y.
 :-title_basics(X,TT1,PT1,OT1,IA1,YE,GEN),title_basics(Y,TT2,PT2,OT2,IA2,YE1,GEN1),eq(X,Y,8),TT1!=TT2,IA1!=IA2,YE!=YE1,GEN!=GEN1.
 
-{eq(X,Y,I);neq(X,Y,I)}=1 :- active(X,Y,I).
+{eq(X,Y,I)} :- active(X,Y,I).
 
 empty(nan). empty("nan").
 

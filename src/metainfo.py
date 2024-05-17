@@ -2,7 +2,7 @@ from argparse import ArgumentError
 from dataloader import Dataloader
 import utils
 from logger import logger
-from trans_utils import get_merge_attributes, get_sim_pairs
+from trans_utils import get_merge_attributes, get_sim_pairs, get_merge_attributes_local
 # from mpi import MPIWrapper
 
 
@@ -64,6 +64,12 @@ TOTAL_ATTR = '#total_attr'
 DUP_NUM = '#ground_truth'
 
 
+LACE = 0
+LACE_P = 1
+VLOG_LB = 2
+VLOG_UB = 3
+
+
 class Attribute:
     # categorical values
     CAT = 'cat'
@@ -86,9 +92,14 @@ class Attribute:
     
     NON_SIM_LST = [CAT,IDS]
     
-    
+    # LACE type
     MERGE = 0
     SIM = 1
+    
+    ##LACE+ type
+    O_MERGE = 2
+    V_MERGE = 3
+    SINGLETON = 4
 
     
     def __init__(self, id, name:str, type:int= SIM,data_type:str = STR, is_list:bool = False, rel_name= None) -> None:
@@ -185,7 +196,7 @@ class Schema:
             circular references are not expected here.
     """
     def __init__(self,  id, name:str='', tbls:dict = None, 
-                 dup_rels:set = None,refs:dict = None, attr_types = None,order = None, spec_dir = str) -> None:
+                 dup_rels:set = None,refs:dict = None, attr_types = None,order = None, spec_dir = str, ver = LACE) -> None:
         assert id is not None
         self.name = name if len(name)> 0 else f'def_schema_{id}'
         self.id = id
@@ -205,34 +216,56 @@ class Schema:
         self.rel_num = 0
         self.tbls = tbls
         self.refs = refs
+        self.ver = ver
         # global uid
         self.u_id = 0
-        self.merge_attrs = get_merge_attributes(spec_dir)
-        #sims_dict = dict()
-        #for t,v in sims:
-            #if t not in sims_dict:
-             #   sims_dict[t] = [v]
-           # else:
-               # sims_dict[t].append(v)
-        #self.sims = sims_dict
+        if self.ver == LACE_P:
+            mergeo_attrs, mergev_attrs = get_merge_attributes_local(spec_dir)
+            #print('object')
+            #[print(k,v) for k,v in mergeo_attrs.items()]
+            #print('value')
+            #[print(k,v) for k,v in mergev_attrs.items()]
+        else:
+            merge_attrs = get_merge_attributes(spec_dir)
         # load the set of all attributes
         for k,v in tbls.items():
             tbl = tbls[k]
+            k = k[:-2] if k.endswith('_c') else k
             rel = Relation(s_id=self.id,id = self.rel_num, name=k)    
             columns = list(tbl[1].columns.values) 
+            if self.ver == LACE_P:
+                for i,c in enumerate(columns):
+                    attr_type = Attribute.SINGLETON # [2024-4-13] those do not participate any merges
+                    if k in mergeo_attrs and i in mergeo_attrs[k]:
+                        #print(c,'o')
+                        attr_type = Attribute.O_MERGE
+                    elif k in mergev_attrs and i in mergev_attrs[k]:
+                        #print(c,'v')
+                        attr_type = Attribute.V_MERGE
+                    # a_type = Attribute.MERGE if ver == LACE else Attribute.O_MERGE
+                    attr = Attribute(id = self.attr_num, name = f'{c}',type=attr_type, \
+                        # assumption here is merge attributes are not some kind of textual string
+                        data_type= Attribute.STR \
+                        ,rel_name=k)
+                    self.add_val_attr(attr=attr)
+                    rel.attrs.append(attr)
+                    self.add_rel(rel=rel)
             # initialise attributes
-            for i,c in enumerate(columns):
-                is_merge = False
-                for _k,_v in self.merge_attrs.items():
-                    if k == _k:
-                        is_merge = i in _v
-                attr = Attribute(id = self.attr_num, name = f'{c}',type=Attribute.MERGE if is_merge else Attribute.SIM, \
-                    # assumption here is merge attributes are not some kind of textual string
-                    data_type=Attribute.IDS if is_merge else Attribute.STR \
-                    ,rel_name=k)
-                self.add_val_attr(attr=attr)
-                rel.attrs.append(attr)
-                self.add_rel(rel=rel)
+            else:
+                for i,c in enumerate(columns):
+                    is_merge = False
+                    for _k,_v in merge_attrs.items():
+                        if k == _k:
+                            is_merge = i in _v
+                    # a_type = Attribute.MERGE if ver == LACE else Attribute.O_MERGE
+                    attr = Attribute(id = self.attr_num, name = f'{c}',type=Attribute.MERGE if is_merge else Attribute.SIM, \
+                        # assumption here is merge attributes are not some kind of textual string
+                        data_type=Attribute.IDS if is_merge else Attribute.STR \
+                        ,rel_name=k)
+                    self.add_val_attr(attr=attr)
+                    rel.attrs.append(attr)
+                    self.add_rel(rel=rel)
+
         to_be_updated = dict()
         # iterate relations, check attributes
         # identify compatible attributes and consider them as one
@@ -258,7 +291,7 @@ class Schema:
         # remove redundant attributes
         # update the relations      
                        
-    def __get_uidx(self,):
+    def get_uidx(self,):
         self.u_id += 1
         return str(self.u_id)
     
@@ -370,7 +403,12 @@ class Schema:
     
     def schema_info(self,):
         self.schema_log.info('Schema Name: %', [self.name])
-        [self.schema_log.info('Relation % : %', [r.name,r]) for r in self.relations] 
+        # [self.schema_log.info('Relation % : %', [r.name,r]) for r in self.relations] 
+        sum = 0
+        for k,v in self.tbls.items():
+            sum+= len(v[1])
+            self.schema_log.info(f'Relation {k} has {str(len(v[1]))} of tuples.')
+        self.schema_log.info(f'#Tuples of schema {self.name} is {str(sum)}.')
       
 
 

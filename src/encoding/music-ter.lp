@@ -28,7 +28,7 @@ active(X,Y,56):-X!=Y,area(X,NA,ART,END),area(Y,NA1,ART,END),not empty(ART),not e
 :-release(X,RGI,AC,NA,B,S,PA,LA,SC,Q),release(Y,RGI1,AC1,NA1,B1,S1,PA1,LA1,SC1,Q1),eq(X,Y,28),B!=B1,not empty(B),not empty(B1).
 :-label(X,NA,GT,ARI,END1),label(Y,NA1,GT1,ARI1,END2),eq(X,Y,67),not eq(ARI,ARI1,56),not empty(ARI),not empty(ARI1).
 
-{eq(X,Y,I);neq(X,Y,I)}=1 :- active(X,Y,I).
+{eq(X,Y,I)} :- active(X,Y,I).
 
 empty(nan). empty("nan").
 

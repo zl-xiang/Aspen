@@ -53,8 +53,8 @@ MUSIC = "music"
 POKEMON = "pokemon"
 
 
-def get_schema(args)->tuple[Schema,Dataloader]:
-    version = args.data
+def get_schema(args,data_dir='')->tuple[Schema,Dataloader]:
+    split = args.data
     files = args.lps
     # uniq = args.uniq
     #print(uniq,'=====================================')
@@ -65,7 +65,7 @@ def get_schema(args)->tuple[Schema,Dataloader]:
     elif args.schema == IMDB:
         return eschema.imdb_schema(files=files)
     elif args.schema == MUSIC:
-        return eschema.music_schema(version,files)
+        return eschema.music_schema(split=split,files=files,data_dir=data_dir)
     elif args.schema == POKEMON:
         return eschema.pokemon_schema('50',files)
 
@@ -73,7 +73,7 @@ def get_schema(args)->tuple[Schema,Dataloader]:
 
     
 def eval(sol,truth,fname='',by_type=True,ter=False,level = _log.INFO_C):
-    print('################################################',111111)
+    
     eval_log = logger(reg_class='eval',level=level)
     def _eval( sol,truth,name='',):
         if not ter:
@@ -83,8 +83,9 @@ def eval(sol,truth,fname='',by_type=True,ter=False,level = _log.INFO_C):
         truth_size = len(truth)
         truth = truth.union({(x[1],x[0]) for x in truth})
         fn_set = utils.remove_symmetry(truth.difference(sol))
-        eval_log.debug(f"[{name}] False Negative pairs : %", [fn_set])
+        #eval_log.debug(f"[{name}] False Negative pairs : %", [fn_set])
         tp_set = utils.remove_symmetry(truth.intersection(sol))
+        eval_log.debug(f"[{name}] True Positve pairs : % ", [tp_set])
         fp_set = utils.remove_symmetry(sol.difference(truth))
 
         eval_log.debug(f"[{name}] False Positve pairs : % ", [fp_set])
@@ -117,16 +118,13 @@ def eval(sol,truth,fname='',by_type=True,ter=False,level = _log.INFO_C):
         
     
     eval_log.info(msg="==============Starting Evaluation==============",args=[])
-    print('################################################',222222)
     if isinstance(truth,dict) and not by_type:
-        
         all_t = set()
         for k,v in truth.items():
             all_t = all_t.union(set(v)) 
         truth = all_t
         _eval(sol=sol,truth=truth)
     elif isinstance(truth,dict) and by_type:
-        
         sol_dict = {}
         for s in sol:
             if s[0] not in sol_dict:
@@ -178,13 +176,15 @@ def main(**kwargs):
     args = argparse.Namespace(**kwargs)
     files = args.lps
     debug = args.debug
+    print(debug)
     log_level = _log.INFO_C if not debug else _log.DEBUG_C
     if args.asprin: mode = 'maxsol'
     else:mode = 'normal'
     fname=files[0].replace('.lp','').split('/')[-1]
     presimed = args.presimed
     ter = args.ternary
-    
+    ter_str = '' if not ter else '-ter'
+    ub_eqs_dir = os.path.join(CACHE_DIR,f'{fname}{ter_str}-{args.data}-ub.pkl') if not utils.is_empty(args.data) else os.path.join(CACHE_DIR,f'{fname}{ter_str}-ub.pkl')
     if args.main:
         main_log = logger('main',level=log_level)
 
@@ -207,9 +207,15 @@ def main(**kwargs):
         else:
             spec_ver = program_transformer.ORIGIN  
         # program_transformer.ORIGIN if not upperbound else program_transformer.UPERBOUND
-        sol, all_models = er_ctrl.run(maxsol,files,sim_facts = sim_facts,spec_ver=spec_ver,asprin=asprin)
-        with open(cached_results_dir, 'wb') as fp:
-            pickle.dump(sol, fp)
+        ub_eqs = None
+        if args.ub_guarded:
+            ub_eqs = utils.load_cache(ub_eqs_dir)
+            #[print(a) for a in ub_eqs]
+            sol, all_models = er_ctrl.run(maxsol,files,sim_facts = sim_facts,spec_ver=spec_ver,asprin=asprin,ub_eqs=ub_eqs)
+        else:
+            sol, all_models = er_ctrl.run(maxsol,files,sim_facts = sim_facts,spec_ver=spec_ver,asprin=asprin,ub_eqs=ub_eqs)
+        #with open(cached_results_dir, 'wb') as fp:
+           # pickle.dump(sol, fp)
             
         all_models = [set(map(utils.atom2str,model)) for model in all_models]
         model = all_models[0]
@@ -227,7 +233,6 @@ def main(**kwargs):
         by_type = args.typed_eval
         if args.enumerate==1:
             #main_log.debug('cora records with weird behaviour: %', [[s for s in set(sol) ]])
-            
             eval(set(sol),ground_truth,fname,by_type,ter,level=log_level)
         else:
             for i, s in enumerate(sol):
@@ -241,11 +246,12 @@ def main(**kwargs):
         # of the shape c_1,c_2 c_3,c_4 ... c_n,c_m
         merge = ['all'] if 'all' in args.pos_merge else utils.pairs2tups(args.pos_merge)
         attrs = None if 'all' in args.pos_merge else utils.pairs2tups(args.attr)
-        if presimed: sim_facts=utils.load_cache(er_ctrl.sim_cache_dir) 
-        else: sim_facts = None
+        if args.ub_guarded:
+            ub_eqs = utils.load_cache(ub_eqs_dir)
+        sim_facts=utils.load_cache(er_ctrl.sim_cache_dir)
         if 'all' in args.pos_merge:
             # merge = ['all']
-            sol, all_models = er_ctrl.pos_merge(sim_facts=sim_facts,ter=ter)
+            sol, all_models = er_ctrl.pos_merge(sim_facts=sim_facts,ter=ter,ub_eqs=ub_eqs)
             sol, all_models = utils.load_result(sol=sol,a_models=all_models,triple=by_type)
             ground_truth = er_ctrl.dataloader.load_ground_truth()
             eval(set(sol), ground_truth,by_type,ter=ter,level=log_level)
@@ -265,7 +271,14 @@ def main(**kwargs):
         ctx = er_ctrl.context
         sim_facts=utils.load_cache(er_ctrl.sim_cache_dir)
         er_ctrl.cm_approx(sim_facts=sim_facts)
-    
+        
+    elif args.naive_sim:
+        sim_log = logger('naive-sim',level=log_level)
+        er_ctrl = __init_crtl(args=args,log=sim_log)
+        ctx = er_ctrl.context
+        # sim_facts=utils.load_cache(er_ctrl.sim_cache_dir)
+        er_ctrl.get_naive_sim()
+        
     elif args.examine:
         cached_results_dir = os.path.join(CACHE_DIR,f'{fname}-{args.data}-{mode}.pkl') if not utils.is_empty(args.data) else os.path.join(CACHE_DIR,f'{fname}-{mode}.pkl')
         print(cached_results_dir)
@@ -307,16 +320,24 @@ def main(**kwargs):
         print(f"* Start time: {start} s")
         sim_log = logger('getsim')
         er_ctrl = __init_crtl(args,sim_log)
+        # data = '' if utils.is_empty(args.data) else args.data
         print('* Querying facts to be compared on similarity ...')
         tobe_simed, sol, model = er_ctrl.get_simed_tuples()
-        utils.cache(er_ctrl.sim_cache_dir,tobe_simed)
-        cached_results_dir = os.path.join(CACHE_DIR,f'{fname}-{args.data}-{mode}.pkl') if not utils.is_empty(args.data) else os.path.join(CACHE_DIR,f'{fname}-{mode}.pkl')
-        all_models = [set(map(utils.atom2str,model))]
-        utils.cache(cached_results_dir,(sol,all_models))
         print('* Pre-computed sim size :', len(tobe_simed))
         print('* Saving to-be-simed results ...')
         end = timer()
         print(f"* To be simed computation ends in : {end - start} s")
+        utils.cache(er_ctrl.sim_cache_dir,tobe_simed)
+        cached_results_dir = os.path.join(CACHE_DIR,f'{fname}-{args.data}-{mode}.pkl') if not utils.is_empty(args.data) else os.path.join(CACHE_DIR,f'{fname}-{mode}.pkl')
+        all_models = [set(map(utils.atom2str,model))]
+        utils.cache(cached_results_dir,(sol,all_models))
+        # ub Eq cache
+        ub_eqs_dir = os.path.join(CACHE_DIR,f'{fname}{ter_str}-{args.data}-ub.pkl') if not utils.is_empty(args.data) else os.path.join(CACHE_DIR,f'{fname}{ter_str}-ub.pkl')
+        ub_eqs =  set([utils.get_atom('up_eq',[str(a) for a in e.arguments])+'.' for e in model if e.name == 'eq' and e.arguments[0]!=e.arguments[1]])
+        #[print(a) for a in ub_eqs]
+        #ub_eqs = utils.replace_pred('eq','up_eq',ub_eqs)
+        utils.cache(ub_eqs_dir,ub_eqs)
+
     elif args.stats:
         splits = [DBLP,CORA,IMDB,MUSIC,POKEMON]
         for s in splits:
@@ -367,7 +388,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data",
         type=str,
-        choices=["10","30","50","50-corr"],
+        choices=["10","30","50","50-corr","m10+1","m10+2","m10+3","m10+4"],
         default="",
         help="""Level of duplications of dataset.""",
     ) 
@@ -517,7 +538,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--debug",
         help="Run with debugging mode",
-        action='store_false',
+        action='store_true',
         default=False,
     )
     
@@ -553,6 +574,17 @@ if __name__ == "__main__":
     parser.add_argument('--attr', nargs='+', help='What attribute the merge is of', required=False)
     
     
+    parser.add_argument('--ub-guarded',  
+                        action='store_true',
+                        default=False, 
+                        help='Reuse computed UB merges to guard the Eq heads', required=False)
+    
+    parser.add_argument('--naive-sim',  
+                        action='store_true',
+                        default=False, 
+                        help='Evaluating performances of naive sim ... ', required=False)
+
+      
     main(**vars(parser.parse_args()))
     
 

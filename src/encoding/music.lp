@@ -88,7 +88,7 @@ active(X,Y):-X!=Y,place(X,NA,PT,ADD1,ARI1,CD1,END),place(Y,NA1,PT1,ADD2,ARI2,CD2
 % it is likely a merge if two area-tuples are in the same area type ART and the same end END have similar names NA,NA1
 active(X,Y):-X!=Y,area(X,NA,ART,END),area(Y,NA1,ART,END),not empty(ART),not empty(END),sim(NA,NA1,S),S>=90.
 
-{eq(X,Y);neq(X,Y)}=1 :- active(X,Y).
+{eq(X,Y)} :- active(X,Y).
 
 
 %%%%%%%%%%% denials

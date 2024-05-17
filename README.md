@@ -68,17 +68,17 @@ python mains_explain_.py \
 
 ```
 # dblp
-python -u mains_explain_.py -c -l ./experiment/dblp/dblp.lp  --getsim --typed_eval --no_show --ternary --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --getsim --typed_eval --no_show --ternary --schema dblp
 # cora
-python -u mains_explain_.py -c -l ./experiment/cora/cora.lp  --getsim --typed_eval --no_show --ternary --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp  --getsim --typed_eval --no_show --ternary --schema cora
 # imdb
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp  --getsim --typed_eval --ternary --schema imdb
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --getsim --typed_eval --ternary --schema imdb
 # music
-python -u mains_explain_.py -c -l ./experiment/music/music.lp  --getsim --typed_eval --ternary --schema music --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data 50
 # music-corr
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp  --getsim --typed_eval --ternary --schema music --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp  --getsim --typed_eval --ternary --schema music --data 50-corr
 # pokemon
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --getsim --typed_eval --ternary --schema pokemon
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --getsim --typed_eval --ternary --schema pokemon
 
 ```
 
@@ -89,68 +89,68 @@ python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --getsim --ty
 ```
 # dblp
 ## lb
-python -u mains_explain_.py -c -l ./experiment/dblp/dblp.lp   --main --lb --no_show --ternary --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp   --main --lb --no_show --ternary --presimed --schema dblp
 ## ub
-python -u mains_explain_.py -c -l ./experiment/dblp/dblp.lp   --main --ub --no_show --ternary --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp   --main --ub --no_show --ternary --presimed --schema dblp
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/dblp/dblp.lp -a -m ./experiment/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema dblp
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/dblp/dblp.lp  --pos-merge all --ternary --no_show --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --pos-merge all --ternary --no_show --presimed --schema dblp
 
 
 # cora
 ## lb
-python -u mains_explain_.py -c -l ./experiment/cora/cora.lp   --main --lb --no_show --ternary --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp   --main --lb --no_show --ternary --presimed --schema cora
 ## ub
-python -u mains_explain_.py -c -l ./experiment/cora/cora.lp   --main --ub --no_show --ternary --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp   --main --ub --no_show --ternary --presimed --schema cora
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/cora/cora.lp -a -m ./experiment/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema cora
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/cora/cora.lp  --pos-merge all --ternary --no_show --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp  --pos-merge all --ternary --no_show --presimed --schema cora
 
 
 # imdb
 ## lb
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp   --main --lb --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --lb --ternary --presimed --schema imdb --typed_eval
 ## ub
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp   --main --ub  --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --ub  --ternary --presimed --schema imdb --typed_eval
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema imdb --typed_eval
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp  --pos-merge all --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --pos-merge all --ternary --presimed --schema imdb --typed_eval
 
 
 # music
 ## lb
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
 
 
 # music-corr
 ## lb
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50-corr
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50-corr
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50-corr
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50-corr
 
 
 # pokemon
 ## lb
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp   --main --lb --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --lb --ternary --presimed --schema pokemon --typed_eval
 ## ub
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp   --main --ub  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --ub  --ternary --presimed --schema pokemon --typed_eval
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema pokemon --typed_eval
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --pos-merge all --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --pos-merge all --ternary --presimed --schema pokemon --typed_eval
 
 ```
 
@@ -162,31 +162,31 @@ python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp  --pos-merge a
 # imdb
 
 ## ub
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp  --typed_eval --ub --presimed --ternary --rec-track --schema imdb
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --typed_eval --ub --presimed --ternary --rec-track --schema imdb
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/imdb/imdb.lp -a -m ./experiment/maxsol-eqr.lp -rec-track  --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp -a -m ./experiment/aspen/maxsol-eqr.lp -rec-track  --ternary --presimed --schema imdb --typed_eval
 
 
 # music
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --rec-track  --ub  --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --rec-track  --ub  --ternary --presimed --schema music --typed_eval --data 50
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music.lp -a -m ./experiment/maxsol-eqr.lp -rec-track  --ternary --presimed --schema music --typed_eval  --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp -rec-track  --ternary --presimed --schema music --typed_eval  --data 50
 
 
 
 # music-corr
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp   --rec-track  --ub  --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --rec-track  --ub  --ternary --presimed --schema music --typed_eval --data 50-corr
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music-corr.lp -a -m ./experiment/maxsol-eqr.lp -rec-track  --ternary --presimed --schema music --typed_eval  --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp -a -m ./experiment/aspen/maxsol-eqr.lp -rec-track  --ternary --presimed --schema music --typed_eval  --data 50-corr
 
 
 # pokemon
 ## ub
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp   --rec-track  --ub  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --rec-track  --ub  --ternary --presimed --schema pokemon --typed_eval
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp -a -m ./experiment/maxsol-eqr.lp -rec-track  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./experiment/aspen/maxsol-eqr.lp -rec-track  --ternary --presimed --schema pokemon --typed_eval
 
 ```
 
@@ -194,35 +194,35 @@ python -u mains_explain_.py -c -l ./experiment/pokemon/pokemon.lp -a -m ./experi
 ### 4 Varying Duplicates Percentage
 #### Step 1: sim computing
 - For Dup30
-`python -u mains_explain_.py -c -l ./experiment/music/music.lp  --getsim --typed_eval --ternary --schema music --data 30`
+`python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data 30`
 
 - For Dup10
-`python -u mains_explain_.py -c -l ./experiment/music/music.lp  --getsim --typed_eval --ternary --schema music --data 10`
+`python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data 10`
 
 #### Step 2: derive solutions
 
 ```
 # music 30
 ## lb
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 30
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 30
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 30
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 30
 
 
 
 # music 10
 ## lb
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 10
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 10
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/music.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 10
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 10
 
 ```
 
@@ -234,7 +234,7 @@ For $$\delta \in \{98,95,90,85\}$$
 
 execute
 
-`python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp  --getsim --typed_eval --ternary --schema music --data 50`
+`python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp  --getsim --typed_eval --ternary --schema music --data 50`
 
 
 
@@ -245,13 +245,13 @@ For $$\delta \in \{98,95,90,85\}$$
 execute
 ```
 ## lb
-python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50
 ## ub
-python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp -a -m ./experiment/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
 
 ```
 
@@ -260,17 +260,17 @@ python -u mains_explain_.py -c -l ./experiment/music/thresh/music-{\delta}.lp  -
 ### 6 Proof Tree
 #### 1) Supported Merge (-pos-merge can be replaced by any pair)
 ```
-python -u mains_explain_.py -c -l ./experiment/music/music.lp --pos-merge rec-2489115-dup-1,rec-2489115-dup-0 --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge rec-2489115-dup-1,rec-2489115-dup-0 --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
 ```
 
 #### 2) Unsupported Merge (-pos-merge can be replaced by any pair)
 ```
-python -u mains_explain_.py -c -l ./experiment/music/music.lp --pos-merge rec-2489115-dup-1,id-748010  --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge rec-2489115-dup-1,id-748010  --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
 ```
 
 #### 3) Violated Merge (-pos-merge can be replaced by any pair)
 ```
-python -u mains_explain_.py -c -l ./experiment/music/music.lp --pos-merge id-748086,id-748010   --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge id-748086,id-748010   --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
 ```
 
 

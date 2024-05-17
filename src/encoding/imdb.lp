@@ -144,7 +144,7 @@ active(X,Y) :- name_basics(X,PN1,PP1), name_basics(Y,PN2,PP2),
         TT1!=TT2, IA1!=IA2, YE!=YE1, GEN!=GEN1.
 
 
-{eq(X,Y);neq(X,Y)}=1 :- active(X,Y).
+{eq(X,Y)} :- active(X,Y).
 
 :-title_basics(X,TT1,PT1,OT1,IA1,YE,GEN),title_basics(Y,TT2,PT2,OT2,IA2,YE1,GEN1),eq(X,Y),TT1!=TT2,IA1!=IA2,YE!=YE1,GEN!=GEN1.
 

@@ -7,6 +7,7 @@ import xml.etree.ElementTree as et
 import re
 import random
 import utils
+import trans_utils
 
 
 # datasets for 2 schemas 2 tables
@@ -66,11 +67,13 @@ def load_csv( encoding = 'utf-8', path_list = [], name = ''):
     sep = ',' if '.tsv' not in path_list[0] else '\t'
     #print(sep)
     tbls = []
+    
     if len(path_list) >1:
         if not utils.is_empty(name):
             path_list = [p for p in path_list if name in p]
         for path in path_list:
             t_name = path.replace('.tsv','').replace('.csv','').split('/')[-1]
+            t_name = t_name[:-2] if t_name.endswith('_c') else t_name
             tbls.append((t_name, pd.read_csv(path,encoding=encoding, sep=sep,dtype=str)))
         return tbls
     else: 
@@ -190,7 +193,6 @@ class Dataloader:
                 #_t = (t[1],t[0])
                 truth_lst.append(tuple(t))
             return truth_lst       
-        #reversed_truth_set = set()
         if not isinstance(tbl,list):
             return add_truth(tbl)
         else:
@@ -332,15 +334,17 @@ class Dataloader:
         for a in atoms:
             #print(a)
             pred = utils.REL_PAT.findall(a)[0]
+            #print(pred) if pred !='artist_credit_name_' else 0
             #print(pred,token)
             if utils.is_empty(token):
-                pred = pred[:-2]    
+                pred = pred[:-1]    
             else: pred = pred.replace(f'_c{token}','').replace(f'_d{token}','')
             #print(pred)
-            val_lst = utils.VAR_PAT.findall(a)[0]
+            #val_lst = utils.VAR_PAT.findall(a)[0]
             # print(val_lst)
-            val_lst = val_lst.split('","')
-            val_lst = [utils.process_atom_val(v) for v in val_lst]
+            #val_lst = val_lst.split('","')
+            #val_lst = [utils.process_atom_val(v) for v in val_lst]
+            val_lst = trans_utils.get_ground_atom_args(a)
             # print(val_lst)
             frame = partion_dict[pred]
             col = frame.columns
@@ -351,12 +355,12 @@ class Dataloader:
             if pred not in parts:
                 parts[pred] = []
             parts[pred].append(row)
-        print("-=========",parts.keys())
         for k in partion_dict.keys():
-            partion_dict[k]=pd.concat([partion_dict[k],pd.DataFrame(parts[k])],ignore_index=True)
+            if k in parts:
+                partion_dict[k]=pd.concat([partion_dict[k],pd.DataFrame(parts[k])],ignore_index=True)
         for k,v in partion_dict.items():
             # print(v)
-            v.to_csv(f"{outdir}/{k}_{token}.csv",sep=",",encoding="utf-8",index=False)
+            v.to_csv(f"{outdir}/{k}_.csv",sep=",",encoding="utf-8",index=False)
     
 def count_records_with_value(csv_file_path, column_name, value):
     df = pd.read_csv(csv_file_path)
@@ -395,13 +399,87 @@ def modify_and_save_column(csv_file_path, column_name):
     df.to_csv(csv_file_path, index=False,float_format='%.0f')
 
 
+def modify_csv(df1_file, col_name, df2_file, dir):
+    # Read the CSV files into pandas DataFrames
+    df1 = pd.read_csv(df1_file)
+    df2 = pd.read_csv(df2_file)
+    
+    # Merge df1 with df2 based on the 'id' column
+    merged_df = pd.merge(df1, df2, left_on=col_name, right_on='id', how='left')
+    print(merged_df.columns)
+    # Replace the values in col_name with the corresponding values from the 'name' column of df2
+    merged_df[col_name] = merged_df['name'].fillna(merged_df[col_name])
+    
+    # Drop the 'id' and 'name' columns as they are no longer needed
+    merged_df.drop(columns=df2.columns, inplace=True)
+    
+    # Save the resulting DataFrame to a CSV file in the specified directory
+    output_file = os.path.join(dir, 'result.csv')
+    merged_df.to_csv(output_file, index=False)
+    
+
+def find_joins_and_save(df1_file, df2_file, attr1, attr2, output_file):
+    # Read the CSV files into pandas DataFrames
+    df1 = pd.read_csv(df1_file)
+    df2 = pd.read_csv(df2_file)
+    rel_name1 = df1.columns[0]
+    rel_name2 = df2.columns[0]
+    
+    # Merge df1 with df2 based on attr1 and attr2
+    merged_df = pd.merge(df1, df2, left_on=attr1, right_on=attr2, how='left', suffixes=('1', '2'))
+    print(merged_df.columns)
+    # Filter out rows where the join attributes have the same value
+    if rel_name1 == rel_name2:
+        merged_df = merged_df[merged_df[f'{rel_name1}1'] != merged_df[f'{rel_name2}2']]
+        
+     
+    # Save the resulting DataFrame to a CSV file
+    merged_df.to_csv(output_file, index=False)
+    
+def find_joins_and_save(df1_file, df2_file, attr1, attr2, output_file):
+    # Read the CSV files into pandas DataFrames
+    df1 = pd.read_csv(df1_file)
+    df2 = pd.read_csv(df2_file)
+    rel_name1 = df1.columns[0]
+    rel_name2 = df2.columns[0]
+    # Forward merge df1 with df2 based on attr1 and attr2
+    merged_df_forward = pd.merge(df1, df2, left_on=attr1, right_on=attr2, how='inner', suffixes=('1', '2'))
+    merged_df_forward.columns = [f'{df1_file[:-4]},{rel_name1}1', attr1, f'{df2_file[:-4]},{rel_name2}2', attr2]
+    
+    # Backward merge df2 with df1 based on attr2 and attr1
+    merged_df_backward = pd.merge(df2, df1, left_on=attr2, right_on=attr1, how='inner', suffixes=('1', '2'))
+    merged_df_backward.columns = [f'{df2_file[:-4]},{rel_name2}2', attr2, f'{df1_file[:-4]},{rel_name1}1', attr1]
+    
+    # Concatenate both DataFrames
+    result_df = pd.concat([merged_df_forward, merged_df_backward])
+    
+    # Drop duplicate rows
+    result_df.drop_duplicates(inplace=True)
+    
+    # Save the resulting DataFrame to a CSV file
+    result_df.to_csv(output_file, index=False)
+    
+    
+def add_index_column(input_file, output_dir):
+    # Read the CSV file into pandas DataFrame
+    df = pd.read_csv(input_file)
+    
+    # Add an extra column named 'index' with integer-valued index starting from 1
+    df['index'] = range(1, len(df) + 1)
+    
+    # Save the new DataFrame to a CSV file in the specified directory
+    # output_file = os.path.join(output_dir, 'output.csv')
+    df.to_csv(out_dir, index=False)
+    
+    print(f"DataFrame with index column saved to {out_dir}")
 
 if __name__ == "__main__":
-    IMDB_PATH = './dataset/imdb'
-    # TODO: loading data thru yml
-    path_list = [IMDB_PATH+'/name_basics.csv',IMDB_PATH+'/title_akas.csv',IMDB_PATH+'/title_basics.csv',IMDB_PATH+'/title_principals.csv',IMDB_PATH+'/title_ratings.csv']
-    dl = Dataloader(name = 'imdb',path_list=path_list,ground_truth=[IMDB_PATH+'/title_ans.csv',IMDB_PATH+'/name_ans.csv'])
-    # tbls = dl.load_data()
-    # print(tbls)
-    gt = dl.gt_to_atom(5000)
-    print(len(gt))
+    #rel_name_1 = 'area'
+    #rel_name_2 = 'area'
+    #df1 =  f'./dataset/music/50/{rel_name_1}_c.csv'
+    #df2 = f'./dataset/music/50/{rel_name_2}_c.csv'
+    #attr1 = 'area_type'
+    #attr2 = 'area_type'
+    in_dir = f'./dataset/music/50/artist_credit_name_c.csv'
+    out_dir = f'./dataset/music/50/artist_credit_name_cid.csv'
+    add_index_column(in_dir,out_dir)
