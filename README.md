@@ -13,7 +13,7 @@
 
 
 ## Environment Installation
-Although it is suffice to install directly with `pip`, we recommand using a `conda` environment as a container.
+Although it is suffice to install directly with `pip`, we recommand using a [`conda`](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment as a container.
 To do so, one could execute optionally the following:
 - create a `conda` environment:
 ```
@@ -282,3 +282,5 @@ are clean, we sampled tuples from each table and created clean partitions of the
 they were sampled only after one of their referencing relations are done with sampling. 
 
 As seen in figure below, green nodes and blue nodes represent entity and non-entity relations respectively in the MUSIC schema, each edge indicates a referential constraints from an out-node to an in-node labelled with the corresponding foreign key. In this case, we begin sampling from the entity relations `Track`, `Place`, `Label` since they are not referenced by any other relations. As `Artist_Credit` relation is also referenced by many other relations, in the second step we sample only those are adjacent to `Track` and with all in-arrows sampled, i.e., the `Medium` and `Recording` relations. Entities of other relations are sampled analogously. Note that since the non-entity relation `Artist_Credit_Name` stores mappings between  `Artist_Credit` and `Artist`, it is sampled only after the entities of `Artist_Credit` are picked. We are then able to proceed sampling from `Artist` when `Artist_Credit_Name` is selected. Consequently, clean partitions of the schema instances can be obtained from sampling. The sampling procedure is done by an extra ASP program as a part of data preprocessing step.
+
+![alt text](./static/music-depend.png)
