@@ -6,6 +6,8 @@ src/__pycache__/
 *$py.class
 *.pkl
 
+
+src/dataset/imdb/full
 trace/
 test/
 archived/

@@ -622,6 +622,30 @@ class program_transformer:
         return cat_sum, sim_const_sum
     
     
+    
+    def transform_online_sim(self,r:str,sim_pred_name = SIM_PRED)-> str:
+        h, b_literals = trans_utils.get_rule_parts(r)
+        pop_list =[]
+        for i,bl in enumerate(b_literals.copy()):
+            # TODO: for testing reson here assume sim atoms only occur positively, which is not the case as in dblp we do allow negating sim atoms in constraint bodies
+            if bl.startswith(sim_pred_name):
+                # remake a online sim atom
+                sim_vars = trans_utils.get_atom_vars(bl)
+                # moving thresholds
+                threshold = b_literals[i+1].split('>=')[1].strip() 
+
+                ol_sim_atom = utils.get_atom(SIM_FUNC_PRED,tuple(sim_vars[:-1]))
+                ol_sim_literal = f'{ol_sim_atom}>={threshold}'
+
+                b_literals.append(ol_sim_literal)
+                pop_list.append(i)
+                pop_list.append(i+1)
+
+        for i,p in enumerate(pop_list):
+            b_literals.pop(p-i)
+        return trans_utils.make_normal_rule(h,b_literals)
+        
+    
     def generate_show(self, ter=False, rec= False, rec_readoff = False, show = True)-> list[str]:
         merge_attrs = [a for a in self.schema.attrs if a.type == Attribute.MERGE]
         show_list:list[str] = [] 
@@ -692,7 +716,7 @@ class program_transformer:
         return show_list
     
     # (version,ter,trace-|traced rels)
-    def spec_construct(self,version,trace = False,show=True)-> list[str]:
+    def spec_construct(self,version,trace = False,show=True, is_ol_sim = False)-> list[str]:
         if version == program_transformer.ORIGIN:
             rules = self.rules.copy()
             rules.append(ACTIVE_CHOICE)
@@ -704,6 +728,9 @@ class program_transformer:
             rules = self.get_ub_spec(rule_list=rules)
         elif version == program_transformer.LOWERBOUND:
             rules = self.get_hard_rules()
+
+        if is_ol_sim:
+            rules = [self.transform_online_sim(r) for r in rules]
             
         
         if trace:
@@ -719,7 +746,7 @@ class program_transformer:
         rules+=self.generate_show(show=show)
         return rules
     
-    def spec_construct_ter(self,version,trace = False,show=True)-> list[str]:
+    def spec_construct_ter(self,version,trace = False,show=True, is_ol_sim = False)-> list[str]:
         rules = self.rules.copy()
         
         if version == program_transformer.ORIGIN:
@@ -733,7 +760,10 @@ class program_transformer:
             ter_spec = self.get_ub_spec(rule_list=[r for r in ter_spec if not r.startswith(IMPLY)])
         elif version == program_transformer.LOWERBOUND:
             ter_spec = self.transform_ternary(self.get_hard_rules())
-            
+        # print(rules)    
+        if is_ol_sim:
+            ter_spec = [self.transform_online_sim(r) for r in ter_spec]
+              
         ter_spec.append(EMPTY_TGRS)
         if trace:
             for i,l in self.annotations:
@@ -749,11 +779,11 @@ class program_transformer:
         ter_spec+=self.generate_show(ter=True,show=show)
         return ter_spec
     
-    def get_spec(self,ter=False,spec_ver=ORIGIN,trace=False,show=True)->list[str]:
+    def get_spec(self,ter=False,spec_ver=ORIGIN,trace=False,show=True, is_ol_sim = False)->list[str]:
         if ter:
-            program = self.spec_construct_ter(version=spec_ver,trace=trace,show=show)
+            program = self.spec_construct_ter(version=spec_ver,trace=trace,show=show, is_ol_sim= is_ol_sim)
         else:
-            program = self.spec_construct(version=spec_ver,trace=trace,show=show)
+            program = self.spec_construct(version=spec_ver,trace=trace,show=show, is_ol_sim = is_ol_sim)
             
         return program
     

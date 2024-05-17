@@ -267,12 +267,12 @@ def imdb_schema(split='',files=[])->tuple[Schema,Dataloader]:
      (T_RATINGS,'tconst'):(T_BASIC,'tconst'),
      (T_PRINCIPLE,'tconst'):(T_BASIC,'tconst'),
      (T_PRINCIPLE,'nconst'):(N_BASIC,'nconst'),}
-    IMDB_PATH = './dataset/imdb'
+    IMDB_PATH = './dataset/imdb/full'
     file = files[0]
     #sim_attrs = get_reduced_spec(file)[1]
     dup_rel = {T_BASIC,N_BASIC}
     path_list = [IMDB_PATH+f'/title_akas{TEST}.csv',IMDB_PATH+f'/name_basics{TEST}.csv',IMDB_PATH+f'/title_basics{TEST}.csv',IMDB_PATH+f'/title_principals{TEST}.csv',IMDB_PATH+f'/title_ratings{TEST}.csv']
-    dl_imdb = Dataloader(name = 'imdb',path_list=path_list,ground_truth=
+    dl_imdb = Dataloader(name = 'imdb-full',path_list=path_list,ground_truth=
                          [IMDB_PATH+f'/name_basics{TEST}_dups.csv',IMDB_PATH+f'/title_basics{TEST}_dups.csv'])
                          #[IMDB_PATH+f'/name_ans{TEST}.csv',IMDB_PATH+f'/title_ans{TEST}.csv'])
                        

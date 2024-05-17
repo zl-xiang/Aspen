@@ -492,8 +492,11 @@ class ERContext(XclingoContext):
                 # measure the editing distance of sequences
                 if x_len + y_len <= short_indicator*2:
                     measure = sm.JaroWinkler()
-                    score = measure.get_sim_score(x,y)
+                    #measure = sm.Jaccard()
+                    #qg3_tok_set = sm.QgramTokenizer(qval=3,return_set=True)
+                    #score = measure.get_sim_score(qg3_tok_set.tokenize(x),qg3_tok_set.tokenize(y))
                     #score = semantic_sim(x,y)
+                    score = measure.get_sim_score(x,y)
                 # TODO: numeric ids?
                 else:
                 # treating long text-valued entries as sets of tokens

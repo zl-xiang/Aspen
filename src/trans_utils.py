@@ -179,7 +179,20 @@ def get_body_literals(body_str:str) -> list[str]:
     literals[-1] = literals[-1][:-1] if literals[-1].endswith('.') else literals[-1]
     return literals
 
+def get_rule_parts(r:str) -> tuple[str,list[str]]:
+    r_split = r.split(IMPLY,1)
+    h = r_split[0].strip()
+    b_literals = get_body_literals(r_split[1])
+    return h,b_literals
 
+
+def make_rule_body(body_literals: list[str])-> str:
+    return ','.join(body_literals)
+
+def make_normal_rule(head:str, body_literals:list[str])-> str:
+    h = head
+    b = make_rule_body(body_literals)
+    return f'{h} {IMPLY} {b}.'
 
 if __name__ == "__main__":
     # Example usage:

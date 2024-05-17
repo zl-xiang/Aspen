@@ -335,15 +335,17 @@ class ERControl:
             files = ["-"]
         atom_base= self.prg_transformer.get_atombase(ter=self.ternary)
         # [print(a) for a in atom_base]
-        atom_base = atom_base.union(sim_facts)
-        self.ctrl_log.info("* Atombase size: %",[len(atom_base)])         
-        atom_base = ''.join(atom_base)
         # print(atom_base)
         show = self.args.no_show
         # print(show,'---------------------------------')
-        spec = self.prg_transformer.get_spec(ter=self.ternary,spec_ver=spec_ver,trace=self.trace,show=show)
+        is_ol_sim = sim_facts == None or len(sim_facts)<1
+        if not is_ol_sim: atom_base = atom_base.union(sim_facts)
+        spec = self.prg_transformer.get_spec(ter=self.ternary,spec_ver=spec_ver,trace=self.trace,show=show,is_ol_sim=is_ol_sim)
         [print(r) for r in spec]
         spec = '\n'.join(spec)
+
+        self.ctrl_log.info("* Atombase size: %",[len(atom_base)])         
+        atom_base = ''.join(atom_base)
         if asprin:
             u, prologue, warnings = self.__init_control(program=spec,spec_dir=files[0],optim_dir=maxsol,atom_base=atom_base, asprin=asprin)  
             fname=files[0].replace('.lp','').split('/')[-1] # TODO
@@ -471,13 +473,15 @@ class ERControl:
 
     def pos_merge(self,merge:Sequence[tuple]=None,sim_facts=set(),ter=False,attrs = None):
         atom_base = self.prg_transformer.get_atombase(ter=ter)
-        atom_base = atom_base.union(sim_facts)
+        
+        is_ol_sim = sim_facts == None or len(sim_facts)<1 
+        if not is_ol_sim: atom_base = atom_base.union(sim_facts)
         # [print(a) for a in atom_base]
         atom_base = ''.join(atom_base)
         #print(merge)
         single_pair = merge is not None and (len(merge) == 1 and 'all' not in merge)
         show = self.args.no_show
-        program = self.prg_transformer.get_spec(ter=ter,trace=self.trace,show=show)
+        program = self.prg_transformer.get_spec(ter=ter,trace=self.trace,show=show,is_ol_sim=is_ol_sim)
         [print(r) for r in program]
         if single_pair: 
             return self.pos_merge_single(program=program,merge=merge,atom_base=atom_base,ter=ter,attrs=attrs)

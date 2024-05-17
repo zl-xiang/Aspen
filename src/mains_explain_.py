@@ -73,7 +73,7 @@ def get_schema(args)->tuple[Schema,Dataloader]:
 
     
 def eval(sol,truth,fname='',by_type=True,ter=False,level = _log.INFO_C):
-    
+    print('################################################',111111)
     eval_log = logger(reg_class='eval',level=level)
     def _eval( sol,truth,name='',):
         if not ter:
@@ -117,13 +117,16 @@ def eval(sol,truth,fname='',by_type=True,ter=False,level = _log.INFO_C):
         
     
     eval_log.info(msg="==============Starting Evaluation==============",args=[])
+    print('################################################',222222)
     if isinstance(truth,dict) and not by_type:
+        
         all_t = set()
         for k,v in truth.items():
             all_t = all_t.union(set(v)) 
         truth = all_t
         _eval(sol=sol,truth=truth)
     elif isinstance(truth,dict) and by_type:
+        
         sol_dict = {}
         for s in sol:
             if s[0] not in sol_dict:
@@ -224,6 +227,7 @@ def main(**kwargs):
         by_type = args.typed_eval
         if args.enumerate==1:
             #main_log.debug('cora records with weird behaviour: %', [[s for s in set(sol) ]])
+            
             eval(set(sol),ground_truth,fname,by_type,ter,level=log_level)
         else:
             for i, s in enumerate(sol):
@@ -237,7 +241,8 @@ def main(**kwargs):
         # of the shape c_1,c_2 c_3,c_4 ... c_n,c_m
         merge = ['all'] if 'all' in args.pos_merge else utils.pairs2tups(args.pos_merge)
         attrs = None if 'all' in args.pos_merge else utils.pairs2tups(args.attr)
-        sim_facts=utils.load_cache(er_ctrl.sim_cache_dir)
+        if presimed: sim_facts=utils.load_cache(er_ctrl.sim_cache_dir) 
+        else: sim_facts = None
         if 'all' in args.pos_merge:
             # merge = ['all']
             sol, all_models = er_ctrl.pos_merge(sim_facts=sim_facts,ter=ter)

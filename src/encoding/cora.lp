@@ -480,8 +480,7 @@ active(X,Y) :- X!=Y,cora(ADD, AN, BT, D,ED,X, INS,J,M, N,PA,P,TEC,T,TY,V,YE),
 %%    cora( ADD1, AN1, BT1, D1,ED1,Y, INS1,J1,M1,N1,PA1,P1,TEC,T1,TY1,V1,YE1), 
 %%    sim(T,T1,S1), S1>=98, 
 %%    #count{ 1:sim(J,J1,S2),S2>=80; 
-%%    1:sim(BT,BT1,S2),S2>=80; 
-%%    1:sim(AN,AN1,S2),S2>=85} = 1.
+%%    1:sim(BT,BT1,S2),S2>=80; rule_fours
 
 %% That is, it possibly is a merge of cora publication id X,Y, if they have extremely similar titles T1,T2, and 
 %%  satisfy one of the conditions 
