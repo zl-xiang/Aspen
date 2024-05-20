@@ -85,7 +85,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --getsi
 
 ```
 
-#### #### $$sim_\mathsf{cs}$$
+#### $$sim_\mathsf{cs}$$
 ```
 # dblp
 python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --naive-sim  --typed_eval --no_show --ternary --schema dblp
@@ -104,7 +104,20 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
 
 
 ### 2 Main Results
-**(after Sim facts computed)**
+ #### For baselines
+  ##### Magellan
+  Since `Magellan` the fixed mapping of data value type to similarity measures do not allow string values to perform equality joins and `jarowinkler` similarity measure, we made changes in this regards in the [forked repo](https://github.com/zl-xiang/py_entitymatching)
+
+  To install, following first the [instructions](https://anhaidgroup.github.io/py_entitymatching/v0.4.0/index.html) to set up the running environments. 
+
+  All rules and configurations are included in `rule-matcher.py`.
+
+  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in{\text{dblp, cora, imdb, music, music\_corr, pokemon}}$$ as following $$texttt{match(\{\math{D}\}_config())}$$
+  ##### JedAI
+
+
+
+ #### For ASPEn, **(after Sim facts computed)**
 ```
 # dblp
 ## lb
@@ -305,10 +318,10 @@ python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge
 ### 7 Datalog Approx.
 Set up `VLog4j` environments following the [instructions](https://github.com/knowsys/rulewerk), then for each database $$D\in\{\text{dblp, cora, imdb, music, music-corr, pokemon}}$$ execute the following,
 ```
-echo -e "@load './encoding/datalogs/{D}-{pname}.rls' .\n @reason .\n @query merge(?R,?X,?Y) ." | java -jar /encoding/datalogs/rulewerk.jar
+echo -e "@load './encoding/datalogs/{D}-{pname}.rls' .\n @reason .\n @query eq(?X,?Y,?R) ." | java -jar /encoding/datalogs/rulewerk.jar
 ```
 
-where `pname`$$\in \{lb, ub\}$$.
+where $$ \texttt{pname} \in \{\texttt{lb}, \texttt{ub}\}$$.
 
 
 
