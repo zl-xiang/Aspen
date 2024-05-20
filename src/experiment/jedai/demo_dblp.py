@@ -14,7 +14,7 @@ from pyjedai.clustering import ConnectedComponentsClustering
 
 d1 = pd.read_csv("../../dataset/dblp/dblp.csv", sep=',')
 d2 =  pd.read_csv("../../dataset/dblp/acm.csv", sep=',')
-gt = pd.read_csv("../../dataset/dblp/DBLP-ACMpm.csv", sep=',')
+gt = pd.read_csv("../../dataset/dblp/DBLP-ACM.csv", sep=',')
 #attr = list(d1.columns)
 attr = ['title','authors']
 
