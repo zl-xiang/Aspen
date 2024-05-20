@@ -8,7 +8,9 @@
   - [3 Multi-level Recursion](#3-multi-level-recursion)
   - [4 Varying Duplicates Percentage](#4-varying-duplicates-percentage)
   - [5 Varying Sim Thresholds](#5-varying-sim-thresholds)
-  - [6 Proof Tree](#6-proof-tree)
+  - [6 Varying Datasize](#6-varying-data-size)
+  - [7 Datalog Approx.](#7-datalog-approx)
+  - [8 Proof Tree](#6-proof-tree)
 - [Clean Data Sampling](#clean-data-sampling)
 
 
@@ -329,7 +331,7 @@ where $$ \texttt{pname} \in \{\texttt{lb}, \texttt{ub}\}$$.
 
 
 
-### 6 Proof Tree
+### 8 Proof Tree
 #### 1) Supported Merge (-pos-merge can be replaced by any pair)
 ```
 python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge rec-2489115-dup-1,rec-2489115-dup-0 --attr release,release --trace  --ternary --presimed --typed_eval --schema music --data 50
