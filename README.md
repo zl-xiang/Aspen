@@ -112,7 +112,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
 
   All rules and configurations are included in `rule-matcher.py`.
 
-  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\_corr, pokemon}\}$$ as following $$\texttt{match(\{\math{D}\}\_config())}$$
+  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following $$\texttt{match(\{\math{D}\}\\_config())}$$
   ##### JedAI
 
 
