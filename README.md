@@ -4,7 +4,7 @@
 - [Environment Installation](#environment-installation)
 - [Experiment Running Instruction](#experiment-running-instruction)
   - [1 Similarity Filtering](#1-similarity-filtering)
-  - [2 Main Results (only after Sim facts computed)](#2-main-results)
+  - [2 Main Results](#2-main-results)
   - [3 Multi-level Recursion](#3-multi-level-recursion)
   - [4 Varying Duplicates Percentage](#4-varying-duplicates-percentage)
   - [5 Varying Sim Thresholds](#5-varying-sim-thresholds)
