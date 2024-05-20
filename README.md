@@ -112,8 +112,10 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
 
   All rules and configurations are included in `rule-matcher.py`.
 
-  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following $$\texttt{match(\{\math{D}\}\\_config())}$$, then execute under the source directory `python rule-matcher.py`.
-
+  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following   
+  ```
+    match({D}_config())
+  ```
   ##### JedAI
   All rules and configs of `JedAI` for the datasets are under `./experiments/jedai`, where settings for each dataset corresponds to an individual python file named after the dataset. To run, install first the environments of JedAI following the [instructons](https://pyjedai.readthedocs.io/en/latest/intro.html), then execute for each python file:
   ```
