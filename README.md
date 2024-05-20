@@ -39,32 +39,35 @@ A general explanantion of the command is the following:
 
 ```
 python mains_explain_.py \
-    --asprin "enable asprin for maximal solution"
+    --asprin "enable to use asprin for maximal solution"
     --cached "caching results or not"
-    --enumerate 1 "enumerate the number of maximal solutions required if maxsol"
-    --data "choosing version to use if music dataset, available choices:  "10", "30", "50", "50-corr"
+    --enumerate 1 "enumerate the number of maximal solutions required if any"
     --schema "choosing dataset schema from {"dblp", "cora", "imdb", "music", "pokemon"}"
-    --main "the main |ER control function, enable if requiring ub/lb or maxsol"
-    --rec-track "procedure to compute levels"
-    --getsim "procedure to compute similarity facts on a dataset"
-    --presimed "to load precomputed similarity facts"
+    --data "choosing version to use if music dataset, available choices:  {10, 30, 50, 50-corr, m10+1, m10+2, m10+3, m10+4}"
+    --main "the main ER control function, enable if requiring ub/lb or maxsol"
+    --rec-track "enable to compute levels"
+    --getsim "enable to compute similarity facts on a dataset"
+    --ub-guarded "enable to reuse precomputed upper-bound merge set"
+    --presimed "enable to load precomputed similarity facts, otherwise runs online similarity evaluation"
     -m "directory where the optimisation statement locates" \
-    -l "a list of logic program as input specification" \
+    -l "a list of asp program as input specification" \
     --typed_eval "activate evaluation for multi-relational dataset"
-    --ternary "enable ternary representation of a specification"
-    --ub "derive ub solution"
-    --lb "derive lb solution"
+    --ternary "enable ternary representation of a specification (when domains of merge positions overlap)"
+    --ub "compute upper-bound merge set"
+    --lb "compute lower-bound merge set"
     --no_show "projection of merges without relation type (on dblp and cora)"
-    --debug "run in debug mode"
+    --debug "enable to run in debug mode (with extra debugging logs)"
     --pos-merge "compute all PM input: all, verify a merge input c,c'"
     --trace-merge "input the merge to provide proof tree"
     --attr "input what relation and attribute the merge is belong to when explaining, e.g. release id"
+    --naive-sim "enable to compute similarity on the sum of cross products of constants arcoss sim positions"
 ```
 
 
 
 
-### 1 Similarity Filtering
+### 1 Similarity Computation
+#### $$sim_\mathsf{opt}$$
 
 ```
 # dblp
@@ -82,75 +85,91 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --getsi
 
 ```
 
+#### #### $$sim_\mathsf{cs}$$
+```
+# dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --naive-sim  --typed_eval --no_show --ternary --schema dblp
+# cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp  --naive-sim  --typed_eval --no_show --ternary --schema cora
+# imdb
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --naive-sim --typed_eval --ternary --schema imdb
+# music
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --naive-sim  --typed_eval --ternary --schema music --data 50
+# music-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp  --naive-sim  --typed_eval --ternary --schema music --data 50-corr
+# pokemon
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive-sim  --typed_eval --ternary --schema pokemon
+
+```
 
 
 ### 2 Main Results
-**(only after Sim facts computed)**
+**(after Sim facts computed)**
 ```
 # dblp
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp   --main --lb --no_show --ternary --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp   --main --lb --no_show --ternary --presimed --schema dblp --ub-guarded
 ## ub
 python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp   --main --ub --no_show --ternary --presimed --schema dblp
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema dblp --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --pos-merge all --ternary --no_show --presimed --schema dblp
+python -u mains_explain_.py -c -l ./experiment/aspen/dblp/dblp.lp  --pos-merge all --ternary --no_show --presimed --schema dblp --ub-guarded
 
 
 # cora
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp   --main --lb --no_show --ternary --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp   --main --lb --no_show --ternary --presimed --schema cora --ub-guarded
 ## ub
 python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp   --main --ub --no_show --ternary --presimed --schema cora
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --no_show --ternary --presimed --schema cora --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp  --pos-merge all --ternary --no_show --presimed --schema cora
+python -u mains_explain_.py -c -l ./experiment/aspen/cora/cora.lp  --pos-merge all --ternary --no_show --presimed --schema cora --ub-guarded
 
 
 # imdb
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --lb --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --lb --ternary --presimed --schema imdb --typed_eval --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --ub  --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp   --main --ub  --ternary --presimed --schema imdb --typed_eval --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema imdb --typed_eval --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --pos-merge all --ternary --presimed --schema imdb --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/imdb/imdb.lp  --pos-merge all --ternary --presimed --schema imdb --typed_eval --ub-guarded
 
 
 # music
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50 --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50 --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50 --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50 --ub-guarded
 
 
 # music-corr
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 50-corr --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 50-corr --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 50-corr --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50-corr
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music-corr.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50-corr --ub-guarded
 
 
 # pokemon
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --lb --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --lb --ternary --presimed --schema pokemon --typed_eval --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --ub  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp   --main --ub  --ternary --presimed --schema pokemon --typed_eval --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema pokemon --typed_eval --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --pos-merge all --ternary --presimed --schema pokemon --typed_eval
+python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --pos-merge all --ternary --presimed --schema pokemon --typed_eval --ub-guarded
 
 ```
 
@@ -191,7 +210,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./
 ```
 
 
-### 4 Varying Duplicates Percentage
+### 4 Varying Duplicates Percentage $$\mathsf{Du}$$
 #### Step 1: sim computing
 - For Dup30
 `python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data 30`
@@ -204,31 +223,31 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./
 ```
 # music 30
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 30 --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 30 --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 30 --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 30
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 30 --ub-guarded
 
 
 
 # music 10
 ## lb
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data 10 --ub-guarded
 ## ub
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval --data 10 --ub-guarded
 ## maxsol
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval  --data 10 --ub-guarded
 ## possible merge
-python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 10
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 10 --ub-guarded
 
 ```
 
 
 
-### 5 Varying Sim Thresholds
+### 5 Varying Sim Thresholds $$\delta$$
 #### Step 1: sim computing
 For $$\delta \in \{98,95,90,85\}$$
 
@@ -254,6 +273,42 @@ python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}
 python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}.lp  --pos-merge all --ternary --presimed --schema music --typed_eval --data 50
 
 ```
+
+
+### 6 Varying Data Size $$|D|$$
+#### Step 1: sim computing
+For $$|D| \in \{1,2,3,4\}$$
+
+execute
+
+`python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data m10+{|D|}`
+
+
+
+#### Step 2: derive solutions
+
+For $$|D| \in \{1,2,3,4\}$$
+
+execute
+```
+## lb
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --lb --ternary --presimed --schema music --typed_eval --data m10+{|D|} --ub-guarded
+## ub
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp   --main --ub  --ternary --presimed --schema music --typed_eval  --data m10+{|D|} --ub-guarded
+## maxsol
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp -a -m ./experiment/aspen/maxsol-eqr.lp --main  --ternary --presimed --schema music --typed_eval   --data m10+{|D|} --ub-guarded
+## possible merge
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge all --ternary --presimed --schema music --typed_eval  --data m10+{|D|} --ub-guarded
+
+```
+
+### 7 Datalog Approx.
+Set up `VLog4j` environments following the [instructions](https://github.com/knowsys/rulewerk), then for each database $$D\in\{\text{dblp, cora, imdb, music, music-corr, pokemon}}$$ execute the following,
+```
+echo -e "@load './encoding/datalogs/{D}-{pname}.rls' .\n @reason .\n @query merge(?R,?X,?Y) ." | java -jar /encoding/datalogs/rulewerk.jar
+```
+
+where `pname`$$\in \{lb, ub\}$$.
 
 
 
