@@ -106,13 +106,11 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
 ### 2 Main Results
  #### For baselines
   ##### Magellan
-  Since `Magellan` the fixed mapping of data value type to similarity measures do not allow string values to perform equality joins and `jarowinkler` similarity measure, we made changes in this regards in the [forked repo](https://github.com/zl-xiang/py_entitymatching)
+  Since `Magellan` the fixed mapping of data value type to similarity measures do not allow string values to perform equality joins and `jarowinkler` similarity measure, we made changes and uploaded to the [forked repo](https://github.com/zl-xiang/py_entitymatching)
 
-  To install, following first the [instructions](https://anhaidgroup.github.io/py_entitymatching/v0.4.0/index.html) to set up the running environments. 
+  To install, following first the [instructions](https://anhaidgroup.github.io/py_entitymatching/v0.4.0/index.html) to set up the running environments.
 
-  All rules and configurations are included in `rule-matcher.py`.
-
-  To run the experiments, modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following   
+  To run the experiments, cloning the fork and modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following   
   ```
     match({D}_config())
   ```
