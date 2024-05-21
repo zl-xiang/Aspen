@@ -269,3 +269,11 @@ empty(nan). empty("nan").empty("ーーー").
 
 eq(X,Y) :- eq(X,Z),eq(Z,Y).
 eq(X,Y) :- eq(Y,X).
+
+
+#show.
+#show(pokemon,V0,V7):pokemon(V0,V1,V2,V3,V4,V5,V6),pokemon(V7,V8,V9,V10,V11,V12,V13),eq(V0,V7),V0!=V7.
+#show(species,V0,V18):species(V0,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14,V15,V16,V17),species(V18,V19,V20,V21,V22,V23,V24,V25,V26,V27,V28,V29,V30,V31,V32,V33,V34,V35),eq(V0,V18),V0!=V18.
+#show(item,V0,V5):item(V0,V1,V2,V3,V4),item(V5,V6,V7,V8,V9),eq(V0,V5),V0!=V5.
+#show(ability,V0,V3):ability(V0,V1,V2),ability(V3,V4,V5),eq(V0,V3),V0!=V3.
+#show(move,V0,V14):move(V0,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13),move(V14,V15,V16,V17,V18,V19,V20,V21,V22,V23,V24,V25,V26,V27),eq(V0,V14),V0!=V14.
