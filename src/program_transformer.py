@@ -257,7 +257,8 @@ class program_transformer:
         
         
     def __load_domain(self, sep_lst = [SEP_AND,SEP_AMP,SEP_COMMA],token='',multi_lvl = False, ter = False):
-        print("* Starting loading domain and processing atom base ...")
+        
+        start = self.log.timer('Loading Atoms', state=1)
         # val_dom_dict = self.get_attr_dict()
         # dictionary
         # key attribute id
@@ -295,7 +296,7 @@ class program_transformer:
                 pred = f'{r_name}' if utils.is_empty(token) else f'{r_name}_{token}'
                 r_atom =f'{pred}({r_tup_str}).'
                 atom_base.add(r_atom)
-                            
+        self.log.timer('Loading Atoms', state=0,start=start)                   
         return atom_base 
     
     def __load_local_domain(self, token='',multi_lvl = False, ter = False):
@@ -784,6 +785,7 @@ class program_transformer:
     def get_reduced_spec(self,sim_predname=SIM_PRED,ter=False,show=True)-> list:
         #dir = self.spec_dir
         # rule_list = get_rule_list(dir)
+        start = self.log.timer('Sim program transformation',1)
         if ter:
             rule_list = self.spec_construct_ter(version=program_transformer.ORIGIN,trace=False,show=show)
         else:
@@ -883,6 +885,7 @@ class program_transformer:
         # update step 2 of new sim algorithm [2023-11-18]
         to_be_sim_rules.add(f'{TO_SIM}(X,Y) {IMPLY} {SIM_PRED}(X,Y), not {SIM_PRED}(X,Y,_), not {SIM_PRED}(Y,X,_).')
         # update step 2 of new sim algorithm [2023-11-18]
+        self.log.timer('Sim program transformation',0,start)
         return transformed_rules,to_be_sim_rules
     
     def get_sim_cat_sum (self,) -> tuple:
@@ -1454,6 +1457,7 @@ class program_transformer:
     
     
     def get_rec_spec(self,ter=False,show=False,max=False)->Sequence[str]:
+        start = self.log.timer('Level program transformation',1)
         # get ub
         rules = self.get_spec(ter=ter)
         # 1 check whether its undefined or violated
@@ -1513,6 +1517,7 @@ class program_transformer:
             transformed_rules.append(maxsol_rec)
         transformed_rules.insert(0,f'{PROGRAM} spec(i).')
         #[print(r) for r in transformed_rules]
+        self.log.timer('Sim program transformation',0,start)
         return base + transformed_rules
     
     
