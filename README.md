@@ -2,6 +2,7 @@
 
 ## Outline
 - [Environment Installation](#environment-installation)
+- [How to Use](#how-to-use)
 - [Experiment Running Instruction](#experiment-running-instruction)
   - [1 Similarity Filtering](#1-similarity-filtering)
   - [2 Main Results](#2-main-results)
@@ -33,11 +34,19 @@ pip install -r requirements.txt
 ```
 
 
+## How To Use
+Setup input:
+### 1 Configure database instance
+To use customised dataset, the system requires to input nesccessary schema-level information of the database, including the followings:
+  - a set of references between tables of the format `(r, a) : (r',a')`, meaning that an attribute `a` of relation `r` is a reference to `a'` attribute of relation `r'`.
+  - a list of paths to raw data of all tables of the datasets (currently supports only `CSV/TSV` files).
+  - a list of path to the ground truth of the datasets (optionally, currently supports only `CSV/TSV` files)
 
-## Experiment Running Instruction
+An example of such object is provided in `example_schema.py`, where the `other_schema` function illustrates how the `Music` dataset is configured.
 
+
+### 2 Run the system with command lines
 A general explanantion of the command is the following:
-
 
 ```
 python mains_explain_.py \
@@ -65,9 +74,58 @@ python mains_explain_.py \
     --naive-sim "enable to compute similarity on the sum of cross products of constants arcoss sim positions"
 ```
 
+Suppose a specification is provided as the file `src/your_specification.lp`, after the corresponding dataset is configured, the user may execute the followings for the use of core functionalities:
+### Similarity Filtering
+
+```
+python -u mains_explain_.py -c -l src/your_specification.lp  --getsim --typed_eval
+```
+
+### Computing maximal solution
+```
+python -u mains_explain_.py -c -l src/your_specification.lp -a -m ./experiment/aspen/maxsol.lp --main  --presimed --typed_eval --ub-guarded
+```
+
+### Compute solution lowerbound
+```
+python -u mains_explain_.py -c -l src/your_specification.lp   --main --lb --presimed --typed_eval --ub-guarded
+```
+
+### Compute solution upperbound
+```
+python -u mains_explain_.py -c -l src/your_specification.lp  --main --ub --presimed --typed_eval  --ub-guarded
+```
 
 
+### Compute possible merges
 
+1. To compute all possible merges:
+```
+python -u mains_explain_.py -c -l src/your_specification.lp --pos-merge all --presimed  --typed_eval --ub-guarded
+```
+
+2. Suppose the user wants to verify whether the pair `(c,c')` of attribute `a` of relation `r` is a possible merge or not w.r.t. the given specification, execute the following:
+```
+python -u mains_explain_.py -c -l src/your_specification.lp --pos-merge c,c' --attr a,r --presimed  --typed_eval --ub-guarded
+```
+
+### Compute explanation
+To declare the rules to be explained, we rely on a set of rule labels introduced as comments of in a specification. An example of rule label is shown as following:
+
+```
+%trace_rule{" artist (%,%)-(%,%) are merged since they have similar names (%,%):% and belong to the same area (%,%)-(%,%) ", X,AI,Y,AI1,NA,NA1,S,T1,ARI,T2,ARI1}.
+eq(X,Y):-X!=Y,artist(X,AI,GID,NA,SN,BY,BM,BD,EY,EM,ED,END,AT,G,ARI,C),
+    artist(Y,AI1,GID1,NA1,SN1,BY1,BM1,BD1,EY1,EM1,ED1,END1,AT1,G1,ARI1,C1),area(T1,ARI,GID2,NA2,ART1,END2),area(T2,ARI1,GID3,NA3,ART2,END3),eq(T1,T2), sim(NA,NA1,S), S>=95.
+```
+where `X,AI,Y,AI1,NA,NA1,S,T1,ARI,T2,ARI1` are list of variables in the rule to be traced, and ` artist (%,%)-(%,%) are merged since they have similar names (%,%):% and belong to the same area (%,%)-(%,%) ` is a string of customised rule explanation in natural language, containing `%` as placeholders to be replaced by the ground constants instantiate the list of variables. 
+
+With a labelled specification, user may execute the following to compute the justification for a merge `(c,c')` of attribute `a` of relation `r`:
+
+```
+python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge c,c' --attr a,r --trace  --presimed --typed_eval
+```
+
+## Experiment Running Instruction
 ### 1 Similarity Computation
 #### $$sim_\mathsf{opt}$$
 

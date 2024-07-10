@@ -3,6 +3,8 @@ from dataloader import Dataloader
 import utils
 from logger import logger
 from trans_utils import get_merge_attributes, get_sim_pairs, get_merge_attributes_local
+
+import os
 # from mpi import MPIWrapper
 
 
@@ -204,8 +206,8 @@ class Schema:
         self.spec_dir = spec_dir
         # id formatted as s_id-r_id
         self.relations:set[Relation] = set()
-        self.dup_rels = dup_rels
-        self.attr_types = attr_types
+        # self.dup_rels = dup_rels
+        # self.attr_types = attr_types
         # TODO: store as a dict
         # TODO: take relation position to retrieval attributes?
         self.attrs:set[Attribute] = set()
@@ -409,8 +411,17 @@ class Schema:
             sum+= len(v[1])
             self.schema_log.info(f'Relation {k} has {str(len(v[1]))} of tuples.')
         self.schema_log.info(f'#Tuples of schema {self.name} is {str(sum)}.')
-      
 
+
+
+def schema_init(name:str,spec_dir:str, data_paths:list[str], ground_truth_path:list[str]=[],ref_dict:dict[tuple,tuple]={})->tuple[Schema,Dataloader]:
+    path_list = data_paths
+    dl = Dataloader(name = f'{name}',path_list=path_list,ground_truth=ground_truth_path)
+    tbls = dl.load_data()  
+    tbls_dict = {t[0]:(0,t[1]) for t in tbls}
+    del tbls 
+    schema = Schema(id = '1',name =f'{name}',tbls=tbls_dict,refs=ref_dict,spec_dir=spec_dir)
+    return schema,dl
 
 if __name__ == "__main__":
     #dl = Dataloader(name = 'cora_tsv')

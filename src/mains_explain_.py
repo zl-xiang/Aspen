@@ -68,6 +68,8 @@ def get_schema(args,data_dir='')->tuple[Schema,Dataloader]:
         return eschema.music_schema(split=split,files=files,data_dir=data_dir)
     elif args.schema == POKEMON:
         return eschema.pokemon_schema('50',files)
+    else:
+        return eschema.other_schema(split=split,files=files)
 
 # ============explaination============
 
@@ -396,8 +398,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--schema",
         type=str,
-        choices=["dblp","dblp-split","cora","cora-split", "imdb", "music", "pokemon"],
-        default="",
+        choices=["dblp","dblp-split","cora","cora-split", "imdb", "music", "pokemon", "other"],
+        default="other",
         help="""schema to be used""",
     ) 
 

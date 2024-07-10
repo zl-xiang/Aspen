@@ -1,6 +1,7 @@
 from dataloader import Dataloader, drop_columns, atom2df, DBLP_ACM, ISO, UTF8,remove_records_and_save_copy, modify_and_save_column
 from dataloader import  ID, PUBLICATION, TITLE, VENUE, YEAR, STRING, NUM, LST, CORA_NAME, load_csv
 from metainfo import Schema, LACE, LACE_P, VLOG_LB, VLOG_UB
+import metainfo
 import contextc_
 import utils
 from utils import DF_EMPTY, ATOM_PAT, REL_PAT
@@ -322,19 +323,33 @@ def music_schema(split='',files=[],ver=LACE, data_dir='./dataset/music')->tuple[
      (PLACE,'area'):(AREA,'area'),
      (LABEL,'area'):(AREA,'area'),
      }
+    
     file = files[0]
-    #sim_attrs = get_reduced_spec(file)[1]
-    # MUSIC_PATH = '/scratch/c.c2028447/project/entity-resolution/dataset/musicbrainz'
+
+    schema_name = f'musicbrainz_ds_{split}'
+
     MUSIC_PATH = f'{data_dir}/{split}/'
-    dup_rel = {TRACK,MEDIUM,RECORDING,RELEASE,RELEASE_GROUP,ARTIST,AREA,PLACE,LABEL,ARTIST_CREDIT}
+    # dup_rel = {TRACK,MEDIUM,RECORDING,RELEASE,RELEASE_GROUP,ARTIST,AREA,PLACE,LABEL,ARTIST_CREDIT}
     path_list = [MUSIC_PATH+f'/{TRACK}{surfix}.csv',MUSIC_PATH+f'/{RECORDING}{surfix}.csv',MUSIC_PATH+f'/{MEDIUM}{surfix}.csv',
                  MUSIC_PATH+f'/{ARTIST_CREDIT}.csv',MUSIC_PATH+f'/{RELEASE_GROUP}{surfix}.csv', 
                  MUSIC_PATH+f'/{RELEASE}{surfix}.csv',MUSIC_PATH+f'/{ARTIST_CREDIT_NAME}{surfix}.csv',MUSIC_PATH+f'/{ARTIST}{surfix}.csv',
                  MUSIC_PATH+f'/{AREA}{surfix}.csv',MUSIC_PATH+f'/{PLACE}{surfix}.csv',MUSIC_PATH+f'/{LABEL}{surfix}.csv'
                  ]
+    
+    
+    ground_truth_path = [MUSIC_PATH+f'/{TRACK}_dups.csv',
+                        MUSIC_PATH+f'/{RECORDING}_dups.csv',
+                        MUSIC_PATH+f'/{MEDIUM}_dups.csv',
+                        MUSIC_PATH+f'/{RELEASE}_dups.csv',
+                        MUSIC_PATH+f'/{ARTIST_CREDIT}_dups.csv',
+                        MUSIC_PATH+f'/{RELEASE_GROUP}_dups.csv',
+                        MUSIC_PATH+f'/{AREA}_dups.csv',
+                        MUSIC_PATH+f'/{ARTIST}_dups.csv',
+                        MUSIC_PATH+f'/{PLACE}_dups.csv',
+                        MUSIC_PATH+f'/{LABEL}_dups.csv']
     # u = 'u' if uniq else ''
     #print(u,'---------------======================')
-    dl_music = Dataloader(name = f'musicbrainz_{split}',path_list=path_list,ground_truth=[MUSIC_PATH+f'/{TRACK}_dups.csv',
+    dl_music = Dataloader(name = f'{schema_name}',path_list=path_list,ground_truth=[MUSIC_PATH+f'/{TRACK}_dups.csv',
                                                                                  MUSIC_PATH+f'/{RECORDING}_dups.csv',
                                                                                  MUSIC_PATH+f'/{MEDIUM}_dups.csv',
                                                                                  MUSIC_PATH+f'/{RELEASE}_dups.csv',
@@ -344,13 +359,77 @@ def music_schema(split='',files=[],ver=LACE, data_dir='./dataset/music')->tuple[
                                                                                  MUSIC_PATH+f'/{ARTIST}_dups.csv',
                                                                                  MUSIC_PATH+f'/{PLACE}_dups.csv',
                                                                                  MUSIC_PATH+f'/{LABEL}_dups.csv'])
-    tbls = dl_music.load_data()  
-    tbls_dict = {t[0]:(0,t[1]) for t in tbls}
-    del tbls 
-    dtype_cfg = MUSIC_PATH+f'/domain.yml'
-    order = [TRACK,ARTIST_CREDIT,RECORDING,MEDIUM,RELEASE,RELEASE_GROUP,ARTIST_CREDIT_NAME,ARTIST,AREA,PLACE,LABEL]
-    music = Schema(id = '2',name =f'musicbrainz_ds_{split}',tbls=tbls_dict,refs=ref_dict,dup_rels=dup_rel,attr_types=utils.load_config(dtype_cfg),order=order,spec_dir=file,ver=ver)
+    
+    music,dl_music = metainfo.schema_init(name=schema_name,spec_dir=file,data_paths=path_list,ground_truth_path=ground_truth_path,ref_dict=ref_dict) 
+    #tbls = dl_music.load_data()  
+    #tbls_dict = {t[0]:(0,t[1]) for t in tbls}
+    #del tbls 
+    #dtype_cfg = MUSIC_PATH+f'/domain.yml'
+    #order = [TRACK,ARTIST_CREDIT,RECORDING,MEDIUM,RELEASE,RELEASE_GROUP,ARTIST_CREDIT_NAME,ARTIST,AREA,PLACE,LABEL]
+    #music = Schema(id = '2',name =f'{schema_name}',tbls=tbls_dict,refs=ref_dict,dup_rels=dup_rel,attr_types=utils.load_config(dtype_cfg),order=order,spec_dir=file,ver=ver)
     #music.set_sim_attrs(sim_attrs)
+    return music,dl_music
+
+
+def other_schema(split='',files=[])->tuple[Schema,Dataloader]:
+    data_dir= './dataset/music'
+    surfix = ''
+    TRACK = f'track' 
+    RECORDING = f'recording' 
+    MEDIUM = f'medium'
+    ARTIST_CREDIT = f'artist_credit' 
+    RELEASE_GROUP = f'release_group' 
+    RELEASE = f'release' 
+    ARTIST_CREDIT_NAME = f'artist_credit_name' 
+    ARTIST = f'artist'
+    AREA = f'area'
+    PLACE = f'place'
+    LABEL = f'label'
+
+    ### Table references
+    ref_dict =    {
+    (TRACK,'artist_credit'):(ARTIST_CREDIT,'artist_credit'),
+     (TRACK,'recording'):(RECORDING,'recording'),
+     (RECORDING,'artist_credit'):(ARTIST_CREDIT,'artist_credit'),
+     (TRACK,'medium'):(MEDIUM,'medium'),
+     (MEDIUM,'release'):(RELEASE,'release'),
+     (RELEASE,'artist_credit'):(ARTIST_CREDIT,'artist_credit'),
+     (RELEASE,'release_group'):(RELEASE_GROUP,'release_group'),
+     (RELEASE_GROUP,'artist_credit'):(ARTIST_CREDIT,'artist_credit'),
+     (ARTIST_CREDIT_NAME,'artist_credit'):(ARTIST_CREDIT,'artist_credit'),
+     (ARTIST_CREDIT_NAME,'artist'):(ARTIST,'artist'),
+     (ARTIST,'area'):(AREA,'area'),
+     (PLACE,'area'):(AREA,'area'),
+     (LABEL,'area'):(AREA,'area'),
+     }
+    
+    file = files[0]
+    schema_name = f'musicbrainz_ds_{split}'
+
+    MUSIC_PATH = f'{data_dir}/{split}/'
+
+    ### Data source path
+    path_list = [MUSIC_PATH+f'/{TRACK}{surfix}.csv',MUSIC_PATH+f'/{RECORDING}{surfix}.csv',MUSIC_PATH+f'/{MEDIUM}{surfix}.csv',
+                 MUSIC_PATH+f'/{ARTIST_CREDIT}.csv',MUSIC_PATH+f'/{RELEASE_GROUP}{surfix}.csv', 
+                 MUSIC_PATH+f'/{RELEASE}{surfix}.csv',MUSIC_PATH+f'/{ARTIST_CREDIT_NAME}{surfix}.csv',MUSIC_PATH+f'/{ARTIST}{surfix}.csv',
+                 MUSIC_PATH+f'/{AREA}{surfix}.csv',MUSIC_PATH+f'/{PLACE}{surfix}.csv',MUSIC_PATH+f'/{LABEL}{surfix}.csv'
+                 ]
+    
+    ### Ground truth path
+    ground_truth_path = [MUSIC_PATH+f'/{TRACK}_dups.csv',
+                        MUSIC_PATH+f'/{RECORDING}_dups.csv',
+                        MUSIC_PATH+f'/{MEDIUM}_dups.csv',
+                        MUSIC_PATH+f'/{RELEASE}_dups.csv',
+                        MUSIC_PATH+f'/{ARTIST_CREDIT}_dups.csv',
+                        MUSIC_PATH+f'/{RELEASE_GROUP}_dups.csv',
+                        MUSIC_PATH+f'/{AREA}_dups.csv',
+                        MUSIC_PATH+f'/{ARTIST}_dups.csv',
+                        MUSIC_PATH+f'/{PLACE}_dups.csv',
+                        MUSIC_PATH+f'/{LABEL}_dups.csv']
+
+    
+    music,dl_music = metainfo.schema_init(name=schema_name,spec_dir=file,data_paths=path_list,ground_truth_path=ground_truth_path,ref_dict=ref_dict) 
+
     return music,dl_music
 
 def musicval_schema(split='',files=[])->tuple[Schema,Dataloader]:
@@ -1422,6 +1501,8 @@ def get_schema(name,spec_dir = '', ver=LACE, data_dir = '',split = '50')->tuple[
         return music_schema(split='50',files=[spec_dir],ver=ver, data_dir=data_dir)
     elif name== 'pokemon':
         return pokemon_schema(split='50',files=[spec_dir],ver=ver)
+    else:
+        return other_schema(split=split,files=[spec_dir],ver=ver)
 
 def extract_body_literals_ungrounded(rule_string):
     # Use regex to find the body part of the rule
