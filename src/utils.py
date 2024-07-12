@@ -494,8 +494,8 @@ def replace_pred(to_be_replaced:str, replacement:str, atom_set:Sequence[str]) ->
 
 if __name__ == "__main__":
     # generate_variants()
-    #eqvs = load_cache('./cache/atoms_musicbrainz_ds_50-p.pkl')
-    #[print(e) for e in eqvs]
+    music_facts = load_cache('./cache/sim-music50.pkl')
+    [print(e) for e in music_facts]
     #fname1 = 'imdb-4k'
     #fname2 = 'imdb-4k-no-eq'
     #rels = ['name_basics_4k','title_basics_4k']
@@ -516,7 +516,7 @@ if __name__ == "__main__":
    
     # example 2
     #print(semantic_sim('Association of Tennis Professionals',"ATP"))
-   print(sim('$Hz222',"$H2222"))
+   #print(sim('$Hz222',"$H2222"))
    
    # example 3
    #print(semantic_sim('Novak Djokovic is a player of the Association of Tennis Professionals',"Novak Djokovic is a player of the ATP"))

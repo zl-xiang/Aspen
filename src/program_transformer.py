@@ -222,7 +222,7 @@ def add_dom_val(attribute:Attribute,val,ter = False):
     val = utils.escape(val,attribute.data_type == Attribute.CAT_SEQ) if not utils.is_empty(val) else DF_EMPTY 
     const_type = [Attribute.NUM]
     if attribute.data_type not in const_type and val!=DF_EMPTY:
-        val = f'"{val}"' if ter else f'"{attribute.id}:{val}"'
+        val = f'"{val}"' if ter or attribute.type != Attribute.MERGE else f'"{attribute.id}:{val}"'
     if not isinstance(val,str):
         val = str(int(val))
     return val

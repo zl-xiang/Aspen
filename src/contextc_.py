@@ -352,10 +352,10 @@ class ERContext(XclingoContext):
         assert type(X) == type(Y)
         self.sim_counter +=1
         # print(self.sim_counter )
-        if not self.ter:
-            return self.sim_annotated_str(X,Y)
-        else:
-            return self.sim_sym(X,Y)
+        #if not self.ter:
+         #   return self.sim_annotated_str(X,Y)
+        #else:
+        return self.sim_sym(X,Y)
         
     def sim_col(self,X:Symbol,C1:Symbol,Y:Symbol,C2:Symbol) -> Number:
         assert type(X) == type(Y)

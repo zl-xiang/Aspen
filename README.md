@@ -8,9 +8,9 @@
   - [2 Main Results](#2-main-results)
   - [3 Multi-level Recursion](#3-multi-level-recursion)
   - [4 Varying Duplicates Percentage](#4-varying-duplicates-percentage)
-  - [5 Varying Sim Thresholds](#5-varying-sim-thresholds)
+  - [5 Varying Similarity Thresholds](#5-varying-similarity-thresholds)
   - [6 Varying Datasize](#6-varying-data-size)
-  - [7 Datalog Approx.](#7-datalog-approx)
+  - [7 Datalog Approximation](#7-datalog-approx)
   - [8 Proof Tree](#6-proof-tree)
 - [Clean Data Sampling](#clean-data-sampling)
 
@@ -37,15 +37,17 @@ pip install -r requirements.txt
 ## How To Use
 Setup input:
 ### 1 Configure database instance
-To use customised dataset, the system requires to input nesccessary schema-level information of the database, including the followings:
-  - a set of references between tables of the format `(r, a) : (r',a')`, meaning that an attribute `a` of relation `r` is a reference to `a'` attribute of relation `r'`.
-  - a list of paths to raw data of all tables of the datasets (currently supports only `CSV/TSV` files).
-  - a list of path to the ground truth of the datasets (optionally, currently supports only `CSV/TSV` files)
+To use a customised dataset, the system requires necessary schema-level information about the database. This includes the following:
 
-An example of such object is provided in `example_schema.py`, where the `other_schema` function illustrates how the `Music` dataset is configured.
+- A Python dictionary with elements of the form `(r1, a1): (r2, a2)`, indicating that the merge attribute `a1` of relation `r1` is of the same entity type as attribute `a2` of relation `r2`.
+- A list of paths to the raw data files for all tables in the dataset (currently supports only `CSV/TSV` files).
+- A list of paths to the ground truth files for the dataset (optional, currently supports only `CSV/TSV` files).
+An example of such a configuration can be found in `src/example_schema.py`, where the `other_schema` function demonstrates how the `Music` dataset is set up.
 
+### 2 ASP Encoding
+Users can input their own ASP encodings with respect to the input dataset. To assist with this, a collection of example encodings (each with explanatory comments) used in our experiments is available in the `src/encoding` directory. Among, the file `src/encoding/music-ab.lp` contains an atom-based encoding derived from tuples in the Music dataset.
 
-### 2 Run the system with command lines
+### 3 System Command Lines
 A general explanantion of the command is the following:
 
 ```
@@ -74,30 +76,30 @@ python mains_explain_.py \
     --naive-sim "enable to compute similarity on the sum of cross products of constants arcoss sim positions"
 ```
 
-Suppose a specification is provided as the file `src/your_specification.lp`, after the corresponding dataset is configured, the user may execute the followings for the use of core functionalities:
-### Similarity Filtering
+Suppose an ASP encoding is provided as the file `src/your_specification.lp`, after the corresponding dataset is configured, the user may execute the followings for the use of core functionalities:
+#### Similarity Filtering
 
 ```
 python -u mains_explain_.py -c -l src/your_specification.lp  --getsim --typed_eval
 ```
 
-### Computing maximal solution
+#### Computing maximal solution
 ```
 python -u mains_explain_.py -c -l src/your_specification.lp -a -m ./experiment/aspen/maxsol.lp --main  --presimed --typed_eval --ub-guarded
 ```
 
-### Compute solution lowerbound
+#### Compute solution lowerbound
 ```
 python -u mains_explain_.py -c -l src/your_specification.lp   --main --lb --presimed --typed_eval --ub-guarded
 ```
 
-### Compute solution upperbound
+#### Compute solution upperbound
 ```
 python -u mains_explain_.py -c -l src/your_specification.lp  --main --ub --presimed --typed_eval  --ub-guarded
 ```
 
 
-### Compute possible merges
+#### Compute possible merges
 
 1. To compute all possible merges:
 ```
@@ -109,7 +111,7 @@ python -u mains_explain_.py -c -l src/your_specification.lp --pos-merge all --pr
 python -u mains_explain_.py -c -l src/your_specification.lp --pos-merge c,c' --attr a,r --presimed  --typed_eval --ub-guarded
 ```
 
-### Compute explanation
+#### Compute explanation
 To declare the rules to be explained, we rely on a set of rule labels introduced as comments of in a specification. An example of rule label is shown as following:
 
 ```
@@ -181,7 +183,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
   ```    
 
 
- #### For ASPEn, **(after Sim facts computed)**
+ #### For ASPEn, **(after similarity facts computed)**
 ```
 # dblp
 ## lb
@@ -288,7 +290,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp -a -m ./
 
 
 ### 4 Varying Duplicates Percentage $$\mathsf{Du}$$
-#### Step 1: sim computing
+#### Step 1: Similarity Computation
 - For Dup30
 `python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --getsim --typed_eval --ternary --schema music --data 30`
 
@@ -324,8 +326,8 @@ python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge
 
 
 
-### 5 Varying Sim Thresholds $$\delta$$
-#### Step 1: sim computing
+### 5 Varying Similarity Thresholds $$\delta$$
+#### Step 1: Similarity Computation
 For $$\delta \in \{98,95,90,85\}$$
 
 execute
@@ -334,7 +336,7 @@ execute
 
 
 
-#### Step 2: derive solutions
+#### Step 2: Merge Sets Computation
 
 For $$\delta \in \{98,95,90,85\}$$
 
@@ -353,7 +355,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/music/thresh/music-{\delta}
 
 
 ### 6 Varying Data Size $$|D|$$
-#### Step 1: sim computing
+#### Step 1: Similarity Computation
 For $$|D| \in \{1,2,3,4\}$$
 
 execute
@@ -362,7 +364,7 @@ execute
 
 
 
-#### Step 2: derive solutions
+#### Step 2: Merge Sets Computation
 
 For $$|D| \in \{1,2,3,4\}$$
 
@@ -379,7 +381,7 @@ python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp  --pos-merge
 
 ```
 
-### 7 Datalog Approx.
+### 7 Datalog Approximation
 Set up `VLog4j` environments following the [instructions](https://github.com/knowsys/rulewerk), then for each database $$D\in\{\text{dblp, cora, imdb, music, music-corr, pokemon}}$$ execute the following,
 ```
 echo -e "@load './encoding/datalogs/{D}-{pname}.rls' .\n @reason .\n @query eq(?X,?Y,?R) ." | java -jar /encoding/datalogs/rulewerk.jar
