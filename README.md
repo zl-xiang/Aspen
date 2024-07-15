@@ -16,7 +16,7 @@
 
 
 ## Environment Installation
-Although it is suffice to install directly with `pip`, we recommand using a [`conda`](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment as a container.
+Although it is sufficient to install directly with `pip`, we recommand using a [`conda`](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) environment as a container.
 To do so, one could execute optionally the following:
 - create a `conda` environment:
 ```
@@ -27,7 +27,7 @@ conda create -n aspen python=3.9.7
 conda activate aspen
 ```
 
-The running environment is maintained using `pip` based on `Python 3.9.7`. To install, directing first to the source folder `aspen/src` then executing the following:
+The running environment is maintained using `pip` based on `Python 3.9.7`. To install, direct first to the source folder `aspen/src` then executing the following:
 
 ```
 pip install -r requirements.txt
@@ -36,19 +36,19 @@ pip install -r requirements.txt
 
 ## How To Use
 Setup input:
-### 1 Configure database instance
-To use a customised dataset, the system requires necessary schema-level information about the database. This includes the following:
+### 1 Configure Database Instance
+To use a customised dataset, the system uses necessary schema-level information about the database. This includes the following:
 
 - A Python dictionary with elements of the form `(r1, a1): (r2, a2)`, indicating that the merge attribute `a1` of relation `r1` is of the same entity type as attribute `a2` of relation `r2`.
-- A list of paths to the raw data files for all tables in the dataset (currently supports only `CSV/TSV` files).
-- A list of paths to the ground truth files for the dataset (optional, currently supports only `CSV/TSV` files).
+- A list of paths to the raw data files for all tables in the dataset (currently supports `CSV/TSV` files).
+- A list of paths to the ground truth files for the dataset (optional, currently supports `CSV/TSV` files).
 An example of such a configuration can be found in `src/example_schema.py`, where the `other_schema` function demonstrates how the `Music` dataset is set up.
 
 ### 2 ASP Encoding
 Users can input their own ASP encodings with respect to the input dataset. To assist with this, a collection of example encodings (each with explanatory comments) used in our experiments is available in the `src/encoding` directory. Among, the file `src/encoding/music-ab.lp` contains an atom-based encoding derived from tuples in the Music dataset.
 
 ### 3 System Command Lines
-A general explanantion of the command is the following:
+A general explanation of the command is the following:
 
 ```
 python mains_explain_.py \
@@ -76,7 +76,7 @@ python mains_explain_.py \
     --naive-sim "enable to compute similarity on the sum of cross products of constants arcoss sim positions"
 ```
 
-Suppose an ASP encoding is provided as the file `src/your_specification.lp`, after the corresponding dataset is configured, the user may execute the followings for the use of core functionalities:
+Suppose an ASP encoding is provided as the file `src/your_specification.lp`, after the corresponding dataset is configured, the user may execute the following for the use of core functionalities:
 #### Similarity Filtering
 
 ```
@@ -112,16 +112,16 @@ python -u mains_explain_.py -c -l src/your_specification.lp --pos-merge c,c' --a
 ```
 
 #### Compute explanation
-To declare the rules to be explained, we rely on a set of rule labels introduced as comments of in a specification. An example of rule label is shown as following:
+To declare the rules to be explained, we rely on a set of rule labels introduced as comments in a specification. An example of rule label is shown as following:
 
 ```
 %trace_rule{" artist (%,%)-(%,%) are merged since they have similar names (%,%):% and belong to the same area (%,%)-(%,%) ", X,AI,Y,AI1,NA,NA1,S,T1,ARI,T2,ARI1}.
 eq(X,Y):-X!=Y,artist(X,AI,GID,NA,SN,BY,BM,BD,EY,EM,ED,END,AT,G,ARI,C),
     artist(Y,AI1,GID1,NA1,SN1,BY1,BM1,BD1,EY1,EM1,ED1,END1,AT1,G1,ARI1,C1),area(T1,ARI,GID2,NA2,ART1,END2),area(T2,ARI1,GID3,NA3,ART2,END3),eq(T1,T2), sim(NA,NA1,S), S>=95.
 ```
-where `X,AI,Y,AI1,NA,NA1,S,T1,ARI,T2,ARI1` are list of variables in the rule to be traced, and ` artist (%,%)-(%,%) are merged since they have similar names (%,%):% and belong to the same area (%,%)-(%,%) ` is a string of customised rule explanation in natural language, containing `%` as placeholders to be replaced by the ground constants instantiate the list of variables. 
+where `X,AI,Y,AI1,NA,NA1,S,T1,ARI,T2,ARI1` are list of variables in the rule to be traced, and ` artist (%,%)-(%,%) are merged since they have similar names (%,%):% and belong to the same area (%,%)-(%,%) ` is a string of customised rule explanation in natural language, containing `%` as placeholders to be replaced by the ground constants instantiated from the list of variables. 
 
-With a labelled specification, user may execute the following to compute the justification for a merge `(c,c')` of attribute `a` of relation `r`:
+With a labelled specification, the user may execute the following to compute the justification for a merge `(c,c')` of attribute `a` of relation `r`:
 
 ```
 python -u mains_explain_.py -c -l ./experiment/aspen/music/music.lp --pos-merge c,c' --attr a,r --trace  --presimed --typed_eval
@@ -168,9 +168,9 @@ python -u mains_explain_.py -c -l ./experiment/aspen/pokemon/pokemon.lp  --naive
 ### 2 Main Results
  #### For baselines
   ##### Magellan
-  Since `Magellan` the fixed mapping of data value type to similarity measures do not allow string values to perform equality joins and `jarowinkler` similarity measure, we made changes and uploaded to the [forked repo](https://github.com/zl-xiang/py_entitymatching)
+  Since in `Magellan` the mapping of data value type to similarity measures do not allow string values to perform equality joins and `jarowinkler` similarity measure, we made changes and uploaded to the [forked repo](https://github.com/zl-xiang/py_entitymatching)
 
-  To install, following first the [instructions](https://anhaidgroup.github.io/py_entitymatching/v0.4.0/index.html) to set up the running environments.
+  To install, follow the [instructions](https://anhaidgroup.github.io/py_entitymatching/v0.4.0/index.html) to set up the running environments.
 
   To run the experiments, cloning the fork and modifying the 874 line of `rule-matcher.py`, passing the proper configuration for each dataset $$D\in \{\text{dblp, cora, imdb, music, music\\_corr, pokemon}\}$$ as following   
   ```
